@@ -1,0 +1,136 @@
+---
+layout: default
+---
+<article {% if page.feature-img or page.color or page.back_color %}class="feature-image" {% endif %}>
+  <header id="main" style="">
+    <div class="title-padder">
+      {% if page.hide_title %}
+      <div class="feature-image-padding"></div>
+      {% else %}
+      <div class="item item_{{ page.icon }}"></div>
+      <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
+      {% include blog/post_info.liquid author=page.author date=page.date %}
+      {% endif %}
+    </div>
+  </header>
+
+  <section class="post-content">
+  {% if page.bootstrap %}
+    <div class="bootstrap-iso">
+    {% endif %}
+      {{ content | toc }}
+    {% if page.bootstrap %}
+    </div>
+  {% endif %}
+  </section>
+
+  <!-- Social media shares -->
+  {% include social/share_buttons.liquid %}
+
+  <!-- Tag list -->
+  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
+  {% include default/tags_list.liquid tags=tag_list %}
+
+</article>
+
+<!-- Post navigation -->
+{% if site.post_navigation  or site.theme_settings.post_navigation %}
+{% include blog/post_nav.liquid %}
+{% endif %}
+
+ <!-- cc by nc sa -->
+ <div class="pagination" style="float: right; text-align: right; width: 50%;">
+   <a style="float: right;" href="https://creativecommons.org/licenses/by-nc-sa/2.0/kr/">
+     <img style="float: right;" src="/assets/img/img_cc_by_nc_sa.png"></img>
+   </a>
+ </div>
+
+<!--Utterances-->
+{% if site.comments.utterances.repo and site.comments.utterances.issue-term %} {% include social/utterances.liquid %} {% endif %}
+
+<!-- Cusdis -->
+{% if site.comments.cusdis_app_id or site.cusdis_app_id %}{% include social/cusdis.liquid %}{% endif %}
+
+<!-- Disqus -->
+{% if site.comments.disqus_shortname or site.theme_settings.disqus_shortname or site.disqus_shortname %}
+{% include social/disqus.liquid %}{% endif %}
+
+<!-- To change color of links in the page -->
+<style>
+  header#main {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  {% if page.color %}
+  .post-content a { color: {{ page.color }} !important; }
+  .share-buttons a { color: {{ page.color }} !important; }
+  .tag-list a:not(:hover) { color: {{ page.color }} !important; }
+  div#post-nav a { color: {{ page.color }} !important; }
+  footer a { color: {{ page.color }} !important; }
+  .site-header nav a:hover {  color: {{ page.color }} !important; }
+  a.button:hover {
+    background: {{ page.color }} !important;
+    border: 1px solid {{ page.color }} !important;
+    color: white;
+    text-decoration: none;
+    filter: none;
+  }
+  header#main {
+      background-color: {{ page.back_color }} !important;
+      background-image: url('{{ site.color_image | relative_url }}');
+  }
+  {% endif %}
+
+  {% if page.back_color %}
+  header#main {
+      background-color: {{ page.back_color }} !important;
+  }
+  {% endif %}
+
+  {% if page.feature-img %}
+  header#main { background-image: url('{{ page.feature-img | relative_url }}'); }
+  {% endif %}
+
+  .item {
+    width: 12.875em;
+    height: 12.875em;
+    background-size: 12.875em;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin: 0 auto 5.5em auto;
+    filter: drop-shadow(4px 4px 4px rgba(51, 61, 75, 0.3));
+  }
+
+  .item_biz {
+      background-image: url('/assets/img/icon_biz.png') !important;
+  }
+  .item_conf {
+      background-image: url('/assets/img/icon_conf.png') !important;
+  }
+  .item_news {
+      background-image: url('/assets/img/icon_news.png') !important;
+  }
+  .item_nlp {
+      background-image: url('/assets/img/icon_nlp.png') !important;
+  }
+  .item_paper {
+      background-image: url('/assets/img/icon_paper.png') !important;
+  }
+  .item_patent {
+      background-image: url('/assets/img/icon_patent.png') !important;
+  }
+  .item_school {
+      background-image: url('/assets/img/icon_school.png') !important;
+  }
+  .item_seminar {
+      background-image: url('/assets/img/icon_seminar.png') !important;
+  }
+  .item_tech {
+      background-image: url('/assets/img/icon_tech.png') !important;
+  }
+  .item_security {
+      background-image: url('/assets/img/icon_security.png') !important;
+  }
+</style>
