@@ -3,7 +3,7 @@
   conf: "The 17th Conference of the European Chapter of the Association for Computational Linguistics(EACL). (2023)"
   year: 2023
   abstract: ""
-  tags: ["EACL2023"]
+  tags: ["EACL2023", "generation"]
   id: 0
 
 - authors: "Donghyun Kim, Youbin Ahn, Chanhee Lee, Wongyu Kim, Kyong‐Ho Lee, Donghoon Shin(NCSOFT), Yeonsoo Lee(NCSOFT)"
@@ -11,7 +11,7 @@
   conf: "The 17th Conference of the European Chapter of the Association for Computational Linguistics(EACL). (2023)"
   year: 2023
   abstract: ""
-  tags: ["EACL2023"]
+  tags: ["EACL2023", "dialogue"]
   id: 1
 
 - authors: "Yoonna Jang, Jungwoo Lim, Yuna Hur, Dongsuk Oh, Suhyune Son, Yeonsoo Lee(NCSOFT), Dong-Hoon Shin(NCSOFT), Seungryong Kim, Heuiseok Lim"
@@ -19,7 +19,7 @@
   conf: "Proceedings of the AAAI Conference on Artificial Intelligence(AAAI). (2022)"
   year: 2022
   abstract: "Humans usually have conversations by making use of prior knowledge about a topic and background information of the people whom they are talking to. However, existing conversational agents and datasets do not consider such comprehensive information, and thus they have a limitation in generating the utterances where the knowledge and persona are fused properly. To address this issue, we introduce a call For Customized conversation (FoCus) dataset where the customized answers are built with the user's persona and Wikipedia knowledge. To evaluate the abilities to make informative and customized utterances of pre-trained language models, we utilize BART and GPT-2 as well as transformer-based models. We assess their generation abilities with automatic scores and conduct human evaluations for qualitative results. We examine whether the model reflects adequate persona and knowledge with our proposed two sub-tasks, persona grounding (PG) and knowledge grounding (KG). Moreover, we show that the utterances of our data are constructed with the proper knowledge and persona through grounding quality assessment."
-  tags: ["AAAI2022"]
+  tags: ["AAAI2022", "dialogue"]
   id: 2
 
 - authors: "Sanghak Lee, Seungmin Seo, Byungkook Oh, Kyong-Ho Lee, Donghoon Shin(NCSOFT),Yeonsoo Lee(NCSOFT)"
@@ -35,7 +35,7 @@
   conf: "The 2022 Conference on Empirical Methods in Natural Language Processing(EMNLP) (2022)"
   year: 2022
   abstract: "To build a conversational agent that interacts fluently with humans, previous studies blend knowledge or personal profile into the pre-trained language model. However, the model that considers knowledge and persona at the same time is still limited, leading to hallucination and a passive way of using personas. We propose an effective dialogue agent that grounds external knowledge and persona simultaneously. The agent selects the proper knowledge and persona to use for generating the answers with our candidate scoring implemented with a poly-encoder. Then, our model generates the utterance with lesser hallucination and more engagingness utilizing retrieval augmented generation with knowledge-persona enhanced query. We conduct experiments on the personaknowledge chat and achieve state-of-the-art performance in grounding and generation tasks on the automatic metrics. Moreover, we validate the answers from the models regarding hallucination and engagingness through human evaluation and qualitative results. We show our retriever’s effectiveness in extracting relevant documents compared to the other previous retrievers, along with the comparison of multiple candidate scoring methods. Code is available at https://github.com/dlawjddn803/INFO"
-  tags: ["EMNLP2022"]
+  tags: ["EMNLP2022", "dialogue"]
   id: 4
 
 - authors: "Seonil Son (NCSOFT), Junsoo Park (NCSOFT), Jeong-in Hwang (NCSOFT), Junghwa Lee (NCSOFT), Hyungjong Noh (NCSOFT), Yeonsoo Lee (NCSOFT)"
