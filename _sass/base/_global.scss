@@ -282,6 +282,18 @@ img + em {
     color: var(--gray5);
 }
 
+img + em + em {
+    display: block;
+    text-align: center;
+    color: var(--gray5);
+}
+
+.center_div {
+    display: block;
+    text-align: center;
+    color: var(--gray5);
+}
+
 // image centering
 img {
     display: block;
