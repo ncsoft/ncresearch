@@ -8,7 +8,7 @@ feature-img: "assets/img/Topbg_pubs.png"
 page-type: main_page
 ---
 
-<script src="{{ base.url | prepend: site.url }}/assets/js/publications.js"></script>
+<script src="{{ site.baseurl | prepend: site.url }}/assets/js/publications.js"></script>
 
 <div class="home">
     {% assign pubs = site.data.publications | sort: "year" %}
