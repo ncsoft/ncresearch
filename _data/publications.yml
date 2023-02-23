@@ -2,7 +2,7 @@
   title: "Persona Expansion with Commonsense Knowledge for Diverse and Consistent Response Generation"
   conf: "The 17th Conference of the European Chapter of the Association for Computational Linguistics(EACL). (2023)"
   year: 2023
-  abstract: ""
+  abstract: "** abstract **"
   tags: ["EACL2023", "generation"]
   id: 0
 
@@ -10,7 +10,7 @@
   title: "Concept-based Persona Expansion for Improving Diversity of Persona-Grounded Dialogue"
   conf: "The 17th Conference of the European Chapter of the Association for Computational Linguistics(EACL). (2023)"
   year: 2023
-  abstract: ""
+  abstract: "** abstract **"
   tags: ["EACL2023", "dialogue"]
   id: 1
 
@@ -26,7 +26,7 @@
   title: "Active Learning for Knowledge Graph Schema Expansion"
   conf: "IEEE Transactions on Knowledge and Data Engineering (TKDE), Vol. 32, Issue 12, pp. 5610-5620"
   year: 2022
-  abstract: ""
+  abstract: "** abstract **"
   tags: ["TKDE"]
   id: 3
 
