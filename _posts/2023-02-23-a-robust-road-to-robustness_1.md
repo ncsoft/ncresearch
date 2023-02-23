@@ -24,7 +24,7 @@ NLP Tech 블로그를 통해 이야기 나눌 수 있어서 기쁘네요.
 
 저는 학부 때 물리학을 전공했는데, 천체나 입자의 상호작용이 우주 속에서 어떤 체계를 가지고 나타나는지 연구 하는 것과 여러 개체들의 상호작용 (관계, 이벤트 등)이 글 속에서 어떻게 구조화되어 나타나는지 연구 하는 게 비슷하다고 생각해 정보 추출이 더 매력적으로 느껴지더라고요. 이런 매력적인 일에도 물론 어려운 점이 여럿 있는데요, 그 중 하나가 오늘 이야기 나눌 견고함 (robustness) 입니다.
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/RRR.png)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/RRR.png"| relative_url}})
 *시작합니다! ㄱㄱㄱ: 견고함으로 가는 길!*
 *(RRR 재미있어요! 인도영화 좋아하시면 추천해요)*
 
@@ -41,13 +41,13 @@ NLP Tech 블로그를 통해 이야기 나눌 수 있어서 기쁘네요.
 > 매우 가치가 있습니다. 마찬가지로, 견고한 자연어 처리 시스템은 다양한 유형의 입력 데이터를 다룰 수 있고,
 > 여전히 정확하고 의미 있는 출력을 제공할 수 있는 유연한 시스템입니다."
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/ChatGPT_explains_robustness.png)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/ChatGPT_explains_robustness.png"| relative_url}})
 *나쁘지 않군요. 고마워요, 챗GPT!*
 *이력서를 다듬어야 하나...*
 
 나쁘지 않군요. 좋은 예시란 많아도 많아도 부족하기에, 한가지 예를 더 들자면 아래 사진의 헤드 분리형 드라이버와 일체형 일자 드라이버가 될 수도 있겠네요. 분리형 드라이버와 같이 여러 분야의 과제나 환경에서 효과적인 도구가 있는 반면에, 단 하나의 환경에서만 효과적인 (십자 나사 앞에서 쓸모 없는) 일자 드라이버 같은 도구도 있는 셈이죠!
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/screwdriver_replaceable_head.jpg)![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/flat_screwdriver.jpg)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/screwdriver_replaceable_head.jpg"| relative_url}})![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/flat_screwdriver.jpg"| relative_url}})
 *견고한 분리형 드라이버 와 견고하지 못한 일자 드라이버*
 
 
@@ -72,10 +72,10 @@ NLP Tech 블로그를 통해 이야기 나눌 수 있어서 기쁘네요.
 자! 여기 인공지능이 둘 있어요. 넵구리와 몽구리 입니다!
 
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/yep_guri.gif)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/yep_guri.gif"| relative_url}})
 *넵구리*
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/mong_guri.gif)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/mong_guri.gif"| relative_url}})
 *몽구리*
 
 
@@ -111,7 +111,7 @@ Sleeping (잠), humans (인간) 과 같은 일반 동/명사가 정답 레이블
 ....
 
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/doguri_shakes_head.gif)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/doguri_shakes_head.gif"| relative_url}})
 *선택지 2개면.....다 찍어도 50점 인데..?*
 
 우리 똑똑한 인공지능들이 넵구리 인줄 알았는데, 사실은 내부 분포에서 아무리 고득점을 받아도 외부 분포로의 일반화 능력은 거의 없다시피 한 몽구리였다고..?
@@ -121,7 +121,7 @@ Sleeping (잠), humans (인간) 과 같은 일반 동/명사가 정답 레이블
 안타깝게도 이 문제는 지금까지도 지속되는데요, 어휘 중복과 entailment 사이의 가짜 상관관계는 원 글 작성 당시 OpenAI 의 ChatGPT 에서도 나타나는 문제 중 하나입니다.
 
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/ChatGPT_lexical_overlap.png)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/ChatGPT_lexical_overlap.png"| relative_url}})
 *천하의 ChatGPT가...! 제 직업은 (지금으로선) 안전합니다 (웃음)*
 *정답은 non-entailment 입니다. 춤을 춘 사람은 의사이지, 배우가 아니죠.*
 
@@ -148,7 +148,7 @@ Min et al. (2020) [^6] 의 연구자들은 어휘 중복과 entailment 레이블
 이런 식으로 어휘 중복이 있으면서 수반하지 않는 문장쌍을 만들어서, 유물의 흔적을 줄여, 궁극적으로 인공지능이 학습할 가짜 상관 관계를 줄여 나가는 방법을 제안하는 논문이죠. 간단한 데이터 조정 및 증강으로 견고함에 한 발자국 다가갈 수 있게 하는, 쉽지만 효과적인 방법으로 볼 수 있습니다. 에헴!
 
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/doguri_nods.gif)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/doguri_nods.gif"| relative_url}})
 *필자는이 Min et al. 2020 [^6] 논문을 좋아합니다. 왜 인지는 비밀입니다!*
 
 
@@ -173,14 +173,14 @@ Min et al. (2020) [^6] 의 연구자들은 어휘 중복과 entailment 레이블
 음. 문제가 생겼습니다. 말투만 나긋나긋하고 내용은 벽돌처럼 딱딱하다는 피드백을 받았어요. 황급히 파워포인트를 열어서 제 그림 실력을 뽐낼 시간이군요!
 
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/nli_model_architecture.png)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/nli_model_architecture.png"| relative_url}})
 *NLI 모델의 구조 (디자이너 급구!)*
 
 이제 좀 나아졌군요. 그림이 도움이 되었으면 좋겠는데, 모델의 구조가 이해 되시나요?
 
 준비운동을 모두 마쳤네요! 이제 논문으로 가 볼까요?
 
-![](/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/nonmun.jfif)
+![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/nonmun.jfif"| relative_url}})
 *곰국을 거꾸로 하면.......아닙니다.*
 
 (ㄱㄱㄱ 2편에서 이어집니다)

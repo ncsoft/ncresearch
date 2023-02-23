@@ -52,27 +52,27 @@ $$w_i$$ 는 $$X_i$$의 resampling weight 이라 정의해요. 이 때, $$T_k$$ �
 여기서 $$K(∙,∙)$$은 양의 정부호 가측대칭함수 (measurable, symmetric positive definite kernel function) 의 매핑 연산자이며, $$(∙,∙)_H$$ 는 Hilbert-Schmidt space 를 나타내요. 그런데, $$K(x,∙)$$ 는 정확한 유도가 불가능 하므로,
 여기서는 랜덤 푸리에 피처: (random Fourier feature[^6]) 을 Zhang et al. (2021)[^5] 의 방식대로 참고해 근사하는 접근을 사용해요.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/1.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/1.png"| relative_url}})
 *(1)*
 
 두 개의 피처 변수 (feature variable) $$Z_i, Z_j$$ 를 $$A, B$$ 로 나타내었을때, RFF의 함수 공간 $$H$$ (2) 에서
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/2.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/2.png"| relative_url}})
 *(2)*
 
 $$n_A, n_B$$ 개의 매핑 함수 (mapping function) 를 샘플하여 (3) 과 같이 나타낼 수 있어요.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/3.1.png)![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/3.2.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/3.1.png"| relative_url}})![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/3.2.png"| relative_url}})
 *(3)*
 
 그렇다면, 피처 $$A, B$$를 새로운 커널 공간에서 재구성한 피처 $$u(A), v(B)$$는 (4) 와 같이 표현할 수 있게 되죠.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/4.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/4.png"| relative_url}})
 *(4)*
 
 위와 같은 방식으로 $$A, B$$ 를 RFF 를 통해 재구성한 공간 (reconstructed space) 로 매핑 한다면, $$u(A), v(B)$$ 사이에 선형화된 의존 관계만 남길 수 있게 되고, 이제 모든 의존 관계는 선형적이예요!!
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/kernel_mapping.png)
+![]({{"assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/kernel_mapping.png"| relative_url}})
 *RFF로 비선형적인 상관 관계 (회귀선) 을 선형화 한다는건*
 *커널 매핑으로 꼬불꼬불한 분류 경계를 시원하게 쫙 펴주는 것과 비슷한 느낌이죠.*
 
@@ -81,34 +81,34 @@ $$n_A, n_B$$ 개의 매핑 함수 (mapping function) 를 샘플하여 (3) 과 �
 ### 선형화된 피처 간 의존구조 최소화
 그 다음 단계는, 선형화된 의존구조 를 제거하는 것이 되겠죠. 교차 공분산 연산자 (cross-covariance operator) $$\Sigma_XY$$ 를 사용하면 피쳐 간 독립성을 (5) 와 같이 표현할 수 있어요.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/5.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/5.png"| relative_url}})
 *(5)*
 
 여기서, 두 가지 피쳐 $$A, B$$ 에 대한 식은 (6) 과 같이 근사 가능하죠. (중간 보조정리 (lemma)를 많이 건너 뛰었어요. 이 과정이 궁금하시면 논문을 참고해 주세요)
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/6.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/6.png"| relative_url}})
 *(6)*
 
 이어서, Hilbert-Schmidt Independence Criterion [^7] 은 (6) 의 힐버트-슈미트 평균 (Hilbert-Schmidt norm) 으로 임의 변수의 독립성을 계산하는데, RFF로 재구성한 공간은 유클리드 공간이므로 프로베니우스 평균 (Frobenius norm) $$‖\Sigma ̃_(AB;w) ‖_F^2$$을 대신 사용할 수 있어요! [^5]
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/7.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/7.png"| relative_url}})
 *(7)*
 
 그러므로, 임의 변수 사이의 의존성을 최소화하려면, (7) 로 정의한 (8) 의 목적함수 (objective function) 을 가진다고 할 수 있고,
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/8.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/8.png"| relative_url}})
 *(8)*
 
 마지막으로 이상적인 인코더와 분류기 $$f^∗, c^∗$$ 는 (9) 로 나타낼 수 있게 되죠! >.<
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/9.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/9.png"| relative_url}})
 *(9)*
 
 여기서 $$L(∙,∙)$$ 은 교차 엔트로피 손실 (cross-entropy loss) 를 나타내요.
 
 (1) - (4) 에서 재구성된 피처 공간에서 (5) - (9) 와 같이 정의된 인코더와 분류기를 사용하면 가짜 상관관계가 어느 정도 억제되었다고 볼 수 있겠네요.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/bonobono_feature_decorrelation.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/bonobono_feature_decorrelation.png"| relative_url}})
 *피처 간 의존성 함수를 손실로 두고 모델을 학습하게 되면 피처 간 독립성이 향상되고, 궁극적으로 가짜 상관관계를 줄일 수 있어요. 보노보노 만세!*
 
 <br/>
@@ -118,34 +118,34 @@ $$n_A, n_B$$ 개의 매핑 함수 (mapping function) 를 샘플하여 (3) 과 �
 
 피처 순화는 정보론적인 접근으로, 중요도 맵 (saliency-map) [^8] 기반 방법으로 찾은 국소적인 피처 [^9] 를 상호 정보 (mutual information: MI) [^10] 를 통해 전체 피처 (global feature) 에 더 큰 가중치로 적용하는 방법입니다.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/gaviscon_local_features.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/gaviscon_local_features.png"| relative_url}})
 *개비스콘은 소화에 도움이 되듯*
 *피처 순화는 문장 이해에 도움이 됩니다!*
 
 
 먼저, Han et al. (2020)[^12] 을 따라, 주어진 문장의 국소적인 피처의 중요도를 (10)과 같이 측정해요.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/10.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/10.png"| relative_url}})
 *(10)*
 
 이 값이 낮으면 해당 피처는 잡음(noise) 이라고 이해할 수 있어서, 문장 전체를 나타내는 전체 피처 (global feature) 를 구성하는데에 사용되면 안되죠.
 
 간단하게, (10) 을 최대화 하는 값을 찾는 (11) 을 최적화 목표 (optimization goal) 로 가진다고 쓸 수 있어요.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/11.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/11.png"| relative_url}})
 *(11)*
 
 여기서, $$I(T^j;Z)$$ 를 정확하게 유도 할 수 없으므로, 이 값을 근사하는 데에 InfoNCE [^11] 를 사용해요.
 
 최종적으로, 이상적인 인코더, 분류함수, 그리고 리샘플링 가중치 (re-sampling weight) 는 (12) 와 같이 학습 될 수 있다는 것이 논문의 골자입니다.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/12.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/12.png"| relative_url}})
 *(12)*
 
 복잡한 수학은 여기 까지 입니다! 이런 피처 독립성 향상과 순화를 통하면, 인간의 개입 또는 해당 데이터셋/모델에 대한 지식 없이도 더 견고한 인공지능을 개발 할 수 있습니다. 신기하지 않나요?
 
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/doguri_campfire.gif)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/doguri_campfire.gif"| relative_url}})
 *불태웠다.......(수학은 어려워)*
 
 <br/>
@@ -153,7 +153,7 @@ $$n_A, n_B$$ 개의 매핑 함수 (mapping function) 를 샘플하여 (3) 과 �
 # 방법론 결과 및 결론
 아래의 표를 보면, 내부 분포 (MultiNLI 의 테스트 셋) 의 성능은 유지 하면서, 외부 분포로의 일반화 능력 (HANS) 은 61점에서 70점으로 크게 향상되어, 피처 독립성 향상과 순화로 상대적 견고함을 얻을 수 있다고 볼 수 있습니다! 또한, 이는 어떤 문제나 데이터셋에 종속적이지 않고 다른 NLP 과제 또는 화학의 단백질 처리, 컴퓨터 비전의 이미지 처리 등에도 사용 할 수 있어 더욱 더 흥미로운, ✨견고한✨ 방법론이라 생각됩니다.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/depro_results.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/depro_results.png"| relative_url}})
 
 
 <br/>
@@ -176,7 +176,7 @@ $$n_A, n_B$$ 개의 매핑 함수 (mapping function) 를 샘플하여 (3) 과 �
 
 지금까지 NLP센터 금융언어이해팀 민중현 이었습니다.
 
-![](assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/rrr_closing.png)
+![]({{"assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/rrr_closing.png"| relative_url}})
 *길고도 긴 견고함으로 가는 길 같이 가주시느라 고생하셨습니다!*
 
 
