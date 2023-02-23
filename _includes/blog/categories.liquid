@@ -5,6 +5,7 @@
             <div class="category-group">
                 <div class="items">
                     {% for post in site.posts %}
+                    {% if post.show %}
                         <a href="{{ post.url | relative_url }}" class="category-post-link">
                             <div class="item item_{{ post.icon }}">
                                 <h3>
@@ -30,6 +31,7 @@
                                 {% include blog/post_info.liquid author=post.author date=post.date %}
                             </div>
                         </a>
+                    {% endif %}
                     {% endfor %}
                 </div>
             </div>

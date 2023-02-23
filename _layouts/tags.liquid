@@ -47,6 +47,7 @@ layout: page
 
             <!-- Pages -->
             {% for page in site.pages %}
+            {% if page.show %}
             {% if page.tags contains tag %}
             <h4 class="tag-title">
                 <a class="font_normal" href="{{ page.url | relative_url }}">
@@ -55,6 +56,7 @@ layout: page
                 </a>
                 {% include blog/post_info.liquid date=page.date %}
             </h4>
+            {% endif %}
             {% endif %}
             {% endfor %}
 
