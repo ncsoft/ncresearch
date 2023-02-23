@@ -618,7 +618,7 @@ Then you can start adding content like:
 
 Now you can use any theme gem with GitHub pages with [29/11/2017 Github Pages Broadcast](https://github.com/blog/2464-use-any-theme-with-github-pages).
 For that remove all `theme:` attributes from `_config.yml` and add instead:
-
+　
 ```yml
 remote_theme: sylhare/Type-on-Strap
 ```
