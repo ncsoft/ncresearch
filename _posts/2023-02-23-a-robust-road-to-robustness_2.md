@@ -41,7 +41,7 @@ $$X, Y, Z$$가 각각 sample (sentence) space, label space, feature space 를 �
 $$w_i$$ 는 $$X_i$$의 resampling weight 이라 정의해요. 이 때, $$T_k$$ 는 문장 내의 local feature 를 나타낸다고 써요.
 
 
-![](/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/depro_viz.png)
+![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/depro_viz.png"| relative_url}})
 *DePro 라고 이름 붙여진 이 방법론을 시각화 한 모형*
 
 <br/>
