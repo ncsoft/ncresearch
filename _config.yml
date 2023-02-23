@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: " https://github.ncsoft.com/pages/ncnlp/ncnlp.github.io/"
+url: "https://ncnlp.github.io/"
 
 # THEME-SPECIFIC CONFIGURATION
 title: 　                                 # site's title
