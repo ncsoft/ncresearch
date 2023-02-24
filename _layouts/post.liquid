@@ -24,12 +24,19 @@ layout: default
   {% endif %}
   </section>
 
-  <!-- Social media shares -->
-  {% include social/share_buttons.liquid %}
-
   <!-- Tag list -->
   {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
   {% include default/tags_list.liquid tags=tag_list %}
+
+  <!-- Social media shares -->
+  {% include social/share_buttons.liquid %}
+
+  <!-- cc by nc sa -->
+  <div class="pagination" style="float: right; text-align: right; width: 50%;">
+    <a style="float: right;" href="https://creativecommons.org/licenses/by-nc-sa/2.0/kr/">
+      <img style="float: right;" src={{"/ncnlp/assets/img/img_cc_by_nc_sa.png"| relative_url}}></img>
+    </a>
+  </div>
 
 </article>
 
@@ -37,13 +44,6 @@ layout: default
 {% if site.post_navigation  or site.theme_settings.post_navigation %}
 {% include blog/post_nav.liquid %}
 {% endif %}
-
- <!-- cc by nc sa -->
- <div class="pagination" style="float: right; text-align: right; width: 50%;">
-   <a style="float: right;" href="https://creativecommons.org/licenses/by-nc-sa/2.0/kr/">
-     <img style="float: right;" src={{"/assets/img/img_cc_by_nc_sa.png"| relative_url}}></img>
-   </a>
- </div>
 
 <!--Utterances-->
 {% if site.comments.utterances.repo and site.comments.utterances.issue-term %} {% include social/utterances.liquid %} {% endif %}
@@ -65,7 +65,6 @@ layout: default
 
   {% if page.color %}
   .post-content a { color: {{ page.color }} !important; }
-  .share-buttons a { color: {{ page.color }} !important; }
   .tag-list a:not(:hover) { color: {{ page.color }} !important; }
   div#post-nav a { color: {{ page.color }} !important; }
   footer a { color: {{ page.color }} !important; }
