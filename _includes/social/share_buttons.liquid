@@ -10,7 +10,7 @@
 
 <div class="share-buttons">
     <ul class="share-buttons">
-        <li class="meta">Share</li>
+        <li id="share_li">Share</li>
         {% if site.data.social.share.facebook or site.theme_settings.share_buttons.facebook %}
         <li>
             <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank"
@@ -86,6 +86,10 @@
                 <span class="sr-only">{{ site.data.social.language.str_email | default: "Email" }}</span></a>
         </li>
         {% endif %}
+
+        <a style="float: right;" href="https://creativecommons.org/licenses/by-nc-sa/2.0/kr/">
+          <img style="float: right;" src={{"/assets/img/img_cc_by_nc_sa.png"| relative_url}}></img>
+        </a>
     </ul>
 </div>
 
