@@ -69,7 +69,7 @@
         width: 12.875em;
         height: 12.875em;
         // background-color: var(--selection);
-        background-image: url('/assets/img/blog_icon_0.png');
+        background-image: url({{'/assets/img/blog_icon_0.png' | relative_url}});
         background-size: 12.875em;
         background-repeat: no-repeat;
         border-radius: 8px;
@@ -77,34 +77,34 @@
       }
 
       .item_biz::before {
-          background-image: url('/assets/img/icon_biz.png') !important;
+          background-image: url({{'/assets/img/icon_biz.png' | relative_url}}) !important;
       }
       .item_conf::before {
-          background-image: url('/assets/img/icon_conf.png') !important;
+          background-image: url({{'/assets/img/icon_conf.png' | relative_url}}) !important;
       }
       .item_news::before {
-          background-image: url('/assets/img/icon_news.png') !important;
+          background-image: url({{'/assets/img/icon_news.png' | relative_url}}) !important;
       }
       .item_nlp::before {
-          background-image: url('/assets/img/icon_nlp.png') !important;
+          background-image: url({{'/assets/img/icon_nlp.png' | relative_url}}) !important;
       }
       .item_paper::before {
-          background-image: url('/assets/img/icon_paper.png') !important;
+          background-image: url({{'/assets/img/icon_paper.png' | relative_url}}) !important;
       }
       .item_patent::before {
-          background-image: url('/assets/img/icon_patent.png') !important;
+          background-image: url({{'/assets/img/icon_patent.png' | relative_url}}) !important;
       }
       .item_school::before {
-          background-image: url('/assets/img/icon_school.png') !important;
+          background-image: url({{'/assets/img/icon_school.png' | relative_url}}) !important;
       }
       .item_seminar::before {
-          background-image: url('/assets/img/icon_seminar.png') !important;
+          background-image: url({{'/assets/img/icon_seminar.png' | relative_url}}) !important;
       }
       .item_tech::before {
-          background-image: url('/assets/img/icon_tech.png') !important;
+          background-image: url({{'/assets/img/icon_tech.png' | relative_url}}) !important;
       }
       .item_security::before {
-          background-image: url('/assets/img/icon_security.png') !important;
+          background-image: url({{'/assets/img/icon_security.png' | relative_url}}) !important;
       }
 
       .category-post-link:hover {
