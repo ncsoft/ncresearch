@@ -16,20 +16,12 @@
   #previous-post {
     float: left;
     width: 50%;
-    text-decoration: none;
-  }
-  #previous-post:hover {
-    text-decoration: none !important;
   }
 
   #next-post {
     float: right;
     text-align: right;
     width: 50%;
-    text-decoration: none;
-  }
-  #next-post:hover {
-    text-decoration: none !important;
   }
 
   @media screen and (max-width: $sm-break) {
@@ -44,5 +36,13 @@ a {
 }
 
 a:hover {
-  text-decoration: underline !important;
+  text-decoration: underline;
+}
+
+#previous-post:hover {
+  text-decoration: none !important;
+}
+
+#next-post:hover {
+  text-decoration: none !important;
 }
