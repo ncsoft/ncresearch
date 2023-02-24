@@ -36,4 +36,12 @@
 #footer_text {
   color: var(--gray3);
   float: left;
+
+  a {
+    color: var(--blue);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
