@@ -342,21 +342,25 @@ table {
     background-color: var(--gray2);
     border: none;
     border-radius: 1em;
+    text-decoration: none;
 }
 
 .publication_tag:hover {
     color: var(--gray0);
     background-color: var(--blue);
+    text-decoration: none !important;
 }
 
 .selected_pub_tag {
     color: var(--gray0);
     background-color: var(--blue);
+    text-decoration: none;
 }
 
 .selected_pub_tag:hover {
     color: var(--text) !important;
     background-color: #BADEFF !important;
+    text-decoration: none !important;
 }
 
 .modal-hide {
