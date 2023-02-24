@@ -466,11 +466,12 @@ a > h3:hover {
     right: 2.28rem;
     width: 1.0625rem;
     height: 1.0625rem;
-    background-image: url('#{$baseurl}/assets/img/link_img.png');
+    background-image: url('#{$baseurl}/assets/img/link_img.png') !important;
 }
 
 // footer
 #social_icon_rss {
     width: 3rem;
-    background-image: url('#{$baseurl}/assets/img/rss_icon.png');
+    height: 3rem;
+    background-image: url('#{$baseurl}/assets/img/rss_icon.png') !important;
 }
