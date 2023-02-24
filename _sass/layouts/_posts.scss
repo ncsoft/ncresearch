@@ -68,6 +68,7 @@ header {
   */
   border-radius: 1em;
   padding-right: 0.5em;
+  padding-top: 1rem;
   display: inline-flex;
   align-items: center;
 
@@ -153,10 +154,22 @@ header {
 }
 
 .post-content {
-  h1 { color: var(--h1); }
-  h2 { color: var(--h2); }
-  h3 { color: var(--h3); }
-  h4 { color: var(--h4); }
+  h1 {
+    color: var(--h1);
+    font-size: 2.25rem;
+  }
+  h2 {
+    color: var(--h2);
+    font-size: 2rem;
+  }
+  h3 {
+    color: var(--h3);
+    font-size: 1.5rem;
+  }
+  h4 {
+    color: var(--h4);
+    font-size: 1.25rem;
+  }
   h5 { color: var(--h5); }
   h6 { color: var(--h6); }
 
@@ -167,6 +180,9 @@ header {
   }
 
   p {
+    font-size: 1.125rem;
+  }
+  ul, li {
     font-size: 1.125rem;
   }
 }
