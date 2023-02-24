@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "ㄱㄱㄱ: 견고함으로 가는 길 2 (RRR: a Robust Road to Robustness II)"
 icon: nlp
 author: 48195cf45287637a49cf35c18ae54a53cf3022cf
 permalink: 64da1f4997161eff97aa5d3ce09e9ad83d751a79
