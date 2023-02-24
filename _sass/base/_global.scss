@@ -1,3 +1,5 @@
+$baseurl: "{{ site.baseurl }}";
+
 * {
   margin: 0;
   padding: 0;
@@ -464,5 +466,11 @@ a > h3:hover {
     right: 2.28rem;
     width: 1.0625rem;
     height: 1.0625rem;
-    background-image: url('/assets/img/link_img.png')
+    background-image: url('#{$baseurl}/assets/img/link_img.png');
+}
+
+// footer
+#social_icon_rss {
+    width: 3rem;
+    background-image: url('#{$baseurl}/assets/img/rss_icon.png');
 }
