@@ -1,14 +1,15 @@
 .search-bar {
   display: block;
-  width: 100%;
-  height: 46px;
+  width: 38.375rem;
+  height: 4.3125rem;
   padding: 6px 12px;
-  font-size: 18px;
+  font-size: 1.25rem;
   line-height: 1.43;
   color: var(--text);
-  background: var(--background) none;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  // background: var(--background) none;
+  background-color: var(--gray2);
+  // border: 1px solid #ccc;
+  border-radius: 2.15rem;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
