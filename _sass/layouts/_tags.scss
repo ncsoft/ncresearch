@@ -11,6 +11,12 @@
     background-color: var(--gray2);
     border: none;
     border-radius: 2rem;
+    text-decoration: none;
+  }
+  a.button:hover {
+    color: var(--gray0);
+    background-color: var(--blue);
+    text-decoration: none !important;
   }
 
   p {
