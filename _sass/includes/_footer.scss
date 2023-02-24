@@ -10,8 +10,6 @@
   background-color: var(--text);
 
   .footer-icons {
-    float: right;
-
     ul {
       list-style: none;
       margin: 0;
@@ -33,6 +31,10 @@
   }
 }
 
+.footer-icons {
+  float: right;
+}
+
 #footer_text {
-    float: left;
+  float: left;
 }
