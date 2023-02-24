@@ -19,7 +19,8 @@
   }
 
   ul {
-    text-align: center;
+    @extend %padding-post;
+    text-align: left;
     list-style: none;
 
     li, div {
