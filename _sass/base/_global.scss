@@ -480,6 +480,10 @@ a > h3:hover {
     background-image: url('/ncnlp/assets/img/rss_icon.png') !important;
 }
 
+#social_icon_rss:hover {
+    background-image: url('/ncnlp/assets/img/rss_icon_hover.png') !important;
+}
+
 #social_icon_github_a {
     display: inline-block;
 }
@@ -489,6 +493,10 @@ a > h3:hover {
     width: 3rem;
     height: 3rem;
     background-image: url('/ncnlp/assets/img/github_icon.png') !important;
+}
+
+#social_icon_github:hover {
+    background-image: url('/ncnlp/assets/img/github_icon_hover.png') !important;
 }
 
 // post_nav
