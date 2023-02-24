@@ -19,13 +19,11 @@
       }
 
       a {
-        color: var(--link);
+        color: var(--blue);
       }
 
       a:hover {
-        .fa-circle {
-          filter: brightness(0.85);
-        }
+        text-decoration: underline;
       }
     }
   }
@@ -36,5 +34,6 @@
 }
 
 #footer_text {
+  color: var(--gray3);
   float: left;
 }
