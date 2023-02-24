@@ -496,3 +496,13 @@ a > h3:hover {
     color: var(--gray5) !important;
     font-size: 1rem;
 }
+
+.post_nav_a {
+    color: var(--black) !important;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+.post_nav_a:hover {
+    text-decoration: underline !important;
+}
