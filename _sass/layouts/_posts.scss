@@ -186,3 +186,7 @@ header {
     font-size: 1.125rem;
   }
 }
+
+ul.share-buttons {
+  @extend %padding-post;
+}
