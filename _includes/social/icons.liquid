@@ -2,7 +2,8 @@
 <li>
     <a feed.xml href="{{ site.data.social.feed.path | default: 'feed.xml' | relative_url }}"
        title="{{ site.data.language.str_rss_follow | default: 'Follow RSS feed' }}"
-       target="_blank">
+       target="_blank"
+       id='social_icon_rss_a'>
        <div id="social_icon_rss"></div>
     </a>
 </li>
@@ -22,7 +23,8 @@
             <a href="{{ data.pre | append: id | append: data.pos }}"
                title="{{ site.data.language.str_follow_on }} {{ brand | remove: '-' | capitalize }}"
                target="_blank"
-               rel="noopener">
+               rel="noopener"
+               id='social_icon_github_a'>
                <div id="social_icon_github"></div>
             </a>
         </li>
