@@ -187,6 +187,18 @@ header {
   }
 }
 
-ul.share-buttons {
+div.share-buttons {
   @extend %padding-post;
+  width: 100%;
+  display: inline-block;
+}
+
+ul.share-buttons {
+  float: left;
+  width: 50%;
+}
+
+#cc_by_nc_sa_a {
+  float: right;
+  width: 50%;
 }
