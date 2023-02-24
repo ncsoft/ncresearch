@@ -452,6 +452,13 @@ a > h3:hover {
     margin: -0.65rem 0 0.625rem 0;
 }
 
+.link_title > a {
+    text-decoration: none;
+}
+.link_title > a:hover {
+    text-decoration: none !important;
+}
+
 .link_desc {
     font-size: 1rem;
     font-weight: normal;
