@@ -202,3 +202,14 @@ ul.share-buttons {
   float: right;
   width: 50%;
 }
+
+#email_div {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url('/ncnlp/assets/img/mail_icon.png') !important;
+}
+
+#email_div:hover {
+  background-image: url('/ncnlp/assets/img/mail_icon_hover.png') !important;
+}

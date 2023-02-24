@@ -79,17 +79,17 @@
             </a>
         </li>
         {% endif %} {% if site.data.social.share.email or site.theme_settings.email %}
-        <li>
-            <a href="mailto:?subject={{ page.title }}%20%7C%20{{ site.title  }}&body={{ page.url | absolute_url }}"
+        <li style="float: left;">
+            <a style="float: left; padding-left: 0.75rem;" href="mailto:?subject={{ page.title }}%20%7C%20{{ site.title  }}&body={{ page.url | absolute_url }}"
                target="_blank" title="{{ site.data.social.language.str_email }}">
-                <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
-                <span class="sr-only">{{ site.data.social.language.str_email | default: "Email" }}</span></a>
+               <div id="email_div"></div>
+            </a>
         </li>
         {% endif %}
 
     </ul>
     <a id="cc_by_nc_sa_a" href="https://creativecommons.org/licenses/by-nc-sa/2.0/kr/">
-        <img src={{"/assets/img/img_cc_by_nc_sa.png"| relative_url}}></img>
+        <img style="float: right; padding: 0;" src={{"/assets/img/img_cc_by_nc_sa.png"| relative_url}}></img>
     </a>
 </div>
 
