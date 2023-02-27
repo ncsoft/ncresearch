@@ -90,8 +90,6 @@ $$
 
 ## 2.2. Longformer: The Long-Document Transformer
 
-### 개요
-
 LongFormer 논문의 저자는 크게 세 가지 관점에서 바라본 희소 어텐션 방식을 제안합니다.
 1. 슬라이딩 윈도우 어텐션 (Sliding Window Attention; (b))
 2. 팽창된 슬라이딩 윈도우 어텐션 (Dilated Sliding Window Attention; (c))
