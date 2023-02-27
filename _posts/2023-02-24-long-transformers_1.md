@@ -12,6 +12,17 @@ toc: true
 show: false
 ---
 
+* 요약 / TL;DR
+* 1. 개요
+* 2. 모델 소개
+  - 2.1. [공통] 희소 어텐션 (Sparse Attention)
+  - 2.2. Longformer: The Long-Document Transformer
+  - 2.3. BigBird: Transformers for Longer Sequences
+  - 2.4. GPU/TPU를 위한 설계
+* 3. 결론
+* References
+{:toc}
+
 <br/>
 
 # 요약 / TL;DR
@@ -95,7 +106,7 @@ LongFormer 논문의 저자는 크게 세 가지 관점에서 바라본 희소 �
 
 이 세 가지 어텐션 방식을 결합함으로써 긴 문서에서 RoBERTa를 앞서는 성능을 보였다고 하네요.
 
-#### 슬라이딩 윈도우 어텐션 (Sliding Window Attention)
+### 슬라이딩 윈도우 어텐션 (Sliding Window Attention)
 
 ![Sliding Window Attention]({{"/assets/img/post/6fc502ede05ca318787928fa22332a82b112805b/longformer-sliding-crop.png"| relative_url}})
 
@@ -112,7 +123,7 @@ LongFormer 논문의 저자는 크게 세 가지 관점에서 바라본 희소 �
 
 실제 모델을 학습할 때는 레이어마다 다른 윈도우 크기를 적용하여 모델의 성능과 용량 사이에서 균형을 맞췄다고 하네요.
 
-#### 팽창된 슬라이딩 윈도우 어텐션 (Dilated Sliding Window Attention)
+### 팽창된 슬라이딩 윈도우 어텐션 (Dilated Sliding Window Attention)
 
 ![Dilated Sliding Window Attention]({{"/assets/img/post/6fc502ede05ca318787928fa22332a82b112805b/dilated-sliding-window-crop.png"| relative_url}})
 
@@ -122,7 +133,7 @@ LongFormer 논문의 저자는 크게 세 가지 관점에서 바라본 희소 �
 
 그림에서 보실 수 있듯이 이번 어텐션에서는 윈도우 사이즈를 d칸씩 띄웁니다. 그러면 수용 영역의 크기는 기존 슬라이딩 윈도우에서 d가 추가되어 $$l \times d \times w$$로 계산됩니다. 또한 멀티 헤드 어텐션(Multi-Head Attention) 학습을 수행할 시에 각 헤드에 다른 사이즈의 Dilation을 적용할 수 있는데요, 작은 d가 적용된 헤드에서는 지역적인 맥락(Local Context)에 / 큰 d가 적용된 헤드에서는 상대적으로 긴 맥락(Longer Context)에 집중하는 효과를 거둘 수 있습니다.
 
-#### 전역 어텐션 (Global Attention)
+### 전역 어텐션 (Global Attention)
 
 ![Global Attention]({{"/assets/img/post/6fc502ede05ca318787928fa22332a82b112805b/longformer-global-crop.png"| relative_url}})
 
@@ -162,7 +173,7 @@ BigBird에서 주목할 점은 희소 어텐션 방식에 이론적 근거를 �
 어떤 노드로부터 다른 노드까지의 최단 거리에 관해 생각해 봅시다. 당연히 풀 어텐션에서는 언제나 1이겠죠. 그렇다면 간선을 무작위로 지워냈다고 생각해 볼까요. 최단 거리의 평균은 1보다는 커지게 될 것입니다. 그런데 이 때 노드의 개수(입력의 길이)가 커지면 최단 거리의 평균은 어떤 식으로 변화할까요? 이론에 따르면 그래프의 모든 간선이 동일한 확률로 남아 있을 때, 노드 간 최단 거리의 평균은 노드 개수의 로그에 비례한다고 알려져 있습니다. 즉, 노드가 많아지더라도 노드 간 최단 거리는 그 정도로 크게 멀어지지 않는다는 이야기입니다. 서로가 직접 연결되어 있지 않아도 몇 단계만 거치면 간접적으로 어텐션을 갖는 효과가 나올 수 있겠죠. BigBird 모델에서는 이에 착안하여 각 쿼리당 r개의 무작위 키를 선택하여 어텐션을 계산합니다. (쿼리, 키는 어텐션 메커니즘에서 이야기하는 Q, K를 말합니다)
 
 
-#### 윈도우 어텐션 (Window Attention)
+### 윈도우 어텐션 (Window Attention)
 
 ![BigBird Window Attention Crop]({{"/assets/img/post/6fc502ede05ca318787928fa22332a82b112805b/bigbird-window-crop.png"| relative_url}})
 
@@ -173,7 +184,7 @@ BigBird에서 주목할 점은 희소 어텐션 방식에 이론적 근거를 �
 
 위와 같이 이웃한 노드끼리 연결된 그래프로 시각화할 수 있겠네요.
 
-#### 전역 어텐션 (Global Attention)
+### 전역 어텐션 (Global Attention)
 
 ![BigBird Window Attention Crop]({{"/assets/img/post/6fc502ede05ca318787928fa22332a82b112805b/bigbird-global-crop.png"| relative_url}})
 
@@ -193,7 +204,7 @@ BigBird 저자들의 실험 결과, 무작위와 윈도우 어텐션의 조합�
 *그래프로 나타낸 BigBird의 전체 어텐션. 출처: https://huggingface.co/blog/big-bird*
 
 
-### 2.4. GPU/TPU를 위한 설계
+## 2.4. GPU/TPU를 위한 설계
 
 지금까지 두 모델의 핵심 원리에 대하여 알아보았습니다. 두 모델 모두 **풀 어텐션을 희소 어텐션(Sparse Attention)으로 대체**하여 **선형 복잡도를 확보**함으로써 긴 글을 효율적으로 처리할 수 있도록 설계되었음을 알 수 있었죠?
 
@@ -205,11 +216,11 @@ BigBird 저자들의 실험 결과, 무작위와 윈도우 어텐션의 조합�
 
 그렇다면 애써 고안해 낸 모델 구조를 제대로 활용하기 위해선 어떻게 해야 할까요? LongFormer와 BigBird에서는 서로 다른 방향의 해결 방법을 제시했습니다.
 
-#### LongFormer - 커스텀 CUDA 커널
+### LongFormer - 커스텀 CUDA 커널
 
 LongFormer의 저자들은 희소 행렬 연산을 위한 CUDA 커널을 직접 구현하였습니다(!). 구현에는 TVM이라고 하는 기계 학습 컴파일러 프레임워크가 사용되었다고 합니다. 자세한 구현은 LongFormer의 [코드](https://github.com/allenai/longformer)를 참조해 주세요.
 
-#### BigBird - 블록 희소 어텐션
+### BigBird - 블록 희소 어텐션
 
 BigBird의 저자들은 어텐션을 블록화(Blockify)하고 계산 트릭을 구사하여 연산 문제를 최적화하였습니다.
 

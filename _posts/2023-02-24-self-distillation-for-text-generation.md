@@ -12,6 +12,15 @@ toc: true
 show: false
 ---
 
+* R-Drop: Regularized Dropout for Neural Networks[^2] (NeurIPS 2021)
+* Guiding Teacher Forcing with Seer Forcing for Neural Machine Translation[^4] (ACL 2021)
+* Confidence Based Bidirectional Global Context Aware Training Framework for Neural Machine Translation[^6] (ACL 2022)
+* The Importance of Being Parameters: An Intra-Distillation Method for Serious Gains[^8] (EMNLP 2022)
+* Unifying the Convergences in Multilingual Neural Machine Translation[^9] (EMNLP 2022)
+* 마치며
+* References
+{:toc}
+
 <br/>
 
 전통적인 의미의 Knowledge Distillation[^1] (KD)은 Teacher model이 가지고 있는 지식을 Student model에 잘 전달하여 Student model의 성능을 향상시킨다는 관점에서 출발하였습니다. 이를 위해서는 특정 Task를 해결하기 위한 지식이 풍부한 Teacher model 구축이 필요한데, 필연적으로 이 모델은 많은 데이터로부터 Training하기 위해 큰 사이즈를 가져야 하기 때문에 Teacher model을 잘 구축하는 것 자체도 작은 일이 아닙니다. 오늘 소개드릴 방법론은 학습 데이터와 파라미터 숫자에서 Student model을 압도하는 Teacher model을 가정하지 않고, Student model과 거의 동등한 수준의 모델로부터 Training하거나 또는 Student model끼리의 상호 Training을 통해 자체 성능을 향상시키는 Self-distillation 기술입니다. 논문에 따라 제안 기술을 부르는 명칭이 다를 수 있는데, 여기에서는 위에 서술한 특징을 가지는 Training 방법을 통칭하여 Self-distillation으로 묶어서 특히 텍스트 생성 업무에서 성능 향상이 보고된 연구들을 소개해 보겠습니다.
@@ -91,6 +100,7 @@ NMT, NLU 등에서의 성능 보고에서 R-drop에 비해 성능이 높아졌�
 <br/>
 
 # References
+
 [^1]: Hinton, Geoffrey, Oriol Vinyals, and Jeff Dean. "Distilling the knowledge in a neural network." arXiv preprint arXiv:1503.02531 (2015).
 
 [^2]: Wu, Lijun, et al. "R-drop: Regularized dropout for neural networks." Advances in Neural Information Processing Systems 34 (2021): 10890-10905.

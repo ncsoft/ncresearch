@@ -12,6 +12,16 @@ toc: true
 show: false
 ---
 
+* 인삿말
+* 논문 배경: 서로 무관한 피처들의 우연적인 의존성은 만기(萬機)의 적!
+* 피처 간 비선형적 상관관계(회귀선)의 선형화
+* 선형화된 피처 간 의존구조 최소화
+* 중요하지 않은 피처 대신 중요한 국소적 피처 강조
+* 방법론 결과 및 결론
+* 5줄요약 / tl;dr
+* References
+{:toc}
+
 <br/>
 
 # 인삿말
@@ -49,6 +59,7 @@ $$w_i$$는 $$X_i$$의 resampling weight이라 정의해요. 이 때, $$T_k$$는 
 <br/>
 
 # 피처 간 비선형적 상관관계(회귀선)의 선형화
+
 첫번째 단계는 랜덤 푸리에 피처(RFF)와 weighted re-sampling (가중치 적용한 리샘플링)을 통한 비선형적, 선형적 의존 구조(dependency) 제거예요. 피처 공간(feature space) Z를 재생핵 힐베르트 공간(reproducing kernel Hilbert space)[^4]으로 매핑하여 상호 독립적인 피처(mutually independent feature)를 찾는 커널 함수(kernel function)를 (1)과 같이 나타낼 수 있어요.
 
 여기서 $$K(∙,∙)$$은 양의 정부호 가측대칭함수(measurable, symmetric positive definite kernel function)의 매핑 연산자이며, $$(∙,∙)_H$$는 Hilbert-Schmidt space를 나타내요. 그런데, $$K(x,∙)$$는 정확한 유도가 불가능 하므로,
@@ -80,7 +91,8 @@ $$n_A, n_B$$ 개의 매핑 함수(mapping function)를 샘플하여 (3)과 같�
 
 <br/>
 
-### 선형화된 피처 간 의존구조 최소화
+# 선형화된 피처 간 의존구조 최소화
+
 그 다음 단계는, 선형화된 의존구조를 제거하는 것이 되겠죠. 교차 공분산 연산자(cross-covariance operator) $$\Sigma_{XY}$$를 사용하면 피쳐 간 독립성을 (5)와 같이 표현할 수 있어요.
 
 ![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/5.png"| relative_url}})
@@ -116,6 +128,7 @@ $$n_A, n_B$$ 개의 매핑 함수(mapping function)를 샘플하여 (3)과 같�
 <br/>
 
 # 중요하지 않은 피처 대신 중요한 국소적 피처 강조
+
 이제, 이렇게 사라진 가짜 상관관계와 불필요한 피처 대신에, 의미 있고 유효한 피처를 더 중요시 하는 방법이 두 번째 부분, 피처 순화(feature purification)예요.
 
 피처 순화는 정보론적인 접근으로, 중요도 맵(saliency-map)[^8] 기반 방법으로 찾은 국소적인 피처[^9]를 상호 정보(mutual information: MI)[^10]를 통해 전체 피처(global feature)에 더 큰 가중치로 적용하는 방법입니다.
@@ -153,6 +166,7 @@ $$n_A, n_B$$ 개의 매핑 함수(mapping function)를 샘플하여 (3)과 같�
 <br/>
 
 # 방법론 결과 및 결론
+
 아래의 표를 보면, 내부 분포(MultiNLI의 테스트 셋)의 성능은 유지 하면서, 외부 분포로의 일반화 능력(HANS)은 61점에서 70점으로 크게 향상되어, 피처 독립성 향상과 순화로 상대적 견고함을 얻을 수 있다고 볼 수 있습니다! 또한, 이는 어떤 문제나 데이터셋에 종속적이지 않고 다른 NLP 과제 또는 화학의 단백질 처리, 컴퓨터 비전의 이미지 처리 등에도 사용 할 수 있어 더욱 더 흥미로운, ✨견고한✨ 방법론이라 생각됩니다.
 
 ![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/depro_results.png"| relative_url}})
@@ -181,8 +195,10 @@ $$n_A, n_B$$ 개의 매핑 함수(mapping function)를 샘플하여 (3)과 같�
 ![]({{"assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/rrr_closing.png"| relative_url}})
 *길고도 긴 견고함으로 가는 길 같이 가주시느라 고생하셨습니다!*
 
+<br/>
 
-### References
+# References
+
 [^1]: [Syntactic Data Augmentation Increases Robustness to Inference Heuristics](https://aclanthology.org/2020.acl-main.212) (Min et al., ACL 2020)
 
 [^2]: [Decorrelate Irrelevant, Purify Relevant: Overcome Textual Spurious Correlations from a Feature Perspective](https://aclanthology.org/2022.coling-1.199) (Dou et al., COLING 2022)
