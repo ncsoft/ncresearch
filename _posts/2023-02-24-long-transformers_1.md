@@ -12,15 +12,7 @@ toc: true
 show: false
 ---
 
-* 요약 / TL;DR
-* 1. 개요
-* 2. 모델 소개
-  - 2.1. [공통] 희소 어텐션 (Sparse Attention)
-  - 2.2. Longformer: The Long-Document Transformer
-  - 2.3. BigBird: Transformers for Longer Sequences
-  - 2.4. GPU/TPU를 위한 설계
-* 3. 결론
-* References
+
 {:toc}
 
 <br/>
