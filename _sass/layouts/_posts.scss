@@ -136,6 +136,7 @@ header {
 /*-- feature-image Responsive scrolling --*/
 .feature-image header {
   background-repeat: no-repeat;
+  background-size: cover;
   @media screen and (max-width: $break) {
     padding: $padding-large*1.5 $padding-small;
   }
