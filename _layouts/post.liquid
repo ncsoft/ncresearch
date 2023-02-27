@@ -32,7 +32,7 @@ layout: default
   {% include social/share_buttons.liquid %}
 
   <!-- Move Top Btn -->
-  <div class='move_top_btn' onclick='window.scrollTo(0,0);'></div>
+  <div class='move_top_btn'></div>
 
 </article>
 
@@ -132,6 +132,8 @@ layout: default
 
 <script>
 let move_top_btn = document.getElementsByClassName("move_top_btn")[0];
+move_top_btn.addEventListener('click', topFunction);
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
