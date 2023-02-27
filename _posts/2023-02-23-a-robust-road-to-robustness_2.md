@@ -62,8 +62,8 @@ $$w_i$$는 $$X_i$$의 resampling weight이라 정의해요. 이 때, $$T_k$$는 
 
 첫번째 단계는 랜덤 푸리에 피처(RFF)와 weighted re-sampling (가중치 적용한 리샘플링)을 통한 비선형적, 선형적 의존 구조(dependency) 제거예요. 피처 공간(feature space) $$Z$$를 재생핵 힐베르트 공간(reproducing kernel Hilbert space)[^4]으로 매핑하여 상호 독립적인 피처(mutually independent feature)를 찾는 커널 함수(kernel function)를 (1)과 같이 나타낼 수 있어요.
 
-여기서 $$K(∙,∙)$$은 양의 정부호 가측대칭함수(measurable, symmetric positive definite kernel function)의 매핑 연산자이며, $$(∙,∙)_H$$는 Hilbert-Schmidt space를 나타내요. 그런데, $$K(x,∙)$$는 정확한 유도가 불가능 하므로,
-여기서는 랜덤 푸리에 피처(random Fourier feature)[^6]을 Zhang et al. (2021)[^5]의 방식대로 참고해 근사하는 접근을 사용해요.
+여기서 $$K(∙,∙)$$은 양의 정부호 가측대칭함수(measurable, symmetric positive definite kernel function)의 매핑 연산자이며, $$(∙,∙)_H$$는 Hilbert-Schmidt space를 나타내요. 그런데, $$K(x,∙)$$은 정확한 유도가 불가능 하므로,
+여기서는 랜덤 푸리에 피처(random Fourier feature)[^6]를 Zhang et al. (2021)[^5]의 방식대로 참고해 근사하는 접근을 사용해요.
 
 ![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/1.png"| relative_url}})
 *(1)*
