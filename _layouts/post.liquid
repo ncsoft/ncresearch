@@ -85,7 +85,12 @@ layout: default
   header#main { background-image: url('{{ page.feature-img | relative_url }}'); }
   {% endif %}
 
-  #markdown-toc > li > a {
+  #markdown-toc > li > a,
+  #markdown-toc > li > ul > li > a,
+  #markdown-toc > li > ul > li > ul > li > a {
+    color: var(--blue) !important;
+  }
+
     color: var(--blue) !important;
   }
   .item {
