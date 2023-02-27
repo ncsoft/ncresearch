@@ -465,6 +465,7 @@ a > h3:hover {
 }
 
 .link_title > a {
+    font-size: 1.5rem !important;
     text-decoration: none;
 }
 .link_title > a:hover {
@@ -472,7 +473,7 @@ a > h3:hover {
 }
 
 .link_desc {
-    font-size: 1rem;
+    font-size: 1rem !important;
     font-weight: normal;
     color: var(--gray6) !important;
     user-select: none;
