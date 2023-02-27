@@ -15,10 +15,13 @@ layout: default
   </header>
 
   <section class="post-content">
+    <div id='table-of-contents'>
+      {% toc %}
+    </div>
   {% if page.bootstrap %}
     <div class="bootstrap-iso">
     {% endif %}
-      {{ content | toc }}
+      {{ content }}
     {% if page.bootstrap %}
     </div>
   {% endif %}
