@@ -542,3 +542,17 @@ a > h3:hover {
     font-size: 1.5rem;
     padding-bottom: 5rem;
 }
+
+// move top btn
+.move_top_btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 17.875rem;
+    right: 14.4375rem;
+    background-image: url('/ncnlp/assets/img/move_top_btn.png') !important;
+}
+
+.move_top_btn:hover {
+    background-image: url('/ncnlp/assets/img/move_top_btn_hover.png') !important;
+}
