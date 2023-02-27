@@ -42,8 +42,6 @@ layout: page
         {% for tag in tags %}
         <h3 id="{{ tag | cgi_escape }}" class="tag-anchor">
             <a href="#{{ tag | cgi_escape }}">{{ tag }}</a>
-            <a href="#{{ page.title }}" style="float: right"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"> </i> </a>
-
         </h3>
 
         <!-- Posts and collection for each tags -->
