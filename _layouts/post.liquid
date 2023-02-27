@@ -69,9 +69,6 @@ layout: default
     text-decoration: none;
     filter: none;
   }
-  a {
-    color: var(--blue) !important;
-  }
   header#main {
       background-color: {{ page.back_color }} !important;
       background-image: url('{{ site.color_image | relative_url }}');
@@ -88,6 +85,9 @@ layout: default
   header#main { background-image: url('{{ page.feature-img | relative_url }}'); }
   {% endif %}
 
+  a {
+    color: var(--blue) !important;
+  }
   .item {
     width: 12.875em;
     height: 12.875em;
