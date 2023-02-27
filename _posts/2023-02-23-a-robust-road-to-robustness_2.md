@@ -6,7 +6,7 @@ author: 48195cf45287637a49cf35c18ae54a53cf3022cf
 permalink: 64da1f4997161eff97aa5d3ce09e9ad83d751a79
 categories: nlp
 tags: [robustness, out-of-distribution_generalization, spurious_correlations, kernel_mapping, analysis, algebra, statistics]
-excerpt: 인간의 개입 없이 수학적인 접근으로 피처 간 의존을 줄여 인공지능의 robustness 를 개선하는 방법론을 소개한다.
+excerpt: 인간의 개입 없이 수학적인 접근으로 피처 간 의존을 줄여 인공지능의 robustness를 개선하는 방법론을 소개한다.
 back_color: "#eff7ff"
 toc: true
 show: false
@@ -24,12 +24,12 @@ show: false
 
 <br/>
 
-# 논문 배경: 서로 무관한 피처들의 우연적인 의존성은 만기(萬機) 의 적!
+# 논문 배경: 서로 무관한 피처들의 우연적인 의존성은 만기(萬機)의 적!
 
-오늘 소개드릴 Decorrelate Irrelevant, Purify Relevant: Overcome Textual Spurious Correlations from a Feature Perspective[^2] 이라는 논문에서 저자들은 spurious correlations (가짜 상관관계)는 accidental dependencies of unrelated features(서로 무관한 피처들의 우연적인 의존성) 에서 기인한다는 주장 [^3] 을 전제로, 수학적인 방법으로 가짜 상관관계를 최소화 하는 방법론을 제시해요. Feature decorrelation (피처 독립성 향상) 과 feature purification (피처 순화) 두 개의 큰 부분으로 나누어진 방법론인데요, 이 중 feature decorrelation 또한 두 부분으로 나눌 수 있어요.
+오늘 소개드릴 Decorrelate Irrelevant, Purify Relevant: Overcome Textual Spurious Correlations from a Feature Perspective[^2]이라는 논문에서 저자들은 spurious correlations (가짜 상관관계)는 accidental dependencies of unrelated features (서로 무관한 피처들의 우연적인 의존성)에서 기인한다는 주장[^3]을 전제로, 수학적인 방법으로 가짜 상관관계를 최소화 하는 방법론을 제시해요. Feature decorrelation (피처 독립성 향상)과 feature purification (피처 순화) 두 개의 큰 부분으로 나누어진 방법론인데요, 이 중 feature decorrelation 또한 두 부분으로 나눌 수 있어요.
 
-1. Feature space (피처 공간) 상의 kernel mapping (커널 매핑) 과 random Fourier feature (랜덤 푸리에 피처: RFF) 을 통한 비선형 의존구조를 선형화 한 뒤,
-2. Weighted re-sampling for feature decorrelation (WRFD) 을 통한 선형화된 피처 간 dependency (의존관계) 최소화
+1. Feature space (피처 공간) 상의 kernel mapping (커널 매핑)과 random Fourier feature (랜덤 푸리에 피처: RFF)을 통한 비선형 의존구조를 선형화 한 뒤,
+2. Weighted re-sampling for feature decorrelation (WRFD)을 통한 선형화된 피처 간 dependency (의존관계) 최소화
 3. 가짜 상관관계 제거에 이어 중요한 local feature (국소적 피처: 문장의 전체에 대한 피처가 아닌 국소적인 부분–단어나 분장 부호 등–의 피처) 학습하도록 유도
 4. ~~???~~
 5. ~~Profit!!~~
@@ -38,20 +38,20 @@ show: false
 
 자, 이제 본격적으로 수학적인 과정을 들여다 보죠.
 
-$$X, Y, Z$$가 각각 sample (sentence) space, label space, feature space 를 나타낸다고 할 때,
-인코더 함수, 분류 함수 $$c$$ 는 $$f:X→Z, c:Z→Y$$ 로 나타낼 수 있어요. $$X_i∈X, Y_i∈Y,Z_i∈Z$$ 라고 쓰며,
-$$w_i$$ 는 $$X_i$$의 resampling weight 이라 정의해요. 이 때, $$T_k$$ 는 문장 내의 local feature 를 나타낸다고 써요.
+$$X, Y, Z$$가 각각 sample (sentence) space, label space, feature space를 나타낸다고 할 때,
+인코더 함수, 분류 함수 $$c$$는 $$f:X→Z, c:Z→Y$$ 로 나타낼 수 있어요. $$X_i∈X, Y_i∈Y,Z_i∈Z$$라고 쓰며,
+$$w_i$$는 $$X_i$$의 resampling weight이라 정의해요. 이 때, $$T_k$$는 문장 내의 local feature를 나타낸다고 써요.
 
 
 ![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/depro_viz.png"| relative_url}})
-*DePro 라고 이름 붙여진 이 방법론을 시각화 한 모형*
+*DePro라고 이름 붙여진 이 방법론을 시각화 한 모형*
 
 <br/>
 
 # 피처 간 비선형적 상관관계(회귀선)의 선형화
-첫번째 단계는 랜덤 푸리에 피처(RFF)와 weighted re-sampling (가중치 적용한 리샘플링)을 통한 비선형적, 선형적 의존 구조(dependency) 제거예요. 피처 공간(feature space) Z 를 재생핵 힐베르트 공간(reproducing kernel Hilbert space)[^4]으로 매핑하여 상호 독립적인 피처(mutually independent feature)를 찾는 커널 함수(kernel function)를 (1)과 같이 나타낼 수 있어요.
+첫번째 단계는 랜덤 푸리에 피처(RFF)와 weighted re-sampling (가중치 적용한 리샘플링)을 통한 비선형적, 선형적 의존 구조(dependency) 제거예요. 피처 공간(feature space) Z를 재생핵 힐베르트 공간(reproducing kernel Hilbert space)[^4]으로 매핑하여 상호 독립적인 피처(mutually independent feature)를 찾는 커널 함수(kernel function)를 (1)과 같이 나타낼 수 있어요.
 
-여기서 $$K(∙,∙)$$은 양의 정부호 가측대칭함수(measurable, symmetric positive definite kernel function)의 매핑 연산자이며, $$(∙,∙)_H$$ 는 Hilbert-Schmidt space를 나타내요. 그런데, $$K(x,∙)$$는 정확한 유도가 불가능 하므로,
+여기서 $$K(∙,∙)$$은 양의 정부호 가측대칭함수(measurable, symmetric positive definite kernel function)의 매핑 연산자이며, $$(∙,∙)_H$$는 Hilbert-Schmidt space를 나타내요. 그런데, $$K(x,∙)$$는 정확한 유도가 불가능 하므로,
 여기서는 랜덤 푸리에 피처(random Fourier feature[^6])을 Zhang et al. (2021)[^5]의 방식대로 참고해 근사하는 접근을 사용해요.
 
 ![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/1.png"| relative_url}})
@@ -72,7 +72,7 @@ $$n_A, n_B$$ 개의 매핑 함수(mapping function)를 샘플하여 (3)과 같�
 ![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/4.png"| relative_url}})
 *(4)*
 
-위와 같은 방식으로 $$A, B$$를 RFF 를 통해 재구성한 공간(reconstructed space)로 매핑 한다면, $$u(A), v(B)$$ 사이에 선형화된 의존 관계만 남길 수 있게 되고, 이제 모든 의존 관계는 선형적이예요!!
+위와 같은 방식으로 $$A, B$$를 RFF를 통해 재구성한 공간(reconstructed space)으로 매핑 한다면, $$u(A), v(B)$$ 사이에 선형화된 의존 관계만 남길 수 있게 되고, 이제 모든 의존 관계는 선형적이예요!!
 
 ![]({{"assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/kernel_mapping.png"| relative_url}})
 *RFF로 비선형적인 상관 관계(회귀선)를 선형화 한다는건*
@@ -81,7 +81,7 @@ $$n_A, n_B$$ 개의 매핑 함수(mapping function)를 샘플하여 (3)과 같�
 <br/>
 
 ### 선형화된 피처 간 의존구조 최소화
-그 다음 단계는, 선형화된 의존구조 를 제거하는 것이 되겠죠. 교차 공분산 연산자(cross-covariance operator) $$\Sigma_(XY)$$ 를 사용하면 피쳐 간 독립성을 (5)와 같이 표현할 수 있어요.
+그 다음 단계는, 선형화된 의존구조를 제거하는 것이 되겠죠. 교차 공분산 연산자(cross-covariance operator) $$\Sigma_{XY}$$를 사용하면 피쳐 간 독립성을 (5)와 같이 표현할 수 있어요.
 
 ![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/5.png"| relative_url}})
 *(5)*
@@ -148,12 +148,12 @@ $$n_A, n_B$$ 개의 매핑 함수(mapping function)를 샘플하여 (3)과 같�
 
 
 ![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/doguri_campfire.gif"| relative_url}})
-*불태웠다.......(수학은 어려워)*
+*불태웠다..(수학은 어려워)*
 
 <br/>
 
 # 방법론 결과 및 결론
-아래의 표를 보면, 내부 분포(MultiNLI 의 테스트 셋)의 성능은 유지 하면서, 외부 분포로의 일반화 능력(HANS)은 61점에서 70점으로 크게 향상되어, 피처 독립성 향상과 순화로 상대적 견고함을 얻을 수 있다고 볼 수 있습니다! 또한, 이는 어떤 문제나 데이터셋에 종속적이지 않고 다른 NLP 과제 또는 화학의 단백질 처리, 컴퓨터 비전의 이미지 처리 등에도 사용 할 수 있어 더욱 더 흥미로운, ✨견고한✨ 방법론이라 생각됩니다.
+아래의 표를 보면, 내부 분포(MultiNLI의 테스트 셋)의 성능은 유지 하면서, 외부 분포로의 일반화 능력(HANS)은 61점에서 70점으로 크게 향상되어, 피처 독립성 향상과 순화로 상대적 견고함을 얻을 수 있다고 볼 수 있습니다! 또한, 이는 어떤 문제나 데이터셋에 종속적이지 않고 다른 NLP 과제 또는 화학의 단백질 처리, 컴퓨터 비전의 이미지 처리 등에도 사용 할 수 있어 더욱 더 흥미로운, ✨견고한✨ 방법론이라 생각됩니다.
 
 ![]({{"/assets/img/post/64da1f4997161eff97aa5d3ce09e9ad83d751a79/depro_results.png"| relative_url}})
 
@@ -172,7 +172,7 @@ $$n_A, n_B$$ 개의 매핑 함수(mapping function)를 샘플하여 (3)과 같�
 5. 위 표와 같이 성능 향상을 관찰할 수 있는데요, 이 방법론은 인간의 관찰력과 노동을 요하는 휴먼 인 더 루프 방법보다 더 낮은 비용으로 높은 효과를 볼 수 있으며, 다른 과제 또는 데이터셋에도 쉽게 적용 할 수 있는 견고한 방법론입니다.
 
 
-이번 견고함으로 가는 길은 여기 까지 인데요, 흥미로운 내용이었으면 하는 바람이예요. 저는 다시 정보 추출에서의 견고함(의 부족: a lack thereof) 과 싸우러 돌아가겠지만, 앞으로 더 재미있고 유익한 내용의 NC 언어 인공지능 기술 블로그가 이어질 예정이니, 많은 관심 부탁드려요.
+이번 견고함으로 가는 길은 여기 까지 인데요, 흥미로운 내용이었으면 하는 바람이예요. 저는 다시 정보 추출에서의 견고함(의 부족: a lack thereof)과 싸우러 돌아가겠지만, 앞으로 더 재미있고 유익한 내용의 NC 언어 인공지능 기술 블로그가 이어질 예정이니, 많은 관심 부탁드려요.
 
 고맙습니다!
 
@@ -201,7 +201,7 @@ $$n_A, n_B$$ 개의 매핑 함수(mapping function)를 샘플하여 (3)과 같�
 
 [^9]: 문장쌍 내의 특정 지역에 국한된 피처: 예를 들면 한 단어의 시제
 
-[^10]: 두 변수 간의 공유되는 정보의 양을 나타낸 값으로, 이 값이 높을 수록 서로의 불확실성을 줄일 수 있다고 이해할 수 있다. 유도 또는 계산하기 어려우나 MI 의 하한값으로 여겨지는 InfoNCE[^11] 를 최대화 하는 방식으로 근사 가능하다.
+[^10]: 두 변수 간의 공유되는 정보의 양을 나타낸 값으로, 이 값이 높을 수록 서로의 불확실성을 줄일 수 있다고 이해할 수 있다. 유도 또는 계산하기 어려우나 MI의 하한값으로 여겨지는 InfoNCE[^11]를 최대화 하는 방식으로 근사 가능하다.
 
 [^11]: [Representation Learning with Contrastive Predictive Coding](https://arxiv.org/abs/1807.03748) (Oord et al., 2019)
 
