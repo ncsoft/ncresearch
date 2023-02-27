@@ -9,7 +9,7 @@ avatar: assets/img/ncnlp_logo.png                         # Empty for no avatar 
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: "NC의 NLP기반 기술을 연구합니다."  # Change Blog header text
+header_text: "NC의 NLP가 열어갈 도전과 변화를 소개합니다."  # Change Blog header text
 header_feature_image: assets/img/header/header.png
 header_feature_image_responsive: true
 footer_text: >
