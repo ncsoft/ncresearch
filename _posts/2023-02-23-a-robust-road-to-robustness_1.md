@@ -12,6 +12,15 @@ toc: true
 show: false
 ---
 
+* 인삿말
+* 견고함(robustness)이 도대체 뭐야?
+* 견고한 놈, 견고하지 않은 놈
+* 유물(artifact)과 가짜 상관관계(spurious correlations)
+* 견고함을 향하여..
+* 겨울철 논문 읽기 전 준비운동은 필수입니다!
+* References
+{:toc}
+
 <br/>
 
 # 인삿말
