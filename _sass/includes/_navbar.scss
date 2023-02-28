@@ -39,11 +39,11 @@
   }
 
   .avatar {
-    height: 2.27em;
+    // height: 2.27em;
     width: 12.627rem;
     float: left;
     margin-top: -13px;
-    border-radius: 0.2em;
+    border-radius: 0 !important;
     margin-right: 0.5em;
     padding: 0.01rem;
   }
