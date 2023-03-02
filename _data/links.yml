@@ -14,14 +14,6 @@
   url: https://danbi-ncsoft.github.io/
   desc: 엔씨소프트 데이터센터 I&I실의 블로그입니다.
 
-- name: "AI HUB"
-  url: 	https://www.aihub.or.kr/
-  desc: AI 기술 및 제품·서비스 개발에 필요한 AI 인프라(AI 데이터, AI SW API, 컴퓨팅 자원)를 지원함으로써 누구나 활용하고 참여하는 AI 통합 플랫폼입니다.
-
-- name: "ACL(전산 언어학 학회)"
-  url: 	https://www.aclweb.org/portal/
-  desc: The Association for Computational Linguistics(ACL)는 컴퓨터 언어학 또는 자연어 처리에 관련된 문제를 연구하는 사람들을 위한 국제 학회입니다.
-
 - name: "언어공학연구회"
   url: http://www.hclt.kr/
   desc: 1991년 창립된 학회로 매년 한글날 전후에 한국인지과학회와 공동으로 "한글 및 한국어정보처리 학술대회"를 개최합니다.
@@ -33,3 +25,11 @@
 - name: "한국어학회"
   url: https://koling.org/
   desc: 1986년 설립된, 한국어학을 대표하는 학회로 연 4회의 학술지 발행, 영문 학술지 발행, 국제학술대회 개최 등을 진행하고 있습니다.
+
+- name: "AI HUB"
+  url: 	https://www.aihub.or.kr/
+  desc: AI 기술 및 제품·서비스 개발에 필요한 AI 인프라(AI 데이터, AI SW API, 컴퓨팅 자원)를 지원함으로써 누구나 활용하고 참여하는 AI 통합 플랫폼입니다.
+
+- name: "ACL(전산 언어학 학회)"
+  url: 	https://www.aclweb.org/portal/
+  desc: The Association for Computational Linguistics(ACL)는 컴퓨터 언어학 또는 자연어 처리에 관련된 문제를 연구하는 사람들을 위한 국제 학회입니다.
