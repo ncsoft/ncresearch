@@ -6,13 +6,13 @@
   url: https://about.ncsoft.com/
   desc: 엔씨소프트 서비스 소개 페이지입니다.
 
-- name: "고려대학교 언어정보연구소"
-  url: https://kurili.korea.ac.kr/rili/index.do
-  desc: 자연언어 텍스트 및 정보처리의 새로운 이론과 기술을 연구하고, 그 인문·사회과학적 활용을 발전시키기 위하여 1993년에 설립되었습니다.
+- name: "NC Motion AI 블로그"
+  url: https://nc-moai.github.io/
+  desc: 엔씨소프트 AI센터 Motion AI의 블로그입니다.
 
-- name: "연세대학교 언어정보연구원"
-  url: https://ilis2.yonsei.ac.kr/ilis/index.do
-  desc: 한국어를 비롯한 여러 언어를 널리 과학적으로 연구하여 이를 정보화하며, 각종 언어 정보 도구를 개발합니다.
+- name: "단비 블로그"
+  url: https://danbi-ncsoft.github.io/
+  desc: 엔씨소프트 데이터센터 I&I실의 블로그입니다.
 
 - name: "한국전자통신연구원(ETRI)"
   url: 	https://www.etri.re.kr/kor/main/main.etri
