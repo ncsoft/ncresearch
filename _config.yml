@@ -10,7 +10,6 @@ favicon: assets/favicon.ico                             # Icon displayed in the 
 
 # Header and footer text
 header_text: "NC의 NLP기술을 소개합니다."  # Change Blog header text
-header_text2: "소개합니다."  # Change Blog header text
 header_feature_image: assets/img/header/header.png
 og_feature_image: assets/img/og_image.png
 header_feature_image_responsive: true
