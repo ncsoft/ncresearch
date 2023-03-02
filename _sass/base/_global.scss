@@ -319,6 +319,10 @@ table {
     color: var(--text);
 }
 
+.category-post-link:hover {
+    text-decoration: none !important;
+}
+
 .publications_meta {
     color: var(--gray5);
     font-size: 1.125em;
