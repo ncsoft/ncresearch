@@ -71,7 +71,7 @@ $baseurl: "{{ site.baseurl }}";
         width: 12.875em;
         height: 12.875em;
         // background-color: var(--selection);
-        background-image: url('#{$baseurl}/assets/img/blog_icon_0.png');
+        background-image: url('/ncnlp/assets/img/blog_icon_0.png');
         background-size: 12.875em;
         background-repeat: no-repeat;
         border-radius: 8px;
@@ -79,34 +79,34 @@ $baseurl: "{{ site.baseurl }}";
       }
 
       .item_biz::before {
-          background-image: url('#{$baseurl}/assets/img/icon_biz.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_biz.png') !important;
       }
       .item_conf::before {
-          background-image: url('#{$baseurl}/assets/img/icon_conf.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_conf.png') !important;
       }
       .item_news::before {
-          background-image: url('#{$baseurl}/assets/img/icon_news.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_news.png') !important;
       }
       .item_nlp::before {
-          background-image: url('#{$baseurl}/assets/img/icon_nlp.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_nlp.png') !important;
       }
       .item_paper::before {
-          background-image: url('#{$baseurl}/assets/img/icon_paper.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_paper.png') !important;
       }
       .item_patent::before {
-          background-image: url('#{$baseurl}/assets/img/icon_patent.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_patent.png') !important;
       }
       .item_school::before {
-          background-image: url('#{$baseurl}/assets/img/icon_school.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_school.png') !important;
       }
       .item_seminar::before {
-          background-image: url('#{$baseurl}/assets/img/icon_seminar.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_seminar.png') !important;
       }
       .item_tech::before {
-          background-image: url('#{$baseurl}/assets/img/icon_tech.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_tech.png') !important;
       }
       .item_security::before {
-          background-image: url('#{$baseurl}/assets/img/icon_security.png') !important;
+          background-image: url('/ncnlp/assets/img/icon_security.png') !important;
       }
 
       .category-post-link:hover {
