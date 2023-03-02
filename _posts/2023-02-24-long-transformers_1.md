@@ -9,7 +9,7 @@ tags: [머신러닝, 딥러닝, 트랜스포머, 문서처리, LongFormer, BigBi
 excerpt: 긴 문서를 처리하기 위해 고안된 두 모델 LongFormer, Transformer의 원리에 대해서 설명합니다.
 back_color: "#eff7ff"
 toc: true
-show: false
+show: true
 ---
 
 * 요약 / TL;DR

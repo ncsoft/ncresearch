@@ -9,7 +9,7 @@ tags: [knowledge_distillation, Self-distillation]
 excerpt: 이 글에서는 Self-distillation이라는 기술의 목적, 방향성과 주요 방법론을 소개합니다.
 back_color: "#eff7ff"
 toc: true
-show: false
+show: true
 ---
 
 * R-Drop: Regularized Dropout for Neural Networks[^2] (NeurIPS 2021)
