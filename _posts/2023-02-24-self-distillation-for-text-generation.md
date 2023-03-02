@@ -86,6 +86,7 @@ NMT, NLU 등에서의 성능 보고에서 R-drop에 비해 성능이 높아졌�
 - 이후 Training에서 각 Epoch마다 언어 쌍 담당 Teacher model의 loss와 Student model의 loss를 각각 체크합니다.
   - 임의의 Teacher model의 Loss가 Student model의 Loss보다 클 경우 (Teacher의 성능이 낮을 경우), 현재의 Teacher model을 폐기하고 현재의 Student model을 복사합니다.
   - 임의의 Teacher model의 loss가 Student model의 Loss보다 작을 경우 (Teacher의 성능이 높을 경우), Teacher model을 그대로 유지하고, 다음 Epoch의 Training 기간 동안 Student model로의 KD를 수행합니다.
+
 위의 방법을 따를 경우, Student model에서 성능 향상이 빠르게 달성된 언어 쌍의 경우 Teacher model이 교체되고, 이후 지속적인 KD를 통해 빠르게 고점에 도달한 성능을 유지할 수 있습니다. 특정 언어 쌍에서의 Student model에서의 성능 향상이 계속 진행될 때마다 Teacher model은 업데이트되고, Student model에서의 성능이 더 이상 높아지지 않거나 낮아지면 기존의 Teacher model은 유지된 상태로 지속적으로 KD를 수행합니다. 비유하자면 20살 때의 수학을 잘하던 나, 30살 때의 영어를 잘하던 나를 그 시점에 복제해 두고, 점점 나이가 들어 해당 능력이 떨어지게 되더라도 당시의 내가 선생님이 되어 계속하여 현재의 나를 가르쳐 주는 겁니다. 이와 같은 방식으로 Training이 진행되었을 경우, Many-to-One model (여러 언어를 하나의 언어로 번역하는 모델)과 One-to-Many model (하나의 언어를 여러 개의 언어로 번역하는 모델)에서 모두 성능 향상을 확인할 수 있었습니다.
 
 이 연구가 인상적인 점은 Self-distillation이라는 학습 방법이 단순히 하나의 모델 성능을 좀 더 향상시키고자 하는 기존의 목적을 넘어, 하나의 모델이 학습하는 여러 대상을 담당하는 독립적인 Teacher model들을 자기 자신으로부터 복사한 뒤, 각각의 성능을 KD를 통해 유지 또는 향상시킬 수 있다는 것입니다. 여기에서는 NMT model에서의 다양한 학습 언어 쌍이 그 대상이 되었지만, 여러 개의 Task를 학습하는 Multi-task 모델 또는 여러 개의 Domain을 대상으로 학습하는 임의의 모델에서도 같은 방식이 동작할 가능성이 있습니다.
