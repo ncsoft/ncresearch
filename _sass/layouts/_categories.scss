@@ -67,7 +67,7 @@ $baseurl: "{{ site.baseurl }}";
       .item::before {
         content: "";
         position: absolute;
-        left: -12%;
+        left: -9rem;
         width: 12.875em;
         height: 12.875em;
         // background-color: var(--selection);
