@@ -14,9 +14,13 @@
   url: https://danbi-ncsoft.github.io/
   desc: 엔씨소프트 데이터센터 I&I실의 블로그입니다.
 
-- name: "한국전자통신연구원(ETRI)"
-  url: 	https://www.etri.re.kr/kor/main/main.etri
-  desc: 국가 지능화 종합 연구기관으로, 미래 신성장동력이 예상되는 ICT 및 융합 전략기술에 대해 핵심원천기술과 부품·소재기술을 확보합니다.
+- name: "AI HUB"
+  url: 	https://www.aihub.or.kr/
+  desc: AI 기술 및 제품·서비스 개발에 필요한 AI 인프라(AI 데이터, AI SW API, 컴퓨팅 자원)를 지원함으로써 누구나 활용하고 참여하는 AI 통합 플랫폼입니다.
+
+- name: "ACL(전산 언어학 학회)"
+  url: 	https://www.aclweb.org/portal/
+  desc: The Association for Computational Linguistics(ACL)는 컴퓨터 언어학 또는 자연어 처리에 관련된 문제를 연구하는 사람들을 위한 국제 학회입니다.
 
 - name: "언어공학연구회"
   url: http://www.hclt.kr/
