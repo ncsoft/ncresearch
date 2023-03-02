@@ -26,7 +26,7 @@
   title: "Active Learning for Knowledge Graph Schema Expansion"
   conf: "IEEE Transactions on Knowledge and Data Engineering (TKDE), Vol. 32, Issue 12, pp. 5610-5620"
   year: 2022
-  abstract: "** abstract **"
+  abstract: "Both entity typing and relation extraction from text corpora are widely used to identify the semantic types of an entity and a relation in a knowledge graph (KG). Most existing approaches rely on a pre-defined set of entity types and relation types in a KG. They thus cannot map entity mentions (relation mentions) to unseen entity types (relation types). To fundamentally overcome the limitations, we should add new semantic types of entities and relations to a KG schema. However, schema expansion traditionally requires manual conceptualization through a user’s observation on the text corpus while assuming the existence of suitable target KG schemas. In this work, we propose an A ctive learning framework for K nowledge graph S chema E xpansion ( AKSE ), which can generate a new semantic type for KG schemas, without depending on a set of target schemas and human users’ observation. Specifically, a granularity based active learning algorithm determines whether a KG schema requires new semantic types or not. We also introduce a KG schema attention-based neural method which assigns semantic types to the entities and relationships extracted. To the best of our knowledge, our work is the first study to expand a KG schema with active learning."
   tags: ["TKDE"]
   id: 3
 
