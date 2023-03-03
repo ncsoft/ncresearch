@@ -117,7 +117,7 @@ T5 모델에 대해서 아시나요? Text-to-Text Transfer Transformer의 앞 �
 
 LittleBird는 카카오엔터프라이즈에서 개발한 언어 모델입니다. BigBird에 기반하되, ALiBi(Attention with Linear Biases), Pack-and-Unpack이라는 어텐션 방식을 적용하여 높은 성능은 보존하면서 속도와 메모리 면에서 개량된 모델이라고 하네요.
 
-|![LittleBird Layer](asset/littlebird-layer.png)|![LittleBird Attention](asset/littlebird-attention.png)|
+|![LittleBird Layer]({{"/assets/img/post/f5e43053b8efa07947ea8dd57dbcbb2967c7deb1/littlebird-layer.png"| relative_url}})|![LittleBird Attention]({{"/assets/img/post/f5e43053b8efa07947ea8dd57dbcbb2967c7deb1/littlebird-attention.png"| relative_url}})|
 |:--:|:--:|
 |*LittleBird의 레이어 구조*|*LittleBird의 Unpack & Sliding Window Attention 구조. (출처: 카카오엔터프라이즈)*|
 
