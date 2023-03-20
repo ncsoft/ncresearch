@@ -23,7 +23,7 @@ show: false
 
 # 1. 개요
 
-Yoav Goldberg (2023)[^2]의 *"Some Remarks on Large Language Models"*에선 책, SNS, 인터넷 등의 기존의 자연어 텍스트 데이터로만 훈련된 GPT-3 등의 거대언어모델(Large Language Model, LLM)에게는 이론적인 한계가 있다고 주장합니다. 거대언어모델은 수백에서 수천억개의 파라미터로 구성되어 있지만 자연어 텍스트 데이터만을 계속하여 학습한다면 그 모델에게 텍스트는 여전히 단어를 나타내는 기호(symbol)에 불과하고 근본적인 의미(meaning)와는 연결 짓지 못하기 때문이에요. 사람은 기본적으로 어떠한 단어를 이야기 할 때 그 의미를 전달하기 위함이 목적인데, 사람과 다르게 기존의 거대언어모델의 경우 *'파인애플'*이라는 단어가 *'타원형에 노란색이며 초록색 풀을 가진 단맛의 과일'*이라는 의미를 고려하지 않는다는 말이죠.
+Yoav Goldberg (2023)[^1]의 *"Some Remarks on Large Language Models"*에선 책, SNS, 인터넷 등의 기존의 자연어 텍스트 데이터로만 훈련된 GPT-3 등의 거대언어모델(Large Language Model, LLM)에게는 이론적인 한계가 있다고 주장합니다. 거대언어모델은 수백에서 수천억개의 파라미터로 구성되어 있지만 자연어 텍스트 데이터만을 계속하여 학습한다면 그 모델에게 텍스트는 여전히 단어를 나타내는 기호(symbol)에 불과하고 근본적인 의미(meaning)와는 연결 짓지 못하기 때문이에요. 사람은 기본적으로 어떠한 단어를 이야기 할 때 그 의미를 전달하기 위함이 목적인데, 사람과 다르게 기존의 거대언어모델의 경우 *'파인애플'*이라는 단어가 *'타원형에 노란색이며 초록색 풀을 가진 단맛의 과일'*이라는 의미를 고려하지 않는다는 말이죠.
 
 ![]({{"/assets/img/post/3147b0357afb32f7da8b67f2f76d6d626813f38b/1.gif"| relative_url}})
 
@@ -37,7 +37,7 @@ Yoav Goldberg (2023)[^2]의 *"Some Remarks on Large Language Models"*에선 책,
 
 그렇기 때문에 주어진 텍스트에 *"please translate 파인애플 in English"* 라는 설명을 데이터에 붙이고 작업자들이 실제로 번역 작업을 한다면, 이 어노테이션 작업으로 인해 텍스트에 grounding을 주입할 수 있습니다. 왜냐하면 '요약', '번역'과 같은 지시들이 일관되게 나타나고 항상 텍스트의 시작 부분에 위치하면서 모델이 '요약'이라는 지시의 의도를 이해할 수 있는 어노테이션 작업의 예제를 바탕으로 학습을 하기 시작하기 때문이에요.
 
-Goldberg[^2]는 이렇게 어노테이션으로 구축된 직접적인 지시문 (instruction) 데이터를 통해 거대언어모델을 학습하는 것이 더 효과적이라고 이야기 합니다. 더불어 지시문으로 인한 학습데이터가 모델에게 텍스트에 대한 의미를 지속적으로 알려주면서 결국에는 요구되는 학습 데이터의 사이즈까지 줄일 수 있다고 주장하고 있어요. 이로 인해 기존의 데이터에서 한층 진화 된 프롬프트 (prompt) 데이터 셋을 학습을 함에 있어서 거대언어모델 기술의 가치도 한층 더 개선되고 있음을 알 수 있습니다.
+Goldberg[^1]는 이렇게 어노테이션으로 구축된 직접적인 지시문 (instruction) 데이터를 통해 거대언어모델을 학습하는 것이 더 효과적이라고 이야기 합니다. 더불어 지시문으로 인한 학습데이터가 모델에게 텍스트에 대한 의미를 지속적으로 알려주면서 결국에는 요구되는 학습 데이터의 사이즈까지 줄일 수 있다고 주장하고 있어요. 이로 인해 기존의 데이터에서 한층 진화 된 프롬프트 (prompt) 데이터 셋을 학습을 함에 있어서 거대언어모델 기술의 가치도 한층 더 개선되고 있음을 알 수 있습니다.
 
 그러므로 계속해서 이어지는 1부에서는 프롬프트가 잘 작동할 수 있게 도와주는 프롬프트 **1) 엔지니어링(prompt engineering)의 중요성**을 알아보면서 **2) 자연어 텍스트 데이터로만 학습된 GPT-3의 데이터 구성**을 살펴보고자 합니다. 그 다음으로 2부에서는 자연어 텍스트 데이터에서 진화된 프롬프트 데이터 구성을 소개하고 3부를 끝으로 언어모델의 프롬프트 데이터 학습으로 인해 성능이 어떻게 평가가 되었는지에 대한 이야기로 거대언어모델 프롬프트 데이터 소개가 마무리됩니다.
 
@@ -81,13 +81,13 @@ Goldberg[^2]는 이렇게 어노테이션으로 구축된 직접적인 지시문
 
 ## GPT-3 (Open AI) 데이터 셋
 
-GPT-3는 약 1조 규모로 구성된 Common Crawl 데이터 셋을 사용했습니다. 이 정도 데이터 크기를 보유한 것이라면 데이터를 따로 추가하여 학습 시키지 않아도 될 만큼의 충분한 양이라고 볼 수 있습니다. 하지만, 필터링이 많이 되지 않은 Common Crawl버전은 curated 데이터 셋 보다 품질이 떨어진다는 점을 Brown et al. (2020)[^1]의 연구에서 이야기 합니다. 그래서 Brown et al. (2020)[^1]은 Common Crawl의 품질을 개선하기 위해서 다음과 같은 3가지 방법을 사용하였습니다. 이 3가지 과정을 거쳐서 최종적으로는 아래의 **Table 1**에 나타난 자연어 텍스트 데이터 셋들이 GPT-3 학습용 데이터로 사용되었습니다.
+GPT-3는 약 1조 규모로 구성된 Common Crawl 데이터 셋을 사용했습니다. 이 정도 데이터 크기를 보유한 것이라면 데이터를 따로 추가하여 학습 시키지 않아도 될 만큼의 충분한 양이라고 볼 수 있습니다. 하지만, 필터링이 많이 되지 않은 Common Crawl버전은 curated 데이터 셋 보다 품질이 떨어진다는 점을 Brown et al. (2020)[^2]의 연구에서 이야기 합니다. 그래서 Brown et al. (2020)[^2]은 Common Crawl의 품질을 개선하기 위해서 다음과 같은 3가지 방법을 사용하였습니다. 이 3가지 과정을 거쳐서 최종적으로는 아래의 **Table 1**에 나타난 자연어 텍스트 데이터 셋들이 GPT-3 학습용 데이터로 사용되었습니다.
 
 ### Common Crawl Filtering
 
 - Common Crawl은 많이 알려진 고품질의 데이터들 (WebText2, Book1, Book2, Wikipedia)과 비슷한 수준으로 필터링 함
 
-> 여기서 Common Crawl에 대한 필터링의 과정을 조금 더 자세히 이야기 하자면,  Brown et al. (2020)[^1]이 저품질의 문서를 없애는 automatic filtering 기법을 개발하였습니다. 필터링 기법에 대해 좀 더 말씀드리자면 WebText를 고품질 문서의 기준으로 사용하여 분류기가 WebText와 Common Crawl을 분류할 수 있게 훈련을 시켰어요. 그리고 Common Crawl에서 고품질이라고 예측되는 데이터들만 학습데이터로 포함한 것이지요. 또한 이 분류기의 positive example은 WebText, Wikipedia, Books가 되었으며, negative example로는 필터링이 되지 않은 Common Crawl을 사용했어요.
+> 여기서 Common Crawl에 대한 필터링의 과정을 조금 더 자세히 이야기 하자면,  Brown et al. (2020)[^2]이 저품질의 문서를 없애는 automatic filtering 기법을 개발하였습니다. 필터링 기법에 대해 좀 더 말씀드리자면 WebText를 고품질 문서의 기준으로 사용하여 분류기가 WebText와 Common Crawl을 분류할 수 있게 훈련을 시켰어요. 그리고 Common Crawl에서 고품질이라고 예측되는 데이터들만 학습데이터로 포함한 것이지요. 또한 이 분류기의 positive example은 WebText, Wikipedia, Books가 되었으며, negative example로는 필터링이 되지 않은 Common Crawl을 사용했어요.
 > 필터링에 있어서 아래의 **Formula 1**의 수식과 같이 Pareto 분포의 알파 값을 9로 높이고 아주 나쁜 점수의 문서만 걸러내는 것을 목표로 하였어요. 그렇지만 아무래도 필터링이기 때문에 여전히 좋지 않은 품질의 문서도 포함이 되어 있긴 해요.  
 
 ![]({{"/assets/img/post/3147b0357afb32f7da8b67f2f76d6d626813f38b/6.png"| relative_url}})
@@ -122,14 +122,14 @@ GPT-3는 약 1조 규모로 구성된 Common Crawl 데이터 셋을 사용했습
 
 # References
 
-[^1]: Brown, Tom, et al. "Language models are few-shot learners." Advances in neural information processing systems 33 (2020): 1877-1901.
+[^1]: Goldberg, Yoav. “Some Remarks on Large Language Models.” Gist, https://gist.github.com/yoavg/59d174608e92e845c8994ac2e234c8a9. 2023.
 
-[^2]: Goldberg, Yoav. “Some Remarks on Large Language Models.” Gist, https://gist.github.com/yoavg/59d174608e92e845c8994ac2e234c8a9. 2023.
+[^2]: Brown, Tom, et al. "Language models are few-shot learners." Advances in neural information processing systems 33 (2020): 1877-1901.
 
 [^3]: Laria Reynolds and Kyle McDonell. 2021. Prompt programming for large language models: Beyond the few-shot paradigm. In Extended Abstracts of the 2021 CHI Conference on Human Factors in Computing Systems, pages 1–7.
-
-[^4]: OpenAI. “Introducing Chatgpt.” Introducing ChatGPT, https://openai.com/blog/chatgpt#OpenAI. 2022.
 
 [^5]: Pengfei Liu, Weizhe Yuan, Jinlan Fu, Zhengbao Jiang, Hiroaki Hayashi, and Graham Neubig. 2021. Pretrain, prompt, and predict: A systematic survey of prompting methods in natural language processing. arXiv preprint arXiv:2107.13586.
 
 [^6]: Timo Schick and Hinrich Schütze. 2021. Few-shot text generation with natural language instructions. In Proceedings of EMNLP.
+
+* OpenAI. “Introducing Chatgpt.” Introducing ChatGPT, https://openai.com/blog/chatgpt#OpenAI. 2022.
