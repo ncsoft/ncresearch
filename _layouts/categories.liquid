@@ -20,7 +20,7 @@ layout: page
                     {% for post in site.posts %}
                         {% if post.show %}
                             <a href="{{ post.url | relative_url }}" class="category-post-link">
-                                <div class="item item_{{ post.icon }}">
+                                <div class="item item_{{ post.icon }}{% if post.new %}_new{% endif %}">
                                     <h3>
                                         {{ post.title }}
                                     </h3>
