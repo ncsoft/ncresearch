@@ -110,54 +110,64 @@ $baseurl: "{{ site.baseurl }}";
       }
 
       .item_biz_new::before {
-          background-image: url('/ncnlp/assets/img/icon_biz.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_biz.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
       .item_conf_new::before {
-          background-image: url('/ncnlp/assets/img/icon_conf.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_conf.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
       .item_news_new::before {
-          background-image: url('/ncnlp/assets/img/icon_news.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_news.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
       .item_nlp_new::before {
-          background-image: url('/ncnlp/assets/img/icon_nlp.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_nlp.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
       .item_paper_new::before {
-          background-image: url('/ncnlp/assets/img/icon_paper.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_paper.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
       .item_patent_new::before {
-          background-image: url('/ncnlp/assets/img/icon_patent.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_patent.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
       .item_school_new::before {
-          background-image: url('/ncnlp/assets/img/icon_school.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_school.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
       .item_seminar_new::before {
-          background-image: url('/ncnlp/assets/img/icon_seminar.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_seminar.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
       .item_tech_new::before {
-          background-image: url('/ncnlp/assets/img/icon_tech.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_tech.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
       .item_security_new::before {
-          background-image: url('/ncnlp/assets/img/icon_security.png'), url('/ncnlp/assets/img/new_badge.png') !important;
-          background-position: center center, left top;
+          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_security.png') !important;
+          background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
+          background-size: auto auto;
       }
 
       .category-post-link:hover {
