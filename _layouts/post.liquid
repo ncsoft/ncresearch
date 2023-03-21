@@ -7,7 +7,7 @@ layout: default
       {% if page.hide_title %}
       <div class="feature-image-padding"></div>
       {% else %}
-      <div class="item item_{{ page.icon }}"></div>
+      <div class="item item_{{ page.icon }}{% if page.new %}_new{% endif %}"></div>
       <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
       {% include blog/post_info.liquid author=page.author date=page.date %}
       {% endif %}
@@ -127,6 +127,66 @@ layout: default
   }
   .item_security {
       background-image: url({{'/assets/img/icon_security.png' | relative_url}}) !important;
+  }
+  .item_biz_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_biz.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
+  }
+  .item_conf_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_conf.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
+  }
+  .item_news_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_news.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
+  }
+  .item_nlp_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_nlp.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
+  }
+  .item_paper_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_paper.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
+  }
+  .item_patent_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_patent.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
+  }
+  .item_school_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_school.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
+  }
+  .item_seminar_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_seminar.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
+  }
+  .item_tech_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_tech.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
+  }
+  .item_security_new {
+      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_security.png') !important;
+      background-position: 0.5rem 0.5rem, center center;
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto auto;
   }
 </style>
 
