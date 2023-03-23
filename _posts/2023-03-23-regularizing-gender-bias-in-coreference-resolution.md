@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WSDM2023 - 언어모델 성별 편향 개선 방법"
-icon: paper
+icon: conf
 author: 52962bb6e3dff29d61f814ef6e37dbb520dc19a7
 permalink: 8b862db09d7f793a8a2c7c443c952ab1e7b98d8f
 categories: conf
