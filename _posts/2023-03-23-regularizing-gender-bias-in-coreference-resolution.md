@@ -102,7 +102,7 @@ $$\mathcal{L}_{MLM} = \frac{1}{|M|}\sum_{m\in masked}^{M} CE(W \cdot h_m, x_m)$$
 
 <br>
 
-# Stereotype Neutralization (SN)
+## Stereotype Neutralization (SN)
 
 편향을 제거하기 위해 사용하는 첫 번째 방법은 Stereotype Neutralization (SN) 입니다. '의사', '간호사', '비서', 'CEO'와 같은 단어들은 특정 성별의 색깔을 띄면 안되겠지만, 단어 자체적으로 성별 특성을 내재하고 있는 경우들이 있습니다. '아빠'나 '엄마' 같은 단어들처럼요. 편향이 제거되어야 하는 성중립적인 단어들과 성별 특성이 존재하는 단어들의 벡터 간 거리가 멀어지도록 만들어주면 모델이 가지고 있는 성별에 대한 고정관념을 어느 정도 지워낼 수 있지 않을까요? 그 아이디어에 기반해 논문에서는 두 종류의 단어들이 구별될 수 있도록 직교화(orthogonalization) 기반의 정규화 텀을 기존의 손실함수에 추가하여 미세조정을 진행하게 됩니다. 미세조정을 하기 전에 성별 특성이 존재하는 단어들의 임베딩을 기반으로 성별 고유 벡터 (Gender Directional Vector)를 정의하고, 미세조정 단계 동안 고정관념이 있는 단어들과 해당 벡터의 내적 값을 0으로 만드는 방향으로 학습을 진행합니다.  
 
@@ -117,7 +117,7 @@ $$\mathcal{L}_{MLM} = \frac{1}{|M|}\sum_{m\in masked}^{M} CE(W \cdot h_m, x_m)$$
 
 <br>
 
-# Elastic Weight Consolidation (EWC)
+## Elastic Weight Consolidation (EWC)
 
 SN이 고정관념 문제를 해소하고자 했다면, Elastic Weight Consolidation (EWC)은 데이터 증강 환경에서 학습된 모델이 보이는 성능 저하 문제를 위해 제안된 방법입니다. EWC는 일반적으로 여러 데이터나 태스크에서 재학습되는 모델이 이전에 학습한 내용을 잊지 않게 할 때 많이 사용하는 방법론인데요. 해당 논문에서는 모델의 중요 파라미터 정보를 담고있는 Fisher Information 기반의 EWC 정규화 텀을 손실함수에 추가하여 사용합니다. 기존의 사전학습 언어모델이 가지고 있는 주요 파라미터 값들을 참고하면서 학습을 진행한다면 증강된 데이터 기반으로 학습되고 있는 모델의 성능이 덜 떨어질 것이라는 건데요. 예를 들어 BERT 모델의 편향을 제거하는 태스크라면, 일반적인 BERT 모델 내 파라미터 별 중요도를 계산해서 주요 파라미터들은 최대한 유지하는 방향으로 학습을 진행하겠다는 것입니다. 언어모델이 사전학습 과정을 거치면서 습득한 뛰어난 언어이해능력을 유지할 수 있도록 학습에 제한을 두는 겁니다. 아무리 편향 제거가 잘 되었더라도 언어능력이 훼손된다면 결국 언어모델로써 가치가 떨어지는 거니까요.   
 
@@ -131,14 +131,15 @@ $$F_j$$를 토대로,  debiasing 하고자 하는 모델의 파라미터 $$\the
 
 <br>
 
-# ASE: Augmentation + SN + EWC
+## ASE: Augmentation + SN + EWC
+
 두 개의 페널티 텀을 합한 최종 손실함수를 통해 기존 방법론들의 단점을 보완하는 하나의 모델을 만들게 됩니다.
 
 $$\mathcal{L}_{ASE} = \mathcal{L}_{MLM} + \mathcal{R}_{SN} + \mathcal{R}_{EWC}$$
 
 <br>
 
-# Stereotype Quantification (SQ) Score
+## Stereotype Quantification (SQ) Score
 
 해당 논문에서는 F1-score 기반의 평가지표의 단점을 보완하기 위하여 확률 기반의 평가지표를 추가적으로 제안합니다. F1-score은 모델이 맞게/틀리게 예측했는지를 중심으로 측정하게 되는데, 동일한 예측 결과이더라도 99%의 확률로 답을 결정하는 것과 51%의 확률로 선택을 하는 건 차이가 있기 때문입니다. Stereotype Quantification (SQ) Score은 prostereotypical한 성별 단어들이 각각 어떤 성별대명사를 예측하는지에 대한 확률 값 간의 분산을 구하게 됩니다. 문맥이 없는 단일 문장에서 모델이 [MASK] 토큰에 대해 엇비슷한 확률로 대명사를 예측한다면 모델이 가지고 있는 고정관념이 작은 편이라고 볼 수 있습니다.  
 
@@ -148,7 +149,7 @@ $$SQ = \frac{1}{|J|}\sum_{j\in{J}}Var_{m,f}(\log p)$$
 
 <br>
 
-# Results (Debiasing and GPR)
+## Results (Debiasing and GPR)
 
 실험은 사전학습 언어모델 중 BERT (Bidirectional Encoder Representations from Transformers)를 사용했는데요. 'Stereo', 'Skew', 'SQ' 모두 값이 작을 수록 편향이 없다는 것을 의미합니다. WinoBias 데이터셋에서 평가를 진행해 본 결과([표 1])를 보면, SN과 EWC 방법을 도입하여 학습한 모델(BERT-ASE)이 기존 모델들(BERT, BERT-U/UO, BERT-A/AO)에 비해 모든 평가지표에서 효과적으로 개선되었습니다.  BERT-AO와 비교해보았을 때 Stereo -8.15 / Skew -14.83 / SQ -0.15 의 개선을 보이는 것을 확인할 수 있죠. 가장 흔히 사용되던 데이터 증강 기법의 효용 역시 확인할 수 있었는데요. SQ Score 결과를 보았을 때, 데이터 증강 기법 유무에 따라 모델 간 SQ Score 편차가 굉장히 크다는 점에서 균형 잡힌 학습 데이터셋의 필요성을 알 수 있습니다. 일반적인 NLU 성능을 보기 위해 진행한 GPR Baseline 평가([표 2])에서는 방법론마다 조금씩 차이를 보이기는 하지만, BERT-ASE의 경우 데이터 증강 모델들 중 우수한 성능을 보여주는 편입니다.
 
@@ -162,7 +163,8 @@ $$SQ = \frac{1}{|J|}\sum_{j\in{J}}Var_{m,f}(\log p)$$
 
 <br>
 
-# Analysis
+## Analysis
+
 정성적인 분석 결과도 흥미롭습니다. "[MASK] is a doctor and has a high salary" ([MASK]는 의사이고 급여가 많다) 라는 문장에서 BERT (bert-base-uncased)의 예측 단어 분포를 보면 남성 중심의 이름이 주로 등장하는 반면, BERT-ASE는 'It'이나 'They' 같이 중립적인 단어들을 더 높은 순위에 올려두는 것을 볼 수 있습니다. "[MASK] is a nurse and does housework after work. ([MASK]는 간호사이고 일이 끝난 후 집안일을 한다) 의 예시에서는 더 뚜렷하게 차이를 보이는데요. 남녀 대명사를 거의 공평하게 예측하는 BERT-ASE와 달리, 기존 BERT 모델은 'She'와 여성 이름으로 치우치는 경향을 보입니다. 임베딩을 시각화 해보았을 때도 BERT-ASE가 BERT에 비해 남성/여성 고정관념이 강한 직업군의 임베딩 간 거리가 비교적 줄어든 것을 확인할 수 있습니다.
 
 ![]({{"/assets/img/post/8b862db09d7f793a8a2c7c443c952ab1e7b98d8f/mask.png"| relative_url}})
@@ -174,6 +176,7 @@ $$SQ = \frac{1}{|J|}\sum_{j\in{J}}Var_{m,f}(\log p)$$
 <br>
 
 # Conclusion
+
 방금 소개해드린 논문은 기존의 학습 패러다임에서 크게 벗어나지 않는 선에서 편향을 제거하는 단편적인 방법론을 제시하고 있습니다. 일반적인 이해 태스크에서 여전히 기존 언어모델만큼의 성능을 보이지 못하고 있고, 바이너리 젠더 (남/여)나 직업 단어 위주로만 방법론 검증이 되었다는 점에서 앞으로 확장되어야 할 부분도 많은데요. 언어모델과 '자연어처리'라는 분야에 대한 관심이 더 커져가는 만큼, 어떤 식으로 '윤리적인' 언어모델을 구성할지에 대한 본격적인 사회적 논의가 진행되어야 하지 않을까요? 아무리 모델이 말을 자연스럽게 잘하더라도 어떤 성별, 직업, 인종 등에 대해 배타적인 인공지능이 사회에 배포되는 건 위험한 일이니까요. 모델이 마법 같이 생성해내는 화려한 텍스트 속에 숨겨진 편견을 가려내고 없애는 방법들이 더욱 중요해질 것 같습니다.
 
 
