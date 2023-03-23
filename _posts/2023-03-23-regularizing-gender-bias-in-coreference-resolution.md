@@ -18,12 +18,6 @@ new: true
 * Gender Pronoun Resolution & Gender Bias
 * Gender Bias Evaluation: Sterotype and Skew
 * *Never Too Late to Learn: Regularizing Gender Bias in Coreference Resolution* (WSDM 2023)
-* Stereotype Neutralization (SN)
-* Elastic Weight Consolidation (EWC)
-* ASE: Augmentation + SN + EWC
-* Stereotype Quantification (SQ) Score
-* Results (Debiasing and GPR)
-* Analysis
 * Conclusion
 * References
 {:toc}
