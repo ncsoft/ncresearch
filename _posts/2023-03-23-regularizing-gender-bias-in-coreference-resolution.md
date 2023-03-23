@@ -92,6 +92,8 @@ $$\frac{1}{2}(|F1_{pro}^{male}-F1_{pro}^{female}|)$$의 경우,  각 성별에 �
 > [예시 5: 데이터 증강]  
 > *"The god of our fathers chose you long ago to know his plan."* (Original) → ***"The goddess of our mothers chose you long ago to know her plan."*** (Reversed)
 
+<br/>
+
 # *Never Too Late to Learn: Regularizing Gender Bias in Coreference Resolution* (WSDM 2023)
 
 올해 2월 WSDM (Web Search and Data Mining) 학회에 발표된 논문 'Never Too Late to Learn: Regularizing Gender Bias in Coreference Resolution'은 고정관념 문제와 언어이해능력이 저하되는 현상을 개선하기 위한 학습 방법을 새롭게 제안하였습니다. 모델 데이터 전처리나 결과값을 보정하는 것도 중요하지만, 언어모델 자체의 편향성을 제거할 수 있도록 학습 과정을 조정할 필요도 있다는 거죠. 해당 논문에서는 데이터 증강을 통해 특정 성별에 치우친 모델을 조정하고, 새로운 두 가지 기법으로 1) '고정관념'과 2) '성능 저하' 이슈를 해결하고자 합니다. 흔히 사용되는 Masked Language Modeling (MLM) 태스크 기반의 손실함수에 편향과 관련된 제약을 줄 수 있는 페널티 텀을 추가하여 학습을 진행합니다. 가장 기본적인 형태의 손실함수 $$L_{MLM}$$은 [MASK] 토큰이 어떤 성별 대명사를 가리키고 있는지 예측하도록 만듭니다. 
@@ -104,21 +106,13 @@ $$\mathcal{L}_{MLM} = \frac{1}{|M|}\sum_{m\in masked}^{M} CE(W \cdot h_m, x_m)$$
 
 편향을 제거하기 위해 사용하는 첫 번째 방법은 Stereotype Neutralization (SN) 입니다. '의사', '간호사', '비서', 'CEO'와 같은 단어들은 특정 성별의 색깔을 띄면 안되겠지만, 단어 자체적으로 성별 특성을 내재하고 있는 경우들이 있습니다. '아빠'나 '엄마' 같은 단어들처럼요. 편향이 제거되어야 하는 성중립적인 단어들과 성별 특성이 존재하는 단어들의 벡터 간 거리가 멀어지도록 만들어주면 모델이 가지고 있는 성별에 대한 고정관념을 어느 정도 지워낼 수 있지 않을까요? 그 아이디어에 기반해 논문에서는 두 종류의 단어들이 구별될 수 있도록 직교화(orthogonalization) 기반의 정규화 텀을 기존의 손실함수에 추가하여 미세조정을 진행하게 됩니다. 미세조정을 하기 전에 성별 특성이 존재하는 단어들의 임베딩을 기반으로 성별 고유 벡터 (Gender Directional Vector)를 정의하고, 미세조정 단계 동안 고정관념이 있는 단어들과 해당 벡터의 내적 값을 0으로 만드는 방향으로 학습을 진행합니다.  
 
-1. $$v_{gs} = \frac{1}{|\Omega|}\sum_{(w_f, w_m)\in \Omega}^{} (E(w_m) - E(w_f))$$
-
-남녀 성별 고유 단어들 간의 임베딩 차이를 기반으로 벡터 $$v_{gs}$$를 만듭니다.
-
-2. $$v_{gd}$$
-
-$$v_{gs}$$를 그대로 사용했을 때 트랜스포머 구조 모델의 학습이 안정적이지 못할 수 있으므로 정규화한 벡터 $$v_{gd}$$를 성별 대표 벡터로 사용합니다.
-
-3. $$\mathcal{R}_{SN}$$
-
-편향을 제거하고자 하는 단어군 (해당 논문에서는 성별 고정관념이 존재하는 직업 단어들)의 임베딩과 성별 대표 벡터 의 내적이 0이 되도록 하는 만드는 페널티 텀을 추가합니다.
+1. $$v_{gs} = \frac{1}{|\Omega|}\sum_{(w_f, w_m)\in \Omega}^{} (E(w_m) - E(w_f))$$ : 남녀 성별 고유 단어들 간의 임베딩 차이를 기반으로 벡터 $$v_{gs}$$를 만듭니다.
+2. $$v_{gd}$$ : $$v_{gs}$$를 그대로 사용했을 때 트랜스포머 구조 모델의 학습이 안정적이지 못할 수 있으므로 정규화한 벡터 $$v_{gd}$$를 성별 대표 벡터로 사용합니다.
+3. $$\mathcal{R}_{SN}$$ : 편향을 제거하고자 하는 단어군 (해당 논문에서는 성별 고정관념이 존재하는 직업 단어들)의 임베딩과 성별 대표 벡터 의 내적이 0이 되도록 하는 만드는 페널티 텀을 추가합니다.
 
 직교화는 각각의 단어 벡터가 서로 수직이 되도록 만들어서, 두 벡터 간 거리가 멀어지도록 만들어줍니다. 서로 다른 성향의 단어들이 벡터 상으로 구별될 수 있도록 그 단어 간의 관계를 없애는 방법이라고 생각해주시면 될 것 같아요. 이 정규화 텀을 가지고 학습을 거치고 나면 SN기반의 모델은 기존의 사전학습 언어모델들과는 달리 특정 단어들에 대한 편향성을 상대적으로 덜 가지고 있는 상태가 됩니다.
 
-![]({{"/assets/img/post/8b862db09d7f793a8a2c7c443c952ab1e7b98d8f/sn.png"| relative_url}})
+![]({{"/assets/img/post/8b862db09d7f793a8a2c7c443c952ab1e7b98d8f/SN.png"| relative_url}})
 *[Stereotype Neutralization 개요]*
 
 <br>
@@ -175,7 +169,7 @@ $$SQ = \frac{1}{|J|}\sum_{j\in{J}}Var_{m,f}(\log p)$$
 *[Mask Token Visualization]*
 
 ![]({{"/assets/img/post/8b862db09d7f793a8a2c7c443c952ab1e7b98d8f/GMMVis.png"| relative_url}})
-*[Mask Token Visualization]*
+*[Embedding Visualization - PCA, GMM Clustering]*
 
 <br>
 
