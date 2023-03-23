@@ -85,7 +85,7 @@ $$F1_{pro}^{male}$$은 남성 pro-stereotypical 단어(e.g., 의사)가 있는 �
 
 $$\mu_{skew} = \frac{1}{2}(|F1_{pro}^{male}-F1_{pro}^{female}| + |F1_{anti}^{male}-F1_{anti}^{female}|)$$
 
-$$\frac{1}{2}(|F1_{pro}^{male}-F1_{pro}^{female}|$$의 경우,  각 성별에 대한 pro-sterotypical 단어들 간의 정확도 차이를 예측합니다. $$F1_{pro}^{male}$$는 남성형 대명사가 정답이라고 가정했을 때 남성 pro-stereotypical 단어에 대한 정확도이고, $$F1_{pro}^{female}$$은 여성형 대명사가 정답이라고 가정했을 때 여성 pro-stereotypical 단어에 대한 정확도입니다.  즉, pro/anti-stereotypical 단어들에 대하여 성별 간 정확도 차이가 나는지 측정하여 특정 성별로 모델의 예측값이 치우쳐 있는지 계산하겠다는 것입니다.
+$$\frac{1}{2}(|F1_{pro}^{male}-F1_{pro}^{female}|)$$의 경우,  각 성별에 대한 pro-sterotypical 단어들 간의 정확도 차이를 예측합니다. $$F1_{pro}^{male}$$는 남성형 대명사가 정답이라고 가정했을 때 남성 pro-stereotypical 단어에 대한 정확도이고, $$F1_{pro}^{female}$$은 여성형 대명사가 정답이라고 가정했을 때 여성 pro-stereotypical 단어에 대한 정확도입니다.  즉, pro/anti-stereotypical 단어들에 대하여 성별 간 정확도 차이가 나는지 측정하여 특정 성별로 모델의 예측값이 치우쳐 있는지 계산하겠다는 것입니다.
 
 기존의 Debiasing 방법론들의 경우, 일반적으로 데이터 증강 (Data Augmentation) 기법을 사용해 문제를 해결하고자 했습니다. "미세조정 때 사용하는 데이터라도 남녀 비율이 균등하도록 구성하고 모델을 학습하면 되지 않을까?"라고 생각한 겁니다. 아니면 별도의 후처리 방법을 도입해서 확률을 보정하는 방법도 있었습니다. 기존 방법론들을 사용했을 때 언어모델이 가지고 있는 '치우침' ($$\mu_{skew}$$) 은 많이 해소되는 경향을 보였지만, '고정관념'($$\mu_{stereo}$$)은 여전히 해결되지 않은 문제로 남았습니다. 그리고 증강된 학습 데이터로 모델을 학습시켰을 때 모델의 언어이해능력 (Natural Language Understanding)이 저하되는 현상도 보였고요. 단순히 데이터를 변형하거나 기학습된 모델의 결과값만을 조정하는 걸로는 충분하지 않다는 겁니다.
 
