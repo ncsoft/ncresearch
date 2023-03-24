@@ -9,7 +9,7 @@ tags: [Pre-trainedLanguageModels, GenderBias, Debiasing, NaturalLanguageUndersta
 excerpt: 언어모델 내 성별 편향을 제거하기 위한 방법론을 소개하는 논문입니다.
 back_color: "#eff7ff"
 toc: true
-show: false
+show: true
 new: true
 ---
 
