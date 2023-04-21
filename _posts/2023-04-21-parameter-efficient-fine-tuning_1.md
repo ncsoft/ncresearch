@@ -5,7 +5,7 @@ icon: tech
 author: 6d1904ff3cb196321b9b48940d8f519d2889b158
 permalink: 1f6f252aef508cb69fbb05b893f2f2f27639d869
 categories: tech
-tags: [chatGPT, Large_Language_Model, History]
+tags: [ChatGPT, Large_Language_Model, 거대언어모델, History]
 excerpt: Large Language Model의 등장 배경을 딥러닝의 발전 과정과 연관지어 살펴봅니다.
 back_color: "#eff7ff"
 toc: true
