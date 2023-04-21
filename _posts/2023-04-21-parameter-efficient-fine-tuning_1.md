@@ -56,7 +56,7 @@ ChatGPT가 성공한 생성형 AI\*임에는 의심의 여지가 없습니다. �
 
 "Large Language Model 그거 사람들이 최근에 잘되는 AI에 갖다 붙인 이름 아니야?"  분명 LLM이라는 단어는 근 몇 년 새에 쓰이기 시작한 말이지만, 딥러닝의 시작이 **"더 방대한 데이터를 다룰 더 큰 신경망"** 이었음을 우리는 다시 볼 필요가 있습니다.
 
-![]({{"/assets/img/post/1f6f252aef508cb69fbb05b893f2f2f27639d869/1_nesteddolls.jpg"| relative_url}})
+![]({{"/assets/img/post/1f6f252aef508cb69fbb05b893f2f2f27639d869/1_nesteddolls.png"| relative_url}})
 *주의: ChatGPT가 LLM보다 더 큰 모델이라는 의미가 아닙니다!*
 
 딥러닝 (Deep Learning)* 의 초기부터 연구를 이어온 ChatGPT의 아버지, OpenAI의 수석과학자 Ilya Sutskever [일리야 수츠키버] 의 다음 발언을 인용해보겠습니다.  
