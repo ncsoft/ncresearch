@@ -9,7 +9,7 @@ tags: [chatGPT, Large_Language_Model, History]
 excerpt: Large Language Model의 등장 배경을 딥러닝의 발전 과정과 연관지어 살펴봅니다.
 back_color: "#eff7ff"
 toc: true
-show: false
+show: true
 new: true
 ---
 
