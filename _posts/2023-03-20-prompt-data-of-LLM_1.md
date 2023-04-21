@@ -10,7 +10,7 @@ excerpt: 대용량 사이즈 접근법에서 벗어나 언어모델이 사람의
 back_color: "#eff7ff"
 toc: true
 show: true
-new: true
+new: false
 ---
 
 * 1. 개요
