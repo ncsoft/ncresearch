@@ -262,48 +262,48 @@ LLM이 가치있다고 느끼신다면 그건 아마도 ChatGPT 덕분일 겁니
 
 [^1]:[Jensen Huang and Ilya Sutskever: AI Today and Vision of the Future](https://youtu.be/ZZ0atq2yYJw)
 
-[^2] Rosenblatt, Frank. "The perceptron: a probabilistic model for information storage and organization in the brain." Psychological review 65.6 (1958): 386. [Perceptron](https://psycnet.apa.org/record/1959-09865-001)
+[^2]: Rosenblatt, Frank. "The perceptron: a probabilistic model for information storage and organization in the brain." Psychological review 65.6 (1958): 386. [Perceptron](https://psycnet.apa.org/record/1959-09865-001)
 
-[^3] Rumelhart, David E., Geoffrey E. Hinton, and Ronald J. Williams. "Learning representations by back-propagating errors." nature 323.6088 (1986): 533-536. [Backpropagation](https://www.nature.com/articles/323533a0)
+[^3]: Rumelhart, David E., Geoffrey E. Hinton, and Ronald J. Williams. "Learning representations by back-propagating errors." nature 323.6088 (1986): 533-536. [Backpropagation](https://www.nature.com/articles/323533a0)
 
-[^4] [ImageNet Large Scale Visual Recognition Challenge (ILSVRC)](https://image-net.org/challenges/LSVRC/index.php)
+[^4]: [ImageNet Large Scale Visual Recognition Challenge (ILSVRC)](https://image-net.org/challenges/LSVRC/index.php)
 
-[^5] Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. "Imagenet classification with deep convolutional neural networks." Communications of the ACM 60.6 (2017): 84-90.[AlexNet](https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
+[^5]: Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. "Imagenet classification with deep convolutional neural networks." Communications of the ACM 60.6 (2017): 84-90.[AlexNet](https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
 
-[^6] Funahashi, Ken-Ichi. "On the approximate realization of continuous mappings by neural networks." Neural networks 2.3 (1989): 183-192. [UAT-width](https://www.sciencedirect.com/science/article/pii/0893608089900038)
+[^6]: Funahashi, Ken-Ichi. "On the approximate realization of continuous mappings by neural networks." Neural networks 2.3 (1989): 183-192. [UAT-width](https://www.sciencedirect.com/science/article/pii/0893608089900038)
 
-[^7] Lu, Zhou, et al. "The expressive power of neural networks: A view from the width." Advances in neural information processing systems 30 (2017). [UAT-depth](http://papers.nips.cc/paper/7203-the-expressive-power-of-neural-networks-a-view-from-the-width)
+[^7]: Lu, Zhou, et al. "The expressive power of neural networks: A view from the width." Advances in neural information processing systems 30 (2017). [UAT-depth](http://papers.nips.cc/paper/7203-the-expressive-power-of-neural-networks-a-view-from-the-width)
 
-[^8] McClelland, James L., David E. Rumelhart, and PDP Research Group. Parallel distributed processing. Vol. 2. Cambridge, MA: MIT press, 1986. [PDP](http://web.stanford.edu/~jlmcc/papers/PDP/Volume%201/Chap1_Part1_PDP86.pdf)
+[^8]: McClelland, James L., David E. Rumelhart, and PDP Research Group. Parallel distributed processing. Vol. 2. Cambridge, MA: MIT press, 1986. [PDP](http://web.stanford.edu/~jlmcc/papers/PDP/Volume%201/Chap1_Part1_PDP86.pdf)
 
-[^9] [재인용](https://www.pinecone.io/learn/imagenet/), (last visited: 2023.04.21)
+[^9]: [재인용](https://www.pinecone.io/learn/imagenet/), (last visited: 2023.04.21)
 
-[^10] Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems 30 (2017).[AIAYN](https://arxiv.org/abs/1706.03762)
+[^10]: Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems 30 (2017).[AIAYN](https://arxiv.org/abs/1706.03762)
 
-[^11] Radford, Alec, et al. "Improving language understanding by generative pre-training." (2018).[GPT](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)
+[^11]: Radford, Alec, et al. "Improving language understanding by generative pre-training." (2018).[GPT](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf)
 
-[^12] [New Moore's law](https://huggingface.co/blog/large-language-models)
+[^12]: [New Moore's law](https://huggingface.co/blog/large-language-models)
 
-[^13] Madotto, Andrea, et al. "Language models as few-shot learner for task-oriented dialogue systems." arXiv preprint arXiv:2008.06239 (2020).[GPT-3](https://arxiv.org/abs/2005.14165)
+[^13]: Madotto, Andrea, et al. "Language models as few-shot learner for task-oriented dialogue systems." arXiv preprint arXiv:2008.06239 (2020).[GPT-3](https://arxiv.org/abs/2005.14165)
 
-[^14] Wei, Jason, et al. "Chain of thought prompting elicits reasoning in large language models." arXiv preprint arXiv:2201.11903 (2022).[CoT Paper](https://arxiv.org/abs/2201.11903)
+[^14]: Wei, Jason, et al. "Chain of thought prompting elicits reasoning in large language models." arXiv preprint arXiv:2201.11903 (2022).[CoT Paper](https://arxiv.org/abs/2201.11903)
 
-[^15] Raffel, Colin, et al. "Exploring the limits of transfer learning with a unified text-to-text transformer." The Journal of Machine Learning Research 21.1 (2020): 5485-5551. [T5](https://arxiv.org/abs/1910.10683)
+[^15]: Raffel, Colin, et al. "Exploring the limits of transfer learning with a unified text-to-text transformer." The Journal of Machine Learning Research 21.1 (2020): 5485-5551. [T5](https://arxiv.org/abs/1910.10683)
 
-[^16] Wei, Jason, et al. "Finetuned language models are zero-shot learners." arXiv preprint arXiv:2109.01652 (2021).[FLAN](https://arxiv.org/abs/2109.01652)
+[^16]: Wei, Jason, et al. "Finetuned language models are zero-shot learners." arXiv preprint arXiv:2109.01652 (2021).[FLAN](https://arxiv.org/abs/2109.01652)
 
-[^17] Ouyang, Long, et al. "Training language models to follow instructions with human feedback." Advances in Neural Information Processing Systems 35 (2022): 27730-27744. [Instruct GPT](https://proceedings.neurips.cc/paper_files/paper/2022/file/b1efde53be364a73914f58805a001731-Paper-Conference.pdf)
+[^17]: Ouyang, Long, et al. "Training language models to follow instructions with human feedback." Advances in Neural Information Processing Systems 35 (2022): 27730-27744. [Instruct GPT](https://proceedings.neurips.cc/paper_files/paper/2022/file/b1efde53be364a73914f58805a001731-Paper-Conference.pdf)
 
-[^18] [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html), (last visited: 2023.04.21)
+[^18]: [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html), (last visited: 2023.04.21)
 
-[^19] [Vicuna](https://vicuna.lmsys.org/), (last visited: 2023.04.21)
+[^19]: [Vicuna](https://vicuna.lmsys.org/), (last visited: 2023.04.21)
 
-[^20] [Open Assistant](https://open-assistant.io/ko), (last visited: 2023.04.21)
+[^20]: [Open Assistant](https://open-assistant.io/ko), (last visited: 2023.04.21)
 
-[^21] Touvron, Hugo, et al. "Llama: Open and efficient foundation language models." arXiv preprint arXiv:2302.13971 (2023). [LLaMa](https://arxiv.org/abs/2302.13971)
+[^21]: Touvron, Hugo, et al. "Llama: Open and efficient foundation language models." arXiv preprint arXiv:2302.13971 (2023). [LLaMa](https://arxiv.org/abs/2302.13971)
 
-[^22] Zhang, Susan, et al. "Opt: Open pre-trained transformer language models." arXiv preprint arXiv:2205.01068 (2022). [OPT](https://arxiv.org/abs/2205.01068)
+[^22]: Zhang, Susan, et al. "Opt: Open pre-trained transformer language models." arXiv preprint arXiv:2205.01068 (2022). [OPT](https://arxiv.org/abs/2205.01068)
 
-[^23] [Polyglot 12B](https://huggingface.co/EleutherAI/polyglot-ko-12.8b)
+[^23]: [Polyglot 12B](https://huggingface.co/EleutherAI/polyglot-ko-12.8b)
 
-[^24] Hu, Edward J., et al. "Lora: Low-rank adaptation of large language models." arXiv preprint arXiv:2106.09685 (2021). [LoRA](https://arxiv.org/abs/2106.09685)
+[^24]: Hu, Edward J., et al. "Lora: Low-rank adaptation of large language models." arXiv preprint arXiv:2106.09685 (2021). [LoRA](https://arxiv.org/abs/2106.09685)
