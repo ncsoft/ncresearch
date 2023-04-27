@@ -31,11 +31,11 @@ body {
 
 .side_note {
     text-decoration: underline;
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
 }
 
 .sidenote {
-    font-size: 0.9rem !important;
+    font-size: 1rem !important;
     position: relative;
 }
 
@@ -43,11 +43,11 @@ body {
     .sidenote {
         float: right;
         clear: right;
-        margin-right: -23vw;
+        margin-left: 2.5rem;
         text-align: left;
 
         top: -3rem;
-        width: 20vw;
+        width: 26rem;
         margin-top: 1rem;
     }
 }
@@ -89,19 +89,19 @@ h6 {
 }
 
 h1 {
-  font-size: 2.3em;
+  font-size: 2.25rem;
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.575em;
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.15em;
+  font-size: 1.25rem;
 }
 
 iframe,
