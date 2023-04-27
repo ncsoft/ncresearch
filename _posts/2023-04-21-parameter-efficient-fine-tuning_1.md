@@ -43,14 +43,19 @@ ChatGPT의 시대에 여러분은 안녕하신가요? 세계사의 분기점이 
 ![]({{"/assets/img/post/1f6f252aef508cb69fbb05b893f2f2f27639d869/0_icebreak.jpg"| relative_url}})
 *???: 테크블로그... 러다이트... 그거 맞나?*
 
-ChatGPT가 성공한 생성형 AI<span class="sidenote-number">
+ChatGPT가 성공한 생성형 AI
+<span class="sidenote-number">
 <small class="sidenote">
 생성형 AI (Generative AI): 텍스트나 이미지, 소리 등의 창작 작업을 수행할 수 있는 AI 모델들을 폭넓게 부르는 말이다.
 </small>
-</span>임에는 의심의 여지가 없습니다. 인간만의 것이라고 생각했던 언어를 이토록 유창하게 구사하는 기계는 처음이니까요. 이를 뒷받침하듯 ChatGPT의 유저 수는 역사상 가장 빨리 성장했고 언어는 더 이상 사람만의 것이 아니게 되었습니다. 이게 가능한 이유는 드디어 LLM* (Large Language Model) 이 사람의 의도에 잘 따르도록 정밀하게 정렬* (alignment) 되기 시작했기 때문일 것입니다.
-
-\* 거대 언어 모델 (Large Language Model; LLM): 언어모델 (LM) 은 앞선 단어들을 보고 다음에 올 단어를 예측하도록 훈련된 모델을 통틀어 부르는 말이다. 후술하겠지만 최근의 언어모델은 많이 커져서 LLM으로 불리게 되었다.
-{:.side_note}
+</span>
+임에는 의심의 여지가 없습니다. 인간만의 것이라고 생각했던 언어를 이토록 유창하게 구사하는 기계는 처음이니까요. 이를 뒷받침하듯 ChatGPT의 유저 수는 역사상 가장 빨리 성장했고 언어는 더 이상 사람만의 것이 아니게 되었습니다. 이게 가능한 이유는 드디어 LLM
+<span class="sidenote-number">
+<small class="sidenote">
+거대 언어 모델 (Large Language Model; LLM): 언어모델 (LM) 은 앞선 단어들을 보고 다음에 올 단어를 예측하도록 훈련된 모델을 통틀어 부르는 말이다. 후술하겠지만 최근의 언어모델은 많이 커져서 LLM으로 불리게 되었다.
+</small>
+</span>
+(Large Language Model) 이 사람의 의도에 잘 따르도록 정밀하게 정렬* (alignment) 되기 시작했기 때문일 것입니다.
 
 \* 정렬 ([AI] Alignment): 생성형 AI 분야에서 쓰일 때에는 사람의 의도를 따르도록 혹은 AI의 행동을 사람에게 안전한 방향으로 조정하는 것을 가리킬 때 사용한다. 이 글에서는 전자의 의미로 사용했다.
 {:.side_note}
