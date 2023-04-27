@@ -67,11 +67,15 @@ body {
 }
 
 .sidenote::before {
-    content: counter(sidenote-counter)".";
+    content: counter(sidenote-counter);
     position: relative;
     vertical-align: baseline;
     font-size: 1.125rem;
     font-weight: bold;
+    display: block;
+    border-bottom: 1px solid var(--gray2);
+    width: 3.125rem;
+    background-image: url('/ncnlp/assets/img/side_note.png') !important;
 }
 
 .sidenote-number::after {
