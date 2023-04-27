@@ -49,8 +49,6 @@ body {
         top: -3rem;
         width: 18rem;
         margin-top: 1rem;
-
-        border-top: 1px var(--gray2);
     }
 }
 
@@ -72,7 +70,7 @@ body {
     content: counter(sidenote-counter)".";
     position: relative;
     vertical-align: baseline;
-    font-size: 0.9em;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 
@@ -81,7 +79,6 @@ body {
     vertical-align: super;
     font-size: 0.7em;
     font-weight: bold;
-    margin-right: 0.5rem;
 }
 
 h1,
