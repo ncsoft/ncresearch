@@ -43,12 +43,14 @@ body {
     .sidenote {
         float: right;
         clear: right;
-        margin-left: -22.5rem;
+        right: -20.5rem;
         text-align: left;
 
         top: -3rem;
-        width: 20rem;
+        width: 18rem;
         margin-top: 1rem;
+
+        border-top: 1px var(--gray2);
     }
 }
 
