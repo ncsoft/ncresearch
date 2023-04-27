@@ -29,6 +29,29 @@ body {
   counter-reset: sidenote-counter;
 }
 
+.side_note {
+    text-decoration: underline;
+    font-size: 0.9rem !important;
+}
+
+.sidenote {
+    font-size: 0.9rem !important;
+    position: relative;
+}
+
+@media (min-width: 1400px) {
+    .sidenote {
+        float: right;
+        clear: right;
+        margin-right: -23vw;
+        text-align: left;
+
+        top: -3rem;
+        width: 20vw;
+        margin-top: 1rem;
+    }
+}
+
 .sidenote-number {
     counter-increment: sidenote-counter;
 }
@@ -589,11 +612,6 @@ a > h3:hover {
 
 .move_top_btn:hover {
     background-image: url('/ncnlp/assets/img/move_top_btn_hover.png') !important;
-}
-
-.side_note {
-    text-decoration: underline;
-    font-size: 0.9rem !important;
 }
 
 .fake_h1 {
