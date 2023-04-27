@@ -18,7 +18,7 @@ layout: default
   {% if page.bootstrap %}
     <div class="bootstrap-iso">
     {% endif %}
-      {{ content | toc }}
+      {{ content | replace: '-!', '<span class="sidenote-number"><small class="sidenote">' | replace: '!-', '</small></span>' | toc }}
     {% if page.bootstrap %}
     </div>
   {% endif %}
