@@ -36,7 +36,7 @@ new: true
 
 <br/>
 
-# 1. ChatGPT가 연 생성형 AI\*의 시대
+# 1. ChatGPT가 연 생성형 AI의 시대
 
 ChatGPT의 시대에 여러분은 안녕하신가요? 세계사의 분기점이 B.C.와 A.D.로 나뉜다면 생성형 AI는 아마 ChatGPT가 나오기 전과 후로 나뉘는 것 같기도 합니다. AI 분야에서 “사람 수준에 도달했다” 는 표현은 식상한 마케팅 문구가 되어버렸지만, 이번엔 달랐습니다. ChatGPT를 처음 써봤을 때 저는 러다이트 운동이 공감될 정도로 큰 충격을 받았습니다. 여러분도 그렇게 생각하지 않으셨나요?
 
@@ -55,22 +55,30 @@ ChatGPT가 성공한 생성형 AI
 거대 언어 모델 (Large Language Model; LLM): 언어모델 (LM) 은 앞선 단어들을 보고 다음에 올 단어를 예측하도록 훈련된 모델을 통틀어 부르는 말이다. 후술하겠지만 최근의 언어모델은 많이 커져서 LLM으로 불리게 되었다.
 </small>
 </span>
-(Large Language Model) 이 사람의 의도에 잘 따르도록 정밀하게 정렬* (alignment) 되기 시작했기 때문일 것입니다.
-
-\* 정렬 ([AI] Alignment): 생성형 AI 분야에서 쓰일 때에는 사람의 의도를 따르도록 혹은 AI의 행동을 사람에게 안전한 방향으로 조정하는 것을 가리킬 때 사용한다. 이 글에서는 전자의 의미로 사용했다.
-{:.side_note}
-
+(Large Language Model) 이 사람의 의도에 잘 따르도록 정밀하게 정렬
+<span class="sidenote-number">
+<small class="sidenote">
+정렬 ([AI] Alignment): 생성형 AI 분야에서 쓰일 때에는 사람의 의도를 따르도록 혹은 AI의 행동을 사람에게 안전한 방향으로 조정하는 것을 가리킬 때 사용한다. 이 글에서는 전자의 의미로 사용했다.
+</small>
+</span>
+(alignment) 되기 시작했기 때문일 것입니다.
 
 <br/>
 
-# 2. ChatGPT ← LLM ← 딥러닝\*
+# 2. ChatGPT ← LLM ← 딥러닝
 
 "Large Language Model 그거 사람들이 최근에 잘되는 AI에 갖다 붙인 이름 아니야?"  분명 LLM이라는 단어는 근 몇 년 새에 쓰이기 시작한 말이지만, 딥러닝의 시작이 **"더 방대한 데이터를 다룰 더 큰 신경망"** 이었음을 우리는 다시 볼 필요가 있습니다.
 
 ![]({{"/assets/img/post/1f6f252aef508cb69fbb05b893f2f2f27639d869/1_nesteddolls.png"| relative_url}})
 *주의: ChatGPT가 LLM보다 더 큰 모델이라는 의미가 아닙니다!*
 
-딥러닝 (Deep Learning)* 의 초기부터 연구를 이어온 ChatGPT의 아버지, OpenAI의 수석과학자 Ilya Sutskever [일리야 수츠키버] 의 다음 발언을 인용해보겠습니다. 젠슨 황에게 GPT4에 대해 질문을 받자, 몇 가지를 설명하다 문득 이런 이야기를 합니다.  
+딥러닝 (Deep Learning)
+<span class="sidenote-number">
+<small class="sidenote">
+딥러닝 (Deep Learning): 층층이 쌓은 신경망을 통한 기계학습 방법을 말한다. 용어는 2006년에 Yann LeCun, Geoffrey Hinton, Yoshua Bengio 에 의해 처음 사용되었고 2012년에 폭발적인 주목을 받기 시작했다.
+</small>
+</span>
+의 초기부터 연구를 이어온 ChatGPT의 아버지, OpenAI의 수석과학자 Ilya Sutskever [일리야 수츠키버] 의 다음 발언을 인용해보겠습니다. 젠슨 황에게 GPT4에 대해 질문을 받자, 몇 가지를 설명하다 문득 이런 이야기를 합니다.  
 
 >[NVIDIA GTC 2023 젠슨 황과의 대담 세션] [^1]
 >
@@ -83,8 +91,6 @@ So, it's like 'wow I would say this is what I find the most surprising' whenever
 요컨데, 지금의 GPT4가 정말 신기하긴 하지만, 정말 신기한 점은 GPT4를 가능하게 한 그 모든 것들이 이미 딥러닝이 대두되기(2012) 전부터 있었으며, 딥러닝을 시작시킨 아이디어에서 많이 벗어나지 않았다는 것입니다.  
 더 많은 데이터를 처리할 더 큰 신경망. 이 아이디어는 어떻게 ChatGPT까지 연결될까요? 그의 인터뷰를 따라 역사속으로 가봅시다.
 
-\* 딥러닝 (Deep Learning): 층층이 쌓은 신경망을 통한 기계학습 방법을 말한다. 용어는 2006년에 Yann LeCun, Geoffrey Hinton, Yoshua Bengio 에 의해 처음 사용되었고 2012년에 폭발적인 주목을 받기 시작했다.
-{:.side_note}
 
 <br/>
 
@@ -155,21 +161,28 @@ Figure 3 에 그려진 순환신경망의 작동 방식을 보면 이를 확인�
 위와같이 사전학습을 하고 나면 같은 양의 텍스트 쌍들을 학습하는 것 (미세조정; Fine-tuning) 으로 훨씬 좋은 품질의 모델을 얻을 수 있습니다.  
 안 그래도 특정 작업을 위해 마련한 텍스트 쌍들은 부족하기 마련이었는데 널려있는 데이터를 활용하여 데이터 효율을 크게 끌어올린 것이죠.  
 PLM의 효용은 이처럼 아주 명확했기 때문에, PLM을 시작점으로 하여 학습을 진행하는 것이 이 때부터 사실상의 표준이 됩니다.  
-하고자 하는 작업이 있다면 (e.g. 번역 등) PLM을 비교적 작은 텍스트쌍에 학습하면 그 작업만 할 줄 아는 모델이 준비되는 것입니다.\*  
+하고자 하는 작업이 있다면 (e.g. 번역 등) PLM을 비교적 작은 텍스트쌍에 학습하면 그 작업만 할 줄 아는 모델이 준비되는 것입니다.
+<span class="sidenote-number">
+<small class="sidenote">
+서로 다른 작업들(e.g. 요약, 번역)을 잘해야 한다면 그 작업의 가짓수만큼 텍스트쌍 데이터를 준비하고 각각에 미세조정을 진행하게 된다. 미세조정을 거친 PLM은 한가지만 잘한다. 이건 나중에 큰 걸림돌으로 작용한다.
+</small>
+</span>  
 여기까지는 GPU 한 두 장이면 소화될 수 있는 정도의 모델 크기였습니다.
 
-\* 서로 다른 작업들(e.g. 요약, 번역)을 잘해야 한다면 그 작업의 가짓수만큼 텍스트쌍 데이터를 준비하고 각각에 미세조정을 진행하게 된다. 미세조정을 거친 PLM은 한가지만 잘한다. 이건 나중에 큰 걸림돌으로 작용한다.
-{:.side_note}
 
 ![]({{"/assets/img/post/1f6f252aef508cb69fbb05b893f2f2f27639d869/fig6.png"| relative_url}})
 *Figure 6. 새로운 무어의 법칙[^12]. 트랜스포머가 등장한 2017년 직후 2018년부터 PLM 혹은 LLM의 크기는 해에 따라서 지수함수적으로 커진다. GPT-3는 175B.*
 
 사전학습의 효과가 증명되자 기업들에선 경쟁적으로 더 많은 데이터로 학습시킨, 더 큰 PLM을 내놓기 시작합니다. 세상의 모든 텍스트, 즉, 더 방대한 데이터를 배울 더 큰 신경망을 만들어야하니까요.  
-지금은 저장할 신경망 가중치만 10억 개 (Billion; B로 표기) 단위로 세는 지경에 이르러 누군가는 이를 새로운 무어의 법칙\*이라고 부르기도 했습니다 (Figure 6).  
+지금은 저장할 신경망 가중치만 10억 개 (Billion; B로 표기) 단위로 세는 지경에 이르러 누군가는 이를 새로운 무어의 법칙
+<span class="sidenote-number">
+<small class="sidenote">
+무어의 법칙: 마이크로칩에 저장할 수 있는 데이터 분량이 18-24개월 마다 두 배씩 증가한다는 법칙. 여기서는 모델의 가중치 갯수가 지수함수로 증가한다.
+</small>
+</span>
+이라고 부르기도 했습니다 (Figure 6).  
 이렇게 크기가 커지면서 PLM은 점차 LLM으로 불리기 시작했습니다.
 
-\* 무어의 법칙: 마이크로칩에 저장할 수 있는 데이터 분량이 18-24개월 마다 두 배씩 증가한다는 법칙. 여기서는 모델의 가중치 갯수가 지수함수로 증가한다.
-{:.side_note}
 
 ![]({{"/assets/img/post/1f6f252aef508cb69fbb05b893f2f2f27639d869/fig7.png"| relative_url}})
 *Figure 7. In-context Learning (LLM = GPT-3 175B) [^13]: 주어진 입력 맥락에서 배우는 것 같이 보여서 In-context Learning이라고 불린다.*
@@ -185,10 +198,13 @@ LLM이 일정 수준 이상 커지자 몇 가지 전에 없던 현상들이 보�
 쓸만한 수준은 아니었지만, 책을 무작정 읽힌 결과 (사전학습) 어느정도의 언어능력이 추가 학습 없이도 발현되는 것 같았달까요?  
 이들 LLM을 미세조정 했을 때 마주할 결과물의 품질이 벌써부터 기대가 되지 않나요?
 
-<u>아, 물론 미세조정을 편하게 할 수 있는 사이즈였다면 말이죠...*</u>
+<u>아, 물론 미세조정을 편하게 할 수 있는 사이즈였다면 말이죠...</u>
+<span class="sidenote-number">
+<small class="sidenote">
+규모가 큰 일부 기업들만 LLM을 만들 수 있었던 것처럼, LLM의 미세조정 역시도 일부에게만 접근가능한 방법이 되어버렸고 초기 (2018-19년) 의 PLM의 사용성과는 거리가 멀어졌다.
+</small>
+</span>
 
-\* 규모가 큰 일부 기업들만 LLM을 만들 수 있었던 것처럼, LLM의 미세조정 역시도 일부에게만 접근가능한 방법이 되어버렸고 초기 (2018-19년) 의 PLM의 사용성과는 거리가 멀어졌다.
-{:.side_note}
 
 <br/>
 
@@ -215,18 +231,25 @@ LLM이 일정 수준 이상 커지자 몇 가지 전에 없던 현상들이 보�
 여러 작업을 동시에 학습한 모델에 적절한 지시를 하면 원하는 작업을 수행할 수 있을 것이라는 기대는 완전히 새로운 것은 아닙니다.  
 
 몇 가지 단서들을 찾아보면...  
-* Instruction Tuning 방법론으로 이어진 T5 (2020) 의 multitask learning\* 시도 (Figure 10)
+* Instruction Tuning 방법론으로 이어진 T5 (2020) 의 multitask learning
+<span class="sidenote-number">
+<small class="sidenote">
+Multitask learning: 여러 작업을 함께 학습시키는 것. Task를 어떻게 보느냐에 따라 좀 달라질 수도 있지만, 여기에서는 번역과 요약을 함께 배우는 것이라 생각하면 된다.
+</small>
+</span>
+ 시도 (Figure 10)
 * 좀 더 최근에는 위와 같은 Prompting (Few-shot learning, Figure7; CoT, Figure 8)
 
 여기에 Human Feedback을 직접적으로 반영하는 방법으로서의 강화학습[^17]이 합쳐져 현재의 ChatGPT의 근간을 이루게 되었습니다.  
-<u>"잘"</u>\* align 시키면 ChatGPT가 되는 LLM.  
+<u>"잘"</u>
+<span class="sidenote-number">
+<small class="sidenote">
+ChatGPT를 가능하게 한 데이터의 수량과 형태는 베일에 싸여있다.
+</small>
+</span>
+ align 시키면 ChatGPT가 되는 LLM.  
 LLM이 가치있다고 느끼신다면 그건 아마도 ChatGPT 덕분일 겁니다.
 
-\* Multitask learning: 여러 작업을 함께 학습시키는 것. Task를 어떻게 보느냐에 따라 좀 달라질 수도 있지만, 여기에서는 번역과 요약을 함께 배우는 것이라 생각하면 된다.
-{:.side_note}
-
-\* ChatGPT를 가능하게 한 데이터의 수량과 형태는 베일에 싸여있다.
-{:.side_note}
 
 <br/>
 
