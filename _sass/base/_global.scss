@@ -43,17 +43,27 @@ body {
     .sidenote {
         float: right;
         clear: right;
-        margin-left: 2.5rem;
+        margin-left: -22.5rem;
         text-align: left;
 
         top: -3rem;
-        width: 26rem;
+        width: 20rem;
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .sidenote {
+        display: none;
     }
 }
 
 .sidenote-number {
     counter-increment: sidenote-counter;
+}
+
+.sidenote-number:hover .sidenote {
+    background-color: var(--blue2);
 }
 
 .sidenote::before {
