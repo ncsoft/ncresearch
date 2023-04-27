@@ -67,7 +67,7 @@ body {
 }
 
 .sidenote::before {
-    content: counter(sidenote-counter);
+    content: "　" counter(sidenote-counter);
     position: relative;
     vertical-align: baseline;
     font-size: 1.125rem;
@@ -78,7 +78,7 @@ body {
     height: 1.875rem;
     background-image: url('/ncnlp/assets/img/side_note.png') !important;
     background-repeat: no-repeat;
-    text-align: center;
+    // text-align: center;
 }
 
 .sidenote-number::after {
