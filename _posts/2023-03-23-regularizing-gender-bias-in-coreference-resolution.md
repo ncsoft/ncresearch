@@ -10,7 +10,7 @@ excerpt: 언어모델 내 성별 편향을 제거하기 위한 방법론을 소�
 back_color: "#eff7ff"
 toc: true
 show: true
-new: true
+new: false
 ---
 
 * Intro
