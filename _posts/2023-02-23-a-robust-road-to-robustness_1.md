@@ -10,6 +10,7 @@ excerpt: 인간의 개입 없이 robust한 학습 방법론을 소개하기 전,
 back_color: "#eff7ff"
 toc: true
 show: true
+series: 0
 ---
 
 * 인삿말

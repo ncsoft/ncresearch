@@ -1,0 +1,24 @@
+- id: 0
+  series_title: ""
+  permalinks: ["abb25deb34567f41e96fe4b9250719cb0f1399fe", "64da1f4997161eff97aa5d3ce09e9ad83d751a79"]
+  titles: ["ㄱㄱㄱ: 견고함으로 가는 길 1", "ㄱㄱㄱ: 견고함으로 가는 길 2"]
+
+- id: 1
+  series_title: ""
+  permalinks: ["6fc502ede05ca318787928fa22332a82b112805b", "f5e43053b8efa07947ea8dd57dbcbb2967c7deb1"]
+  titles: ["긴 글을 위한 트랜스포머 모델 - Longformer와 BigBird (1편)", "긴 글을 위한 트랜스포머 모델 - Longformer와 BigBird (2편)"]
+
+- id: 2
+  series_title: ""
+  permalinks: ["022d8f7905fc7e231e56a955aee112fdc3d9b011", "042287f8d8542f900b6d4ce4505b4841db3d9145"]
+  titles: ["ChatGPT와 대화 모델의 미래: 발전과 고민 1", "ChatGPT와 대화 모델의 미래: 발전과 고민 2"]
+
+- id: 3
+  series_title: ""
+  permalinks: ["3147b0357afb32f7da8b67f2f76d6d626813f38b", "f596e51b591092dda565cff8cb37ae91cda2e84c"]
+  titles: ["거대언어모델의 프롬프트 데이터 1", "거대언어모델의 프롬프트 데이터 2"]
+
+- id: 4
+  series_title: ""
+  permalinks: ["1f6f252aef508cb69fbb05b893f2f2f27639d869"]
+  titles: ["Large Language Model을 밀어서 잠금해제: Parameter-Efficient Fine-Tuning 1"]

@@ -18,6 +18,20 @@ layout: default
   {% if page.bootstrap %}
     <div class="bootstrap-iso">
     {% endif %}
+    {% if page.series != -1 %}
+      {% assign series = site.data.series %}
+      {% for ser in series %}
+        {% if ser.id == page.series %}
+          <div class="series_div">
+            <ol>
+              {% for permalink in ser.permalinks %}
+                <li><a href="https://ncsoft.github.io/ncnlp/{{permalink}}">{{ser.titles[forloop.index]}}</a></li>
+              {% endfor %}
+            </ol>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
       {{ content | replace: '-!', '<span class="sidenote-number"><small class="sidenote">' | replace: '!-', '</small></span>' | toc }}
     {% if page.bootstrap %}
     </div>
