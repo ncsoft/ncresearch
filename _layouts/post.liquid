@@ -25,7 +25,7 @@ layout: default
           <div class="series_div">
             <ol>
               {% for permalink in ser.permalinks %}
-                <li><a href="https://ncsoft.github.io/ncnlp/{{permalink}}">{{ser.titles[forloop.index]}}</a></li>
+                <li class="series_li"><a href="https://ncsoft.github.io/ncnlp/{{permalink}}">{{ser.titles[forloop.index-1]}}</a></li>
               {% endfor %}
             </ol>
           </div>
