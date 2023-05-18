@@ -18,7 +18,7 @@ layout: default
   {% if page.bootstrap %}
     <div class="bootstrap-iso">
     {% endif %}
-    {% if page.series != -1 %}
+    {% if page.series >= 0 %}
       {% assign series = site.data.series %}
       {% for ser in series %}
         {% if ser.id == page.series %}

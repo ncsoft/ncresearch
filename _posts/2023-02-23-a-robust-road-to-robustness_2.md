@@ -10,6 +10,7 @@ excerpt: 인간의 개입 없이 수학적인 접근으로 피처 간 의존을 
 back_color: "#eff7ff"
 toc: true
 show: true
+series: 0
 ---
 
 * 인삿말

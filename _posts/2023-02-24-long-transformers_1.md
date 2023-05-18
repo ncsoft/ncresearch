@@ -10,6 +10,7 @@ excerpt: 긴 문서를 처리하기 위해 고안된 두 모델 Longformer, BigB
 back_color: "#eff7ff"
 toc: true
 show: true
+series: 1
 ---
 
 * 요약 / TL;DR

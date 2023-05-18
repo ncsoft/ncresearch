@@ -10,6 +10,7 @@ excerpt: 이 글에서는 Self-distillation이라는 기술의 목적, 방향성
 back_color: "#eff7ff"
 toc: true
 show: true
+series: -1
 ---
 
 * R-Drop: Regularized Dropout for Neural Networks[^2] (NeurIPS 2021)

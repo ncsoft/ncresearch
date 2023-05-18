@@ -10,6 +10,7 @@ excerpt: Longformer, BigBird 모델이 보인 성능과 이들의 유사/파생 
 back_color: "#eff7ff"
 toc: true
 show: true
+series: 1
 ---
 
 * 1. 개요
