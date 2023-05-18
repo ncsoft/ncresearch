@@ -24,8 +24,8 @@ layout: default
         {% if ser.id == page.series %}
           <div class="series_div">
             <ol>
-              {% for permalink in ser.permalinks %}
-                <li class="series_li"><a href="https://ncsoft.github.io/ncnlp/{{permalink}}">{{ser.titles[forloop.index-1]}}</a></li>
+              {% for el in ser.list %}
+                <li class="series_li"><a href="https://ncsoft.github.io/ncnlp/{{el.permalink}}">{{el.title}}</a></li>
               {% endfor %}
             </ol>
           </div>
