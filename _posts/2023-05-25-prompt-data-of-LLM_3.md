@@ -79,6 +79,7 @@ FLAN이란, zero-shot learning의 성능을 향상 시키기 위해 제안한 in
 ![figure4.jpg (682×427)]({{"/assets/img/post/e36b37cd7298f4ed2458cbea6029922c13761a63/figure4.jpg"| relative_url}})
 *Figure 4. Instruction tuning clusters 성능 평가*
 
+<br/>
 
 ## b) InstructGPT (OpenAI) 모델 성능 평가
 
@@ -133,6 +134,7 @@ FLAN이란, zero-shot learning의 성능을 향상 시키기 위해 제안한 in
 ![figure7.jpg (455×362)]({{"/assets/img/post/e36b37cd7298f4ed2458cbea6029922c13761a63/figure7.jpg"| relative_url}})
 *Figure 7. GPT, GPT(promted), FLAN, T0와 InstructGPT(SFT, PPO-ptx)의 성능 비교 (Likert score 1~7)*
 
+<br/>
 
 ## c) Super-NaturalInstructions (Wang et al.) 모델 성능 평가
 
