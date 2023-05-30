@@ -9,7 +9,7 @@ tags: [Large_Language_Model, PEFT]
 excerpt: Parameter-Efficient Fine-Tuning (PEFT) 방법들
 back_color: "#eff7ff"
 toc: true
-show: false
+show: true
 series: 4
 new: true
 ---

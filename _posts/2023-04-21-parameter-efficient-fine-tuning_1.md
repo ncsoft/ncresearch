@@ -11,7 +11,7 @@ back_color: "#eff7ff"
 toc: true
 show: true
 series: 4
-new: true
+new: false
 ---
 
 1부: 생각보다는 연속적인 기술의 발전으로 등장한 Large Language Model (LLM)
