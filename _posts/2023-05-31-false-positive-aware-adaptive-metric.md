@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FPAdametric"
+title: "Metric learning을 활용한 추천 시스템에서의 클릭 실수 반영 연구"
 icon: paper
 author: e0802b67c9cc81bc165dba7245d7441f9eb86c9e
 permalink: 9be54695f02af4443a7b264e711c696da8192fc6

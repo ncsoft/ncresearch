@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MeLU"
+title: "메타러닝 기반의 초기 사용자 선호도 예측 모델 연구"
 icon: paper
 author: 380d7c5f64f1446237c2ef318b1f6f2298c60f23
 permalink: 228ac36aaec993243384ef1046c0074746f03208
