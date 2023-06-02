@@ -6,9 +6,17 @@
   url: https://about.ncsoft.com/
   desc: 엔씨소프트 서비스 소개 페이지입니다.
 
-- name: "NC Motion AI 블로그"
-  url: https://nc-moai.github.io/
-  desc: 엔씨소프트 AI센터 Motion AI의 블로그입니다.
+- name: "AI Center 유튜브 채널"
+  url: https://www.youtube.com/channel/UCCEMC6k5fZWzOUcv-bnSWZA
+  desc: "엔씨소프트 AI Center의 데모를 보실 수 있는 유튜브 채널입니다."
+
+- name: "NC Applied AI Lab 블로그"
+  url: https://velog.io/@applailab
+  desc: 엔씨소프트 Applied AI Lab의 블로그입니다.
+
+- name: "SIGKDD"
+  url: https://kdd.org/
+  desc: SIGKDD는 데이터로부터 지식을 발견하거나 데이터 마이닝 문제를 연구하는 사람들을 위한 국제 학회입니다.
 
 - name: "단비 블로그"
   url: https://danbi-ncsoft.github.io/
