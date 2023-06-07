@@ -520,13 +520,13 @@ a > h3:hover {
 .link_div {
     border: 1px solid var(--gray2);
     padding: 2.125rem 2.125rem 1.375rem 2.125rem;
-    border-radius: 0.25rem;
+    border-radius: 0.625rem;
     background-color: var(--gray0);
 }
 
-.link_div:hover {
-    filter: drop-shadow(4px 4px 4px rgba(51, 61, 75, 0.3));
-}
+// .link_div:hover {
+//     filter: drop-shadow(4px 4px 4px rgba(51, 61, 75, 0.3));
+// }
 
 .link_title {
     font-size: 1.5rem;
