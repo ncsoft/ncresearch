@@ -14,7 +14,7 @@
 }
 
 .site-header {
-  padding: 2% 2% 1% 2%;
+  padding: 2.1875rem 3.125rem 2.1875rem 3.125rem;
   background: var(--background);
   display: inline-block;
   float: left;
@@ -42,7 +42,7 @@
     // height: 2.27em;
     // width: 12.627rem;
     float: left;
-    margin-top: -13px;
+    // margin-top: -13px;
     border-radius: 0 !important;
     margin-right: 0.5em;
     padding: 0.01rem;
@@ -105,7 +105,7 @@ nav {
 @media screen and (max-width: $break) {
   .site-header {
     img.avatar {
-      margin-top: -7px
+      // margin-top: -7px
     }
 
     .site-title {
