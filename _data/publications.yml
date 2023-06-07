@@ -646,3 +646,43 @@
   abstract: "This paper presents a novel motion transfer algorithm that copies content motion into a specific style character. The input consists of two motions. One is a content motion such as walking or running, and the other is movement style such as zombie or Krall. The algorithm automatically generates the synthesized motion such as walking zombie, walking Krall, running zombie, or running Krall. In order to obtain natural results, the method adopts the generative power of deep neural networks. Compared to previous neural approaches, the proposed algorithm shows better quality, runs extremely fast, does not require big data, and supports user-controllable style weights."
   tags: ["SIGGRAPH2018", "Graphics", "AI"]
   id: 80
+
+- authors: "Minseok Cho, Reinald Kim Amplayo, Seung-won Hwang, Jonghyuck Park(NCSOFT)"
+  title: "Adversarial TableQA: Attention Supervision for Question Answering on Tables"
+  conf: "Proceedings of the 10th Asian Conference on Machine Learning (AACL). (2018)"
+  year: 2018
+  abstract: "The task of answering a question given a text passage has shown great developments on model performance thanks to community efforts in building useful datasets. Recently, there have been doubts whether such rapid progress has been based on truly understanding language. The same question has not been asked in the table question answering (TableQA) task, where we are tasked to answer a query given a table. We show that existing efforts, of using “answers” for both evaluation and supervision for TableQA, show deteriorating performances in adversarial settings of perturbations that do not affect the answer. This insight naturally motivates to develop new models that understand question and table more precisely. For this goal, we propose Neural Operator (NeOp), a multi-layer sequential network with attention supervision to answer the query given a table. NeOp uses multiple Selective Recurrent Units (SelRUs) to further help the interpretability of the answers of the model. Experiments show that the use of operand information to train the model significantly improves the performance and interpretability of TableQA models.NeOp outperforms all the previous models by a big margin."
+  tags: ["AACL2018", "Question answering", "Applied AI"]
+  id: 81
+
+- authors: "Hoyeop Lee(NCSOFT), Jongseon Park(NCSOFT), Hyungjun Kim(NCSOFT), Hyunsouk Cho(NCSOFT), Geonsoo Kim(NCSOFT)"
+  title: "PREFER: PREdiction Model for Financial Entity Relation"
+  conf: "Proceedings of the Fourth International Workshop on Data Science for Macro-Modeling with Financial and Economic Datasets (DSMM). (2018)"
+  year: 2018
+  abstract: "The Financial Entity Identification and Information Integration (FEIII) is a competition for the understanding relationships between financial entities. To predict competitor relation between two entities, there are three challenges - 1) relevant feature extraction from the various released dataset, 2) missing entity information handling and 3) imbalance of train data handling. To solve these challenges, we propose a model named PREFER which considering 1) relation trend and context feature extraction from the release dataset, 2) K-NN estimation with concept graph of knowledge bases (Probase), and 3) oversampling from the true labeled data. From the model, we increase 34% of F1-score compared to the baseline method."
+  tags: ["DSMM2018", "Entity identification", "Applied AI"]
+  id: 82
+
+- authors: "Hoyeop Lee(NCSOFT), Jinbae Im(NCSOFT), Seongwon Jang(NCSOFT), Hyunsouk Cho(NCSOFT), Sehee Chung(NCSOFT)"
+  title: "MeLU: Meta-Learned User Preference Estimator for Cold-Start Recommendation"
+  conf: "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD). (2019)"
+  year: 2019
+  abstract: "This paper proposes a recommender system to alleviate the cold-start problem that can estimate user preferences based on only a small number of items. To identify a user's preference in the cold state, existing recommender systems, such as Netflix, initially provide items to a user; we call those items evidence candidates. Recommendations are then made based on the items selected by the user. Previous recommendation studies have two limitations: (1) the users who consumed a few items have poor recommendations and (2) inadequate evidence candidates are used to identify user preferences. We propose a meta-learning-based recommender system called MeLU to overcome these two limitations. From meta-learning, which can rapidly adopt new task with a few examples, MeLU can estimate new user's preferences with a few consumed items. In addition, we provide an evidence candidate selection strategy that determines distinguishing items for customized preference estimation. We validate MeLU with two benchmark datasets, and the proposed model reduces at least 5.92% mean absolute error than two comparative models on the datasets. We also conduct a user study experiment to verify the evidence selection strategy."
+  tags: ["KDD2019", "Cold-start", "Recommendation", "Curation", "Applied AI"]
+  id: 83
+
+ - authors: "Gyeongbok Lee(NCSOFT), Seung-won Hwang, Hyunsouk Cho(NCSOFT)"
+  title: "SQuAD2-CR: Semi-supervised Annotation for Cause and Rationales for Unanswerability in SQuAD 2.0"
+  conf: "Proceedings of the 12th Language Resources and Evaluation Conference (LREC). (2020)"
+  year: 2020
+  abstract: "Existing machine reading comprehension models are reported to be brittle for adversarially perturbed questions when optimizing only for accuracy, which led to the creation of new reading comprehension benchmarks, such as SQuAD 2.0 which contains such type of questions. However, despite the super-human accuracy of existing models on such datasets, it is still unclear how the model predicts the answerability of the question, potentially due to the absence of a shared annotation for the explanation. To address such absence, we release SQuAD2-CR dataset, which contains annotations on unanswerable questions from the SQuAD 2.0 dataset, to enable an explanatory analysis of the model prediction. Specifically, we annotate (1) explanation on why the most plausible answer span cannot be the answer and (2) which part of the question causes unanswerability. We share intuitions and experimental results that how this dataset can be used to analyze and improve the interpretability of existing reading comprehension model behavior."
+  tags: ["LREC2020", "Question answering", "XAI", "Applied AI"]
+  id: 84
+
+ - authors: "Seongwon Jang(NCSOFT), Hoyeop Lee(NCSOFT), Hyunsouk Cho(NCSOFT), Sehee Chung(NCSOFT)"
+  title: "CITIES: Contextual Inference of Tail-Item Embeddings for Sequential Recommendation"
+  conf: "2020 IEEE International Conference on Data Mining (ICDM). (2020)"
+  year: 2020
+  abstract: "Sequential recommendation techniques provide users with product recommendations fitting their current preferences by handling dynamic user preferences over time. Previous studies have focused on modeling sequential dynamics without much regard to which of the best-selling products (i.e., head items) or niche products (i.e., tail items) should be recommended. We scrutinize the structural reason for why tail items are barely served in the current sequential recommendation model, which consists of an item-embedding layer, a sequence-modeling layer, and a recommendation layer. Well-designed sequence-modeling and recommendation layers are expected to naturally learn suitable item embeddings. However, tail items are likely to fall short of this expectation because the current model structure is not suitable for learning high-quality embeddings with insufficient data. Thus, tail items are rarely recommended. To eliminate this issue, we propose a framework called CITIES, which aims to enhance the quality of the tail-item embeddings by training an embedding-inference function using multiple contextual head items so that the recommendation performance improves for not only the tail items but also for the head items. Moreover, our framework can infer new-item embeddings without an additional learning process. Extensive experiments on two realworld datasets show that applying CITIES to the state-of-the-art methods improves recommendation performance for both tail and head items. We conduct an additional experiment to verify that CITIES can infer suitable new-item embeddings as well."
+  tags: ["ICDM2020", "Long-tail", "Recommendation", "Curation", "Applied AI"]
+  id: 85
