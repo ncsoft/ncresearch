@@ -3,7 +3,7 @@
   conf: "The 17th Conference of the European Chapter of the Association for Computational Linguistics(EACL). (2023)"
   year: 2023
   abstract: "** abstract **"
-  tags: ["EACL2023", "generation"]
+  tags: ["EACL2023", "Dialogue", "NLP"]
   id: 0
 
 - authors: "Donghyun Kim, Youbin Ahn, Chanhee Lee, Wongyu Kim, Kyong‐Ho Lee, Donghoon Shin(NCSOFT), Yeonsoo Lee(NCSOFT)"
@@ -11,7 +11,7 @@
   conf: "The 17th Conference of the European Chapter of the Association for Computational Linguistics(EACL). (2023)"
   year: 2023
   abstract: "** abstract **"
-  tags: ["EACL2023", "dialogue"]
+  tags: ["EACL2023", "Dialogue", "NLP"]
   id: 1
 
 - authors: "Yoonna Jang, Jungwoo Lim, Yuna Hur, Dongsuk Oh, Suhyune Son, Yeonsoo Lee(NCSOFT), Dong-Hoon Shin(NCSOFT), Seungryong Kim, Heuiseok Lim"
@@ -19,7 +19,7 @@
   conf: "Proceedings of the AAAI Conference on Artificial Intelligence(AAAI). (2022)"
   year: 2022
   abstract: "Humans usually have conversations by making use of prior knowledge about a topic and background information of the people whom they are talking to. However, existing conversational agents and datasets do not consider such comprehensive information, and thus they have a limitation in generating the utterances where the knowledge and persona are fused properly. To address this issue, we introduce a call For Customized conversation (FoCus) dataset where the customized answers are built with the user's persona and Wikipedia knowledge. To evaluate the abilities to make informative and customized utterances of pre-trained language models, we utilize BART and GPT-2 as well as transformer-based models. We assess their generation abilities with automatic scores and conduct human evaluations for qualitative results. We examine whether the model reflects adequate persona and knowledge with our proposed two sub-tasks, persona grounding (PG) and knowledge grounding (KG). Moreover, we show that the utterances of our data are constructed with the proper knowledge and persona through grounding quality assessment."
-  tags: ["AAAI2022", "dialogue"]
+  tags: ["AAAI2022", "Dialogue", "NLP"]
   id: 2
 
 - authors: "Sanghak Lee, Seungmin Seo, Byungkook Oh, Kyong-Ho Lee, Donghoon Shin(NCSOFT),Yeonsoo Lee(NCSOFT)"
@@ -27,7 +27,7 @@
   conf: "IEEE Transactions on Knowledge and Data Engineering (TKDE), Vol. 32, Issue 12, pp. 5610-5620"
   year: 2022
   abstract: "Both entity typing and relation extraction from text corpora are widely used to identify the semantic types of an entity and a relation in a knowledge graph (KG). Most existing approaches rely on a pre-defined set of entity types and relation types in a KG. They thus cannot map entity mentions (relation mentions) to unseen entity types (relation types). To fundamentally overcome the limitations, we should add new semantic types of entities and relations to a KG schema. However, schema expansion traditionally requires manual conceptualization through a user’s observation on the text corpus while assuming the existence of suitable target KG schemas. In this work, we propose an A ctive learning framework for K nowledge graph S chema E xpansion ( AKSE ), which can generate a new semantic type for KG schemas, without depending on a set of target schemas and human users’ observation. Specifically, a granularity based active learning algorithm determines whether a KG schema requires new semantic types or not. We also introduce a KG schema attention-based neural method which assigns semantic types to the entities and relationships extracted. To the best of our knowledge, our work is the first study to expand a KG schema with active learning."
-  tags: ["TKDE"]
+  tags: ["TKDE", "Search", "NLP"]
   id: 3
 
 - authors: "Jungwoo Lim(Korea Univ), Myugnhoon Kang(Korea Univ), Yuna Hur(Korea Univ), Seung Won Jeong(Korea Univ), Jinsung Kim(Korea Univ), Yoonna Jang(Korea Univ), Dongyub Lee(NAVER), Hyesung Ji(NCSOFT), DongHoon Shin(NCSOFT), Seungryong Kim(Korea Univ) and Heuiseok Lim(Korea Univ)"
@@ -35,7 +35,7 @@
   conf: "The 2022 Conference on Empirical Methods in Natural Language Processing(EMNLP) (2022)"
   year: 2022
   abstract: "To build a conversational agent that interacts fluently with humans, previous studies blend knowledge or personal profile into the pre-trained language model. However, the model that considers knowledge and persona at the same time is still limited, leading to hallucination and a passive way of using personas. We propose an effective dialogue agent that grounds external knowledge and persona simultaneously. The agent selects the proper knowledge and persona to use for generating the answers with our candidate scoring implemented with a poly-encoder. Then, our model generates the utterance with lesser hallucination and more engagingness utilizing retrieval augmented generation with knowledge-persona enhanced query. We conduct experiments on the personaknowledge chat and achieve state-of-the-art performance in grounding and generation tasks on the automatic metrics. Moreover, we validate the answers from the models regarding hallucination and engagingness through human evaluation and qualitative results. We show our retriever’s effectiveness in extracting relevant documents compared to the other previous retrievers, along with the comparison of multiple candidate scoring methods. Code is available at https://github.com/dlawjddn803/INFO"
-  tags: ["EMNLP2022", "dialogue"]
+  tags: ["EMNLP2022", "Dialogue", "NLP"]
   id: 4
 
 - authors: "Seonil Son (NCSOFT), Junsoo Park (NCSOFT), Jeong-in Hwang (NCSOFT), Junghwa Lee (NCSOFT), Hyungjong Noh (NCSOFT), Yeonsoo Lee (NCSOFT)"
@@ -43,7 +43,7 @@
   conf: "AACL 2022"
   year: 2022
   abstract: "One of the challenges of developing a summarization model arises from the difficulty in measuring the factual inconsistency of the generated text. In this study, we reinterpret the decoder overconfidence-regularizing objective suggested in (Miao et al., 2021) as a hallucination risk measurement to better estimate the quality of generated summaries. We propose a reference-free metric, HaRiM+, which only requires an off-the-shelf summarization model to compute the hallucination risk based on token likelihoods. Deploying it requires no additional training of models or ad-hoc modules, which usually need alignment to human judgments. For summary-quality estimation, HaRiM+ records state-of-the-art correlation to human judgment on three summary-quality annotation sets: FRANK, QAGS, and SummEval. We hope that our work, which merits the use of summarization models, facilitates the progress of both automated evaluation and generation of summary."
-  tags: ["AACL2022"]
+  tags: ["AACL2022", "Translation", "NLP"]
   id: 5
 
 - authors: "Hojun Cho (KAIST), Dohee Kim (KAIST), Seungwoo Ryu (KAIST), ChaeHun Park (KAIST), Hyungjong Noh (NCSOFT), Jeong-in Hwang (NCSOFT), Minseok Choi (KAIST), Edward Choi (KAIST), Jaegul Choo (KAIST)"
@@ -51,7 +51,7 @@
   conf: "The 2022 Conference on Empirical Methods in Natural Language Processing(EMNLP) (2022)"
   year: 2022
   abstract: "Style control, content preservation, and fluency determine the quality of text style transfer models. To train on a nonparallel corpus, several existing approaches aim to deceive the style discriminator with an adversarial loss. However, adversarial training significantly degrades fluency compared to the other two metrics. In this work, we explain this phenomenon using energy-based interpretation, and leverage a pretrained language model to improve fluency. Specifically, we propose a novel approach which applies the pretrained language model to the text style transfer framework by restructuring the discriminator and the model itself, allowing the generator and the discriminator to also take advantage of the power of the pretrained model. We evaluated our model on three public benchmarks GYAFC, Amazon, and Yelp and achieved state-of-the-art performance on the overall metrics."
-  tags: ["EMNLP2022"]
+  tags: ["EMNLP2022", "Translation", "NLP"]
   id: 6
 
 - authors: "Eunhwan Park(JNU), Jong-Hyeon Lee(NCSOFT), Jeon Dong Hyeon(NAVER), Seonhoon Kim(NAVER), INHO KANG(NAVER) and Seung-Hoon Na(JNU)"
@@ -60,7 +60,7 @@
   year: 2022
   abstract: "This study proposes Semantic-Infused SElective Graph Reasoning (SISER) for fact verification, which newly presents semantic-level graph reasoning and injects its reasoning-enhanced representation into other
   types of graph-based and sequence-based reasoning methods. SISER combines three reasoning types: 1) semantic-level graph reasoning, which uses a semantic graph from evidence sentences, whose nodes are elements of a triple – <Subject, Verb, Object>, 2)“semantic-infused” sentence-level “selective” graph reasoning, which combine semanticlevel and sentence-level representations and perform graph reasoning in a selective manner using the node selection mechanism, and 3) sequence reasoning, which concatenates all evidence sentences and performs attentionbased reasoning. Experiment results on a large-scale dataset for Fact Extraction and VERification (FEVER) show that SISER outperforms the previous graph-based approaches and achieves state-of-the-art performance."
-  tags: ["COLING2022"]
+  tags: ["COLING2022", "Understanding", "NLP"]
   id: 7
 
 - authors: "이정, 서민택, 나승훈, 나민수(NCSOFT), 최맹식(NCSOFT), 이충희(NCSOFT)"
@@ -68,7 +68,7 @@
   conf: "2022 한국소프트웨어종합학술대회"
   year: 2022
   abstract: "최근 다양한 산업 전반에서 자동 음성 인식(Automatic Speech Recognition)을 활용한 음성 기반의 인터페이스가 적용됨에 따라 높은 수준의 정확도를 보이는 음성 인식 기술에 대한 필요성이 점차 증대되고 있다. 하지만 음성 인식 분야에 대규모 사전 학습 모델을 활용하기 위해서는 음성 데이터와 함께 음성 전사 텍스트 데이터가 주석된 데이터(Labeled Data)가 필수적이나 대규모의 주석 데이터 구축에는 큰 비용이 소모된다는 단점이 존재한다. 따라서 본 논문에서는 주석 데이터에 대한 의존성을 줄이기 위하여 자기지도학습(Self-supervised Learning)에 기반한 사전 학습 음성 언어 모델을 바탕으로 한국어 음성 인식 모델을 구성하고 성능을 보인다."
-  tags: ["2022한국소프트웨어종합학술대회"]
+  tags: ["2022한국소프트웨어종합학술대회", "Understanding", "NLP"]
   id: 8
 
 - authors: "서민택, 나승훈, 나민수(NCSOFT), 최맹식(NCSOFT), 이충희(NCSOFT)"
@@ -76,7 +76,7 @@
   conf: "2022 한국소프트웨어종합학술대회"
   year: 2022
   abstract: "성능 향상을 위한 많은 노력에도 불구하고 현재 Automatic Speech Recognition(ASR) 모델은 완벽하지 않기 때문에 실제 서비스에서 오류는 나타날 수밖에 없다. 서비스 품질 향상을 위해 이러한 오류 발생을 후처리를 통해 교정하려는 많은 노력이 진행되고 있다. 그러나 이러한 오류 유형중 고유명사 인식에서 오류가 발생하는 경우가 적지 않은데, 이러한 오류는 문장 자체로 본다면 정상이라 단일 단서로 교정하기가 어렵다. 이런 오류를 교정하기 위해서는 최상의 결과만을 활용하는 대신 상위 결과를 추가적으로 활용한다면 단서가 늘어나 올바른 단어로 교정할 확률이 증가한다. 따라서 본 논문에서는 생성 모델과 N-Best 결과를 이용한 간소화된 Ensemble 방법을 통해 교정 결과의 향상을 확인한다."
-  tags: ["2022한국소프트웨어종합학술대회"]
+  tags: ["2022한국소프트웨어종합학술대회", "Understanding", "NLP"]
   id: 9
 
 - authors: "이정, 서민택, 나승훈(전북대학교), 나민수(NCSOFT), 최맹식(NCSOFT), 이충희(NCSOFT)"
@@ -84,7 +84,7 @@
   conf: "2022 한글 및 한국어 정보처리 학술대회"
   year: 2022
   abstract: "자동 음성 인식(Automatic Speech Recognition) 혹은 Speech-to-Text(STT)는 컴퓨터가 사람이 말하는 음성 언어를 텍스트 데이터로 전환하는 일련의 처리나 기술 등을 일컫는다. 음성 인식 기술이 다양한 산업 전반에 걸쳐 적용됨에 따라 높은 수준의 정확도와 더불어 다양한 분야에 적용할 수 있는 음성 인식 기술에 대한 필요성이 점차 증대되고 있다. 다만 한국어 음성 인식의 경우 기존 선행 연구에 비해 예사말/높임말의 구분이나 어미, 조사 등의 인식에 어려움이 있어 음성 인식 결과 후처리를 통한 성능 개선이 중요하다. 따라서 본 논문에서는 N-Best 음성 인식 결과가 구성되었을 때 Re-ranking을  통해 한국어 음성 인식의 성능을 개선하는 모델을 제안한다."
-  tags: ["2022한글및한국어정보처리학술대회"]
+  tags: ["2022한글및한국어정보처리학술대회", "Understanding", "NLP"]
   id: 10
 
 - authors: "서민택, 나승훈(전북대학교), 나민수(NCSOFT), 최맹식(NCSOFT), 이충희(NCSOFT)"
@@ -92,7 +92,7 @@
   conf: "2022 한글 및 한국어 정보처리 학술대회"
   year: 2022
   abstract: "딥러닝의 발전 이후, 다양한 분야에서는 딥러닝을 이용해 이전에 어려웠던 작업들을 해결하여 사용자에게 편의성을 제공하고 있다. 하지만 아직 딥러닝을 통해 이상적인 서비스를 제공하는 데는 어려움이 있다. 특히, 음성 인식 작업에서 음성 양식에서 이용 방안에 대하여 다양성을 제공해주는 음성을 텍스트로 전환하는 Speech-To-Text(STT)은 문장 결과가 이상치에 달하지 못해 오류가 나타나게 된다. 본 논문에서는 STT 결과 보정을 문법 교정으로 치환하여 종단에서 올바른 토큰들을 조합하여 성능 향상을 하기 위해 각 토큰 별 품질 평가를 진행하는 모델을 한국어에서 적용하고 성능의 향상을 확인한다."
-  tags: ["2022한글및한국어정보처리학술대회"]
+  tags: ["2022한글및한국어정보처리학술대회", "Understanding", "NLP"]
   id: 11
 
 - authors: "정민지(NCSOFT), 이새벽(NCSOFT), 김영준(NCSOFT), 허철훈(NCSOFT), 이충희(NCSOFT)"
@@ -100,7 +100,7 @@
   conf: "2022 한글 및 한국어 정보처리 학술대회"
   year: 2022
   abstract: "질문에 답하기 위해 관련 구절을 검색하는 기술은 오픈 도메인 질의응답의 검색 단계를 위해 필요하다. 전통적인 방법은 정보 검색 기법인 빈도-역문서 빈도(TF-IDF) 기반으로 희소한 벡터 표현을 활용하여 구절을 검색한다. 하지만 희소 벡터 표현은 벡터 길이가 길 뿐만 아니라, 질문에 나오지 않는 단어나 토큰을 검색하지 못한다는 취약점을 가진다. 밀집 벡터 표현 연구는 이러한 취약점을 개선하고 있으며 대부분의 연구가 영어 데이터셋을 학습한 것이다. 따라서, 본 연구는 한국어 데이터셋을 학습한 밀집 벡터 표현을 연구하고 여러 가지 부정 샘플(negative sample) 추출 방법을 도입하여 전이 학습한 모델 성능을 비교 분석한다. 또한, 대화 응답 선택 태스크에서 밀집 검색에 활용한 순위 재지정 상호작용 레이어를 추가한 실험을 진행하고 비교 분석한다. 밀집 벡터 표현 모델을 학습하는 것이 도전적인 과제인만큼 향후에도 다양한 시도가 필요할 것으로 보인다."
-  tags: ["2022한글및한국어정보처리학술대회"]
+  tags: ["2022한글및한국어정보처리학술대회", "Search", "NLP"]
   id: 12
 
 - authors: "Byung-Chull Bae(hongik univ.) Suji Jang(hongik univ), Youngjune Kim(NCSOFT), Seyoung Park(NCSOF)"
@@ -108,7 +108,7 @@
   conf: "ICIDS 2021"
   year: 2021
   abstract: "Story interestingness is of great importance in narrative understanding and generation. In this paper, based on the outlined literature review, we present our incipient framework for measuring story interestingness, consisting of two factors - cognitive interest and emotional interest. The cognitive factors include four components - goal, novelty, inference, and schema violation. The emotional aspects contain four elements - empathy, external emotions, humor, and outcome valence."
-  tags: ["ICIDS2021"]
+  tags: ["ICIDS2021", "Data", "NLP"]
   id: 13
 
 - authors: "정영준 (강원대학교), 이창기 (강원대학교), 황정인 (NCSOFT), 노형종 (NCSOFT)"
@@ -116,7 +116,7 @@
   conf: "2021 한국컴퓨터종합학술대회"
   year: 2021
   abstract: "문체 변환(style transfer)은 소스 문체(source style)로 쓰여진 텍스트가 주어지면 내용(content)을 유지하면서 타겟 문체(target style)의 텍스트를 생성하는 작업이다. 일반적으로 내용은 불변성(invariance), 문체는 가변성(variance)이라고 가정하여 텍스트의 문체를 변환하게 된다. 하지만, 채팅체의 경우 내용과 문체의 경계가 모호한 특성을 가지기 때문에 분리에 어려움이 있어 기존의 문체 변환 모델로 학습이 잘 되지 않는 문제가 있다. 본 논문에서는 비지도 기계 번역(unsupervised machine translation)을 이용한 문체 변환 모델을 사용하여 채팅체를 문어체로 변환하는 방법을 제안한다. 또한, 변환된 결과를 활용하여 문체 변환에 사용될 수 있는 문체 간 단어 변환 사전을 구축할 수 있음을 보인다."
-  tags: ["2021한국컴퓨터종합학술대회", "문체변환"]
+  tags: ["2021한국컴퓨터종합학술대회", "문체변환", "Translation", "NLP"]
   id: 14
 
 - authors: "민주 (강원대학교), 이창기 (강원대학교), 황정인 (NCSOFT), 노형종 (NCSOFT)"
@@ -124,7 +124,7 @@
   conf: "2021 한국컴퓨터종합학술대회"
   year: 2021
   abstract: "인터넷 채팅체로 쓰여진 문장은 문어체 문장과 달리 신조어 및 축약어가 쓰이며 문체 또한 일반적인 문어체 또는 구어체와 상이하다. 따라서 인터넷 채팅체를 기존 문어체 기반 자연어처리 시스템에서 이용하기 위해서는 채팅체-문어체 스타일 변환 기술이 필요하며, 이를 위해서 구어체-문어체로 이루어진 병렬 코퍼스를 구축할 필요가 있다. 본 논문에서는 채팅체 문장을 문어체로 변환한 문장 쌍 병렬 코퍼스를 Round-Trip Translation 기법을 이용하여 자동으로 구축하고, 자동으로 구축된 병렬 코퍼스 중에 부정확한 문장 쌍을 자동으로 필터링하는 방법을 제안한다. 또한 구축된 병렬 코퍼스를 검증하기 위해 구축된 병렬 코퍼스를 이용하여 자동으로 채팅체-문어체 변환 사전을 구축하였다."
-  tags: ["2021한국컴퓨터종합학술대회"]
+  tags: ["2021한국컴퓨터종합학술대회", "Translation", "NLP"]
   id: 15
 
 - authors: "배장성 (강원대학교), 이창기 (강원대학교), 황정인 (NCSOFT), 노형종 (NCSOFT)"
@@ -132,7 +132,7 @@
   conf: "2021 한글및한국어정보처리 학술대회"
   year: 2021
   abstract: "텍스트 스타일 변환은 입력 스타일(source style)로 쓰여진 텍스트의 내용(content)을 유지하며 목적 스타일(target style)의 텍스트로 변환하는 문제이다. 텍스트 스타일 변환을 시퀀스 간 변환 문제(sequence-to-sequence)로 보고 기존 기계학습 모델을 이용해 해결할 수 있지만, 모델 학습에 필요한 각 스타일에 대응되는 병렬 말뭉치를 구하기 어려운 문제점이 있다. 따라서 최근에는 비병렬 말뭉치를 이용해 텍스트 스타일 변환을 수행하는 방법들이 연구되고 있다. 이 연구들은 주로 인코더-디코더 구조의 생성 모델을 사용하기 때문에 입력 문장이 가지고 있는 내용이 누락되거나 다른 내용의 문장이 생성될 수 있는 문제점이 있다. 본 논문에서는 마스크 언어 모델(masked language model)을 이용해 입력 텍스트의 내용을 유지하면서 원하는 스타일로 변경할 수 있는 텍스트 스타일 변환 방법을 제안하고 한국어 긍정-부정, 채팅체-문어체 변환에 적용한다."
-  tags: ["2021한글및한국어정보처리학술대회"]
+  tags: ["2021한글및한국어정보처리학술대회", "Translation", "NLP"]
   id: 16
 
 - authors: "박진솔(서울대학교), 최맹식(NCSOFT), Andrew Matteson(NCSOFT), 이충희(NCSOFT)"
@@ -140,7 +140,7 @@
   conf: "2021 한글및한국어정보처리 학술대회"
   year: 2021
   abstract: "한국어에서는 문장 내의 주어나 목적어가 자주 생략된다. 자연어 처리에서 이러한 문장을 그대로 사용하는 것은 정보 부족으로 인한 문제 난이도 상승으로 귀결된다. 생략복원은 텍스트에서 생략된 부분을 이전 문구에서 찾아서 복원해 주는 기술이며, 본 논문은 생략된 주어를 복원하는 방법에 대한 연구이다. 본 논문에서는 기존에 생략복원에 사용되지 않았던 다양한 입력 형태를 시도한다. 또한, 출력 레이어로는 finetuning layer(Linear, Bi-LSTM, MultiHeadAttention)와 생략복원 태스크 형태(BIO tagging, span prediction)의 다양한 조합을 실험한다. 국립국어원 무형 대용어 복원 말뭉치를 기반으로 생략복원이 불필요한 네거티브 샘플을 추가하여 ELECTRA 기반의 딥러닝 생략복원 모델을 학습시키고, 생략복원에 최적화된 조합을 검토한다."
-  tags: ["2021한글및한국어정보처리학술대회"]
+  tags: ["2021한글및한국어정보처리학술대회", "Translation", "NLP"]
   id: 17
 
 - authors: "Hyonsu Choe(NCSOFT), Jiyoon Han(YU), Hyejin Park(YU), Tae Hwan Oh(YU), Hansaem Kim(YU)"
@@ -148,7 +148,7 @@
   conf: "Proceedings of DMR 2020"
   year: 2020
   abstract: "To explore the potential sembanking in Korean and ways to represent the meaning of Korean sentences, this paper reports on the process of applying Abstract Meaning Representation to Korean, a semantic representation framework that has been studied in wide range of languages, and its output: the Korean AMR corpus. The corpus which is constructed so far is a size of 1,253 sentences and its raw texts are from ExoBrain Corpus, a state-led R&D project on language AI. This paper also analyzes the result in both qualitative and quantitative manners, proposing discussions for further development."
-  tags: ["ProceedingsofDMR2020"]
+  tags: ["ProceedingsofDMR2020", "Data", "NLP"]
   id: 18
 
 - authors: "신승우 (NCSOFT), 오주민 (NCSOFT), 노형종 (NCSOFT), 이연수 (NCSOFT)"
@@ -156,7 +156,7 @@
   conf: "2020 한글및한국어정보처리 학술대회"
   year: 2020
   abstract: "기존의 자연어 의미 표상 방법은 크게 나눠보았을 때 두 가지가 있다. 첫 번째로, 전통적인 기호 기반 의미 표상 방법론이다. 이 방법론들은 논리적이고 해석가능하다는 장점이 있으나, 구축에 시간이 많이 들고 정작 기호 자체의 의미를 더욱 미시적으로 파악하기 어렵다는 단점이 있었다. 반면, 최근 대두된 분산 표상의 경우 단어 하나하나의 의미는 상대적으로 잘 파악하는 반면, 문장 등의 복잡한 구조의 의미를 나타내는 데 있어 상대적으로 약한 측면을 보이며 해석가능하지 않다는 단점이 있다. 본 논문에서는 이 둘의 장점을 섞어서 서로의 단점을 보완하는 새로운 의미 표상을 제안하였으며, 이 표상이 유의미하게 문장의 의미를 담고 있음을 비지도 문장 군집화 문제를 통해 간접적으로 보였다."
-  tags: ["2020한글및한국어정보처리학술대회"]
+  tags: ["2020한글및한국어정보처리학술대회", "Understanding", "NLP"]
   id: 19
 
 - authors: "이진우(NCSOFT), 최맹식(NCSOFT), 이충희(NCSOFT), 이연수(NCSOFT)"
@@ -164,7 +164,7 @@
   conf: "2020 한글및한국어정보처리 학술대회"
   year: 2020
   abstract: "본 연구는 딥 러닝 기반 의존 구문 분석에서, 학습에 적용하는 손실 함수에 따른 성능을 평가하였다. Pointer Network를 이용한 Left-To-Right 모델을 총 세 가지의 손실 함수(Maximize Golden Probability, Cross Entropy, Local Hinge)를 이용하여 학습시켰다. 그 결과 LH 손실 함수로 학습한 모델이 선행 연구와 같이 MGP 손실 함수로 학습한 것에 비해 UAS/LAS가 각각 0.86%p/0.87%p 상승하였으며, 특히 의존 거리가 먼 경우에 대하여 분석 성능이 크게 향상됨을 확인하였다. 딥러닝 의존 구문 분석기를 구현할 때 학습 모델과 입력 표상뿐만 아니라 손실 함수 역시 중요하게 고려되어야 함을 보였다."
-  tags: ["2020한글및한국어정보처리학술대회"]
+  tags: ["2020한글및한국어정보처리학술대회", "Understanding", "NLP"]
   id: 20
 
 - authors: "최현수(NCSOFT), 민진우, 나승훈(전북대학교), 김한샘(연세대학교)"
@@ -172,7 +172,7 @@
   conf: "2020 한글및한국어정보처리 학술대회"
   year: 2020
   abstract: "본 연구에서는 한국어 의미 표상 자원 구축과 의미 파싱 성능 향상을 위한 데이터 자동 증강 방법을 제안하고 수동 구축 결과 대비 자동 변환 정확도를 보인다. 지도 학습 기반의 AMR 파싱 모델이 유의미한 성능에 도달하려면 대량의 주석 데이터가 반드시 필요하다. 본 연구에서는 기성 언어 분석 기술 또는 기존에 구축된 말뭉치의 주석 정보를 바탕으로 Semi-AMR 데이터를 변환해내는 알고리즘을 제시하며, 자동 변환 결과는 Gold-standard 데이터에 대해 Smatch F1 0.46의 일치도를 보였다. 일정 수준 이상의 정확도를 보이는 자동 증강 데이터는 주석 프로젝트에 소요되는 비용을 경감시키는 데에 활용될 수 있다."
-  tags: ["2020한글및한국어정보처리학술대회"]
+  tags: ["2020한글및한국어정보처리학술대회", "Data", "NLP"]
   id: 21
 
 - authors: "이민호(NCSOFT), 최맹식(NCSOFT), 김정아(NCSOFT), 이충희(NCSOFT), 김보희(NCSOFT), 오효정(전북대학교), 이연수(NCSOFT)"
@@ -180,7 +180,7 @@
   conf: "2020 한글및한국어정보처리 학술대회"
   year: 2020
   abstract: "구묶음은 문장을 겹치지 않는 문장 구성 성분으로 나누는 과정으로, 구묶음 방법에 따라 구문분석, 관계추출 등 다양한 하위 태스크에 사용할 수 있다. 본 논문에서는 문장의 키워드를 추출하기 위한 구묶음 방식을 제안하고, 키워드 단위 구묶음 데이터를 구축하기 위한 가이드라인을 제작하였다. 해당 가이드라인을 적용하여 구축한 데이터와 BERT 기반의 모델을 이용하여 학습 및 평가를 통해 구축된 데이터의 품질을 측정하여 78점의 F1점수를 얻었다. 이후 패턴 통일, 형태소 표시 여부 등 다양한 개선 방법의 적용 및 재실험을 통해 가이드라인의 개선 방향을 제시한다."
-  tags: ["2020한글및한국어정보처리학술대회"]
+  tags: ["2020한글및한국어정보처리학술대회", "Data", "NLP"]
   id: 22
 
 - authors: "Hyesung Ji(NCSOFT), Danial Hooshyar, Kuekyeng Kim, and Heuiseok Lim (Korea univ)"
@@ -188,7 +188,7 @@
   conf: "Journal of Information Science 45(6)"
   year: 2019
   abstract: "Video scene segmentation is very important research in the field of computer vision, because it helps in efficient storage, indexing and retrieval of videos. Achieving this kind of scene segmentation cannot be done by just calculating the similarity of low-level features presented in the video; high-level features should also be considered to achieve a better performance. Even though much research has been conducted on video scene segmentation, most of these studies failed to semantically segment a video into scenes. Thus, in this study, we propose a Deep-learning Semantic-based Scene-segmentation model (called DeepSSS) that considers image captioning to segment a video into scenes semantically. First, the DeepSSS performs shot boundary detection by comparing colour histograms and then employs maximum-entropy-applied keyframe extraction. Second, for semantic analysis, using image captioning that benefits from deep learning generates a semantic text description of the keyframes. Finally, by comparing and analysing the generated texts, it assembles the keyframes into a scene grouped under a semantic narrative. That said, DeepSSS considers both low- and high-level features of videos to achieve a more meaningful scene segmentation. By applying DeepSSS to data sets from MS COCO for caption generation and evaluating its semantic scene-segmentation task results with the data sets from TRECVid 2016, we demonstrate quantitatively that DeepSSS outperforms other existing scene-segmentation methods using shot boundary detection and keyframes. What’s more, the experiments were done by comparing scenes segmented by humans and scene segmented by the DeepSSS. The results verified that the DeepSSS’ segmentation resembled that of humans. This is a new kind of result that was enabled by semantic analysis, which was impossible by just using low-level features of videos."
-  tags: ["JournalofInformationScience"]
+  tags: ["JournalofInformationScience", "Understanding", "NLP"]
   id: 23
 
 - authors: "장영진, 김학수(강원대학교), 김진태(NCSOFT), 왕지현(NCSOFT), 이충희(NCSOFT)"
@@ -196,7 +196,7 @@
   conf: "2019 한글및한국어정보처리 학술대회"
   year: 2019
   abstract: "정답 후보군 탐지 모델은 최근 활발히 진행되고 있는 질의-응답 데이터 수집 연구의 선행이 되는 연구로 특정 질문에 대한 정답을 주어진 단라에서 추출하는 작업을 말한다. 제안 모델은 포인터 네트워크 디코더를 통하여 기존의 순차 레이블링 모델에서 처리할 수 없었던 정담이 겹치는 문제애 대해서 해결할 수 있게 되었다. 그리고 독립된 두 개의 포인터 네트워크 디코더를 사용함으로써, 단일 포인터 네트워크로 처리할 수 없었던 정답의 탐지가 가능하게 되었다."
-  tags: ["2019한글및한국어정보처리학술대회"]
+  tags: ["2019한글및한국어정보처리학술대회", "Understanding", "NLP"]
   id: 24
 
 - authors: "장영진, 김학수(강원대학교), 지혜성(NCSOFT), 이충희(NCSOFT)"
@@ -204,7 +204,7 @@
   conf: "2019 한글및한국어정보처리 학술대회"
   year: 2019
   abstract: "검색 모델은 색인된 문서 내에서 입력과 유사한 문서를 검색하는 시스템이다. 최근에는 기계독해 모델과 통합하여 질문에 대한 답을 검색 모델의 결과에서 찾는 연구가 진행되고 있다. 위의 통합 모델이 좋은 결과를 내기 위해서는 검색 모델의 높은 성능이 요구된다. 따라서 본 논문에서는 검색 모델의 성능을 보완해 줄 수 있는 재순위화 모델을 제안한다. 검색 모델의 결과 후보를 일괄적으로 입력받고 '질문-단락' 간 주의 집중을계산하여 재순위화 한다. 실험 결과 P@1 기준으로 기존 검색 모델 성능 대비 5.58%의 성능 향상을 보였다."
-  tags: ["2019한글및한국어정보처리학술대회"]
+  tags: ["2019한글및한국어정보처리학술대회", "Search", "NLP"]
   id: 25
 
 - authors: "이현구, 장영진(강원대학교), 김진태(NCSOFT), 왕지현(NCSOFT), 신동훈(NCSOFT), 김학수(강원대학교)"
@@ -212,7 +212,7 @@
   conf: "2019 한글및한국어정보처리 학술대회"
   year: 2019
   abstract: "기계독해 모델에 새로운 도메인을 적용하기 위해서는 도메인에 맞는 데이터가 필요하다. 그러나 추가 데이터 구축은 많은 비용이 발생한다. 사람이 직접 구축한 데이터 없이 적용하기 위해서는 자동 추가 데이터 확보, 도메인 적응의 문제를 해결해야한다. 추가 데이터 확보의 경우 번역, 질의 생성의 방법으로 연구가 진행되었다. 그러나 도메인 적응을 위해서는 새로운 정답 유형에 대한 질의가 필요하며 이를 위해서는 정답 후보 추출, 추출된 정답 후보로 질의를 생성해야한다. 본 논문에서는 이러한 문제를 해결하기 위해 듀얼 포인터 네트워크 기반 정답 후보 추출 모델로 정답 후보를 추출하고, 포인터 제너레이터 기반 질의 생성 모델로 새로운 데이터를 생성하는 방법을 제안한다. 실험 결과 추가 데이터 확보의 경우 KorQuAD, 경제, 금융 도메인의 데이터에서 모두 성능 향상을 보였으며, 도메인 적응 실험에서도 새로운 도메인의 문맥만을 이용해 데이터를 생성했을 때 기존 도메인과 다른 도메인에서 모두 기계독해 성능 향상을 보였다."
-  tags: ["2019한글및한국어정보처리학술대회"]
+  tags: ["2019한글및한국어정보처리학술대회", "Search", "NLP"]
   id: 26
 
 - authors: "소찬호(고려대), 왕지현(NCSOFT), 이충희(NCSOFT), 이연수(NCSOFT), 강재우(고려대)"
@@ -220,7 +220,7 @@
   conf: "2019 한글및한국어정보처리 학술대회"
   year: 2019
   abstract: "본 논문은 대화 시스템인 챗봇의 성능 향상을 위한 생략 복원 기술의 정확률을 올리기 위한 유효 발화문 인식 모델을 제안한다. 생략 복원 기술은 챗봇 사용자의 현재 발화문의 생략된 정보를 이전 발화문으로부터 복원하는 기술이다. 유효 발화문 인식 모델은 현재 발화문의 생략된 정보를 보유한 이전 발화문을 인식하는 역할을 수행한다. 유효 발화문 인식 모델은 BERT 기반 이진 분류 모델이며, 사용된 BERT 모델은 한국어 문서를 기반으로 새로 학습된 한국어 사전 학습 BERT 모델이다. 사용자의 현재 발화문과 이전 발화문들의 토큰 임베딩을 한국어 BERT를 통해 얻고, CNN 모델을 이용하여 각 토큰의 지역적인 정보를 추출해서 발화문 쌍의 표현 정보를 구해 해당 이전 발화문에 생략된 개체값이 있는지를 판단한다. 제안한 모델의 효과를 검증하기 위해 유효 발화문 인식 모델에서 유효하다고 판단한 이전 발화문만을 생략 복원 모델에 적용한 결과, 생략 복원 모델의 정확률이 약 5% 정도 상승한 것을 확인하였다."
-  tags: ["2019한글및한국어정보처리학술대회"]
+  tags: ["2019한글및한국어정보처리학술대회", "Dialogue", "NLP"]
   id: 27
 
 - authors: "정재환(스탠포드대학교), 김동준(NCSOFT), 이우철(NCSOFT), 이연수(NCSOFT)"
@@ -228,7 +228,7 @@
   conf: "2019 한글및한국어정보처리 학술대회"
   year: 2019
   abstract: "본 논문은 어휘가 비슷한 문장들을 효과적으로 분류하는 BERT 기반 유사 문장 분류기의 학습 자료 구성 방법을 제안한다. 기존의 유사 문장 분류기는 문장의 의미와 상관 없이 각 문장에서 출현한 어휘의 유사도를 기준으로 분류하였다. 이는 학습 자료 내의 유사 문장 쌍들이 유사하지 않은 문장 쌍들보다 어휘 유사도가 높기 때문이다. 따라서, 본 논문은 어휘 유사도가 높은 유사 의미 문장 쌍들과 어휘 유사도가 높지 않은 의미 문장 쌍들을 학습 자료에 추가하여 BERT 유사 문장 분류기를 학습하여 전체 분류 성능을 크게 향상시켰다. 이는 문장의 의미를 결정짓는 단어들과 그렇지 않은 단어들을 유사 문장 분류기가 학습하였기 때문이다. 제안하는 학습 데이터 구축 방법을 기반으로 학습된 BERT 유사 문장 분류기들의 학습된 self-attention weight들을 비교 분석하여 BERT 내부에서 어떤 변화가 발생하였는지 확인하였다."
-  tags: ["2019한글및한국어정보처리학술대회"]
+  tags: ["2019한글및한국어정보처리학술대회", "Data", "NLP"]
   id: 28
 
 - authors: "김진태(KNU), 최기현(KNU), 김학수(KNU), 왕지현(NCSOFT)"
@@ -236,7 +236,7 @@
   conf: "2019 한글및한국어정보처리 학술대회"
   year: 2019
   abstract: "정답 후보군 탐지 시스템은 주어진 문단을 이용해 질의을 생성할 때 정답으로 사용이 가능한 정답 후보군들을 탐지하는 시스템이다. 정답 후보군 탐지 시스템은 질의 생성 시스템의 선행 연구로 굉장히 중요하다. 기존 연구는 주어진 문단에서 사용 가능한 정답 후보군 탐지를 위해 포인터 네트워크를 사용해 정답의 후보군을 탐지하며 단순한 명사를 탐지하는 모델과 구절을 탐지하는 모델을 각각 학습했다. 본 논문은 포인터 네트워크를 이용해 명사와 구절을 하나의 모델로 탐지하는 방법을 제안한다. 추가로 정확한 위치를 찾기 위해 자가 주의 집중 방법을 사용해 성능을 향상시킨 정답 후보군 탐지 시스템을 제안한다. 5,736개 데이터를 사용한 실험에서 제안 모델은 일반적인 포인터 네트워크보다 재현율과 F1 점수에서 우수한 성능을 보였고 단순한 명사와 구절 형태의 정답 후보군을 모두 탐지했다."
-  tags: ["2019한글및한국어정보처리학술대회"]
+  tags: ["2019한글및한국어정보처리학술대회", "Understanding", "NLP"]
   id: 29
 
 - authors: "장영진(KNU), 김학수(KNU), 왕지현(NCSOFT)"
@@ -244,7 +244,7 @@
   conf: "2019 한글및한국어정보처리 학술대회"
   year: 2019
   abstract: "검색 모델은 색인된 문서 내에서 입력과 유사한 문서를 검색하는 시스템이다. 최근 검색 모델을 기계독해 시스템에 적용하는 연구가 활발해지면서 검색 모델의 성능은 중요한 문제로 대두되고 있다. 이 문제를 해결하기 위해 재순위화 같은 검색 모델의 후처리 연구가 진행되고 있으며, 본 논문에서는 검색 모델의 후처리 모듈에 사용되는 모델을 제안한다. 제안 모델은 질의를 입력받아 질의 유형을 반환하는 문장 분류모델이며, 주의 집중 시퀀스-투-시퀀스 모델 구조에 트랜스포머를 적용하여 구현했다. 10개의 질의 유형분류에 대해 Micro F1 score 기준 86.39%의 성능을 보였다."
-  tags: ["2019한글및한국어정보처리학술대회"]
+  tags: ["2019한글및한국어정보처리학술대회", "Search", "NLP"]
   id: 30
 
 - authors: "Jintae Kim(KNU), Hyeon-Gu Lee(KNU), Harksoo Kim(KNU), Yeonsoo Lee(NCSOFT), Young-Gil Kim(ETRI)"
@@ -252,7 +252,7 @@
   conf: "Proceedings of 2IS&NLG 2018"
   year: 2018
   abstract: "Generative chatbot models based on sequence-to-sequence networks can generate natural conversation interactions if a huge dialogue corpus is used as training data. However, except for a few languages such as English and Chinese, it remains difficult to collect a large dialogue corpus. To address this problem, we propose a chatbot model using a mixture of words and syllables as encoding-decoding units. In addition, we propose a two-step training method, involving pre-training using a large non-dialogue corpus and re-training using a small dialogue corpus. In our experiments, the mixture units were shown to help reduce out-of-vocabulary (OOV) problems. Moreover, the two-step training method was effective in reducing grammatical and semantical errors in responses when the chatbot was trained using a small dialogue corpus (533,997 sentence pairs)."
-  tags: ["2IS&NLG2018"]
+  tags: ["2IS&NLG2018", "Dialogue", "NLP"]
   id: 31
 
 - authors: "김시형(KNU), 김진태(KNU), 김학수(KNU), 최맹식(NCSOFT)"
@@ -260,7 +260,7 @@
   conf: "2018 한국소프트웨어종합학술대회"
   year: 2018
   abstract: "최근 기계독해 분야는 SQuAD와 같은 챌린지에서 사람을 뛰어 넘는 성능을 보이고 있다. 그러나 이 성능은 문맥 검색 모델이 정확하게 문맥을 검색했을 때의 성능이다. 따라서 문맥을 정확하게 검색 할 수 있는 검색 모델이 필수적이고 중요하다. 본 논문에서는 문맥 검색 모델을 위해 적합성 피드백과 클러스터기반 언어 모델을 사용하여 문맥을 검색하고, 검색한 문맥을 합성곱 신경망을 사용하여 재순위화 하는 모델을 제안한다. 본 논문에서 제안한 검색 모델은 MRR, Precision@k에서 높은 성능을 보였다."
-  tags: ["2018한국소프트웨어종합학술대회"]
+  tags: ["2018한국소프트웨어종합학술대회", "Search", "NLP"]
   id: 32
 
 - authors: "이현구(KNU), 김진태(KNU), 최맹식(NCSOFT), 김학수(KNU)"
@@ -268,7 +268,7 @@
   conf: "2018 한글 및 한국어 정보처리 학술대회"
   year: 2018
   abstract: "챗봇은 사람과 기계가 자연어로 된 대화를 주고받는 시스템이다. 최근 대화형 인공지능 비서 시스템이 상용화되면서 일반적인 대화와 질의응답을 함께 처리해야할 필요성이 늘어나고 있다. 본 논문에서는 기계독해 기반 질의응답과 Transformer 기반 자연어 생성 모델을 함께 사용하여 하나의 모델에서 일반적인 대화와 질의응답을 함께 하는 기계독해 기반 질의응답 챗봇을 제안한다. 제안 모델은 기계독해 모델에 일반대화를 판단하는 옵션을 추가하여 기계독해를 하면서 자체적으로 문장을 분류하고, 기계독해 결과를 통해 자연어로 된 문장을 생성한다. 실험 결과 일반적인 대화 문장과 질의를 높은 성능으로 구별하면서 기계독해의 성능은 유지하였고 자연어 생성에서도 분류에 맞는 응답을 생성하였다."
-  tags: ["2018한글및한국어정보처리학술대회"]
+  tags: ["2018한글및한국어정보처리학술대회", "Dialogue", "NLP"]
   id: 33
 
 - authors: "김민(스탠포드대), 변증현(NCSOFT), 이충희(NCSOFT), 이연수(NCSOFT)"
@@ -276,7 +276,7 @@
   conf: "2018 한글 및 한국어 정보처리 학술대회"
   year: 2018
   abstract: "본 논문은 한국어 문장의 형태소, 음절, 자소를 동시에 각자 다른 합성곱층을 통과시켜 문장의 감성을 분류하는 Multi-channel CNN을 제안한다. 오타를 포함하는 구어체 문장들의 경우에 형태소 기반 CNN으로 추출 할 수 없는 특징들을 음절이나 자소에서 추출 할 수 있다. 한국어 감성분석에 형태소 기반 CNN이 많이 쓰이지만, 본 논문의 Multi-channel CNN 모델은 형태소, 음절, 자소를 동시에 고려하여 더 정확하게 문장의 감성을 분류한다. 본 논문이 제안하는 모델이 형태소 기반 CNN보다 야구 댓글 데이터에서는 약 4.8%, 영화 리뷰 데이터에서는 약 1.3% 더 정확하게 문장의 감성을 분류하였다."
-  tags: ["2018한글및한국어정보처리학술대회"]
+  tags: ["2018한글및한국어정보처리학술대회", "Understanding", "NLP"]
   id: 34
 
 - authors: "이현구(KNU), 김학수(KNU), 이연수(NCSOFT)"
@@ -284,7 +284,7 @@
   conf: "2018 한국컴퓨터종합학술대회"
   year: 2018
   abstract: "기계독해는 주어진 문맥을 기계가 이해하고 관련된 질의에 대해 답을 하는 질의응답 모델이다. 기계독해 모델은 최근 많은 연구를 통해 인코딩, 상호 집중, 응답 추출 3단계로 정착되었다. 기존의 연구는 상호집중 단계를 연구하여 문맥과 질의간의 상호 관계를 찾는데 집중됐지만 인코더 및 응답 추출을 향상 시키는 연구는 부족하였다. 본 논문은 인코더 및 응답 추출의 성능을 향상시키기 위해 품사, 의존 구문 태그, 개체명 등의 자질을 사용하며, 이러한 자질을 효과적으로 반영하기 위한 자질 게이트 기반 자질 선별 방법을 제안한다. SQuAD(Stanford Question Answering Dataset)를 사용한 실험에서 제안 모델은 이전의 대표적인 모델보다 높은 성능(Exact Match: 81.5%, F1-score: 87.6%)을 보였다."
-  tags: ["2018한국컴퓨터종합학술대회"]
+  tags: ["2018한국컴퓨터종합학술대회", "Understanding", "NLP"]
   id: 35
 
 - authors: "김진태(KNU), 김학수(KNU), 최맹식(NCSOFT), 이연수(NCSOFT), 권오욱(ETRI), 김영길(ETRI)"
@@ -292,5 +292,445 @@
   conf: "2018 한국컴퓨터종합학술대회"
   year: 2018
   abstract: "채팅 시스템은 사람과 컴퓨터가 자연어를 사용하여 대화를 하는 시스템이다. 생성기반 채팅 모델은 발화-응답 쌍의 데이터를 학습하여, 사용자의 발화에 적합한 응답을 생성하는 모델이다. 단어들을 생성하기 때문에 다양한 응답을 할 수 있는 장점이 있으나, 잘못된 단어를 생성하여 문법에 맞지 않는 문장을 생성하는 단점이 존재한다. 본 논문은 생성 모델에서의 단점을 해결하고자 대량의 일반 문장을 사전 학습하여 문법에 맞는 문장 생성능력을 향상시키고, 채팅 데이터를 통해 대화 능력을 학습하는 채팅 시스템을 제안한다. 134,038 채팅 문장 쌍을 사용한 실험에서 제안 모델은 사전 학습을 사용하지 않는 모델보다 높은 성능(ROUGE-L: 0.4920, ROUGE-1: 0.5043, ROUGE-2: 0.3193, BLEU: 0.5267)을 보였다."
-  tags: ["2018한국컴퓨터종합학술대회"]
+  tags: ["2018한국컴퓨터종합학술대회", "Dialogue", "NLP"]
   id: 36
+
+- authors: "이용혁(NCSOFT), 조남현(NCSOFT)"
+  title: "PhonMatchNet: Phoneme-Guided Zero-Shot Keyword Spotting for User-Defined Keywords"
+  conf: "INTERSPEECH 2023"
+  year: 2023
+  abstract: "This study presents a novel zero-shot user-defined keyword spotting model that utilizes the audio-phoneme relationship of the keyword to improve performance. Unlike the previous approach that estimates at utterance level, we use both utterance and phoneme level information. Our proposed method comprises a two-stream speech encoder architecture, selfattention-based pattern extractor, and phoneme-level detection loss for high performance in various pronunciation environments. Based on experimental results, our proposed model outperforms the baseline model and achieves competitive performance compared with full-shot keyword spotting models. Our proposed model significantly improves the EER and AUC across all datasets, including familiar words, proper nouns, and indistinguishable pronunciations, with an average relative improvement of 67% and 80%, respectively"
+  tags: ["INTERSPEECH2023","Speech", "Keyword spotting", "Zero-shot", "AI"]
+  id: 37
+
+- authors: "김글빛(NCSOFT), 조남현(NCSOFT)"
+  title: "Focus-attention-enhanced Crossmodal Transformer with Metric Learning for Multimodal Speech Emotion Recognition"
+  conf: "INTERSPEECH 2023"
+  year: 2023
+  abstract: "Recognizing emotions in speech is essential for improving human-computer interactions, which require understanding and responding to the users’ emotional states. Integrating multiple modalities, such as speech and text, enhances the performance of speech emotion recognition systems by providing a varied source of emotional information. In this context, we propose a model that enhances cross-modal transformer fusion by applying focus attention mechanisms to align and combine the salient features of two different modalities, namely, speech and text. The analysis of the disentanglement of the emotional representation various multiple embedding spaces using deep metric learning confirmed that our method shows enhanced emotion recognition performance. Furthermore, the proposed approach was evaluated on the IEMOCAP dataset. Experimental results demonstrated that our model achieves the best performance among other relevant multimodal speech emotion recognition systems"
+  tags: ["INTERSPEECH2023", "Speech", "Emotion recognition", "Multi-modal", "AI"]
+  id: 38
+
+- authors: "조남현(NCSOFT), 김선민(NCSOFT), 강요셉(NCSOFT), 김희만(NCSOFT)"
+  title: "Fast Enrollable Streaming Keyword Spotting System: Training and Inference using a Web Browser"
+  conf: "INTERSPEECH 2023"
+  year: 2023
+  abstract: "When a keyword spotting system is deployed on heavily personalized platforms such as digital humans, a few issues occur such as 1) a lack of training data when registering userdefined keywords, 2) a desire to reduce computation and minimize latency, and 3) the inability to immediately train and test the keyword-spotting model. We address the issues through 1) a keyword-spotting system based on a speech embedding model, 2) streamable system with duplicate computations removed, and 3) real-time inference in a web browser using WebAssembly."
+  tags: ["INTERSPEECH2023", "Speech", "Keyword spotting", "AI"]
+  id: 39
+
+- authors: "임종화(NCSOFT), 김민재(NCSOFT)"
+  title: "Style-Guided Inference of Transformer for High-resolution Image Synthesis"
+  conf: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) (2023)"
+  year: 2023
+  abstract: "Transformer is eminently suitable for auto-regressive image synthesis which predicts discrete value from the past values recursively to make up full image.Especially, combined with vector quantised latent representation, the state-of-the-art auto-regressive transformer displays realistic high-resolution images. However, sampling the latent code from discrete probability distribution makes the output unpredictable. Therefore, it requires to generate lots of diverse samples to acquire desired outputs.To alleviate the process of generating lots of samples repetitively, in this article, we propose to take a desired output, a style image, as an additional condition without re-training the transformer. To this end, our method transfers the style to a probability constraint to re-balance the prior, thereby specifying the target distribution instead of the original prior. Thus, generated samples from the re-balanced prior have similar styles to reference style.In practice, we can choose either an image or a category of images as an additional condition. In our qualitative assessment, we show that styles of majority of outputs are similar to the input style."
+  tags: ["WACV2023", "Vision", "AI"]
+  id: 40
+  
+- authors: "전성호, 장주용, 박성범(NCSOFT)"
+  title: "Learnable Human Mesh Triangulation for 3D Human Pose and Shape Estimation"
+  conf: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) (2023)"
+  year: 2023
+  abstract: "Compared to joint position, the accuracy of joint rotation and shape estimation has received relatively little attention in the skinned multi-person linear model (SMPL)-based human mesh reconstruction from multi-view images. The work in this field is broadly classified into two categories. The first approach performs joint estimation and then produces SMPL parameters by fitting SMPL to resultant joints. The second approach regresses SMPL parameters directly from the input images through a convolutional neural network (CNN)-based model. However, these approaches suffer from the lack of information for resolving the ambiguity of joint rotation and shape reconstruction and the difficulty of network learning. To solve the aforementioned problems, we propose a two-stage method. The proposed method first estimates the coordinates of mesh vertices through a CNN-based model from input images, and acquires SMPL parameters by fitting the SMPL model to the estimated vertices. Estimated mesh vertices provide sufficient information for determining joint rotation and shape, and are easier to learn than SMPL parameters. According to experiments using Human3.6M and MPI-INF-3DHP datasets, the proposed method significantly outperforms the previous works in terms of joint rotation and shape estimation, and achieves competitive performance in terms of joint location estimation."
+  tags: ["WACV2023", "Vision", "AI"]
+  id: 41
+
+- authors: "강승윤, 이민현, 김민재(NCSOFT), 심현정"
+  title: "HybridMatch: Semi-supervised Facial Landmark Detection via Hybrid Heatmap Representations"
+  conf: "IEEE Access 2023"
+  year: 2023
+  abstract: "Facial landmark detection is an essential task in face-processing techniques. Traditional methods, however, require expensive pixel-level labels. Semi-supervised facial landmark detection has been explored as an alternative, but previous approaches only focus on training-oriented issues (e.g., noisy pseudo-labels in semi-supervised learning), neglecting task-oriented issues (i.e., the quantization error in landmark detection). We argue that semi-supervised landmark detectors should resolve the two technical issues simultaneously. Through a simple experiment, we found that task- and training-oriented solutions may negatively influence each other, thus eliminating their negative interactions is important. To this end, we devise a new heatmap regression framework via hybrid representation, namely HybridMatch. We utilize both 1-D and 2-D heatmap representations. Here, the 1-D and 2-D heatmaps help alleviate the taskoriented and training-oriented issues, respectively. To exploit the advantages of our hybrid representation, we introduce curriculum learning; relying more on the 2-D heatmap at the early training stage and gradually increasing the effects of the 1-D heatmap. By resolving the two issues simultaneously, we can capture more precise landmark points than existing methods with only a few annotated data. Extensive experiments show that HybridMatch achieves state-of-the-art performance on three benchmark datasets, especially showing 26.3% NME improvement over the existing method in the 300-W full set at 5% data ratio. Surprisingly, our method records a comparable performance, 5.04 (challenging set in the 300-W) to the fully-supervised facial landmark detector 5.03. The remarkable performance of HybridMatch shows its potential as a practical alternative to the fully-supervised model."
+  tags: ["IEEE Access 2023", "Vision", "AI"]
+  id: 42
+
+- authors: "배한빈(NCSOFT), 주영선(NCSOFT)"
+  title: "Enhancement of Pitch Controllability using Timbre-Preserving Pitch Augmentation in FastPitch"
+  conf: "INTERSPEECH 2022"
+  year: 2022
+  abstract: "The recently developed pitch-controllable text-to-speech (TTS) model, i.e. FastPitch, was conditioned for the pitch contours. However, the quality of the synthesized speech degraded considerably for pitch values that deviated significantly from the average pitch; i.e. the ability to control pitch was limited. To address this issue, we propose two algorithms to improve the robustness of FastPitch. First, we propose a novel timbre-preserving pitch-shifting algorithm for natural pitch augmentation. Pitch-shifted speech samples sound more natural when using the proposed algorithm because the speaker's vocal timbre is maintained. Moreover, we propose a training algorithm that defines FastPitch using pitch-augmented speech datasets with different pitch ranges for the same sentence. The experimental results demonstrate that the proposed algorithms improve the pitch controllability of FastPitch."
+  tags: ["INTERSPEECH2022", "Speech", "TTS", "AI"]
+  id: 43
+
+- authors: "배재성(NCSOFT), 양진혁(NCSOFT), 박태준(NCSOFT), 주영선(NCSOFT)"
+  title: "Hierarchical and Multi-Scale Variational Autoencoder for Diverse and Natural Non-Autoregressive Text-to-Speech"
+  conf: "INTERSPEECH 2022"
+  year: 2022
+  abstract: "This paper proposes a hierarchical and multi-scale variational autoencoder-based non-autoregressive text-to-speech model (HiMuV-TTS) to generate natural speech with diverse speaking styles. Recent advances in non-autoregressive TTS (NAR-TTS) models have significantly improved the inference speed and robustness of synthesized speech. However, the diversity of speaking styles and naturalness are needed to be improved. To solve this problem, we propose the HiMuV-TTS model that first determines the global-scale prosody and then determines the local-scale prosody via conditioning on the global-scale prosody and the learned text representation. In addition, we improve the quality of speech by adopting the adversarial training technique. Experimental results verify that the proposed HiMuV-TTS model can generate more diverse and natural speech as compared to TTS models with single-scale variational autoencoders, and can represent different prosody information in each scale."
+  tags: ["INTERSPEECH2022", "Speech", "TTS", "AI"]
+  id: 44
+
+- authors: "김태우(NCSOFT), 강민수(NCSOFT), 이경훈(NCSOFT)"
+  title: "Adversarial Multi-Task Learning for Disentangling Timbre and Pitch in Singing Voice Synthesis"
+  conf: "INTERSPEECH 2022"
+  year: 2022
+  abstract: "Recently, deep learning-based generative models have been introduced to generate singing voices. One approach is to predict the parametric vocoder features consisting of explicit speech parameters. This approach has the advantage that the meaning of each feature is explicitly distinguished. Another approach is to predict mel-spectrograms for a neural vocoder. However, parametric vocoders have limitations of voice quality and the mel-spectrogram features are difficult to model because the timbre and pitch information are entangled. In this study, we propose a singing voice synthesis model with multi-task learning to use both approaches -- acoustic features for a parametric vocoder and mel-spectrograms for a neural vocoder. By using the parametric vocoder features as auxiliary features, the proposed model can efficiently disentangle and control the timbre and pitch components of the mel-spectrogram. Moreover, a generative adversarial network framework is applied to improve the quality of singing voices in a multi-singer model. Experimental results demonstrate that our proposed model can generate more natural singing voices than the single-task models, while performing better than the conventional parametric vocoder-based model."
+  tags: ["INTERSPEECH2022", "Speech", "Singing voice synthesis", "AI"]
+  id: 45
+
+- authors: "Seyoung Lee, Jiye Lee, Jehee Lee(NCSOFT)"
+  title: "Learning Virtual Chimeras by Dynamic Motion Reassembly"
+  conf: "SIGGRAPH Asia 2022"
+  year: 2022
+  abstract: "The Chimera is a mythological hybrid creature composed of different animal parts. The chimera’s movements are highly dependent on the spatial and temporal alignments of its composing parts. In this paper, we present a novel algorithm that creates and animates chimeras by dynamically reassembling source characters and their movements. Our algorithm exploits a two-network architecture: part assembler and dynamic controller. The part assembler is a supervised learning layer that searches for the spatial alignment among body parts, assuming that the temporal alignment is provided. The dynamic controller is a reinforcement learning layer that learns robust control policy for a wide variety of potential temporal alignments. These two layers are tightly intertwined and learned simultaneously. The chimera animation generated by our algorithm is energy efficient and expressive in terms of describing weight shifting, balancing, and full-body coordination. We demonstrate the versatility of our algorithm by generating the motor skills of a large variety of chimeras from limited source characters."
+  tags: ["SIGGRAPH Asia 2022", "Graphics", "AI"]
+  id: 46
+
+- authors: "정하림, 오명석, 이성환, 양철종(NCSOFT)"
+  title: "Neural Architecture Adaptation for Object Detection by Searching Channel Dimensions and Mapping Pre-trained Parameters"
+  conf: "International Conference on Pattern Recognition (ICPR) (2022)"
+  year: 2022
+  abstract: "Most object detection frameworks use backbone architectures originally designed for image classification, conventionally with pre-trained parameters on ImageNet. However, image classification and object detection are essentially different tasks and there is no guarantee that the optimal backbone for classification is also optimal for object detection. Recent neural architecture search (NAS) research has demonstrated that automatically designing a backbone specifically for object detection helps improve the overall accuracy. In this paper, we introduce a neural architecture adaptation method that can optimize the given backbone for detection purposes, while still allowing the use of pre-trained parameters. We propose to adapt both the micro- and macro-architecture by searching for specific operations and the number of layers, in addition to the output channel dimensions of each block. It is important to find the optimal channel depth, as it greatly affects the feature representation capability and computation cost. We conduct experiments with our searched backbone for object detection and demonstrate that our backbone outperforms both manually designed and searched state-of-the-art backbones on the COCO dataset."
+  tags: ["ICPR2022", "Vision", "AI"]
+  id: 47
+
+- authors: "이건희(NCSOFT), 임종화(NCSOFT), 김찬란(NCSOFT), 김민재(NCSOFT)"
+  title: "StyLandGAN: A StyleGAN based Landscape Image Synthesis using Depth-map"
+  conf: "Computer Vision and Pattern Recognition Conference Workshop (CVPR) (2022)" 
+  year: 2022
+  abstract: "Despite recent success in conditional image synthesis, prevalent input conditions such as semantics and edges are not clear enough to express ‘Linear (Ridges)’ and ‘Planar (Scale)’ representations. To address this problem, we propose a novel framework StyLandGAN, which synthesizes desired landscape images using a depth map which has higher expressive power. Our StyleLandGAN is extended from the unconditional generation model to accept input conditions. We also propose a ’2-phase inference’ pipeline which generates diverse depth maps and shifts local parts so that it can easily reflect user’s intend. As a comparison, we modified the existing semantic image synthesis models to accept a depth map as well. Experimental results show that our method is superior to existing methods in quality, diversity, and depth-accuracy."
+  tags: ["CVPR Workshop 2022", "Vision", "AI"]
+  id: 48
+
+- authors: "공다영, 이준석, 김만진, 하성종(NCSOFT), 조민수"
+  title: "Future Transformer for Long-term Action Anticipation"
+  conf: "Computer Vision and Pattern Recognition Conference (CVPR) (2022)"
+  year: 2022
+  abstract: "The task of predicting future actions from a video is crucial for a real-world agent interacting with others. When anticipating actions in the distant future, we humans typically consider long-term relations over the whole sequence of actions, i.e., not only observed actions in the past but also potential actions in the future. In a similar spirit, we propose an end-to-end attention model for action anticipation, dubbed Future Transformer (FUTR), that leverages global attention over all input frames and output tokens to predict a minutes-long sequence of future actions. Unlike the previous autoregressive models, the proposed method learns to predict the whole sequence of future actions in parallel decoding, enabling more accurate and fast inference for longterm anticipation. We evaluate our method on two standard benchmarks for long-term action anticipation, Breakfast and 50 Salads, achieving state-of-the-art results."
+  tags: ["CVPR2022", "Vision", "AI"]
+  id: 49
+
+- authors: "Inseok Oh, Seungeun Rho, Sangbin Moon, Seongho Son, Hyoil Lee, Jinyun Chung "
+  title: "Creating Pro-Level AI for a Real-Time Fighting Game Using Deep Reinforcement Learning"
+  conf: "IEEE Transactions on Games, Volume: 14, Issue: 2, June 2022, pp. 212 - 220 "
+  year: 2022
+  abstract: "Reinforcement learning (RL) combined with deep neural networks has performed remarkably well in many genres of games recently. It has surpassed human-level performance in fixed game environments and turn-based two-player board games. However, to the best of our knowledge, current research has yet to produce a result that has surpassed human-level performance in modern complex fighting games. This is due to the inherent difficulties with real-time fighting games, including: vast action spaces, action dependencies, and imperfect information. We overcame these challenges and made 1v1 battle AI agents for the commercial game Blade and Soul . The trained agents competed against five professional gamers and achieved a winning rate of 62%. This article presents a practical RL method that includes a novel self-play curriculum and data skipping techniques. Through the curriculum, three different styles of agents were created by reward shaping and were trained against each other. Additionally, this article suggests data-skipping techniques that could increase data efficiency and facilitate explorations in vast spaces. Since our method can be generally applied to all two-player competitive games with vast action spaces, we anticipate its application to game development including level design and automated balancing."
+  tags: ["IEEE Transactions on Games 2022", "Reinforcement Learning", "Deep learning", "fighting game", "self-play curriculum learning", "AI"]
+  id: 50
+
+- authors: "Jinyun Chung, Seungeun Rho"
+  title: "Reinforcement Learning in Action: Creating Arena Battle AI for 'Blade & Soul'"
+  conf: "Game Developers Conference (GDC) (2022) (AI Summit)"
+  year: 2022
+  abstract: "The NCSOFT team applied reinforcement learning to create an AI for the arena 1v1 battle in 'Blade & Soul', a global MMORPG. The AI agents participated in the 2018 'Blade & Soul' Tournament World Championship as blind matches and played against three top professional players from across the globe. The AI had 3 wins and 4 loses - an impressive showing against professional players. In this session, the NCSOFT team will will share their experiences on how they built pro-level AI agents."
+  tags: ["GDC2022","AI Summit","Reinforcement Learning", "AI"]
+  id: 51
+
+- authors: "Inseok Oh, Jinhyung Ahn"
+  title: "Multi-Agent Reinforcement Learning Invades MMORPG: 'Lineage Clone Wars'"
+  conf: "Game Developers Conference (GDC) (2022) (AI Summit)"
+  year: 2022
+  abstract: "Lineage is a massively multiplayer online role-playing game played by millions of players around the world. For the first time ever, we developed two types of multi-agent AI battle content in the Lineage universe using reinforcement learning. Clone Wars and Rookies vs. Veterans offer a chance for users to experience an exhilarating battle against AI opponents. In the future, reinforcement learning will be applied in new ways to create more MMORPG content where users can engage in multiplayer battles with AIs."
+  tags: ["GDC2022","AI Summit","Reinforcement Learning", "Multi-agent Reinforcement Learning", "AI"]
+  id: 52
+
+- authors: "양진혁(NCSOFT), 배재성(NCSOFT), 박태준(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT)"
+  title: "GANSpeech: Adversarial Training for High-Fidelity Multi-Speaker Speech Synthesis"
+  conf: "INTERSPEECH 2021"
+  year: 2021
+  abstract: "Recent advances in neural multi-speaker text-to-speech (TTS) models have enabled the generation of reasonably good speech quality with a single model and made it possible to synthesize the speech of a speaker with limited training data. Fine-tuning to the target speaker data with the multi-speaker model can achieve better quality, however, there still exists a gap compared to the real speech sample and the model depends on the speaker. In this work, we propose GANSpeech, which is a high-fidelity multi-speaker TTS model that adopts the adversarial training method to a non-autoregressive multi-speaker TTS model. In addition, we propose simple but efficient automatic scaling methods for feature matching loss used in adversarial training. In the subjective listening tests, GANSpeech significantly outperformed the baseline multi-speaker FastSpeech and FastSpeech2 models, and showed a better MOS score than the speaker-specific fine-tuned FastSpeech2."
+  tags: ["INTERSPEECH2021", "Speech", "TTS", "AI"]
+  id: 53
+
+- authors: "박태준(NCSOFT), 배재성(NCSOFT), 배한빈(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT)"
+  title: "FastPitchFormant: Source-filter based Decomposed Modeling for Speech Synthesis"
+  conf: "INTERSPEECH 2021"
+  year: 2021
+  abstract: "Methods for modeling and controlling prosody with acoustic features have been proposed for neural text-to-speech (TTS) models. Prosodic speech can be generated by conditioning acoustic features. However, synthesized speech with a large pitch-shift scale suffers from audio quality degradation, and speaker characteristics deformation. To address this problem, we propose a feed-forward Transformer based TTS model that is designed based on the source-filter theory. This model, called FastPitchFormant, has a unique structure that handles text and acoustic features in parallel. With modeling each feature separately, the tendency that the model learns the relationship between two features can be mitigated."
+  tags: ["INTERSPEECH2021", "Speech", "TTS", "AI"]
+  id: 54
+
+- authors: "이경훈(NCSOFT), 김태우(NCSOFT), 배한빈(NCSOFT), 이민지(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT)"
+  title: "N-Singer: A Non-Autoregressive Korean Singing Voice Synthesis System for Pronunciation Enhancement"
+  conf: "INTERSPEECH 2021"
+  year: 2021
+  abstract: "Recently, end-to-end Korean singing voice systems have been designed to generate realistic singing voices. However, these systems still suffer from a lack of robustness in terms of pronunciation accuracy. In this paper, we propose N-Singer, a non-autoregressive Korean singing voice system, to synthesize accurate and pronounced Korean singing voices in parallel. N-Singer consists of a Transformer-based mel-generator, a convolutional network-based postnet, and voicing-aware discriminators. It can contribute in the following ways. First, for accurate pronunciation, N-Singer separately models linguistic and pitch information without other acoustic features. Second, to achieve improved mel-spectrograms, N-Singer uses a combination of Transformer-based modules and convolutional network-based modules. Third, in adversarial training, voicing-aware conditional discriminators are used to capture the harmonic features of voiced segments and noise components of unvoiced segments. The experimental results prove that N-Singer can synthesize a natural singing voice in parallel with a more accurate pronunciation than the baseline model."
+  tags: ["INTERSPEECH2021", "Speech", "Music", "Singing voice synthesis", "AI"]
+  id: 55
+
+- authors: "배재성(NCSOFT), 박태준(NCSOFT), 주영선(NCSOFT), 조훈영(NCSOFT)"
+  title: "Hierarchical Context-Aware Transformers for Non-Autoregressive Text to Speech"
+  conf: "INTERSPEECH 2021"
+  year: 2021
+  abstract: "In this paper, we propose methods for improving the modeling performance of a Transformer-based non-autoregressive text-to-speech (TNA-TTS) model. Although the text encoder and audio decoder handle different types and lengths of data (i.e., text and audio), the TNA-TTS models are not designed considering these variations. Therefore, to improve the modeling performance of the TNA-TTS model we propose a hierarchical Transformer structure-based text encoder and audio decoder that are designed to accommodate the characteristics of each module. For the text encoder, we constrain each self-attention layer so the encoder focuses on a text sequence from the local to the global scope. Conversely, the audio decoder constrains its self-attention layers to focus in the reverse direction, i.e., from global to local scope. Additionally, we further improve the pitch modeling accuracy of the audio decoder by providing sentence and word-level pitch as conditions. Various objective and subjective evaluations verified that the proposed method outperformed the baseline TNA-TTS."
+  tags: ["INTERSPEECH2021", "Speech", "TTS", "AI"]
+  id: 56
+
+- authors: "배한빈(NCSOFT), 배재성(NCSOFT), 주영선(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT)"
+  title: "A Neural Text-to-Speech Model Utilizing Broadcast Data Mixed with Background Music"
+  conf: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) (2021)"
+  year: 2021
+  abstract: "Recently, it has become easier to obtain speech data from various media such as the internet or YouTube, but directly utilizing them to train a neural text-to-speech (TTS) model is difficult. The proportion of clean speech is insufficient and the remainder includes background music. Even with the global style token (GST). Therefore, we propose the following method to successfully train an end-to-end TTS model with limited broadcast data. First, the background music is removed from the speech by introducing a music filter. Second, the GST-TTS model with an auxiliary quality classifier is trained with the filtered speech and a small amount of clean speech. In particular, the quality classifier makes the embedding vector of the GST layer focus on representing the speech quality (filtered or clean) of the input speech. The experimental results verified that the proposed method synthesized much more high-quality speech than conventional methods."
+  tags: ["ICASSP2021", "Speech", "TTS", "AI"]
+  id: 57
+
+- authors: "Seong Uk Kim, Hanyoung Jang(NCSOFT), Hyeonseung Im, Jongmin Kim"
+  title: "Human Motion Reconstruction Using Deep Transformer Networks"
+  conf: "Pattern Recognition Letters (2021)"
+  year: 2021
+  abstract: "Establishing a human motion reconstruction system from very few constraints imposed on the body has been an interesting and important research topic because it significantly reduces the degrees of freedom to be managed. However, it is a well-known mathematically ill-posed problem as the dimension of constraints is much lower than that of the human pose to be determined. Therefore, it is challenging to directly reconstruct the whole body joint information from very few constraints due to many possible solutions. To address this issue, we present a novel deep learning framework with an attention mechanism using large-scale motion capture (mocap) data for mapping very few user-defined constraints into the human motion as realistically as possible. Our system is built upon the attention networks for looking back further to achieve better results. Experimental results show that our network model is capable of producing more accurate results compared with previous approaches. We also conducted several experiments to test all possible combinations of the features extracted from the mocap data, and found the best feature combination to generate high-quality poses."
+  tags: ["Pattern Recognition Letters 2021", "Graphics", "AI"]
+  id: 58
+
+- authors: "Kyungho Lee(NCSOFT), Sehee Min, Sunmin Lee, Jehee Lee"
+  title: "Learning Time-Critical Responses for Interactive Character Control"
+  conf: "SIGGRAPH (2021) (Technical Paper)"
+  year: 2021
+  abstract: "Creating agile and responsive characters from a collection of unorganized human motion has been an important problem of constructing interactive virtual environments. Recently, learning-based approaches have successfully been exploited to learn deep network policies for the control of interactive characters. The agility and responsiveness of deep network policies are influenced by many factors, such as the composition of training datasets, the architecture of network models, and learning algorithms that involve many threshold values, weights, and hyper-parameters. In this paper, we present a novel teacher-student framework to learn time-critically responsive policies, which guarantee the time-to-completion between user inputs and their associated responses regardless of the size and composition of the motion databases. We demonstrate the effectiveness of our approach with interactive characters that can respond to the user's control quickly while performing agile, highly dynamic movements."
+  tags: ["SIGGRAPH2021", "Graphics", "AI"]
+  id: 59
+
+- authors: "Youngwoo Cho, Minwook Chang(NCSOFT), Sanghyeon Lee, Hyoungwoo Lee, Gerard Jounghyun Kim, Jaegul Choo"
+  title: "Efficient Adversarial Audio Synthesis via Progressive Upsampling"
+  conf: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) (2021)"
+  year: 2021
+  abstract: "This paper proposes a novel generative model called PUGAN, which progressively synthesizes high-quality audio in a raw waveform. Progressive upsampling GAN (PUGAN) leverages the progressive generation of higher-resolution output by stacking multiple encoder-decoder architectures. Compared to an existing state-of-the-art model called WaveGAN, which uses a single decoder architecture, our model generates audio signals and converts them to a higher resolution in a progressive manner, while using a significantly smaller number of parameters, e.g., 3.17x smaller for 16 kHz output, than WaveGAN. Our experiments show that the audio signals can be generated in real time with a comparable quality to that of WaveGAN in terms of the inception scores and human perception."
+  tags: ["ICASSP2021", "Graphics", "AI"]
+  id: 60
+
+- authors: "이재명(NCSOFT), 이주성(NCSOFT), 이영현(NCSOFT), 이준수(NCSOFT)"
+  title: "저품질 이미지에 강인한 문자 검출 방법"
+  conf: "대한전자공학회 2021년도 추계학술대회"
+  year: 2021
+  abstract: "Lack of training data is one of the biggest challenges in developing deep learning-based textdetectors, and it becomes more difficult in case of handling models for low-quality images. We propose an efficient text localization method that can overcome the challenge by using a combination of image-to-image translation and semi-supervisedlearning. We show the proposed method improvestext detection accuracy on both clean and low-quality images."
+  tags: ["대한전자공학회2021년도추계학술대회", "Vision", "AI"]
+  id: 61
+
+- authors: "남진우, 안대철, 강동엽, 하성종(NCSOFT), 최종현"
+  title: "Unsupervised Natural Language Video Localization"
+  conf: "International Conference on Computer Vision (ICCV) (2021)"
+  year: 2021
+  abstract: "Understanding videos to localize moments with natural language often requires large expensive annotated video regions paired with language queries. To eliminate the annotation costs, we make a first attempt to train a natural language video localization model in zero-shot manner. Inspired by unsupervised image captioning setup, we merely require random text corpora, unlabeled video collections, and an off-the-shelf object detector to train a model. With the unpaired data, we propose to generate pseudosupervision of candidate temporal regions and corresponding query sentences, and develop a simple NLVL model to train with the pseudo-supervision. Our empirical validations show that the proposed pseudo-supervised method outperforms several baseline approaches and a number of methods using stronger supervision on Charades-STA and ActivityNet-Captions."
+  tags: ["ICCV2021", "Vision", "AI"]
+  id: 62
+
+- authors: "김나영, 하성종(NCSOFT), 강제원"
+  title: "VQAC : Video Question and Answering Using Compressed-Domain Video Features"
+  conf: "International Conference on Computer Vision (ICCV) (2021)"
+  year: 2021
+  abstract: "Video Question Answering (Video QA) attempts to answer a question through semantic reasoning between visual and linguistic information. Recently, handling large amounts of multi-modal video and language information of a video is considered important in the industry. However, the current video QA models use deep features, suffered from significant computational complexity and insufficient representation capability. Existing features are extracted using pre-trained networks after all the frames are decoded, which is not always suitable for video QA tasks. In this paper, we develop a novel deep neural network to provide video QA features obtained from coded video bitstream to reduce the complexity. The proposed network includes several dedicated deep modules to both the video QA and the video compression system, which is the first attempt at the video QA task. The proposed network is predominantly model-agnostic. It is integrated into the state-of-theart networks for improved performance without any computationally expensive motion-related deep models. The experimental results demonstrate that the proposed network outperforms the previous studies at lower complexity."
+  tags: ["ICCV2021", "Vision", "AI"]
+  id: 63
+
+- authors: "홍성수, 정채연, 이정수, 박경민, 이준수, 김민재(NCSOFT), 송무경 (NCSOFT), 김연우(NCSOFT), 주재걸"
+  title: "Understanding Human-side Impact of Sampling Image Batches in Subjective Attribute Labeling"
+  conf: "The ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW) (2021)"
+  year: 2021
+  abstract: "Capturing human annotators’ subjective responses in image annotation has become crucial as vision-based classifiers expand the range of application areas. While there has been significant progress in image annotation interface design in general, relatively little research has been conducted to understand how to elicit reliable and cost-efficient human annotation when the nature of the task includes a certain level of subjectivity. To bridge this gap, we aim to understand how different sampling methods in image batch labeling, a design that allows human annotators to label a batch of images simultaneously, can impact human annotation performances. In particular, we developed three different strategies in forming image batches: (1) uncertainty-based labeling (UL) that prioritizes images that a classifier predicts with the highest uncertainty, (2) certainty-based labeling(CL), a reverse strategy of UL, and (3) random, a baseline approach that randomly selects images. Although UL and CL solely select images to be labeled from a classifier’s point of view, we hypothesized that human-side perception and labeling performance may also vary depending on the different sampling strategies. In our study, we observed that participants were able to recognize a different level of perceived cognitive load across three conditions (CL the easiest while UL the most difficult). We also observed a trade-off between annotation task effectiveness (CL and UL more reliable than random) and task efficiency (UL the most efficient while CL the least efficient). Based on the results, we discuss the implications of design and possible future research directions of image batch labeling."
+  tags: ["CSCW2021", "Vision", "AI"]
+  id: 64
+
+- authors: "이주성(NCSOFT), 이재명(NCSOFT), 양철종(NCSOFT), 이영현(NCSOFT), 이준수(NCSOFT)"
+  title: "Rotated Box Is Back: An Accurate Box Proposal Network for Scene Text Detection"
+  conf: "International Conference on Document Analysis and Recognition (ICDAR) (2021)"
+  year: 2021
+  abstract: "Scene text detection is a challenging task because it must be able to handle text in various fonts and from various perspective views. This makes it difficult to use rectangular bounding boxes to detect text locations accurately. To detect multi-oriented text, rotated bounding box-based methods have been explored as an alternative. However, they are not as accurate for scene text detection as rectangular bounding box-based methods. In this paper, we propose a novel region-proposal network to suggest rotated bounding boxes and an iterative region refinement network for final scene text detection. The proposed regionproposal network predicts rotated box candidates from pixels and anchors, which increases recall by creating more candidates around the text. The proposed refinement network improves the accuracy of scene text detection by correcting the differences in the locations between the ground truth and the prediction. In addition, we reduce the backpropagation time by using a new pooling method called rotated box crop and resize pooling. The proposed method achieves state-of-the-art performance on ICDAR 2017 and competitive results on ICDAR 2015 and ICDAR 2013. Furthermore, our approach achieves a significant increase in performance over previous methods based on rotated bounding boxes."
+  tags: ["ICDAR2021", "Vision", "AI"]
+  id: 65
+
+- authors: "추성권(NCSOFT), 하성종(NCSOFT), 이준수(NCSOFT)"
+  title: "SEMANTIC-PRESERVING METRIC LEARNING FOR VIDEO-TEXT RETRIEVAL"
+  conf: "IEEE International Conference on Image Processing (ICIP) (2021)"
+  year: 2021
+  abstract: "Video-text retrieval requires finding an optimal space for comparing the similarity of two different modalities. Most approaches adopt ranking loss as a primary training objective to find the space. The loss is only interested in bringing the samples annotated as pairs closer to each other without considering the semantic relevance of different samples. This rather causes even semantically similar pairs not to get close. To deal with the problem, we propose semanticpreserving metric learning. The proposed method entails the metric space where the similarity ratio between samples is proportional to semantic relevance between annotations. In the extensive experiments on video-text datasets, the proposed method presents a close alignment between the learned metric space and the semantic space. It also demonstrates state-of-the-art retrieval performance."
+  tags: ["ICIP2021", "Vision", "AI"]
+  id: 66
+
+- authors: "정윤재(NCSOFT), 조훈영(NCSOFT)"
+  title: "Detecting Mismatch Between Text Script and Voice-Over Using Utterance Verification Based on Phoneme Recognition Ranking"
+  conf: "International Conference on Acoustics, Speech, and Signal Processing (ICASSP) (2020)"
+  year: 2020
+  abstract: "The purpose of this study is to detect the mismatch between text script and voice-over. For this, we present a novel utterance verification (UV) method, which calculates the degree of correspondence between a voice-over and the phoneme sequence of a script. We found that the phoneme recognition probabilities of exaggerated voice-overs decrease compared to ordinary utterances, but their rankings do not demonstrate any significant change. The proposed method, therefore, uses the recognition ranking of each phoneme segment corresponding to a phoneme sequence for measuring the confidence of a voice-over utterance for its corresponding script. The experimental results show that the proposed UV method outperforms a state-of-the-art approach using cross modal attention used for detecting mismatch between speech and transcription."
+  tags: ["ICASSP2020", "Speech","Utterance verification", "AI"]
+  id: 67
+
+- authors: "양진혁(NCSOFT), 이준모(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT), 김인정"
+  title: "VocGAN: A High-Fidelity Real-time Vocoder with a Hierarchically-nested Adversarial Network"
+  conf: "INTERSPEECH 2020"
+  year: 2020
+  abstract: "We present a novel high-fidelity real-time neural vocoder called VocGAN. A recently developed GAN-based vocoder, MelGAN, produces speech waveforms in real-time. However, it often produces a waveform that is insufficient in quality or inconsistent with acoustic characteristics of the input mel spectrogram. VocGAN is nearly as fast as MelGAN, but it significantly improves the quality and consistency of the output waveform. VocGAN applies a multi-scale waveform generator and a hierarchically-nested discriminator to learn multiple levels of acoustic properties in a balanced way. It also applies the joint conditional and unconditional objective, which has shown successful results in high-resolution image synthesis. In experiments, VocGAN synthesizes speech waveforms 416.7x faster on a GTX 1080Ti GPU and 3.24x faster on a CPU than real-time. Compared with MelGAN, it also exhibits significantly improved quality in multiple evaluation metrics including mean opinion score (MOS) with minimal additional overhead. Additionally, compared with Parallel WaveGAN, another recently developed high-fidelity vocoder, VocGAN is 6.98x faster on a CPU and exhibits higher MOS."
+  tags: ["INTERSPEECH2020", "Speech","TTS", "VocGAN", "AI"]
+  id: 68
+
+- authors: "배재성(NCSOFT), 배한빈(NCSOFT), 주영선(NCSOFT), 이준모(NCSOFT), 이경훈(NCSOFT), 조훈영(NCSOFT)"
+  title: "Speaking Speed Control of End-to-End Speech Synthesis using Sentence-Level Conditioning"
+  conf: "INTERSPEECH 2020"
+  year: 2020
+  abstract: "This paper proposes a controllable end-to-end text-to-speech (TTS) system to control the speaking speed (speed-controllable TTS; SCTTS) of synthesized speech with sentence-level speaking-rate value as an additional input. The speaking-rate value, the ratio of the number of input phonemes to the length of input speech, is adopted in the proposed system to control the speaking speed. Furthermore, the proposed SCTTS system can control the speaking speed while retaining other speech attributes, such as the pitch, by adopting the global style token-based style encoder. The proposed SCTTS does not require any additional well-trained model or an external speech database to extract phoneme-level duration information and can be trained in an end-to-end manner. In addition, our listening tests on fast-, normal-, and slow-speed speech showed that the SCTTS can generate more natural speech than other phoneme duration control approaches which increase or decrease duration at the same rate for the entire sentence, especially in the case of slow-speed speech."
+  tags: ["INTERSPEECH2020", "Speech", "TTS", "AI"]
+  id: 69
+
+- authors: "주영선(NCSOFT), 배한빈(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT)"
+  title: "Effective emotion transplantation in an end-to-end text-to-speech system"
+  conf: "IEEE Access (2020)"
+  year: 2020
+  abstract: "In this paper, we propose an effective technique to transplant a source speaker’s emotional expression to a new target speaker’s voice within an end-to-end text-to-speech (TTS) framework. We modify an expressive TTS model pre-trained using a source speaker’s emotional speech database to reflect the voice characteristics of a target speaker for which only a neutral speech database is available. We set two adaptation criteria to achieve this. One criterion is to minimize the reconstruction loss between the target speaker’s recorded and synthesized speech, such that the synthesized speech has the target speaker’s voice characteristics. The other criterion is to minimize the emotion loss between the emotion embedding vectors extracted from the reference expressive speech and the target speaker’s synthesized expressive speech, which is essential to preserve expressiveness. Since the two criteria are applied alternately in the adaptation process, we are able to avoid the kind of bias issues frequently encountered in similar tasks. The proposed adaptation technique demonstrates more effective performance compared to conventional approaches in both quantitative and qualitative evaluations."
+  tags: ["IEEE Access 2020", "Speech","TTS", "AI"]
+  id: 70
+
+- authors: "Seong Uk Kim, Hanyoung Jang(NCSOFT), Jongmin Kim"
+  title: "A Robust Low-cost Mocap System with Sparse Sensors"
+  conf: "SIGGRAPH Asia (2020) (Poster Session)"
+  year: 2020
+  abstract: "In this paper, we propose a robust low-cost mocap system (mocap) with sparse sensors. Although the sensor with an accelerometer, magnetometer, and gyroscope is cost-effective and offers the measured positions and rotations from these devices, it potentially suffers from noise, drift, and lost issues over time. The resulting character obtained from a sensor-based low-cost mocap system is thus generally not satisfactory. We address these issues by using a novel deep learning framework that consists of two networks, a motion estimator and a sensor data generator. When the aforementioned issues occur, the motion estimator feeds the newly synthesized sensor data obtained with the measured and predicted data from the sensor data generator until the issues have been resolved. Otherwise, the motion estimator receives the measured sensor data to accurately and continuously reconstruct the new character poses. In our examples, we show that our system outperforms the previous approach without the sensor data generator and we believe that it can be considered a handy and robust mocap system."
+  tags: ["SIGGRAPH Asia 2020", "Graphics", "AI"]
+  id: 71
+
+- authors: "Seong Uk Kim, Hanyoung Jang(NCSOFT), Jongmin Kim"
+  title: "A variational U-Net for motion retargeting"
+  conf: "International Conference on Computer Animation and Social Agents (CASA) (2020) (Best Paper Nominee), SIGGRAPH Asia (2018) (Poster Session)"
+  year: 2018
+  abstract: "Motion retargeting is the process of copying motion from one character (source) to another (target) when the source and target body sizes and proportions (of arms, legs, torso, etc.) are different. The problem of automatic motion retargeting has been studied for several decades; however, the motion quality obtained with the application of current approaches is on occasion unrealistic. This is because previous methods, which are mainly based on numerical optimization, generally do not incorporate prior knowledge of the details and nuances of human movements. To address these issues, we present a novel human motion retargeting system using a deep learning framework with large-scale motion data to produce high-quality retargeted human motion. We establish a deep-learning-based motion retargeting system using a variational deep autoencoder combining the deep convolutional inverse graphics network (DC-IGN) and the U-Net. The DC-IGN is utilized for disentangling the motion of each body part, while the U-Net is employed to preserve details of the original motion. We conduct several experiments to validate the proposed motion retargeting system, and find that ours achieves better accuracy along with reduced computational burden when compared with the conventional motion retargeting approach and other neural network architectures."
+  tags: ["CASA2020", "SIGGRAPH Asia 2018", "Graphics", "AI"]
+  id: 72
+
+- authors: "Younghyun Lee(NCSOFT), Hyunjo Jung(NCSOFT), Cheoljong Yang(NCSOFT), Joonsoo Lee(NCSOFT)"
+  title: "Highlight-Video Generation System for Baseball Games"
+  conf: "IEEE International Conference on Consumer Electronics (ICCE-Asia) (2020)"
+  year: 2020
+  abstract: "Highlight videos are designed to help people understand the key content without having to watch the original long videos in their entirety. Notably, highlight videos of sports are in considerable demand from viewers. We propose a highlight-video generation system for baseball games. The original video, along with the game log, is used to rapidly and accurately extract trimmed event video using simple computer vision algorithms. Several types of highlight videos can be generated by extracting all the trimmed event videos and combining them in various manners. Experimental results show that the proposed method has 98.18% accuracy in trimmed event video extraction. Moreover, it is possible to generate highlight videos within an average of 2 min after receiving the input video."
+  tags: ["ICCE Asia 2020", "Vision", "AI"]
+  id: 73
+
+- authors: "이주성(NCSOFT), 이영현(NCSOFT), 이준수(NCSOFT)"
+  title: "ATSR: 단어 인식기에 필요한 것은 트랜스포머"
+  conf: "대한전자공학회 2020년도 하계종합학술대회"
+  year: 2020
+  abstract: "Scene text recognition is a challenging taskbecause it contains a variety of background, noise,blur,fonts, and perspective views. Recently, deep learning-based algorithms, for example, RNN-based methods or Transformer-based methods, have shown out standing results on the scene text recognition task. However, RNN-based methods suffer inherently from long-term dependency problems and Transformer-based methods have low accuracy in curved and irregular text.In this paper, we propose a novel deep neural network architecture which combines “Spatial Transformer Network” and “Transformer” network for scene text recognition. The proposed architecture shows consistently better word accuracy over widely used public word recognition datasets,compared to previous scene text recognition models."
+  tags: ["대한전자공학회2020년도하계종합학술대회", "Vision", "AI"]
+  id: 74
+
+- authors: "이재명(NCSOFT), 이주성(NCSOFT), 이영현(NCSOFT), 이준수(NCSOFT)"
+  title: "문자 검출을 위한 이중수용영역 기반 특징 추출 방법"
+  conf: "대한전자공학회 2020년도 하계종합학술대회"
+  year: 2020
+  abstract: "Instance segmentation-based approach using Mask R-CNN is currently one of the leading methods for the text localization task. Different from general object detection tasks, the aspect ratio of text instances is too high to apply Mask R-CNN as it is.To simply apply Mask R-CNN for text  detection yields false positives due to over-generalized receptive fields for bounding boxes. In this paper, we propose a modified Mask R-CNN architecture for text detection. We present  a method to extract features containing word-level and character-level receptive fields simultaneously.Our approach shows consistent performance improve menton MLT 2017 and Incidental Scene Text. Moreover, our method surpasses most of prior state-of-the-art text localization methods appeared in recent computer vision conferences."
+  tags: ["대한전자공학회2020년도하계종합학술대회", "Vision", "AI"]
+  id: 75
+
+- authors: "Junho Kim(NCSOFT), Hyeonwoo Kang(NCSOFT), Minjae Kim(NCSOFT), Kwang Hee Lee"
+  title: "U-GAT-IT: UNSUPERVISED GENERATIVE ATTENTIONAL NETWORKS WITH ADAPTIVE LAYER-INSTANCE NORMALIZATION FOR IMAGE-TO-IMAGE TRANSLATION"
+  conf: "The International Conference on Learning Representations (ICLR) (2020)"
+  year: 2020
+  abstract: "We propose a novel method for unsupervised image-to-image translation, which incorporates a new attention module and a new learnable normalization function in an end-to-end manner. The attention module guides our model to focus on more important regions distinguishing between source and target domains based on the attention map obtained by the auxiliary classifier. Unlike previous attention-based method which cannot handle the geometric changes between domains, our model can translate both images requiring holistic changes and images requiring large shape changes. Moreover, our new AdaLIN (Adaptive Layer-Instance Normalization) function helps our attention-guided model to flexibly control the amount of change in shape and texture by learned parameters depending on datasets. Experimental results show the superiority of the proposed method compared to the existing state-of-the-art models with a fixed network architecture and hyper-parameters."
+  tags: ["ICLR2020", "Vision", "AI"]
+  id: 76
+
+- authors: "Seong Uk Kim, Hanyoung Jang(NCSOFT), Jongmin Kim"
+  title: "Human Motion Denoising Using Attention-Based Bidirectional Recurrent Neural Network"
+  conf: "SIGGRAPH Asia (2019) (Poster Session)"
+  year: 2019
+  abstract: "In this paper, we propose a novel method of denoising human motion using a bidirectional recurrent neural network (BRNN) with an attention mechanism. The corrupted motion that is captured from a single 3D depth sensor camera is automatically fixed in the well-established smooth motion manifold. Incorporating an attention mechanism into BRNN achieves better optimization results and higher accuracy because a higher weight value is selectively given to the more important input pose at a specific frame for encoding the input motion when compared to other deep learning frameworks. The results show that our approach efficiently handles various types of motion and noise. We also experiment with different features to find the best feature and believe that our method will be sufficiently desirable to be used in motion capture applications as a post-processing step after capturing human motion."
+  tags: ["SIGGRAPH Asia 2019", "Graphics", "AI"]
+  id: 77
+
+- authors: "Moonwon Yu(NCSOFT), Byungjun Kwon(NCSOFT), Jongmin Kim, Shinjin Kang, Hanyoung Jang(NCSOFT)"
+  title: "Fast Terrain-Adaptive Motion Generation using Deep Neural Networks"
+  conf: "SIGGRAPH Asia (2019) (Technical Brief)"
+  year: 2019
+  abstract: "We propose a fast motion adaptation framework using deep neural networks. Traditionally, motion adaptation is performed via iterative numerical optimization. We adopted deep neural networks and replaced the iterative process with the feed-forward inference consisting of simple matrix multiplications. For efficient mapping from contact constraints to character motion, the proposed system is composed of two types of networks: trajectory and pose generators. The networks are trained using augmented motion capture data and are fine-tuned using the inverse kinematics loss. In experiments, our system successfully generates multi-contact motions of a hundred of characters in real-time, and the result motions contain the naturalness existing in the motion capture data."
+  tags: ["SIGGRAPH Asia 2019", "Graphics", "AI"]
+  id: 78
+
+- authors: "정겨운(NCSOFT), 조남현(NCSOFT), 김희만(NCSOFT), 조훈영(NCSOFT)"
+  title: "DNN-GRU Multiple Layers for VAD in PC Game Café, ICCE-ASIA 2018"
+  conf: "International Conference on Consumer Electronics Asia (ICCE ASIA) (2018)"
+  year: 2018
+  abstract: "In this paper, we present multi-layer networks based on Deep Neural Networks (DNNs; also known as Dense layer or fully connected layer) and Gated Recurrent Units (GRUs) for Voice Activity Detection (VAD) with temporal smoothing in noisy PC game cafe environments. The noise from PC game cafe has distinctive features from previous VAD studies. To improve the accuracy of VAD in noisy environments, we recommend multi-layer neural networks with the fusion of DNNs and GRUs. DNNs were used as the first layer and last one because DNNs are good at mapping features and performing class-based discrimination. In order to take advantage of time sequence modeling such as speech, we used GRU We show that our model made better performance for the PC game cafe noisy environment compared to using only DNNs and GRUs."
+  tags: ["ICCE Asia 2022", "Speech", "VAD", "AI"]
+  id: 79
+
+- authors: "Byungjun Kwon(NCSOFT), Moonwon Yu(NCSOFT), Hanyoung Jang(NCSOFT), KyuHyun Cho(NCSOFT), Hyundong Lee(NCSOFT), Taesung Hahn(NCSOFT)"
+  title: "Deep Motion Transfer without Big Data"
+  conf: "SIGGRAPH (2018) (Poster Session)"
+  year: 2018
+  abstract: "This paper presents a novel motion transfer algorithm that copies content motion into a specific style character. The input consists of two motions. One is a content motion such as walking or running, and the other is movement style such as zombie or Krall. The algorithm automatically generates the synthesized motion such as walking zombie, walking Krall, running zombie, or running Krall. In order to obtain natural results, the method adopts the generative power of deep neural networks. Compared to previous neural approaches, the proposed algorithm shows better quality, runs extremely fast, does not require big data, and supports user-controllable style weights."
+  tags: ["SIGGRAPH2018", "Graphics", "AI"]
+  id: 80
+
+- authors: "Minseok Cho, Reinald Kim Amplayo, Seung-won Hwang, Jonghyuck Park(NCSOFT)"
+  title: "Adversarial TableQA: Attention Supervision for Question Answering on Tables"
+  conf: "Proceedings of the 10th Asian Conference on Machine Learning (AACL). (2018)"
+  year: 2018
+  abstract: "The task of answering a question given a text passage has shown great developments on model performance thanks to community efforts in building useful datasets. Recently, there have been doubts whether such rapid progress has been based on truly understanding language. The same question has not been asked in the table question answering (TableQA) task, where we are tasked to answer a query given a table. We show that existing efforts, of using “answers” for both evaluation and supervision for TableQA, show deteriorating performances in adversarial settings of perturbations that do not affect the answer. This insight naturally motivates to develop new models that understand question and table more precisely. For this goal, we propose Neural Operator (NeOp), a multi-layer sequential network with attention supervision to answer the query given a table. NeOp uses multiple Selective Recurrent Units (SelRUs) to further help the interpretability of the answers of the model. Experiments show that the use of operand information to train the model significantly improves the performance and interpretability of TableQA models.NeOp outperforms all the previous models by a big margin."
+  tags: ["AACL2018", "Question answering", "Applied AI"]
+  id: 81
+
+- authors: "Hoyeop Lee(NCSOFT), Jongseon Park(NCSOFT), Hyungjun Kim(NCSOFT), Hyunsouk Cho(NCSOFT), Geonsoo Kim(NCSOFT)"
+  title: "PREFER: PREdiction Model for Financial Entity Relation"
+  conf: "Proceedings of the Fourth International Workshop on Data Science for Macro-Modeling with Financial and Economic Datasets (DSMM). (2018)"
+  year: 2018
+  abstract: "The Financial Entity Identification and Information Integration (FEIII) is a competition for the understanding relationships between financial entities. To predict competitor relation between two entities, there are three challenges - 1) relevant feature extraction from the various released dataset, 2) missing entity information handling and 3) imbalance of train data handling. To solve these challenges, we propose a model named PREFER which considering 1) relation trend and context feature extraction from the release dataset, 2) K-NN estimation with concept graph of knowledge bases (Probase), and 3) oversampling from the true labeled data. From the model, we increase 34% of F1-score compared to the baseline method."
+  tags: ["DSMM2018", "Entity identification", "Applied AI"]
+  id: 82
+
+- authors: "Hoyeop Lee(NCSOFT), Jinbae Im(NCSOFT), Seongwon Jang(NCSOFT), Hyunsouk Cho(NCSOFT), Sehee Chung(NCSOFT)"
+  title: "MeLU: Meta-Learned User Preference Estimator for Cold-Start Recommendation"
+  conf: "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD). (2019)"
+  year: 2019
+  abstract: "This paper proposes a recommender system to alleviate the cold-start problem that can estimate user preferences based on only a small number of items. To identify a user's preference in the cold state, existing recommender systems, such as Netflix, initially provide items to a user; we call those items evidence candidates. Recommendations are then made based on the items selected by the user. Previous recommendation studies have two limitations: (1) the users who consumed a few items have poor recommendations and (2) inadequate evidence candidates are used to identify user preferences. We propose a meta-learning-based recommender system called MeLU to overcome these two limitations. From meta-learning, which can rapidly adopt new task with a few examples, MeLU can estimate new user's preferences with a few consumed items. In addition, we provide an evidence candidate selection strategy that determines distinguishing items for customized preference estimation. We validate MeLU with two benchmark datasets, and the proposed model reduces at least 5.92% mean absolute error than two comparative models on the datasets. We also conduct a user study experiment to verify the evidence selection strategy."
+  tags: ["KDD2019", "Cold-start", "Recommendation", "Curation", "Applied AI"]
+  id: 83
+
+ - authors: "Gyeongbok Lee(NCSOFT), Seung-won Hwang, Hyunsouk Cho(NCSOFT)"
+  title: "SQuAD2-CR: Semi-supervised Annotation for Cause and Rationales for Unanswerability in SQuAD 2.0"
+  conf: "Proceedings of the 12th Language Resources and Evaluation Conference (LREC). (2020)"
+  year: 2020
+  abstract: "Existing machine reading comprehension models are reported to be brittle for adversarially perturbed questions when optimizing only for accuracy, which led to the creation of new reading comprehension benchmarks, such as SQuAD 2.0 which contains such type of questions. However, despite the super-human accuracy of existing models on such datasets, it is still unclear how the model predicts the answerability of the question, potentially due to the absence of a shared annotation for the explanation. To address such absence, we release SQuAD2-CR dataset, which contains annotations on unanswerable questions from the SQuAD 2.0 dataset, to enable an explanatory analysis of the model prediction. Specifically, we annotate (1) explanation on why the most plausible answer span cannot be the answer and (2) which part of the question causes unanswerability. We share intuitions and experimental results that how this dataset can be used to analyze and improve the interpretability of existing reading comprehension model behavior."
+  tags: ["LREC2020", "Question answering", "XAI", "Applied AI"]
+  id: 84
+
+ - authors: "Seongwon Jang(NCSOFT), Hoyeop Lee(NCSOFT), Hyunsouk Cho(NCSOFT), Sehee Chung(NCSOFT)"
+  title: "CITIES: Contextual Inference of Tail-Item Embeddings for Sequential Recommendation"
+  conf: "2020 IEEE International Conference on Data Mining (ICDM). (2020)"
+  year: 2020
+  abstract: "Sequential recommendation techniques provide users with product recommendations fitting their current preferences by handling dynamic user preferences over time. Previous studies have focused on modeling sequential dynamics without much regard to which of the best-selling products (i.e., head items) or niche products (i.e., tail items) should be recommended. We scrutinize the structural reason for why tail items are barely served in the current sequential recommendation model, which consists of an item-embedding layer, a sequence-modeling layer, and a recommendation layer. Well-designed sequence-modeling and recommendation layers are expected to naturally learn suitable item embeddings. However, tail items are likely to fall short of this expectation because the current model structure is not suitable for learning high-quality embeddings with insufficient data. Thus, tail items are rarely recommended. To eliminate this issue, we propose a framework called CITIES, which aims to enhance the quality of the tail-item embeddings by training an embedding-inference function using multiple contextual head items so that the recommendation performance improves for not only the tail items but also for the head items. Moreover, our framework can infer new-item embeddings without an additional learning process. Extensive experiments on two realworld datasets show that applying CITIES to the state-of-the-art methods improves recommendation performance for both tail and head items. We conduct an additional experiment to verify that CITIES can infer suitable new-item embeddings as well."
+  tags: ["ICDM2020", "Long-tail", "Recommendation", "Curation", "Applied AI"]
+  id: 85
+
+- authors: "Jinbae Im(NCSOFT), Moonki Kim(NCSOFT), Hoyeop Lee(NCSOFT), Hyunsouk Cho(NCSOFT), Sehee Chung(NCSOFT)"
+  title: "Self-supervised Multimodal Opinion Summarization"
+  conf: "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL-IJCNLP). (2021)"
+  year: 2021
+  abstract: "Recently, opinion summarization, which is the generation of a summary from multiple reviews, has been conducted in a self-supervised manner by considering a sampled review as a pseudo summary. However, non-text data such as image and metadata related to reviews have been considered less often. To use the abundant information contained in non-text data, we propose a self-supervised multimodal opinion summarization framework called MultimodalSum. Our framework obtains a representation of each modality using a separate encoder for each modality, and the text decoder generates a summary. To resolve the inherent heterogeneity of multimodal data, we propose a multimodal training pipeline. We first pretrain the text encoder–decoder based solely on text modality data. Subsequently, we pretrain the non-text modality encoders by considering the pretrained text decoder as a pivot for the homogeneous representation of multimodal data. Finally, to fuse multimodal representations, we train the entire framework in an end-to-end manner. We demonstrate the superiority of MultimodalSum by conducting experiments on Yelp and Amazon datasets."
+  tags: ["ACL2021", "Multi-modal", "Summerization", "Applied AI"]
+  id: 86
+
+- authors: "Jaemin Yoo, Junghun Kim, Hoyoung Yoon, Geonsoo Kim(NCSOFT), Changwon Jang(NCSOFT), U Kang"
+  title: "Accurate Graph-based PU Learning Without Class Prior"
+  conf: "2021 IEEE International Conference on Data Mining (ICDM). (2021)"
+  year: 2021
+  abstract: "How can we classify graph-structured data only with positive labels? Graph-based positive-unlabeled (PU) learning is to train a binary classifier given only the positive labels when the relationship between examples is given as a graph. The problem is of great importance for various tasks such as detecting malicious accounts in a social network, which are difficult to be modeled by supervised learning when the true negative labels are absent. Previous works for graph-based PU learning assume that the prior distribution of positive nodes is known in advance, which is not true in many real-world cases. In this work, we propose GRAB (Graph-based Risk minimization with iterAtive Belief propagation), a novel end-to-end approach for graph-based PU learning that requires no class prior. GRAB models a given graph as a Markov network and runs the marginalization and update steps iteratively. The marginalization step estimates the marginals of latent variables, while the update step trains a classifier network utilizing the computed priors in the objective function. Extensive experiments on five datasets show that GRAB achieves state-of-the-art accuracy, even compared with previous methods that are given the true prior."
+  tags: ["ICDM2021", "Anomaly Detection", "Applied AI"]
+  id: 87
+
+- authors: "Vinnam Kim, Hyunsouk Cho, Sehee Chung(NCSOFT)"
+  title: "One-Step Pixel-Level Perturbation-Based Saliency Detector"
+  conf: "Proceedings of the British Machine Vision Conference 2021 (BMVC). (2021)"
+  year: 2021
+  abstract: "To explain deep neural networks, many perturbation-based saliency methods are studied in the computer vision domain. However, previous perturbation-based saliency methods require iterative optimization steps or multiple forward propagation steps. In this paper, we propose a new perturbation-based saliency that requires only one backward propagation step by approximating the perturbation effect on the output in the local area. We empirically demonstrate that our method shows fast computations and low memory requirements comparable to other most efficient baselines. Furthermore, our method simultaneously considers all possible perturbing directions so as not to misestimate the perturbation effect. Our ablation study shows that considering all possible perturbing directions is crucial to obtain a correct saliency map. Lastly, our method exhibits competitive performance on the benchmarks in evaluating the pixel-level saliency map."
+  tags: ["BMVC2021", "XAI", "Applied AI"]
+  id: 88
+
+- authors: "Jongwon Jeong(NCSOFT), Jeong Choi, Hyunsouk Cho, Sehee Chung(NCSOFT)"
+  title: "FPAdaMetric: False-Positive-Aware Adaptive Metric Learning for Session-Based Recommendation"
+  conf: "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI). (2022)"
+  year: 2022
+  abstract: "Modern recommendation systems are mostly based on implicit feedback data which can be quite noisy due to false positives (FPs) caused by many reasons, such as misclicks or quick curiosity. Numerous recommendation algorithms based on collaborative filtering have leveraged post-click user behavior (eg, skip) to identify false positives. They effectively involved these false positives in the model supervision as negative-like signals. Yet, false positives had not been considered in existing session-based recommendation systems (SBRs) although they provide just as deleterious effects. To resolve false positives in SBRs, we first introduce FP-Metric model which reformulates the objective of the session-based recommendation with FP constraints into metric learning regularization. In addition, we propose FP-AdaMetric that enhances the metric-learning regularization terms with an adaptive module that elaborately calculates the impact of FPs inside sequential patterns. We verify that FP-AdaMetric improves several session-based recommendation models' performances in terms of Hit Rate (HR), MRR, and NDCG on datasets from different domains including music, movie, and game. Furthermore, we show that the adaptive module plays a much more crucial role in FP-AdaMetric model than in other baselines."
+  tags: ["AAAI2022", "Session-based", "Recommendation", "Curation", "Applied AI"]
+  id: 89
+
+- authors: "Jeong Choi, Seongwon Jang(NCSOFT), Hyunsouk Cho, Sehee Chung(NCSOFT)"
+  title: "Towards Proper Contrastive Self-Supervised Learning Strategies for Music Audio Representation"
+  conf: "2022 IEEE International Conference on Multimedia and Expo (ICME). (2022)"
+  year: 2022
+  abstract: "The common research goal of self-supervised learning is to extract a general representation which an arbitrary downstream task would benefit from. In this work, we investigate music audio representation learned from different contrastive self-supervised learning schemes and empirically evaluate the embedded vectors on various music information retrieval (MIR) tasks where different levels of the music perception are concerned. We analyze the results to discuss the proper direction of contrastive learning strategies for different MIR tasks. We show that these representations convey a comprehensive information about the auditory characteristics of music in general, although each of the self-supervision strategies has its own effectiveness in certain aspect of information."
+  tags: ["ICME2022", "Music audio representation", "Curation", "Applied AI"]
+  id: 90
+
+- authors: "Jaemin Yoo, Junghun Kim, Hoyoung Yoon, Geonsoo Kim(NCSOFT), Changwon Jang(NCSOFT), U Kang"
+  title: "Graph-based PU Learning for Binary and Multiclass Classification Without Class Prior"
+  conf: "Knowledge and Information Systems (KAIS) Vol. 64, Issue 8, pp. 2141-2169"
+  year: 2022
+  abstract: "How can we classify graph-structured data only with positive labels? Graph-based positive-unlabeled (PU) learning is to train a binary classifier given only the positive labels when the relationship between examples is given as a graph. The problem is of great importance for various tasks such as detecting malicious accounts in a social network, which are difficult to be modeled by supervised learning when the true negative labels are absent. Previous works for graph-based PU learning assume that the prior distribution of positive nodes is known in advance, which is not true in many real-world cases. In this work, we propose GRAB (Graph-based Risk minimization with iterAtive Belief propagation), a novel end-to-end approach for graph-based PU learning that requires no class prior. GRAB runs marginalization and update steps iteratively. The marginalization step models the given graph as a Markov network and estimates the marginals of latent variables. The update step trains the binary classifier by utilizing the computed marginals in the objective function. We then generalize GRAB to multi-positive unlabeled (MPU) learning, where multiple positive classes exist in a dataset. Extensive experiments on five real-world datasets show that GRAB achieves the state-of-the-art performance, even when the true prior is given only to the competitors."
+  tags: ["KAIS2022", "Anomaly Detection", "Applied AI"]
+  id: 91
