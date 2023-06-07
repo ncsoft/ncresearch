@@ -326,7 +326,7 @@
   abstract: "Transformer is eminently suitable for auto-regressive image synthesis which predicts discrete value from the past values recursively to make up full image.Especially, combined with vector quantised latent representation, the state-of-the-art auto-regressive transformer displays realistic high-resolution images. However, sampling the latent code from discrete probability distribution makes the output unpredictable. Therefore, it requires to generate lots of diverse samples to acquire desired outputs.To alleviate the process of generating lots of samples repetitively, in this article, we propose to take a desired output, a style image, as an additional condition without re-training the transformer. To this end, our method transfers the style to a probability constraint to re-balance the prior, thereby specifying the target distribution instead of the original prior. Thus, generated samples from the re-balanced prior have similar styles to reference style.In practice, we can choose either an image or a category of images as an additional condition. In our qualitative assessment, we show that styles of majority of outputs are similar to the input style."
   tags: ["WACV2023", "Vision", "AI"]
   id: 40
-  
+
 - authors: "전성호, 장주용, 박성범(NCSOFT)"
   title: "Learnable Human Mesh Triangulation for 3D Human Pose and Shape Estimation"
   conf: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) (2023)"
