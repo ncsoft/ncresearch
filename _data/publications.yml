@@ -454,3 +454,195 @@
   abstract: "In this paper, we propose methods for improving the modeling performance of a Transformer-based non-autoregressive text-to-speech (TNA-TTS) model. Although the text encoder and audio decoder handle different types and lengths of data (i.e., text and audio), the TNA-TTS models are not designed considering these variations. Therefore, to improve the modeling performance of the TNA-TTS model we propose a hierarchical Transformer structure-based text encoder and audio decoder that are designed to accommodate the characteristics of each module. For the text encoder, we constrain each self-attention layer so the encoder focuses on a text sequence from the local to the global scope. Conversely, the audio decoder constrains its self-attention layers to focus in the reverse direction, i.e., from global to local scope. Additionally, we further improve the pitch modeling accuracy of the audio decoder by providing sentence and word-level pitch as conditions. Various objective and subjective evaluations verified that the proposed method outperformed the baseline TNA-TTS."
   tags: ["INTERSPEECH2021", "Speech", "TTS", "AI"]
   id: 56
+
+- authors: "배한빈(NCSOFT), 배재성(NCSOFT), 주영선(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT)"
+  title: "A Neural Text-to-Speech Model Utilizing Broadcast Data Mixed with Background Music"
+  conf: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) (2021)"
+  year: 2021
+  abstract: "Recently, it has become easier to obtain speech data from various media such as the internet or YouTube, but directly utilizing them to train a neural text-to-speech (TTS) model is difficult. The proportion of clean speech is insufficient and the remainder includes background music. Even with the global style token (GST). Therefore, we propose the following method to successfully train an end-to-end TTS model with limited broadcast data. First, the background music is removed from the speech by introducing a music filter. Second, the GST-TTS model with an auxiliary quality classifier is trained with the filtered speech and a small amount of clean speech. In particular, the quality classifier makes the embedding vector of the GST layer focus on representing the speech quality (filtered or clean) of the input speech. The experimental results verified that the proposed method synthesized much more high-quality speech than conventional methods."
+  tags: ["ICASSP2021", "Speech", "TTS", "AI"]
+  id: 57
+
+- authors: "Seong Uk Kim, Hanyoung Jang(NCSOFT), Hyeonseung Im, Jongmin Kim"
+  title: "Human Motion Reconstruction Using Deep Transformer Networks"
+  conf: "Pattern Recognition Letters (2021)"
+  year: 2021
+  abstract: "Establishing a human motion reconstruction system from very few constraints imposed on the body has been an interesting and important research topic because it significantly reduces the degrees of freedom to be managed. However, it is a well-known mathematically ill-posed problem as the dimension of constraints is much lower than that of the human pose to be determined. Therefore, it is challenging to directly reconstruct the whole body joint information from very few constraints due to many possible solutions. To address this issue, we present a novel deep learning framework with an attention mechanism using large-scale motion capture (mocap) data for mapping very few user-defined constraints into the human motion as realistically as possible. Our system is built upon the attention networks for looking back further to achieve better results. Experimental results show that our network model is capable of producing more accurate results compared with previous approaches. We also conducted several experiments to test all possible combinations of the features extracted from the mocap data, and found the best feature combination to generate high-quality poses."
+  tags: ["Pattern Recognition Letters 2021", "Graphics", "AI"]
+  id: 58
+
+- authors: "Kyungho Lee(NCSOFT), Sehee Min, Sunmin Lee, Jehee Lee"
+  title: "Learning Time-Critical Responses for Interactive Character Control"
+  conf: "SIGGRAPH (2021) (Technical Paper)"
+  year: 2021
+  abstract: "Creating agile and responsive characters from a collection of unorganized human motion has been an important problem of constructing interactive virtual environments. Recently, learning-based approaches have successfully been exploited to learn deep network policies for the control of interactive characters. The agility and responsiveness of deep network policies are influenced by many factors, such as the composition of training datasets, the architecture of network models, and learning algorithms that involve many threshold values, weights, and hyper-parameters. In this paper, we present a novel teacher-student framework to learn time-critically responsive policies, which guarantee the time-to-completion between user inputs and their associated responses regardless of the size and composition of the motion databases. We demonstrate the effectiveness of our approach with interactive characters that can respond to the user's control quickly while performing agile, highly dynamic movements."
+  tags: ["SIGGRAPH2021", "Graphics", "AI"]
+  id: 59
+
+- authors: "Youngwoo Cho, Minwook Chang(NCSOFT), Sanghyeon Lee, Hyoungwoo Lee, Gerard Jounghyun Kim, Jaegul Choo"
+  title: "Efficient Adversarial Audio Synthesis via Progressive Upsampling"
+  conf: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP) (2021)"
+  year: 2021
+  abstract: "This paper proposes a novel generative model called PUGAN, which progressively synthesizes high-quality audio in a raw waveform. Progressive upsampling GAN (PUGAN) leverages the progressive generation of higher-resolution output by stacking multiple encoder-decoder architectures. Compared to an existing state-of-the-art model called WaveGAN, which uses a single decoder architecture, our model generates audio signals and converts them to a higher resolution in a progressive manner, while using a significantly smaller number of parameters, e.g., 3.17x smaller for 16 kHz output, than WaveGAN. Our experiments show that the audio signals can be generated in real time with a comparable quality to that of WaveGAN in terms of the inception scores and human perception."
+  tags: ["ICASSP2021", "Graphics", "AI"]
+  id: 60
+
+- authors: "이재명(NCSOFT), 이주성(NCSOFT), 이영현(NCSOFT), 이준수(NCSOFT)"
+  title: "저품질 이미지에 강인한 문자 검출 방법"
+  conf: "대한전자공학회 2021년도 추계학술대회"
+  year: 2021
+  abstract: "Lack of training data is one of the biggest challenges in developing deep learning-based textdetectors, and it becomes more difficult in case of handling models for low-quality images. We propose an efficient text localization method that can overcome the challenge by using a combination of image-to-image translation and semi-supervisedlearning. We show the proposed method improvestext detection accuracy on both clean and low-quality images."
+  tags: ["대한전자공학회2021년도추계학술대회", "Vision", "AI"]
+  id: 61
+
+- authors: "남진우, 안대철, 강동엽, 하성종(NCSOFT), 최종현"
+  title: "Unsupervised Natural Language Video Localization"
+  conf: "International Conference on Computer Vision (ICCV) (2021)"
+  year: 2021
+  abstract: "Understanding videos to localize moments with natural language often requires large expensive annotated video regions paired with language queries. To eliminate the annotation costs, we make a first attempt to train a natural language video localization model in zero-shot manner. Inspired by unsupervised image captioning setup, we merely require random text corpora, unlabeled video collections, and an off-the-shelf object detector to train a model. With the unpaired data, we propose to generate pseudosupervision of candidate temporal regions and corresponding query sentences, and develop a simple NLVL model to train with the pseudo-supervision. Our empirical validations show that the proposed pseudo-supervised method outperforms several baseline approaches and a number of methods using stronger supervision on Charades-STA and ActivityNet-Captions."
+  tags: ["ICCV2021", "Vision", "AI"]
+  id: 62
+
+- authors: "김나영, 하성종(NCSOFT), 강제원"
+  title: "VQAC : Video Question and Answering Using Compressed-Domain Video Features"
+  conf: "International Conference on Computer Vision (ICCV) (2021)"
+  year: 2021
+  abstract: "Video Question Answering (Video QA) attempts to answer a question through semantic reasoning between visual and linguistic information. Recently, handling large amounts of multi-modal video and language information of a video is considered important in the industry. However, the current video QA models use deep features, suffered from significant computational complexity and insufficient representation capability. Existing features are extracted using pre-trained networks after all the frames are decoded, which is not always suitable for video QA tasks. In this paper, we develop a novel deep neural network to provide video QA features obtained from coded video bitstream to reduce the complexity. The proposed network includes several dedicated deep modules to both the video QA and the video compression system, which is the first attempt at the video QA task. The proposed network is predominantly model-agnostic. It is integrated into the state-of-theart networks for improved performance without any computationally expensive motion-related deep models. The experimental results demonstrate that the proposed network outperforms the previous studies at lower complexity."
+  tags: ["ICCV2021", "Vision", "AI"]
+  id: 63
+
+- authors: "홍성수, 정채연, 이정수, 박경민, 이준수, 김민재(NCSOFT), 송무경 (NCSOFT), 김연우(NCSOFT), 주재걸"
+  title: "Understanding Human-side Impact of Sampling Image Batches in Subjective Attribute Labeling"
+  conf: "The ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW) (2021)"
+  year: 2021
+  abstract: "Capturing human annotators’ subjective responses in image annotation has become crucial as vision-based classifiers expand the range of application areas. While there has been significant progress in image annotation interface design in general, relatively little research has been conducted to understand how to elicit reliable and cost-efficient human annotation when the nature of the task includes a certain level of subjectivity. To bridge this gap, we aim to understand how different sampling methods in image batch labeling, a design that allows human annotators to label a batch of images simultaneously, can impact human annotation performances. In particular, we developed three different strategies in forming image batches: (1) uncertainty-based labeling (UL) that prioritizes images that a classifier predicts with the highest uncertainty, (2) certainty-based labeling(CL), a reverse strategy of UL, and (3) random, a baseline approach that randomly selects images. Although UL and CL solely select images to be labeled from a classifier’s point of view, we hypothesized that human-side perception and labeling performance may also vary depending on the different sampling strategies. In our study, we observed that participants were able to recognize a different level of perceived cognitive load across three conditions (CL the easiest while UL the most difficult). We also observed a trade-off between annotation task effectiveness (CL and UL more reliable than random) and task efficiency (UL the most efficient while CL the least efficient). Based on the results, we discuss the implications of design and possible future research directions of image batch labeling."
+  tags: ["CSCW2021", "Vision", "AI"]
+  id: 64
+
+- authors: "이주성(NCSOFT), 이재명(NCSOFT), 양철종(NCSOFT), 이영현(NCSOFT), 이준수(NCSOFT)"
+  title: "Rotated Box Is Back: An Accurate Box Proposal Network for Scene Text Detection"
+  conf: "International Conference on Document Analysis and Recognition (ICDAR) (2021)"
+  year: 2021
+  abstract: "Scene text detection is a challenging task because it must be able to handle text in various fonts and from various perspective views. This makes it difficult to use rectangular bounding boxes to detect text locations accurately. To detect multi-oriented text, rotated bounding box-based methods have been explored as an alternative. However, they are not as accurate for scene text detection as rectangular bounding box-based methods. In this paper, we propose a novel region-proposal network to suggest rotated bounding boxes and an iterative region refinement network for final scene text detection. The proposed regionproposal network predicts rotated box candidates from pixels and anchors, which increases recall by creating more candidates around the text. The proposed refinement network improves the accuracy of scene text detection by correcting the differences in the locations between the ground truth and the prediction. In addition, we reduce the backpropagation time by using a new pooling method called rotated box crop and resize pooling. The proposed method achieves state-of-the-art performance on ICDAR 2017 and competitive results on ICDAR 2015 and ICDAR 2013. Furthermore, our approach achieves a significant increase in performance over previous methods based on rotated bounding boxes."
+  tags: ["ICDAR2021", "Vision", "AI"]
+  id: 65
+
+- authors: "추성권(NCSOFT), 하성종(NCSOFT), 이준수(NCSOFT)"
+  title: "SEMANTIC-PRESERVING METRIC LEARNING FOR VIDEO-TEXT RETRIEVAL"
+  conf: "IEEE International Conference on Image Processing (ICIP) (2021)"
+  year: 2021
+  abstract: "Video-text retrieval requires finding an optimal space for comparing the similarity of two different modalities. Most approaches adopt ranking loss as a primary training objective to find the space. The loss is only interested in bringing the samples annotated as pairs closer to each other without considering the semantic relevance of different samples. This rather causes even semantically similar pairs not to get close. To deal with the problem, we propose semanticpreserving metric learning. The proposed method entails the metric space where the similarity ratio between samples is proportional to semantic relevance between annotations. In the extensive experiments on video-text datasets, the proposed method presents a close alignment between the learned metric space and the semantic space. It also demonstrates state-of-the-art retrieval performance."
+  tags: ["ICIP2021", "Vision", "AI"]
+  id: 66
+
+- authors: "정윤재(NCSOFT), 조훈영(NCSOFT)"
+  title: "Detecting Mismatch Between Text Script and Voice-Over Using Utterance Verification Based on Phoneme Recognition Ranking"
+  conf: "International Conference on Acoustics, Speech, and Signal Processing (ICASSP) (2020)"
+  year: 2020
+  abstract: "The purpose of this study is to detect the mismatch between text script and voice-over. For this, we present a novel utterance verification (UV) method, which calculates the degree of correspondence between a voice-over and the phoneme sequence of a script. We found that the phoneme recognition probabilities of exaggerated voice-overs decrease compared to ordinary utterances, but their rankings do not demonstrate any significant change. The proposed method, therefore, uses the recognition ranking of each phoneme segment corresponding to a phoneme sequence for measuring the confidence of a voice-over utterance for its corresponding script. The experimental results show that the proposed UV method outperforms a state-of-the-art approach using cross modal attention used for detecting mismatch between speech and transcription."
+  tags: ["ICASSP2020", "Speech","Utterance verification", "AI"]
+  id: 67
+
+- authors: "양진혁(NCSOFT), 이준모(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT), 김인정"
+  title: "VocGAN: A High-Fidelity Real-time Vocoder with a Hierarchically-nested Adversarial Network"
+  conf: "INTERSPEECH 2020"
+  year: 2020
+  abstract: "We present a novel high-fidelity real-time neural vocoder called VocGAN. A recently developed GAN-based vocoder, MelGAN, produces speech waveforms in real-time. However, it often produces a waveform that is insufficient in quality or inconsistent with acoustic characteristics of the input mel spectrogram. VocGAN is nearly as fast as MelGAN, but it significantly improves the quality and consistency of the output waveform. VocGAN applies a multi-scale waveform generator and a hierarchically-nested discriminator to learn multiple levels of acoustic properties in a balanced way. It also applies the joint conditional and unconditional objective, which has shown successful results in high-resolution image synthesis. In experiments, VocGAN synthesizes speech waveforms 416.7x faster on a GTX 1080Ti GPU and 3.24x faster on a CPU than real-time. Compared with MelGAN, it also exhibits significantly improved quality in multiple evaluation metrics including mean opinion score (MOS) with minimal additional overhead. Additionally, compared with Parallel WaveGAN, another recently developed high-fidelity vocoder, VocGAN is 6.98x faster on a CPU and exhibits higher MOS."
+  tags: ["INTERSPEECH2020", "Speech","TTS", "VocGAN", "AI"]
+  id: 68
+
+- authors: "배재성(NCSOFT), 배한빈(NCSOFT), 주영선(NCSOFT), 이준모(NCSOFT), 이경훈(NCSOFT), 조훈영(NCSOFT)"
+  title: "Speaking Speed Control of End-to-End Speech Synthesis using Sentence-Level Conditioning"
+  conf: "INTERSPEECH 2020"
+  year: 2020
+  abstract: "This paper proposes a controllable end-to-end text-to-speech (TTS) system to control the speaking speed (speed-controllable TTS; SCTTS) of synthesized speech with sentence-level speaking-rate value as an additional input. The speaking-rate value, the ratio of the number of input phonemes to the length of input speech, is adopted in the proposed system to control the speaking speed. Furthermore, the proposed SCTTS system can control the speaking speed while retaining other speech attributes, such as the pitch, by adopting the global style token-based style encoder. The proposed SCTTS does not require any additional well-trained model or an external speech database to extract phoneme-level duration information and can be trained in an end-to-end manner. In addition, our listening tests on fast-, normal-, and slow-speed speech showed that the SCTTS can generate more natural speech than other phoneme duration control approaches which increase or decrease duration at the same rate for the entire sentence, especially in the case of slow-speed speech."
+  tags: ["INTERSPEECH2020", "Speech", "TTS", "AI"]
+  id: 69
+
+- authors: "주영선(NCSOFT), 배한빈(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT)"
+  title: "Effective emotion transplantation in an end-to-end text-to-speech system"
+  conf: "IEEE Access (2020)"
+  year: 2020
+  abstract: "In this paper, we propose an effective technique to transplant a source speaker’s emotional expression to a new target speaker’s voice within an end-to-end text-to-speech (TTS) framework. We modify an expressive TTS model pre-trained using a source speaker’s emotional speech database to reflect the voice characteristics of a target speaker for which only a neutral speech database is available. We set two adaptation criteria to achieve this. One criterion is to minimize the reconstruction loss between the target speaker’s recorded and synthesized speech, such that the synthesized speech has the target speaker’s voice characteristics. The other criterion is to minimize the emotion loss between the emotion embedding vectors extracted from the reference expressive speech and the target speaker’s synthesized expressive speech, which is essential to preserve expressiveness. Since the two criteria are applied alternately in the adaptation process, we are able to avoid the kind of bias issues frequently encountered in similar tasks. The proposed adaptation technique demonstrates more effective performance compared to conventional approaches in both quantitative and qualitative evaluations."
+  tags: ["IEEE Access 2020", "Speech","TTS", "AI"]
+  id: 70
+
+- authors: "Seong Uk Kim, Hanyoung Jang(NCSOFT), Jongmin Kim"
+  title: "A Robust Low-cost Mocap System with Sparse Sensors"
+  conf: "SIGGRAPH Asia (2020) (Poster Session)"
+  year: 2020
+  abstract: "In this paper, we propose a robust low-cost mocap system (mocap) with sparse sensors. Although the sensor with an accelerometer, magnetometer, and gyroscope is cost-effective and offers the measured positions and rotations from these devices, it potentially suffers from noise, drift, and lost issues over time. The resulting character obtained from a sensor-based low-cost mocap system is thus generally not satisfactory. We address these issues by using a novel deep learning framework that consists of two networks, a motion estimator and a sensor data generator. When the aforementioned issues occur, the motion estimator feeds the newly synthesized sensor data obtained with the measured and predicted data from the sensor data generator until the issues have been resolved. Otherwise, the motion estimator receives the measured sensor data to accurately and continuously reconstruct the new character poses. In our examples, we show that our system outperforms the previous approach without the sensor data generator and we believe that it can be considered a handy and robust mocap system."
+  tags: ["SIGGRAPH Asia 2020", "Graphics", "AI"]
+  id: 71
+
+- authors: "Seong Uk Kim, Hanyoung Jang(NCSOFT), Jongmin Kim"
+  title: "A variational U-Net for motion retargeting"
+  conf: "International Conference on Computer Animation and Social Agents (CASA) (2020) (Best Paper Nominee), SIGGRAPH Asia (2018) (Poster Session)"
+  year: 2018
+  abstract: "Motion retargeting is the process of copying motion from one character (source) to another (target) when the source and target body sizes and proportions (of arms, legs, torso, etc.) are different. The problem of automatic motion retargeting has been studied for several decades; however, the motion quality obtained with the application of current approaches is on occasion unrealistic. This is because previous methods, which are mainly based on numerical optimization, generally do not incorporate prior knowledge of the details and nuances of human movements. To address these issues, we present a novel human motion retargeting system using a deep learning framework with large-scale motion data to produce high-quality retargeted human motion. We establish a deep-learning-based motion retargeting system using a variational deep autoencoder combining the deep convolutional inverse graphics network (DC-IGN) and the U-Net. The DC-IGN is utilized for disentangling the motion of each body part, while the U-Net is employed to preserve details of the original motion. We conduct several experiments to validate the proposed motion retargeting system, and find that ours achieves better accuracy along with reduced computational burden when compared with the conventional motion retargeting approach and other neural network architectures."
+  tags: ["CASA2020", "SIGGRAPH Asia 2018", "Graphics", "AI"]
+  id: 72
+
+- authors: "Younghyun Lee(NCSOFT), Hyunjo Jung(NCSOFT), Cheoljong Yang(NCSOFT), Joonsoo Lee(NCSOFT)"
+  title: "Highlight-Video Generation System for Baseball Games"
+  conf: "IEEE International Conference on Consumer Electronics (ICCE-Asia) (2020)"
+  year: 2020
+  abstract: "Highlight videos are designed to help people understand the key content without having to watch the original long videos in their entirety. Notably, highlight videos of sports are in considerable demand from viewers. We propose a highlight-video generation system for baseball games. The original video, along with the game log, is used to rapidly and accurately extract trimmed event video using simple computer vision algorithms. Several types of highlight videos can be generated by extracting all the trimmed event videos and combining them in various manners. Experimental results show that the proposed method has 98.18% accuracy in trimmed event video extraction. Moreover, it is possible to generate highlight videos within an average of 2 min after receiving the input video."
+  tags: ["ICCE Asia 2020", "Vision", "AI"]
+  id: 73
+
+- authors: "이주성(NCSOFT), 이영현(NCSOFT), 이준수(NCSOFT)"
+  title: "ATSR: 단어 인식기에 필요한 것은 트랜스포머"
+  conf: "대한전자공학회 2020년도 하계종합학술대회"
+  year: 2020
+  abstract: "Scene text recognition is a challenging taskbecause it contains a variety of background, noise,blur,fonts, and perspective views. Recently, deep learning-based algorithms, for example, RNN-based methods or Transformer-based methods, have shown out standing results on the scene text recognition task. However, RNN-based methods suffer inherently from long-term dependency problems and Transformer-based methods have low accuracy in curved and irregular text.In this paper, we propose a novel deep neural network architecture which combines “Spatial Transformer Network” and “Transformer” network for scene text recognition. The proposed architecture shows consistently better word accuracy over widely used public word recognition datasets,compared to previous scene text recognition models."
+  tags: ["대한전자공학회2020년도하계종합학술대회", "Vision", "AI"]
+  id: 74
+
+- authors: "이재명(NCSOFT), 이주성(NCSOFT), 이영현(NCSOFT), 이준수(NCSOFT)"
+  title: "문자 검출을 위한 이중수용영역 기반 특징 추출 방법"
+  conf: "대한전자공학회 2020년도 하계종합학술대회"
+  year: 2020
+  abstract: "Instance segmentation-based approach using Mask R-CNN is currently one of the leading methods for the text localization task. Different from general object detection tasks, the aspect ratio of text instances is too high to apply Mask R-CNN as it is.To simply apply Mask R-CNN for text  detection yields false positives due to over-generalized receptive fields for bounding boxes. In this paper, we propose a modified Mask R-CNN architecture for text detection. We present  a method to extract features containing word-level and character-level receptive fields simultaneously.Our approach shows consistent performance improve menton MLT 2017 and Incidental Scene Text. Moreover, our method surpasses most of prior state-of-the-art text localization methods appeared in recent computer vision conferences."
+  tags: ["대한전자공학회2020년도하계종합학술대회", "Vision", "AI"]
+  id: 75
+
+- authors: "Junho Kim(NCSOFT), Hyeonwoo Kang(NCSOFT), Minjae Kim(NCSOFT), Kwang Hee Lee"
+  title: "U-GAT-IT: UNSUPERVISED GENERATIVE ATTENTIONAL NETWORKS WITH ADAPTIVE LAYER-INSTANCE NORMALIZATION FOR IMAGE-TO-IMAGE TRANSLATION"
+  conf: "The International Conference on Learning Representations (ICLR) (2020)"
+  year: 2020
+  abstract: "We propose a novel method for unsupervised image-to-image translation, which incorporates a new attention module and a new learnable normalization function in an end-to-end manner. The attention module guides our model to focus on more important regions distinguishing between source and target domains based on the attention map obtained by the auxiliary classifier. Unlike previous attention-based method which cannot handle the geometric changes between domains, our model can translate both images requiring holistic changes and images requiring large shape changes. Moreover, our new AdaLIN (Adaptive Layer-Instance Normalization) function helps our attention-guided model to flexibly control the amount of change in shape and texture by learned parameters depending on datasets. Experimental results show the superiority of the proposed method compared to the existing state-of-the-art models with a fixed network architecture and hyper-parameters."
+  tags: ["ICLR2020", "Vision", "AI"]
+  id: 76
+
+- authors: "Seong Uk Kim, Hanyoung Jang(NCSOFT), Jongmin Kim"
+  title: "Human Motion Denoising Using Attention-Based Bidirectional Recurrent Neural Network"
+  conf: "SIGGRAPH Asia (2019) (Poster Session)"
+  year: 2019
+  abstract: "In this paper, we propose a novel method of denoising human motion using a bidirectional recurrent neural network (BRNN) with an attention mechanism. The corrupted motion that is captured from a single 3D depth sensor camera is automatically fixed in the well-established smooth motion manifold. Incorporating an attention mechanism into BRNN achieves better optimization results and higher accuracy because a higher weight value is selectively given to the more important input pose at a specific frame for encoding the input motion when compared to other deep learning frameworks. The results show that our approach efficiently handles various types of motion and noise. We also experiment with different features to find the best feature and believe that our method will be sufficiently desirable to be used in motion capture applications as a post-processing step after capturing human motion."
+  tags: ["SIGGRAPH Asia 2019", "Graphics", "AI"]
+  id: 77
+
+- authors: "Moonwon Yu(NCSOFT), Byungjun Kwon(NCSOFT), Jongmin Kim, Shinjin Kang, Hanyoung Jang(NCSOFT)"
+  title: "Fast Terrain-Adaptive Motion Generation using Deep Neural Networks"
+  conf: "SIGGRAPH Asia (2019) (Technical Brief)"
+  year: 2019
+  abstract: "We propose a fast motion adaptation framework using deep neural networks. Traditionally, motion adaptation is performed via iterative numerical optimization. We adopted deep neural networks and replaced the iterative process with the feed-forward inference consisting of simple matrix multiplications. For efficient mapping from contact constraints to character motion, the proposed system is composed of two types of networks: trajectory and pose generators. The networks are trained using augmented motion capture data and are fine-tuned using the inverse kinematics loss. In experiments, our system successfully generates multi-contact motions of a hundred of characters in real-time, and the result motions contain the naturalness existing in the motion capture data."
+  tags: ["SIGGRAPH Asia 2019", "Graphics", "AI"]
+  id: 78
+
+- authors: "정겨운(NCSOFT), 조남현(NCSOFT), 김희만(NCSOFT), 조훈영(NCSOFT)"
+  title: "DNN-GRU Multiple Layers for VAD in PC Game Café, ICCE-ASIA 2018"
+  conf: "International Conference on Consumer Electronics Asia (ICCE ASIA) (2018)"
+  year: 2018
+  abstract: "In this paper, we present multi-layer networks based on Deep Neural Networks (DNNs; also known as Dense layer or fully connected layer) and Gated Recurrent Units (GRUs) for Voice Activity Detection (VAD) with temporal smoothing in noisy PC game cafe environments. The noise from PC game cafe has distinctive features from previous VAD studies. To improve the accuracy of VAD in noisy environments, we recommend multi-layer neural networks with the fusion of DNNs and GRUs. DNNs were used as the first layer and last one because DNNs are good at mapping features and performing class-based discrimination. In order to take advantage of time sequence modeling such as speech, we used GRU We show that our model made better performance for the PC game cafe noisy environment compared to using only DNNs and GRUs."
+  tags: ["ICCE Asia 2022", "Speech", "VAD", "AI"]
+  id: 79
+
+- authors: "Byungjun Kwon(NCSOFT), Moonwon Yu(NCSOFT), Hanyoung Jang(NCSOFT), KyuHyun Cho(NCSOFT), Hyundong Lee(NCSOFT), Taesung Hahn(NCSOFT)"
+  title: "Deep Motion Transfer without Big Data"
+  conf: "SIGGRAPH (2018) (Poster Session)"
+  year: 2018
+  abstract: "This paper presents a novel motion transfer algorithm that copies content motion into a specific style character. The input consists of two motions. One is a content motion such as walking or running, and the other is movement style such as zombie or Krall. The algorithm automatically generates the synthesized motion such as walking zombie, walking Krall, running zombie, or running Krall. In order to obtain natural results, the method adopts the generative power of deep neural networks. Compared to previous neural approaches, the proposed algorithm shows better quality, runs extremely fast, does not require big data, and supports user-controllable style weights."
+  tags: ["SIGGRAPH2018", "Graphics", "AI"]
+  id: 80
