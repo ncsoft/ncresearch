@@ -71,7 +71,7 @@ $baseurl: "{{ site.baseurl }}";
         width: 12rem;
         height: 12rem;
         // background-color: var(--selection);
-        background-image: url('/ncnlp/assets/img/blog_icon_0.png');
+        background-image: url('/ncresearch/assets/img/blog_icon_0.png');
         background-size: 12rem;
         background-repeat: no-repeat;
         border-radius: 8px;
@@ -79,112 +79,112 @@ $baseurl: "{{ site.baseurl }}";
       }
 
       .item_biz::before {
-          background-image: url('/ncnlp/assets/img/icon_biz.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_biz.png') !important;
           background-position: center center;
           background-size: auto;
       }
       .item_conf::before {
-          background-image: url('/ncnlp/assets/img/icon_conf.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_conf.png') !important;
           background-position: center center;
           background-size: auto;
       }
       .item_news::before {
-          background-image: url('/ncnlp/assets/img/icon_news.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_news.png') !important;
           background-position: center center;
           background-size: auto;
       }
       .item_nlp::before {
-          background-image: url('/ncnlp/assets/img/icon_nlp.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_nlp.png') !important;
           background-position: center center;
           background-size: auto;
       }
       .item_paper::before {
-          background-image: url('/ncnlp/assets/img/icon_paper.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_paper.png') !important;
           background-position: center center;
           background-size: auto;
       }
       .item_patent::before {
-          background-image: url('/ncnlp/assets/img/icon_patent.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_patent.png') !important;
           background-position: center center;
           background-size: auto;
       }
       .item_school::before {
-          background-image: url('/ncnlp/assets/img/icon_school.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_school.png') !important;
           background-position: center center;
           background-size: auto;
       }
       .item_seminar::before {
-          background-image: url('/ncnlp/assets/img/icon_seminar.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_seminar.png') !important;
           background-position: center center;
           background-size: auto;
       }
       .item_tech::before {
-          background-image: url('/ncnlp/assets/img/icon_tech.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_tech.png') !important;
           background-position: center center;
           background-size: auto;
       }
       .item_security::before {
-          background-image: url('/ncnlp/assets/img/icon_security.png') !important;
+          background-image: url('/ncresearch/assets/img/icon_security.png') !important;
           background-position: center center;
           background-size: auto;
       }
 
       .item_biz_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_biz.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_biz.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;
       }
       .item_conf_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_conf.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_conf.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;
       }
       .item_news_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_news.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_news.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;
       }
       .item_nlp_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_nlp.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_nlp.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;
       }
       .item_paper_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_paper.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_paper.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;
       }
       .item_patent_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_patent.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_patent.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;
       }
       .item_school_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_school.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_school.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;
       }
       .item_seminar_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_seminar.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_seminar.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;
       }
       .item_tech_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_tech.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_tech.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;
       }
       .item_security_new::before {
-          background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_security.png') !important;
+          background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_security.png') !important;
           background-position: 0.5rem 0.5rem, center center;
           background-repeat: no-repeat, no-repeat;
           background-size: auto auto;

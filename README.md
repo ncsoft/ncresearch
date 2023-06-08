@@ -1,1 +1,1 @@
-# [NC NLP TechBlog](https://ncsoft.github.io/ncnlp/)
+# [NC NLP TechBlog](https://ncsoft.github.io/ncresearch/)

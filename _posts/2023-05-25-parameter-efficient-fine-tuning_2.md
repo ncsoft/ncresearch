@@ -5,7 +5,7 @@ icon: tech
 author: 6d1904ff3cb196321b9b48940d8f519d2889b158
 permalink: c8416dcc21d8aad7f0ee65eaa47ad53854578b59
 categories: tech
-tags: [Large_Language_Model, PEFT]
+tags: [Large_Language_Model, PEFT, NLP]
 excerpt: Parameter-Efficient Fine-Tuning (PEFT) 방법들
 back_color: "#eff7ff"
 toc: true
@@ -41,7 +41,7 @@ new: true
 
 다시 만나뵙게 되어 반갑습니다 =]
 우리 1부 에서 만났었죠? 
-[1부: 생각보다는 연속적인 기술의 발전으로 등장한 Large Language Model (LLM)](https://ncsoft.github.io/ncnlp/1f6f252aef508cb69fbb05b893f2f2f27639d869) 에서는 ChatGPT를 화두로 어떻게 LLM은 다시 강팀(?)이 되었는지,
+[1부: 생각보다는 연속적인 기술의 발전으로 등장한 Large Language Model (LLM)](https://ncsoft.github.io/ncresearch/1f6f252aef508cb69fbb05b893f2f2f27639d869) 에서는 ChatGPT를 화두로 어떻게 LLM은 다시 강팀(?)이 되었는지,
 그리고 그 기술적 흐름의 원천까지 함께 살펴보았습니다.
 
 

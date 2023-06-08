@@ -1,45 +1,48 @@
 ---
 layout: default
 ---
-<article {% if page.feature-img or page.color or page.back_color %}class="feature-image" {% endif %}>
+<article {% if page.feature-img or page.color or page.back_color %}class="feature-image"{% endif %}>
   <header id="main" style="">
     <div class="title-padder">
       {% if page.hide_title %}
-      <div class="feature-image-padding"></div>
+        <div class="feature-image-padding"></div>
       {% else %}
-      <div class="item item_{{ page.icon }}{% if page.new %}_new{% endif %}"></div>
-      <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
-      {% include blog/post_info.liquid author=page.author date=page.date %}
+        <div class="item item_{{ page.icon }}{% if page.new %}_new{% endif %}"></div>
+        <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
+        {% include blog/post_info.liquid author=page.author date=page.date %}
       {% endif %}
     </div>
   </header>
 
   <section class="post-content">
-  {% if page.bootstrap %}
-    <div class="bootstrap-iso">
-    {% endif %}
-    {% if page.series >= 0 %}
-      {% assign series = site.data.series %}
-      {% for ser in series %}
-        {% if ser.id == page.series %}
-          <div class="series_div">
-            <ol>
-              {% for el in ser.list %}
-                <li class="series_li"><a href="https://ncsoft.github.io/ncnlp/{{el.permalink}}">{{el.title}}</a></li>
-              {% endfor %}
-            </ol>
-          </div>
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-      {{ content | replace: '-!', '<span class="sidenote-number"><small class="sidenote">' | replace: '!-', '</small></span>' | toc }}
     {% if page.bootstrap %}
-    </div>
-  {% endif %}
+      <div class="bootstrap-iso">
+      {% endif %}
+      {% if page.series >= 0 %}
+        {% assign series = site.data.series %}
+        {% for ser in series %}
+          {% if ser.id == page.series %}
+            <div class="series_div">
+              <ol>
+                {% for el in ser.list %}
+                  <li class="series_li">
+                    <a href="https://ncsoft.github.io/ncresearch/{{el.permalink}}">{{ el.title }}</a>
+                  </li>
+                {% endfor %}
+              </ol>
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {{ content | replace: '-!', '<span class="sidenote-number"><small class="sidenote">' | replace: '!-', '</small></span>' | toc }}
+      {% if page.bootstrap %}
+      </div>
+    {% endif %}
   </section>
 
   <!-- Tag list -->
-  {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}
+  {% capture tag_list %}
+    {{ page.tags | join: "|" }}{% endcapture %}
   {% include default/tags_list.liquid tags=tag_list %}
 
   <!-- Social media shares -->
@@ -51,55 +54,78 @@ layout: default
 </article>
 
 <!-- Post navigation -->
-{% if site.post_navigation  or site.theme_settings.post_navigation %}
-{% include blog/post_nav.liquid %}
+{% if site.post_navigation or site.theme_settings.post_navigation %}
+  {% include blog/post_nav.liquid %}
 {% endif %}
 
 <!--Utterances-->
-{% if site.comments.utterances.repo and site.comments.utterances.issue-term %} {% include social/utterances.liquid %} {% endif %}
+{% if site.comments.utterances.repo and site.comments.utterances.issue-term %}
+  {% include social/utterances.liquid %}
+{% endif %}
 
 <!-- Cusdis -->
-{% if site.comments.cusdis_app_id or site.cusdis_app_id %}{% include social/cusdis.liquid %}{% endif %}
+{% if site.comments.cusdis_app_id or site.cusdis_app_id %}
+  {% include social/cusdis.liquid %}{% endif %}
 
 <!-- Disqus -->
 {% if site.comments.disqus_shortname or site.theme_settings.disqus_shortname or site.disqus_shortname %}
-{% include social/disqus.liquid %}{% endif %}
+  {% include social/disqus.liquid %}{% endif %}
 
 <!-- To change color of links in the page -->
 <style>
   header#main {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   {% if page.color %}
-  .post-content a { color: {{ page.color }} !important; }
-  .tag-list a:not(:hover) { color: {{ page.color }} !important; }
-  div#post-nav a { color: {{ page.color }} !important; }
-  footer a { color: {{ page.color }} !important; }
-  .site-header nav a:hover {  color: {{ page.color }} !important; }
-  a.button:hover {
-    background: {{ page.color }} !important;
-    border: 1px solid {{ page.color }} !important;
-    color: white;
-    text-decoration: none;
-    filter: none;
-  }
-  header#main {
-      background-color: {{ page.back_color }} !important;
+    .post-content a {
+      color: {{ page.color }}
+       !important;
+    }
+    .tag-list a:not(:hover) {
+      color: {{ page.color }}
+       !important;
+    }
+    div#post-nav a {
+      color: {{ page.color }}
+       !important;
+    }
+    footer a {
+      color: {{ page.color }}
+       !important;
+    }
+    .site-header nav a:hover {
+      color: {{ page.color }}
+       !important;
+    }
+    a.button:hover {
+      background: {{ page.color }}
+       !important;
+      border: 1px solid{{ page.color }}!important;
+      color: white;
+      text-decoration: none;
+      filter: none;
+    }
+    header#main {
+      background-color: {{ page.back_color }}
+       !important;
       background-image: url('{{ site.color_image | relative_url }}');
-  }
+    }
   {% endif %}
 
   {% if page.back_color %}
-  header#main {
-      background-color: {{ page.back_color }} !important;
-  }
+    header#main {
+      background-color: {{ page.back_color }}
+       !important;
+    }
   {% endif %}
 
   {% if page.feature-img %}
-  header#main { background-image: url('{{ page.feature-img | relative_url }}'); }
+    header#main {
+      background-image: url('{{ page.feature-img | relative_url }}');
+    }
   {% endif %}
 
   .item {
@@ -108,120 +134,122 @@ layout: default
     background-size: 12rem;
     background-repeat: no-repeat;
     border-radius: 8px;
-    margin: 0 auto 5.5em auto;
+    margin: 0 auto 5.5em;
     filter: drop-shadow(4px 4px 4px rgba(51, 61, 75, 0.3));
   }
 
   .item_biz {
-      background-image: url({{'/assets/img/icon_biz.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_biz.png' | relative_url}}') !important;
   }
   .item_conf {
-      background-image: url({{'/assets/img/icon_conf.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_conf.png' | relative_url}}') !important;
   }
   .item_news {
-      background-image: url({{'/assets/img/icon_news.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_news.png' | relative_url}}') !important;
   }
   .item_nlp {
-      background-image: url({{'/assets/img/icon_nlp.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_nlp.png' | relative_url}}') !important;
   }
   .item_paper {
-      background-image: url({{'/assets/img/icon_paper.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_paper.png' | relative_url}}') !important;
   }
   .item_patent {
-      background-image: url({{'/assets/img/icon_patent.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_patent.png' | relative_url}}') !important;
   }
   .item_school {
-      background-image: url({{'/assets/img/icon_school.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_school.png' | relative_url}}') !important;
   }
   .item_seminar {
-      background-image: url({{'/assets/img/icon_seminar.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_seminar.png' | relative_url}}') !important;
   }
   .item_tech {
-      background-image: url({{'/assets/img/icon_tech.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_tech.png' | relative_url}}') !important;
   }
   .item_security {
-      background-image: url({{'/assets/img/icon_security.png' | relative_url}}) !important;
+    background-image: url('{{'/assets/img/icon_security.png' | relative_url}}') !important;
   }
   .item_biz_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_biz.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_biz.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
   .item_conf_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_conf.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_conf.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
   .item_news_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_news.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_news.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
   .item_nlp_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_nlp.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_nlp.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
   .item_paper_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_paper.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_paper.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
   .item_patent_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_patent.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_patent.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
   .item_school_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_school.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_school.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
   .item_seminar_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_seminar.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_seminar.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
   .item_tech_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_tech.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_tech.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
   .item_security_new {
-      background-image: url('/ncnlp/assets/img/new_badge.png'), url('/ncnlp/assets/img/icon_security.png') !important;
-      background-position: 0.5rem 0.5rem, center center;
-      background-repeat: no-repeat, no-repeat;
-      background-size: auto auto;
+    background-image: url('/ncresearch/assets/img/new_badge.png'), url('/ncresearch/assets/img/icon_security.png') !important;
+    background-position: 0.5rem 0.5rem, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto auto;
   }
 </style>
 
 <script>
-let move_top_btn = document.getElementsByClassName("move_top_btn")[0];
-move_top_btn.addEventListener('click', topFunction);
+  let move_top_btn = document.getElementsByClassName("move_top_btn")[0];
+  move_top_btn.addEventListener('click', topFunction);
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+  window.onscroll = function() {
+    scrollFunction()
+  };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    move_top_btn.style.display = "block";
-  } else {
-    move_top_btn.style.display = "none";
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      move_top_btn.style.display = "block";
+    } else {
+      move_top_btn.style.display = "none";
+    }
   }
-}
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 </script>

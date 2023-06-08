@@ -5,7 +5,7 @@ icon: nlp
 author: 48195cf45287637a49cf35c18ae54a53cf3022cf
 permalink: abb25deb34567f41e96fe4b9250719cb0f1399fe
 categories: nlp
-tags: [robustness, natural_language_inference, spurious_correlations, out-of-distribution_generalization]
+tags: [robustness, natural_language_inference, spurious_correlations, out-of-distribution_generalization, NLP]
 excerpt: 인간의 개입 없이 robust한 학습 방법론을 소개하기 전, 관련 개념, 연구, 및 NLI 모델 구조 등을 쉽게 설명한다.
 back_color: "#eff7ff"
 toc: true
@@ -194,7 +194,7 @@ Min et al. (2020)[^6]의 연구자들은 어휘 중복과 entailment 레이블 �
 ![]({{"/assets/img/post/abb25deb34567f41e96fe4b9250719cb0f1399fe/nonmun.jfif"| relative_url}})
 *곰국을 거꾸로 하면..아닙니다.*
 
-([ㄱㄱㄱ 2편](https://ncsoft.github.io/ncnlp/64da1f4997161eff97aa5d3ce09e9ad83d751a79)에서 이어집니다)
+([ㄱㄱㄱ 2편](https://ncsoft.github.io/ncresearch/64da1f4997161eff97aa5d3ce09e9ad83d751a79)에서 이어집니다)
 
 <br/>
 

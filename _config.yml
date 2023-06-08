@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/ncnlp"
+baseurl: "/ncresearch"
 url: "https://ncsoft.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
