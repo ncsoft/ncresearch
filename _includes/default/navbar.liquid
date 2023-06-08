@@ -6,8 +6,14 @@
       <a href="{{ '/' | relative_url }}">
         <img
           alt="logo img"
-          class="avatar"
+          class="avatar{% if page.path == 'index.html' %} avatar_hide{% endif %}"
           src="{{ site.avatar | relative_url }}" />
+        {% if page.path == 'index.html' %}
+          <img
+            alt="logo img"
+            class="avatar"
+            src="{{ site.avatar2 | relative_url }}" />
+        {% endif %}
       </a>
     {% endif %}
   </div>
