@@ -11,7 +11,7 @@ favicon: assets/favicon.ico                             # Icon displayed in the 
 # Header and footer text
 header_text: "Explore future values"  # Change Blog header text
 header_text2: "with technology and creativity"
-header_feature_image: assets/img/header/header.png
+header_feature_image: assets/img/renewal/header.png
 og_feature_image: assets/img/og_image.png
 header_feature_image_responsive: true
 footer_text: >
