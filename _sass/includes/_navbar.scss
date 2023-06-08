@@ -18,10 +18,9 @@
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: #FFFFFF;
-
+  
   padding: 2.1875rem 3.125rem 2.1875rem 3.125rem;
-  background: var(--background);
+  background: var(--background) !important;
   display: inline-block;
   float: left;
   width: 100%;
