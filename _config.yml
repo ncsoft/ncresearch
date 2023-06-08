@@ -6,6 +6,7 @@ url: "https://ncsoft.github.io"
 title: 　                                 # site's title
 description: "NC Research"      # used by search engines
 avatar: assets/img/renewal/text_logo_blue.png                         # Empty for no avatar in navbar
+avatar2: assets/img/renewal/text_logo_white.png
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
