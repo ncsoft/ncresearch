@@ -16,10 +16,10 @@
 }
 
 %padding-post {
-  // padding: $padding-x-small $padding-x-large;
-  padding: $padding-x-small 21.0625rem;
+  padding: $padding-x-small $padding-x-large;
   @media (max-width: $xl-break) {
-    padding: $padding-x-small ($padding-large * 2);
+    // padding: $padding-x-small ($padding-large * 2);
+    padding: $padding-x-small 21.0625rem;
   }
   @media (max-width: $l-break) {
     padding: $padding-x-small $padding-large;
