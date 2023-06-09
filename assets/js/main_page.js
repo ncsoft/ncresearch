@@ -1,5 +1,7 @@
 function initEventListener() {
   console.log('main_page init');
+  const site_header = document.getElementsByClassName('site-header')[0];
+  removeClass(site_header, 'site_header_wheeled');
   
   addEventListener('scroll', (e) => {
     const main_div = document.getElementById('main');
