@@ -3,12 +3,18 @@ function initEventListener() {
   
   addEventListener('scrollend', (e) => {
     const main_div = document.getElementById('main');
+    const logo_blue = document.getElementById('logo_blue');
+    const logo_white = document.getElementById('logo_white');
 
     if (window.scrollY <= 20) {
       removeClass(main_div, 'call-out_img_wheeled');
+      removeClass(logo_blue, 'avatar_hide');
+      addClass(logo_white, 'avatar_hide');
     }
     else {
       addClass(main_div, 'call-out_img_wheeled');
+      addClass(logo_blue, 'avatar_hide');
+      removeClass(logo_white, 'avatar_hide');
     }
   });
   

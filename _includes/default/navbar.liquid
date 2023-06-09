@@ -5,11 +5,13 @@
     {% if site.avatar %}
       <a href="{{ '/' | relative_url }}">
         <img
+          id="logo_blue"
           alt="logo img"
           class="avatar{% if page.path == 'index.html' %} avatar_hide{% endif %}"
           src="{{ site.avatar | relative_url }}" />
         {% if page.path == 'index.html' %}
           <img
+            id="logo_white"
             alt="logo img"
             class="avatar"
             src="{{ site.avatar2 | relative_url }}" />
