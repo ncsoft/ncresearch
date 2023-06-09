@@ -2,7 +2,7 @@
   title: "Persona Expansion with Commonsense Knowledge for Diverse and Consistent Response Generation"
   conf: "The 17th Conference of the European Chapter of the Association for Computational Linguistics(EACL). (2023)"
   year: 2023
-  abstract: "** abstract **"
+  abstract: "Generating diverse and consistent responses is the ultimate goal of a persona-based dialogue. Although many studies have been conducted, the generated responses tend to be generic and bland due to the personas’ limited descriptiveness. Therefore, it is necessary to expand the given personas for more attractive responses. However, indiscriminate expansion of personas threaten the consistency of responses and therefore reduce the interlocutor’s interest in conversation. To alleviate this issue, we propose a consistent persona expansion framework that improves not only the diversity but also the consistency of persona-based responses. To do so, we define consistency criteria to avoid possible contradictions among personas as follows: 1) Intra-Consistency and 2) Inter-Consistency. Then, we construct a silver profile dataset to deliver the ability to conform with the consistency criteria to the expansion model. Finally, we propose a persona expansion model with an encoder-decoder structure, which considers the relatedness and consistency among personas. Our experiments on the Persona-Chat dataset demonstrate the superiority of the proposed framework."
   tags: ["EACL2023", "Dialogue", "NLP"]
   id: 0
 
@@ -10,7 +10,7 @@
   title: "Concept-based Persona Expansion for Improving Diversity of Persona-Grounded Dialogue"
   conf: "The 17th Conference of the European Chapter of the Association for Computational Linguistics(EACL). (2023)"
   year: 2023
-  abstract: "** abstract **"
+  abstract: "A persona-grounded dialogue model aims to improve the quality of responses to promote user engagement. However, because the given personas are mostly short and limited to only a few informative words, it is challenging to utilize them to generate diverse responses. To tackle this problem, we propose a novel persona expansion framework, Concept-based Persona eXpansion (CPX). CPX takes the original persona as input and generates expanded personas that contain conceptually rich content. We constitute CPX with two task modules: 1) Concept Extractor and 2) Sentence Generator. To train these modules, we exploit the duality of two tasks with a commonsense dataset consisting of a concept set and the corresponding sentences which contain the given concepts. Extensive experiments on persona expansion and response generation show that our work sufficiently contributes to improving the quality of responses in diversity and richness."
   tags: ["EACL2023", "Dialogue", "NLP"]
   id: 1
 
