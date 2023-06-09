@@ -1,7 +1,7 @@
 function initEventListener() {
   console.log('main_page init');
   
-  addEventListener('wheel', (e) => {
+  addEventListener('scroll', (e) => {
     const main_div = document.getElementById('main');
 
     if (window.scrollY <= 20) {
