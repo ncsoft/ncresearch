@@ -665,3 +665,9 @@ a > h3:hover {
 .call-out_img_wheeled {
   background-image: none !important;
 }
+
+.site_header_wheeled {
+  background-image: none !important;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray100);
+}
