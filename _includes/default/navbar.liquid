@@ -1,4 +1,4 @@
-<header class="site-header{% if page.page_name != 'home' %} site_header_wheeled{% endif %}">
+<header class="site-header{% if page.layout != 'home' %} site_header_wheeled{% endif %}">
 
   <!-- Logo and title -->
   <div class="branding">
@@ -7,9 +7,9 @@
         <img
           id="logo_blue"
           alt="logo img"
-          class="avatar{% if page.page_name == 'home' %} avatar_hide{% endif %}"
+          class="avatar{% if page.layout == 'home' %} avatar_hide{% endif %}"
           src="{{ site.avatar | relative_url }}" />
-        {% if page.page_name == 'home' %}
+        {% if page.layout == 'home' %}
           <img
             id="logo_white"
             alt="logo img"
@@ -41,7 +41,7 @@
           </li>
           <li>
             <a
-              class="clear{% if page.page_name == 'home' %} main_page_a{% endif %}"
+              class="clear{% if page.layout == 'home' %} main_page_a{% endif %}"
               aria-label="{{ page_.title }}"
               title="{{ page_.title }}"
               href="{{ page_.url | relative_url }}">
