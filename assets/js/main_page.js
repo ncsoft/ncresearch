@@ -1,7 +1,7 @@
 function initEventListener() {
   console.log('main_page init');
   
-  addEventListener('scroll', (e) => {
+  addEventListener('scrollend', (e) => {
     const main_div = document.getElementById('main');
 
     if (window.scrollY <= 20) {
