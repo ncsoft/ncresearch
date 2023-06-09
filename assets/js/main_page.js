@@ -1,6 +1,17 @@
 function initEventListener() {
   console.log('main_page init');
   
+  addEventListener('wheel', (e) => {
+    const main_div = document.getElementById('main');
+
+    if (window.scrollY == 0) {
+      removeClass(main_div, 'call-out_img_wheeled');
+    }
+    else {
+      addClass(main_div, 'call-out_img_wheeled');
+    }
+  });
+  
 }
 
 function hasClass(el, className) {
