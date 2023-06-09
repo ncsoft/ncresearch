@@ -1,7 +1,7 @@
 function initEventListener() {
   console.log('main_page init');
   
-  addEventListener('scrollend', (e) => {
+  addEventListener('scroll', (e) => {
     const main_div = document.getElementById('main');
     const logo_blue = document.getElementById('logo_blue');
     const logo_white = document.getElementById('logo_white');
