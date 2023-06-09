@@ -4,7 +4,7 @@ function initEventListener() {
   addEventListener('wheel', (e) => {
     const main_div = document.getElementById('main');
 
-    if (window.scrollY == 0) {
+    if (window.scrollY <= 20) {
       removeClass(main_div, 'call-out_img_wheeled');
     }
     else {
