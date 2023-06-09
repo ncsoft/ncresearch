@@ -39,7 +39,7 @@
           </li>
           <li>
             <a
-              class="clear"
+              class="clear{% if page.path == 'index.html' %} main_page_a{% endif %}"
               aria-label="{{ page.title }}"
               title="{{ page.title }}"
               href="{{ page.url | relative_url }}">
