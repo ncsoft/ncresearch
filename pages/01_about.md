@@ -63,10 +63,6 @@ page-type: main_page
 
 <br/>
 
----
-
-<br/>
-
 > ## 언어이해기술실
 > (Language Understanding Tech)
 >
@@ -102,10 +98,6 @@ page-type: main_page
 - 자연어 처리 어플리케이션 혹은 언어/대화모델 개발 경험
 - 자연어처리 및 머신러닝 관련 주요 학회 및 저널 논문 게재 실적 (NeurIPS, ICML, ICLR, ACL, EMNLP, AAAI, IJCAI, COLING, INTERSPEECH 등)
 - AI 관련 Challenge 및 경진대회 수상 이력
-
-<br/>
-
----
 
 <br/>
 
@@ -165,10 +157,6 @@ page-type: main_page
 #### 💼 팀에서 하는 일
 
 다양한 언어모델을 학습하고 여러 벤치마크 태스크에서 우수한 성능을 보이도록 언어모델을 학습 및 튜닝하는 업무를 진행하고 있습니다. 또한, 초거대 언어모델 학습 및 프롬프트, Zero-Shot learning에 대한 연구도 진행하고 있으며 텍스트 외에 이미지, 비디오, 음성 등을 결합한 멀티모달 언어모델에 대해 연구를 수행합니다.
-
-<br/>
-
----
 
 <br/>
 
@@ -256,10 +244,6 @@ page-type: main_page
 
 <br/>
 
----
-
-<br/>
-
 > ## 검색기술실
 > (Intelligent Search Tech Division)
 >
@@ -324,10 +308,6 @@ page-type: main_page
 - Elasticsearch/Solr 등의 검색엔진을 사용한 경험이 있으신 분
 - 벡터 검색 등 딥러닝을 이용한 검색 시스템에 경험이 있으신 분
 - CI/CD 도구 사용 경험이 있으신 분
-
-<br/>
-
----
 
 <br/>
 

@@ -467,15 +467,16 @@ table {
 }
 
 .about_center_desc {
-    text-align: center;
-    padding-left: 3em;
-    padding-right: 3em;
+    // text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
     border: none;
     margin: 1em 0em;
-    background-color: var(--gray5);
-    color: var(--gray0);
+    background: none;
+    // background-color: var(--gray5);
+    color: var(--gray600);
     box-shadow: none;
-    border-radius: 0.5em;
+    // border-radius: 0.5em;
 }
 
 .about_center_desc > p {
