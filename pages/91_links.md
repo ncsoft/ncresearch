@@ -5,7 +5,6 @@ title2 : Links
 permalink: /links/
 subtitle: "NC Research 관련 사이트"
 h_color: var(--black)
-feature-img: "assets/img/Topbg_link.png"
 page-type: main_page
 ---
 
