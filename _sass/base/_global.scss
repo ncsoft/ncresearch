@@ -687,11 +687,11 @@ h4.subtitle {
 }
 
 #main {
+  transition: opaticy .3s, display .3s;
   display: inline-block;
   opacity: 1;
 }
 #main.hide {
-  transition: opaticy .3s, display .3s;
   display: none;
   opacity: 0;
 }
