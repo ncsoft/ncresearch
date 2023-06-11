@@ -13,39 +13,39 @@ page-type: main_page
 <table id="about_table">
 <thead>
   <tr>
-    <th><a href="#NLP Center">NLP Center</a></th>
-    <th>AI Center</th>
-    <th>Applied AI Lab</th>
+    <th><a href="#nlp-center">NLP Center</a></th>
+    <th><a href="#ai-center">AI Center</a></th>
+    <th><a href="#applied-ai-lab">Applied AI Lab</a></th>
   </tr>
 </thead>
 <tbody>
   <tr>
     <td><a href="#언어이해기술실">언어이해기술실</a></td>
-    <td>Vision AI Lab</td>
+    <td><a href="#vision-ai-lab">Vision AI Lab</a></td>
     <td class="blank"></td>
   </tr>
   <tr>
     <td><a href="#대화기술실">대화기술실</a></td>
-    <td>Graphics AI Lab</td>
+    <td><a href="#graphics-ai-lab">Graphics AI Lab</a></td>
     <td class="blank"></td>
   </tr>
   <tr>
     <td><a href="#생성번역기술실">생성번역기술실</a></td>
-    <td>Speech AI Lab</td>
+    <td><a href="#speech-ai-lab">Speech AI Lab</a></td>
     <td class="blank"></td>
   </tr>
   <tr>
     <td><a href="#검색기술실">검색기술실</a></td>
-    <td>Intelligent Agent AI Lab</td>
+    <td><a href="#intelligent-agent-ai-lab">Intelligent Agent AI Lab</a></td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td><a href="#NLP데이터기술실">NLP데이터기술실</a></td>
-    <td>AI Production실</td>
+    <td><a href="#nlp데이터기술실">NLP데이터기술실</a></td>
+    <td><a href="#ai-production실">AI Production실</a></td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td><a href="#AI번역서비스실">AI번역서비스실</a></td>
+    <td><a href="#ai번역서비스실">AI번역서비스실</a></td>
     <td class="blank"></td>
     <td class="blank"></td>
   </tr>
