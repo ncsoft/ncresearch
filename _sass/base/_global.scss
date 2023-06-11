@@ -686,7 +686,11 @@ h4.subtitle {
   color: var(--gray400) !important;
 }
 
-#about_table {
+#about_div {
+  width: 100%;
   padding-top: 5rem;
-  display: block;
+}
+
+#about_table {
+  display: inline-table;
 }
