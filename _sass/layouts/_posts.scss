@@ -161,21 +161,30 @@ header {
   }
   h2 {
     color: var(--h2);
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 3.5625rem;
   }
   h3 {
     color: var(--h3);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
   h4 {
     color: var(--h4);
-    font-size: 1.25rem;
+    font-size: 2rem;
+    line-height: 2.375rem;
   }
   h5 {
-    color: var(--gray600);
-    font-size: 1.125rem;  
+    color: var(--h5);
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
   }
-  h6 { color: var(--h6); }
+  h6 {
+    color: var(--gray600);
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 2.125rem;
+  }
 
   a {
     :visited {
