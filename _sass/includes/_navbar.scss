@@ -28,7 +28,7 @@
   float: left;
   width: 100%;
   font-weight: 500;
-  color: #62697A;
+  color: var(--gray500);
 
   .separator {
     user-select: none;
@@ -49,7 +49,7 @@
   }
 
   a {
-    color: var(--header-link);
+    color: var(--gray500);
     text-decoration: none;
     font-size: 1.25rem !important;
   }
