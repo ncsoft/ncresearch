@@ -695,7 +695,7 @@ h4.subtitle {
   display: inline-table;
 }
 
-#about_table > td {
+#about_table td {
   border: none;
   border-radius: 0.375rem;
   background-color: var(--gray50) !important;
@@ -703,7 +703,7 @@ h4.subtitle {
   color: var(--gray700) !important;
 }
 
-#about_table > th {
+#about_table th {
   border: none;
   border-radius: 0.375rem;
   background-color: var(--ncblue) !important;
