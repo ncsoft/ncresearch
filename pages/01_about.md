@@ -1,8 +1,9 @@
 ---
 layout: page
 title: About
+title2: NC Research
 permalink: /about/
-subtitle: "NC NLP Center 및 세부 조직 소개"
+subtitle: "NC Research 소개 및 연구 조직"
 page-type: main_page
 ---
 
