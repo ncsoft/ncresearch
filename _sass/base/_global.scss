@@ -693,6 +693,8 @@ h4.subtitle {
 
 #about_table {
   display: inline-table;
+  border-collapse: separate;
+  border-spacing: 2rem 0.625rem;
 }
 
 #about_table td {
@@ -701,6 +703,7 @@ h4.subtitle {
   background-color: var(--gray50) !important;
   font-size: 1.125rem !important;
   color: var(--gray700) !important;
+  height: 2.8125rem;
 }
 
 #about_table th {
@@ -709,4 +712,5 @@ h4.subtitle {
   background-color: var(--ncblue) !important;
   font-size: 1.125rem !important;
   color: var(--gray50) !important;
+  height: 3.3125rem;
 }
