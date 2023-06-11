@@ -9,7 +9,7 @@ article {
   @extend .comments;
 
   header {
-    margin-bottom: 6%;
+    // margin-bottom: 6%;
     text-align: center;
   }
 
@@ -171,7 +171,7 @@ header {
     color: var(--h4);
     font-size: 1.25rem;
   }
-  h5 { color: var(--h5); }
+  h5 { color: var(--gray600); }
   h6 { color: var(--h6); }
 
   a {
