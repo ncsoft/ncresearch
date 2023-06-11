@@ -671,3 +671,7 @@ a > h3:hover {
   background: var(--white);
   border-bottom: 1px solid var(--gray100);
 }
+
+.site_header_a_selected {
+  color: var(--blue500) !important;
+}
