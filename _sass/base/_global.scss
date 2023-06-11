@@ -694,3 +694,19 @@ h4.subtitle {
 #about_table {
   display: inline-table;
 }
+
+#about_table > td {
+  border: none;
+  border-radius: 0.375rem;
+  background-color: var(--gray50) !important;
+  font-size: 1.125rem !important;
+  color: var(--gray700) !important;
+}
+
+#about_table > th {
+  border: none;
+  border-radius: 0.375rem;
+  background-color: var(--ncblue) !important;
+  font-size: 1.125rem !important;
+  color: var(--gray50) !important;
+}
