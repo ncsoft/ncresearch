@@ -458,19 +458,21 @@ table {
 }
 
 .about_desc > h2 {
-    margin-bottom: 0.1em;
-    font-size: 2rem !important;
+  display: inline-block;
+  margin-bottom: 0.1em;
+  font-size: 2rem !important;
 }
 
 .about_desc > p {
-    line-height: 1.875em;
-    font-size: 1.125em;
+  line-height: 1.875em;
+  font-size: 1.125em;
 }
 
 .about_desc > h2 + p {
   display: inline-block;
   font-size: 1.25rem !important;
   color: var(--gray300);
+  padding-left: 0.5rem;
 }
 
 .about_center_desc {
