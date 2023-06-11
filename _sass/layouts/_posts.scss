@@ -171,7 +171,10 @@ header {
     color: var(--h4);
     font-size: 1.25rem;
   }
-  h5 { color: var(--gray600); }
+  h5 {
+    color: var(--gray600);
+    font-size: 1.125rem;  
+  }
   h6 { color: var(--h6); }
 
   a {
