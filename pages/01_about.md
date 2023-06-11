@@ -19,15 +19,33 @@ ol {
 
 <h6>NC Research는 미래 기술에 대한 열정과 도전을 통해 고객에게는 새로운 가치를 제공하고, NC의 장기적인 성장과 발전을 위해 노력합니다. NC Research에는 R&D 분야별 전문 조직이 구성되어 있어서 최신 기술에 대한 공유 및 집단 연구를 통해 차별화된 경쟁력을 만들어 나가며, 단기 프로젝트 중심의 활동 보다는 장기적인 비전을 통해 미래 지향적이고 지속적인 기술 개발을 수행합니다.</h6>
 
-
-* NC NLP center
-** 언어이해기술실
-** 대화기술실
-** 생성번역기술실
-** 검색기술실
-** NLP데이터기술실
-** AI번역서비스
-{:toc}
+<table id="about_table">
+<thead>
+  <tr>
+    <th>NLP Center</th><th>AI Center</th><th>Applied AI Lab</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>언어이해기술실</td><td>Vision AI Lab</td><td></td>
+  </tr>
+  <tr>
+    <td>대화기술실</td><td>Graphics AI Lab</td><td></td>
+  </tr>
+  <tr>
+    <td>생성번역기술실</td><td>Speech AI Lab</td><td></td>
+  </tr>
+  <tr>
+    <td>검색기술실</td><td>Intelligent Agent AI Lab</td><td></td>
+  </tr>
+  <tr>
+    <td>NLP데이터기술실</td><td>AI Production실</td><td></td>
+  </tr>
+  <tr>
+    <td>AI번역서비스실</td><td></td><td></td>
+  </tr>
+</tbody>
+</table>
 
 
 <br/>
