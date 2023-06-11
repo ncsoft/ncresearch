@@ -25,7 +25,7 @@ page-type: main_page
     <td class="blank"></td>
   </tr>
   <tr>
-    <td>대화기술실</td>
+    <td><a href="#대화기술실">대화기술실</a></td>
     <td>Graphics AI Lab</td>
     <td class="blank"></td>
   </tr>

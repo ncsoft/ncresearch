@@ -721,3 +721,13 @@ h4.subtitle {
   background: none;
   cursor: auto;
 }
+
+#about_table td > a {
+  text-decoration: none;
+  color: var(--gray700) !important;
+}
+
+#about_table td > a:hover {
+  text-decoration: none;
+  color: var(--blue500) !important;
+}
