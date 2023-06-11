@@ -2,7 +2,6 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "assets/img/Topbg_about.png"
 subtitle: "NC NLP Center 및 세부 조직 소개"
 page-type: main_page
 ---
