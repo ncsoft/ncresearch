@@ -18,22 +18,22 @@ page-type: main_page
 </thead>
 <tbody>
   <tr>
-    <td>언어이해기술실</td><td>Vision AI Lab</td><td></td>
+    <td>언어이해기술실</td><td>Vision AI Lab</td><td class="blank"></td>
   </tr>
   <tr>
-    <td>대화기술실</td><td>Graphics AI Lab</td><td></td>
+    <td>대화기술실</td><td>Graphics AI Lab</td><td class="blank"></td>
   </tr>
   <tr>
-    <td>생성번역기술실</td><td>Speech AI Lab</td><td></td>
+    <td>생성번역기술실</td><td>Speech AI Lab</td><td class="blank"></td>
   </tr>
   <tr>
-    <td>검색기술실</td><td>Intelligent Agent AI Lab</td><td></td>
+    <td>검색기술실</td><td>Intelligent Agent AI Lab</td><td class="blank"></td>
   </tr>
   <tr>
-    <td>NLP데이터기술실</td><td>AI Production실</td><td></td>
+    <td>NLP데이터기술실</td><td>AI Production실</td><td class="blank"></td>
   </tr>
   <tr>
-    <td>AI번역서비스실</td><td></td><td></td>
+    <td>AI번역서비스실</td><td class="blank"></td><td class="blank"></td>
   </tr>
 </tbody>
 </table>
