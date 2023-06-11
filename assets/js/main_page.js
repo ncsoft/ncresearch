@@ -16,7 +16,7 @@ function initEventListener() {
       removeClass(logo_white, 'avatar_hide');
       removeClass(site_header, 'site_header_wheeled');
       site_header_a.forEach(c => addClass(c, 'main_page_a'));
-      removeClass(main_div, 'hide');
+      main_div.style.display = 'inline-block';
     }
     else {
       addClass(main_div, 'call-out_img_wheeled');
@@ -25,7 +25,6 @@ function initEventListener() {
       addClass(site_header, 'site_header_wheeled');
       site_header_a.forEach(c => removeClass(c, 'main_page_a'));
       main_div.style.display = 'none';
-      addClass(main_div, 'hide')
     }
   });
   
