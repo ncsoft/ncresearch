@@ -686,6 +686,12 @@ h4.subtitle {
   color: var(--gray400) !important;
 }
 
-.home {
-  transition: .3s ease-out;
+#main {
+  display: inline-block;
+  opacity: 1;
+}
+#main.hide {
+  transition: opaticy .3s, display .3s;
+  display: none;
+  opacity: 0;
 }
