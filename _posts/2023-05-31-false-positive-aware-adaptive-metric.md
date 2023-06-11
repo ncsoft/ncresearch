@@ -9,7 +9,7 @@ tags: [Recommendation, Session-based, Metric-learning, Applied_AI]
 excerpt: 이 글에서는 세션 기반의 추천에서 잘못된 클릭 시그널들을 고려하는 방법에 대해 연구한 내용을 소개합니다.
 back_color: "#eff7ff"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 ---
