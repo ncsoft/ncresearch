@@ -533,7 +533,7 @@ a > h3:hover {
     font-size: 1.25rem;
     font-weight: bold;
     color: var(--gray800);
-    line-height: 1.5rem;
+    line-height: 1.5rem !important;
     margin: 0 0 0.625rem 0;
 }
 
@@ -549,7 +549,7 @@ a > h3:hover {
     font-size: 1rem !important;
     font-weight: normal;
     color: var(--gray500) !important;
-    line-height: 1.1875rem;
+    line-height: 1.1875rem !important;
     user-select: none;
 }
 
