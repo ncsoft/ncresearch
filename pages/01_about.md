@@ -13,7 +13,7 @@ page-type: main_page
 <table id="about_table">
 <thead>
   <tr>
-    <th>NLP Center</th>
+    <th><a href="#NLP Center">NLP Center</a></th>
     <th>AI Center</th>
     <th>Applied AI Lab</th>
   </tr>
@@ -30,22 +30,22 @@ page-type: main_page
     <td class="blank"></td>
   </tr>
   <tr>
-    <td>생성번역기술실</td>
+    <td><a href="#생성번역기술실">생성번역기술실</a></td>
     <td>Speech AI Lab</td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td>검색기술실</td>
+    <td><a href="#검색기술실">검색기술실</a></td>
     <td>Intelligent Agent AI Lab</td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td>NLP데이터기술실</td>
+    <td><a href="#NLP데이터기술실">NLP데이터기술실</a></td>
     <td>AI Production실</td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td>AI번역서비스실</td>
+    <td><a href="#AI번역서비스실">AI번역서비스실</a></td>
     <td class="blank"></td>
     <td class="blank"></td>
   </tr>
@@ -55,7 +55,7 @@ page-type: main_page
 
 <br/>
 
-> # NC NLP Center
+> # NLP Center
 >
 > NLP센터는 사람이 하는 말을 기계가 알아듣고 거기에 지식을 결합하거나, 추론하거나, 인간 뇌에 해당하는 여러 (사고) 과정을 연구해 사람의 말을 생성하기까지 모든 단계에 대해 종합적으로 연구합니다. 전사 AI 연구 차원에서 NLP 분야 중요도를 높게 보고 있어 NLP센터 내에 주 연구 단위별(언어이해, 대화, 생성·번역, 검색) 기술실 네 개를 둘 만큼 심층적으로 연구를 수행하고 있습니다. 게임 사업을 위한 AI 연구조직처럼 보일 수 있지만 그렇지 않고 게임뿐만 아니라 게임과 무관한 다양한 영역에서도 AI 연구를 하고 있습니다.  
 >　
