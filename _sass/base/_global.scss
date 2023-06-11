@@ -693,18 +693,27 @@ h4.subtitle {
 
 #about_table {
   display: inline-table;
-  border-collapse: separate;
-  border-spacing: 2rem 0.625rem;
+  border-collapse: collapse;
+  // border-spacing: 2rem 0.625rem;
 }
 
 #about_table td {
-  border: none;
+  border: 0px solid transparent;
+  background-clip: padding-box;
   border-radius: 0.375rem;
   background-color: var(--gray50);
   font-size: 1.125rem;
   color: var(--gray700);
   height: 2.8125rem;
   cursor: pointer;
+}
+
+#about_table tr > td + td {
+  border-left-width: 2rem;
+}
+
+#about_table tr + tr > td {
+  border-top-width: 0.625rem;
 }
 
 #about_table th {
