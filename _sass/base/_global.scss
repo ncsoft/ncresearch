@@ -530,15 +530,15 @@ a > h3:hover {
 // }
 
 .link_title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
-    // color: var(--black);
-    color: #282B33;
+    color: var(--gray800);
+    line-height: 1.5rem;
     margin: 0 0 0.625rem 0;
 }
 
 .link_title > a {
-    font-size: 1.5rem !important;
+    font-size: 1.25rem !important;
     text-decoration: none;
 }
 .link_title > a:hover {
@@ -548,8 +548,8 @@ a > h3:hover {
 .link_desc {
     font-size: 1rem !important;
     font-weight: normal;
-    // color: var(--gray6) !important;
-    color: #62697A !important;
+    color: var(--gray500) !important;
+    line-height: 1.1875rem;
     user-select: none;
 }
 
