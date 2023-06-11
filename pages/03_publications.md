@@ -1,6 +1,7 @@
 ---
 layout: page
 title : Publications
+title2 : Publications
 permalink: /publications/
 h_color: var(--gray0)
 subtitle: "NC Research의 연구 논문, 발표 자료"

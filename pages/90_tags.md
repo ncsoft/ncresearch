@@ -1,6 +1,7 @@
 ---
 layout: tags
 title: Tags
+title2: Tags
 permalink: /tags/
 h_color: var(--gray0)
 subtitle: "블로그 글을 태그로 빠르게 검색"
