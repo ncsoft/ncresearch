@@ -1,14 +1,3 @@
-{% if site.data.social.rss or site.theme_settings.rss %}
-<li>
-    <a feed.xml href="{{ site.data.social.feed.path | default: 'feed.xml' | relative_url }}"
-       title="{{ site.data.language.str_rss_follow | default: 'Follow RSS feed' }}"
-       target="_blank"
-       id='social_icon_rss_a'>
-       <div id="social_icon_rss"></div>
-    </a>
-</li>
-{% endif %}
-
 {% for footer in site.data.icons %}
     {% unless footer[1] == nil %}
         {% assign brand = footer[0] %}
@@ -30,3 +19,14 @@
         </li>
     {% endunless %}
 {% endfor %}
+
+{% if site.data.social.rss or site.theme_settings.rss %}
+<li>
+    <a feed.xml href="{{ site.data.social.feed.path | default: 'feed.xml' | relative_url }}"
+       title="{{ site.data.language.str_rss_follow | default: 'Follow RSS feed' }}"
+       target="_blank"
+       id='social_icon_rss_a'>
+       <div id="social_icon_rss"></div>
+    </a>
+</li>
+{% endif %}
