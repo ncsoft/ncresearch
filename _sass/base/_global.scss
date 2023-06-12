@@ -447,14 +447,15 @@ table {
 }
 
 .about_desc {
-    // text-align: center;
-    padding-left: 3em;
-    padding-right: 3em;
-    border: none;
-    margin: 1em 0em;
-    background-color: var(--gray50);
-    box-shadow: none;
-    border-radius: 0.5em;
+  // text-align: center;
+  padding-left: 3em;
+  padding-right: 3em;
+  border: none;
+  margin: 1em 0em;
+  background-color: var(--gray50);
+  box-shadow: none;
+  border-radius: 0.5em;
+  cursor: pointer;
 }
 
 .about_desc > h2 {
@@ -532,6 +533,14 @@ a > h3:hover {
     border-radius: 0.625rem;
     // background-color: var(--gray0);
     background-color: #FBFBFC;
+}
+
+.link_div:hover link_img {
+  color: var(--blue500);
+}
+
+.link_div:hover a {
+  color: var(--blue500);
 }
 
 // .link_div:hover {

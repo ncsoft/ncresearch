@@ -362,10 +362,6 @@ NLP데이터기술실은 NCSOFT의 NLP 연구개발 조직에 필요한 데이�
 
 <br/>
 
----
-
-<br/>
-
 > ## AI번역서비스실
 > AI Translation Service Division
 >
