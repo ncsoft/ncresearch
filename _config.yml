@@ -16,7 +16,7 @@ header_feature_image: assets/img/renewal/header.png
 og_feature_image: assets/img/og_image.png
 header_feature_image_responsive: true
 footer_text: >
-  2023 NC NLP Tech Blog. Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+  Copyright Ⓒ NCSOFT Corporation. All Right Reserved.
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
