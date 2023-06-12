@@ -536,11 +536,11 @@ a > h3:hover {
 }
 
 .link_div:hover link_img {
-  color: var(--blue500);
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_blue.png') !important;
 }
 
 .link_div:hover a {
-  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_blue.png') !important;
+  color: var(--blue500);
 }
 
 // .link_div:hover {
