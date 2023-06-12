@@ -20,7 +20,7 @@ page-type: main_page
 </thead>
 <tbody>
   <tr>
-    <td><a href="#언어이해기술실">언어이해기술실</a></td>
+    <td><a href="#언어이해기술실">언어이해기술실</a><div class='about_link_img'></div></td>
     <td><a href="#vision-ai-lab">Vision AI Lab</a></td>
     <td class="blank"></td>
   </tr>
