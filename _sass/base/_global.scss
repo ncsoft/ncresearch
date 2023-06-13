@@ -515,6 +515,9 @@ table {
 .about_desc h4 + ul {
   display: none;
 }
+.about_desc h4 + p + ul {
+  display: none;
+}
 
 .about_center_desc {
     // text-align: center;
