@@ -494,6 +494,21 @@ table {
 .about_desc h3 + ul {
   display: none;
 }
+.about_desc h3 + p + ul {
+  display: none;
+}
+.about_desc h3 + p + ul + p {
+  display: none;
+}
+.about_desc h3 + p + ul + p + ul {
+  display: none;
+}
+.about_desc h4 {
+  display: none;
+}
+.about_desc h4 + p {
+  display: none;
+}
 
 .about_center_desc {
     // text-align: center;
