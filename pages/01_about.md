@@ -21,31 +21,31 @@ page-type: main_page
 <tbody>
   <tr>
     <td><a href="#언어이해기술실">언어이해기술실</a><div class='about_link_img'></div></td>
-    <td><a href="#vision-ai-lab">Vision AI Lab</a></td>
+    <td><a href="#vision-ai-lab">Vision AI Lab</a><div class='about_link_img'></div></td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td><a href="#대화기술실">대화기술실</a></td>
-    <td><a href="#graphics-ai-lab">Graphics AI Lab</a></td>
+    <td><a href="#대화기술실">대화기술실</a><div class='about_link_img'></div></td>
+    <td><a href="#graphics-ai-lab">Graphics AI Lab</a><div class='about_link_img'></div></td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td><a href="#생성번역기술실">생성번역기술실</a></td>
-    <td><a href="#speech-ai-lab">Speech AI Lab</a></td>
+    <td><a href="#생성번역기술실">생성번역기술실</a><div class='about_link_img'></div></td>
+    <td><a href="#speech-ai-lab">Speech AI Lab</a><div class='about_link_img'></div></td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td><a href="#검색기술실">검색기술실</a></td>
-    <td><a href="#intelligent-agent-ai-lab">Intelligent Agent AI Lab</a></td>
+    <td><a href="#검색기술실">검색기술실</a><div class='about_link_img'></div></td>
+    <td><a href="#intelligent-agent-ai-lab">Intelligent Agent AI Lab</a><div class='about_link_img'></div></td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td><a href="#nlp데이터기술실">NLP데이터기술실</a></td>
-    <td><a href="#ai-production실">AI Production실</a></td>
+    <td><a href="#nlp데이터기술실">NLP데이터기술실</a><div class='about_link_img'></div></td>
+    <td><a href="#ai-production실">AI Production실</a><div class='about_link_img'></div></td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td><a href="#ai번역서비스실">AI번역서비스실</a></td>
+    <td><a href="#ai번역서비스실">AI번역서비스실</a><div class='about_link_img'></div></td>
     <td class="blank"></td>
     <td class="blank"></td>
   </tr>
