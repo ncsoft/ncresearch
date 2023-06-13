@@ -503,10 +503,16 @@ table {
 .about_desc h3 + p + ul + p + ul {
   display: none;
 }
+.about_desc h3 + p + ol {
+  display: none;
+}
 .about_desc h4 {
   display: none;
 }
 .about_desc h4 + p {
+  display: none;
+}
+.about_desc h4 + ul {
   display: none;
 }
 
