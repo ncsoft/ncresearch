@@ -346,3 +346,25 @@ page-type: main_page
 {:.about_desc}
 
 <br/>
+
+> # AI Center
+>
+> NC AI Center는 사람들에게 새로운 즐거움을, 기업에는 새로운 성장 동력을 만들어 낼 수 있는 AI 기술을 연구합니다. 어떻게 하면 사람이 AI와 함께 재미있고 편리하게 즐기고 일할 수 있는지 고민하며, 나아가 과거에 꿈꾸기 어려웠던 새로운 산업 분야와 NC의 차세대 성장 동력을 만들어 내고자 합니다. 이를 위해 AI Center는 폭넓은 분야의 AI 원천 기술을 연구하고 있습니다.
+>　
+> 디지털 휴먼 관련 기반 기술 R&D
+> Vision, Speech, Graphics, Decision Making AI 기술을 개발, 통합하여 사람과 감정적으로 교감하고 몰입감을 주는 디지털 휴먼 요소 기술을 개발합니다.
+> - **Vision AI** 실사 및 디지털 영상에 대한 시각적 이해를 바탕으로 새로운 영상 컨텐츠 생성을 위한 Vision AI 기술 연구 개발
+> - **Speech AI** 일상적인 환경에서 사람의 음성을 이해 및 생성하여 사람과 자연스럽게 커뮤니케이션할 수 있는 음성 AI 개발
+> - **Graphics AI** 고품질 디지털 캐릭터를 제작하고 애니메이션 품질을 높이기 위한 딥러닝 기술 기반의 그래픽스 AI 개발
+> - **Intelligent Agent** 게임과 일상생활에서 사람의 판단 능력을 대체할 수 있는 강화학습 기반 Decision Making 기술 개발
+>
+> 응용 AI 기술 R&D
+> NC 가 보유한 AI 기술 서비스화를 위한 최적화 기술 및 디지털 휴먼 솔루션 등을 개발합니다.
+> - **Audio-visual Multimodal Recognition AI** 사람의 감정과 환경적 맥락을 인지하기 위한 음성/영상 신호를 조합한 고수준의 Recognition AI 개발
+> - **Speech & Music Synthesis AI** 사람처럼 자연스럽게 말하고 노래할 수 있으며 목소리, 억양, 분위기 등을 컨트롤할 수 있는 AI 개발
+> - **Visual Acting AI** 사람에 가까운 외모와 자연스러운 움직임을 표현하기 위한 차세대 스캔 및 캡쳐 파이프라인, AI기반 애니메이션 기술, Neural Rendering/Nerf 포함한 디지털 휴먼 Rendering 기술 등 개발
+> - **Applied AI Application** 게임 및 서비스 개발 및 제작에 필요한 각종 AI 기능 및 AI 기반의 새로운 콘텐츠 개발 및 운영
+>
+{:.about_center_desc}
+
+<br/>
