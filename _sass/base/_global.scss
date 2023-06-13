@@ -480,6 +480,16 @@ table {
   content: " ";
   float: right;
   background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down.png') !important;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 2.0625rem;
+}
+
+.about_desc h3 {
+  display: none;
+}
+.about_desc h3 + p {
+  display: none;
 }
 
 .about_center_desc {
