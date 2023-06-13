@@ -775,7 +775,7 @@ h4.subtitle {
   color: var(--blue500) !important;
 }
 
-.about_th:hover .about_link_text {
+.about_th:hover a {
   text-decoration: none !important;
   color: var(--blue500) !important;
 }
@@ -785,7 +785,7 @@ h4.subtitle {
   background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_s_blue.png') !important;
 }
 
-.about_td:hover .about_link_text {
+.about_td:hover a {
   text-decoration: none !important;
   color: var(--blue500) !important;
 }
