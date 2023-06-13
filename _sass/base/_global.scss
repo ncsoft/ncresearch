@@ -704,6 +704,8 @@ a > h3:hover {
 
 .site_header_a_selected {
   color: var(--blue500) !important;
+  border-bottom: var(--blue500) 0.25rem solid;
+  padding-bottom: 2.4rem;
 }
 
 h1.main_page {
