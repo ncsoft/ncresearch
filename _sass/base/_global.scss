@@ -757,7 +757,7 @@ h4.subtitle {
 
 #about_table td > a {
   text-decoration: none;
-  color: var(--gray700) !important;
+  color: var(--gray700);
 }
 
 #about_table td > a:hover {
@@ -767,7 +767,7 @@ h4.subtitle {
 
 #about_table th > a {
   text-decoration: none;
-  color: var(--gray50) !important;
+  color: var(--gray50);
 }
 
 #about_table th > a:hover {
