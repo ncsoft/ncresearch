@@ -5,12 +5,12 @@
 
   a.button {
     margin: 0.1em;
-    padding: 0.3em 0.6em;
-    font-size: 0.9em;
-    color: var(--text);
-    background-color: var(--gray2);
+    padding: 0.625rem 1.25rem;
+    font-size: 1.5rem;
+    color: var(--gray600);
+    background-color: var(--gray50);
     border: none;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     text-decoration: none;
   }
   a.button:hover {
