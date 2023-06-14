@@ -1,12 +1,13 @@
 function initEventListener() {
   const desc_array = document.querySelectorAll(".about_desc");
   desc_array.forEach(c => {
-    if (hasClass(c, 'active')) {
-      removeClass(c, 'active');
-    }
-    else {
-      addClass(c, "active");      
-    }
+    c.addEventListener('click', function(e) {
+      if (hasClass(c, "active")) {
+        removeClass(c, "active");
+      } else {
+        addClass(c, "active");
+      }
+    });
   });
 }
 
