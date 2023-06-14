@@ -13,7 +13,7 @@ favicon: assets/img/renewal/Vector.svg                             # Icon displa
 header_text: "Explore future values"  # Change Blog header text
 header_text2: "with technology and creativity"
 header_feature_image: assets/img/renewal/header.png
-og_feature_image: assets/img/og_image.png
+og_feature_image: assets/img/renewal/thumbnail.png
 header_feature_image_responsive: true
 footer_text: >
   Ⓒ NCSOFT Corporation. All Right Reserved.
