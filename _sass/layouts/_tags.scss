@@ -69,6 +69,11 @@
       // margin-left: $padding-x-small;
     }
 
+    a::before {
+      background-image: url('/ncresearch/assets/img/renewal/ic_publications.png') !important;
+      width: 1.5rem;
+    }
+
     .post-info {
       float: right;
       padding-top: 0;

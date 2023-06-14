@@ -93,27 +93,12 @@ layout: page
             {% if post.tags contains tag %}
               <h4 class="tag-title">
                 <a class="font_normal" href="{{ post.url | relative_url }}">
-                  <i class="far fa-sticky-note" aria-hidden="true"></i>
                   {{ post.title }}
                 </a>
 
                 {% include blog/post_info.liquid date=post.date %}
               </h4>
             {% endif %}
-          {% endif %}
-        {% endfor %}
-
-        <!-- Portfolio -->
-        {% for note in site.portfolio %}
-          {% if note.tags contains tag %}
-            <h4 class="tag-title">
-              <a class="font_normal" href="{{ note.url | relative_url }}">
-                <i class="far fa-sticky-note" aria-hidden="true"></i>
-                {{ note.title }}
-              </a>
-
-              {% include blog/post_info.liquid date=note.date %}
-            </h4>
           {% endif %}
         {% endfor %}
 
