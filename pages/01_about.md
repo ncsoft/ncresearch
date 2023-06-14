@@ -100,8 +100,6 @@ page-type: main_page
 > - AI 관련 Challenge 및 경진대회 수상 이력
 {:.about_desc}
 
-<br/>
-
 > ## 대화기술실
 > Dialog Tech Lab
 >
@@ -142,8 +140,6 @@ page-type: main_page
 > #### 💼 팀에서 하는 일
 > 다양한 언어모델을 학습하고 여러 벤치마크 태스크에서 우수한 성능을 보이도록 언어모델을 학습 및 튜닝하는 업무를 진행하고 있습니다. 또한, 초거대 언어모델 학습 및 프롬프트, Zero-Shot learning에 대한 연구도 진행하고 있으며 텍스트 외에 이미지, 비디오, 음성 등을 결합한 멀티모달 언어모델에 대해 연구를 수행합니다.
 {:.about_desc}
-
-<br/>
 
 > ## 생성번역기술실
 > Generation & Translation Tech Lab
@@ -208,7 +204,6 @@ page-type: main_page
 > - 딥러닝 서비스 배포 및 최적화 경험
 {:.about_desc}
 
-<br/>
 
 > ## 검색기술실
 > Intelligent Search Tech Division
@@ -265,8 +260,6 @@ page-type: main_page
 > - CI/CD 도구 사용 경험이 있으신 분
 {:.about_desc}
 
-<br/>
-
 > ## NLP데이터기술실
 > NLP Data Tech Division
 >
@@ -305,8 +298,6 @@ page-type: main_page
 > - 언어 데이터 처리 경험
 > - 규칙, 통계, 딥러닝 기반 NLP 개발 경험
 {:.about_desc}
-
-<br/>
 
 > ## AI번역서비스실
 > AI Translation Service Division
@@ -435,8 +426,6 @@ page-type: main_page
 > - 컴퓨터 비전 관련 오픈소스(OpenCV 등) 사용 경험이 있으신 분
 {:.about_desc}
 
-<br/>
-
 > ## Graphics AI Lab
 > 　
 > 
@@ -491,8 +480,6 @@ page-type: main_page
 > - 팀원들을 배려하고 도움을 줄 수 있는 헌신적인 자세를 갖춘 분
 {:.about_desc}
 
-<br/>
-
 > ## Speech AI Lab
 > 　
 > 
@@ -540,8 +527,6 @@ page-type: main_page
 > - 자신의 연구 결과와 파급효과를 잘 설명하여 그 가치를 극대화할 수 있는 분
 {:.about_desc}
 
-<br/>
-
 > ## Intelligent Agent Lab
 > 　
 > 
@@ -585,8 +570,6 @@ page-type: main_page
 > - 현상의 본질을 꿰뚫는 통찰력을 지니신 분
 > - 현실에 직접적으로 기여할 수 있는 문제 해결에 관심이 많은 분
 {:.about_desc}
-
-<br/>
 
 > ## AI Production실
 > 　
@@ -643,8 +626,6 @@ page-type: main_page
 > - 여러 부서와 협업하기 위한 커뮤니케이션 스킬이 좋으신 분
 > - 새로운 것을 배우기 좋아하시는 분
 {:.about_desc}
-
-<br/>
 
 > ## Applied AI Lab
 > 　
