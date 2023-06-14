@@ -7,6 +7,8 @@ subtitle: "NC Research 소개 및 연구 조직"
 page-type: main_page
 ---
 
+<script src="{{ site.baseurl | prepend: site.url }}/assets/js/about.js"></script>
+
 <h6>NC Research는 미래 기술에 대한 열정과 도전을 통해 고객에게는 새로운 가치를 제공하고, NC의 장기적인 성장과 발전을 위해 노력합니다. NC Research에는 R&D 분야별 전문 조직이 구성되어 있어서 최신 기술에 대한 공유 및 집단 연구를 통해 차별화된 경쟁력을 만들어 나가며, 단기 프로젝트 중심의 활동 보다는 장기적인 비전을 통해 미래 지향적이고 지속적인 기술 개발을 수행합니다.</h6>
 
 <div id="about_div">
@@ -634,6 +636,7 @@ page-type: main_page
 <br/>
 
 > ## Applied AI Lab
+> 　
 >
 > Applied AI Lab은 Data Science 기술을 기반으로 예측하고, 해석하고, 최적화하여 사용자에게 유용하고 가치있는 기능을 제공하는 것을 목표로 연구하는 조직입니다.  
 > 목표 서비스 내 수많은 데이터와 Contents로부터 사용자, Contents, Domain에 대해 분석 및 이해하고, 다양한 정보를 추론하여 Insight를 전달하며, 사용자에게 맞춤 설정된 경험을 제공하는 개인화 (Personalization) 기술을 개발하여 실제 서비스화 할 수 있도록 제공하고 있습니다.  
