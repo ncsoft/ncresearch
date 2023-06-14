@@ -484,6 +484,9 @@ table {
   height: 1.5rem;
   margin-top: 2.0625rem;
 }
+.about_desc.active::before {
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_up.png') !important;
+}
 
 .about_desc h3 {
   display: none;
@@ -522,36 +525,36 @@ table {
 .about_desc.active h3 {
   display: block;
 }
-// .about_desc h3+p {
-//   display: none;
-// }
-// .about_desc h3+ul {
-//   display: none;
-// }
-// .about_desc h3+p+ul {
-//   display: none;
-// }
-// .about_desc h3+p+ul+p {
-//   display: none;
-// }
-// .about_desc h3+p+ul+p+ul {
-//   display: none;
-// }
-// .about_desc h3+p+ol {
-//   display: none;
-// }
-// .about_desc h4 {
-//   display: none;
-// }
-// .about_desc h4+p {
-//   display: none;
-// }
-// .about_desc h4+ul {
-//   display: none;
-// }
-// .about_desc h4+p+ul {
-//   display: none;
-// }
+.about_desc.active h3+p {
+  display: none;
+}
+.about_desc.active h3+ul {
+  display: none;
+}
+.about_desc.active h3+p+ul {
+  display: none;
+}
+.about_desc.activeh3+p+ul+p {
+  display: none;
+}
+.about_desc.active h3+p+ul+p+ul {
+  display: none;
+}
+.about_desc.active h3+p+ol {
+  display: none;
+}
+.about_desc.active h4 {
+  display: none;
+}
+.about_desc.active h4+p {
+  display: none;
+}
+.about_desc.active h4+ul {
+  display: none;
+}
+.about_desc.active h4+p+ul {
+  display: none;
+}
 
 .about_center_desc {
     // text-align: center;
