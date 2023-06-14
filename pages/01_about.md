@@ -11,7 +11,7 @@ page-type: main_page
 
 <style>
   h1, h2 {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: 8rem;
   }
 </style>
 
