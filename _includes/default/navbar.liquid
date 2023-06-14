@@ -41,7 +41,7 @@
           </li>
           <li>
             <a
-              class="clear{% if page.url == '/' %} main_page_a{% endif %}{% if page.title == page_.title %} site_header_a_selected{% endif %}"
+              class="clear{% if page.url == '/' %} main_page_a{% endif %}{% if page.title == page_.title or page.layout == 'post' %} site_header_a_selected{% endif %}"
               aria-label="{{ page_.title }}"
               title="{{ page_.title }}"
               href="{{ page_.url | relative_url }}">
