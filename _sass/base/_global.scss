@@ -535,6 +535,12 @@ table {
 .about_desc h3 + p + ul + p + ul {
   display: none;
 }
+.about_desc h3 + p + ul + p + ul + p {
+  display: none;
+}
+.about_desc h3 + p + ul + p + ul + p + ul {
+  display: none;
+}
 .about_desc h3 + p + ol {
   display: none;
 }
@@ -567,6 +573,12 @@ table {
   display: block;
 }
 .about_desc.active h3+p+ul+p+ul {
+  display: block;
+}
+.about_desc.active h3+p+ul+p+ul+p {
+  display: block;
+}
+.about_desc.active h3+p+ul+p+ul+p+ul {
   display: block;
 }
 .about_desc.active h3+p+ol {
