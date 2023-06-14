@@ -16,7 +16,7 @@ header_feature_image: assets/img/renewal/header.png
 og_feature_image: assets/img/og_image.png
 header_feature_image_responsive: true
 footer_text: >
-  Copyright Ⓒ NCSOFT Corporation. All Right Reserved.
+  Ⓒ NCSOFT Corporation. All Right Reserved.
 
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
