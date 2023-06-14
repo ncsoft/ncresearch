@@ -66,7 +66,8 @@
     margin-bottom: 0;
 
     a {
-      // margin-left: $padding-x-small;
+      font-size: 1.5rem;
+      font-weight: normal;
     }
 
     .tag_img {
@@ -77,8 +78,10 @@
     }
 
     .post-info {
-      float: right;
+      // float: right;
       padding-top: 0;
+      vertical-align: middle;
+      margin-left: 0.2rem;
     }
   }
 
