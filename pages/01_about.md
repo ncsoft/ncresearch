@@ -10,7 +10,7 @@ page-type: main_page
 <script src="{{ site.baseurl | prepend: site.url }}/assets/js/about.js"></script>
 
 <style>
-  a {
+  h1, h2 {
     scroll-margin-top: 7rem;
   }
 </style>
