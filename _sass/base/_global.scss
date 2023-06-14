@@ -478,13 +478,13 @@ table {
 }
 
 .about_desc > h3 {
-  font-size: 2rem;
-  color: var(--gray800);
+  font-size: 2rem !important;
+  color: var(--gray800) !important;
 }
 
 .about_desc > h4 {
-  font-size: 1.5rem;
-  color: var(--gray800);
+  font-size: 1.5rem !important;
+  color: var(--gray800) !important;
 }
 
 .about_desc::before {
