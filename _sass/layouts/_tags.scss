@@ -70,8 +70,10 @@
     }
 
     .tag_img {
+      display: inline-block;
       background-image: url('/ncresearch/assets/img/renewal/ic_publications.png') !important;
       width: 1.5rem;
+      height: 1.5625rem;
     }
 
     .post-info {
