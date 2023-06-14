@@ -487,10 +487,22 @@ table {
   color: var(--gray800) !important;
 }
 
+.about_desc:hover h2 {
+  color: var(--blue500) !important;
+}
+
 .about_desc::before {
   content: " ";
   float: right;
   background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down.png') !important;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 2.0625rem;
+}
+.about_desc:hover::before {
+  content: " ";
+  float: right;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down_hover.png') !important;
   width: 1.5rem;
   height: 1.5rem;
   margin-top: 2.0625rem;
