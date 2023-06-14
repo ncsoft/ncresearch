@@ -701,15 +701,15 @@ a > h3:hover {
 }
 
 #social_icon_rss {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-image: url('/ncresearch/assets/img/renewal/ic_rss.png') !important;
-    opacity: 0.5;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url('/ncresearch/assets/img/renewal/ic_rss.png') !important;
+  opacity: 0.5;
 }
 
 #social_icon_rss:hover {
-    background-image: url('/ncresearch/assets/img/renewal/ic_rss_hover.png') !important;
+  opacity: 1;
 }
 
 #social_icon_github_a {
@@ -718,15 +718,15 @@ a > h3:hover {
 }
 
 #social_icon_github {
-    display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-image: url('/ncresearch/assets/img/renewal/ic_github.png') !important;
-    opacity: 0.5;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url('/ncresearch/assets/img/renewal/ic_github.png') !important;
+  opacity: 0.5;
 }
 
 #social_icon_github:hover {
-    background-image: url('/ncresearch/assets/img/renewal/ic_github_hover.png') !important;
+  opacity: 1;
 }
 
 // post_nav
