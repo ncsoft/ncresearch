@@ -5,7 +5,7 @@
 
   a.button {
     margin: 0.1em;
-    padding: 0.625rem 1.25rem;
+    padding: 0 1.25rem;
     font-size: 1.5rem;
     color: var(--gray600);
     background-color: var(--gray50);
@@ -21,8 +21,9 @@
 
   p {
     margin: 0;
-    padding: 0 0.2em 0 0;
+    padding: 0;
     line-height: 1;
+    font-size: 1.5rem;
   }
 
   ul {
