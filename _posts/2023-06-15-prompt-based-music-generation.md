@@ -14,9 +14,13 @@ new: true
 series: -1
 ---
 
-
-
-
+* 1. 개요
+* 2. 프롬프트 기반 음성 생성 기술
+* 3. 프롬프트 기반 오디오 생성 기술
+* 4. 프롬프트 기반 음악 생성 기술
+* 5. 엔씨에서의 음악 생성 기술 
+* 6. References
+{:toc}
 
 <br/>
 
@@ -157,7 +161,7 @@ MusicLM은 프롬프트 기반의 음악 생성 모델이 단순히 텍스트로
 
 <br/>
 
-# References
+# 6. References
 
 [^1]: Hierarchical Text-Conditional Image Generation with CLIP Latents
 
