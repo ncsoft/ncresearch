@@ -98,7 +98,7 @@ series: 6
 
 <br/>
 
-<u>**(2부에서는 4D Scan의 핵심 파이프라인을 소개합니다. 2부에서 만나요!)**</u>
+<u><b>([2부](https://ncsoft.github.io/ncresearch/4244afc8f68189c2d81073a9d5fccdd31f2439cc)에서는 4D Scan의 핵심 파이프라인을 소개합니다. [2부](https://ncsoft.github.io/ncresearch/4244afc8f68189c2d81073a9d5fccdd31f2439cc)에서 만나요!)</b></u>
 
 
 [^1]: '데포르메(deformer)'는 어떤 대상의 형태가 달라지는 일, 또는 달라지게 하는 것(변형, 왜곡)을 뜻하는 미술용어로, 만화, 일러스트 분야에서는 표현하려는 대상을 간략화 또는 과장해서 표현하는 방법론을 말한다. 

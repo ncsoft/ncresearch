@@ -35,7 +35,7 @@ series: 6
 
 <br/>
 
-*(1부에서 이어집니다.)*
+*([1부](https://ncsoft.github.io/ncresearch/61fda2c4f6b3c54a863755104a7948d2e4cb9fd8)에서 이어집니다.)*
 
 # 4D Scan의 핵심 파이프라인
 
