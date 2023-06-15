@@ -5,7 +5,7 @@ icon: tech
 author: 07f98dfca0a2ce72eb39ad0ad4f5ecebae36a5bd
 permalink: 2b5fdbcb98c49dc3cf3711fcc482ecdfb0823218
 categories: tech
-tags: [knowledge_distillation, Self-distillation, NLP]
+tags: [knowledge_distillation, Self-distillation, NLP, Translation]
 excerpt: 이 글에서는 Self-distillation이라는 기술의 목적, 방향성과 주요 방법론을 소개합니다.
 back_color: "#eff7ff"
 toc: true

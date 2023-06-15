@@ -5,7 +5,7 @@ icon: tech
 author: 6d1904ff3cb196321b9b48940d8f519d2889b158
 permalink: c8416dcc21d8aad7f0ee65eaa47ad53854578b59
 categories: tech
-tags: [Large_Language_Model, PEFT, NLP]
+tags: [Large_Language_Model, PEFT, NLP, Translation]
 excerpt: Parameter-Efficient Fine-Tuning (PEFT) 방법들
 back_color: "#eff7ff"
 toc: true
