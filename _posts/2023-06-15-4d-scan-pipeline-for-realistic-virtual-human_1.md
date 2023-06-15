@@ -47,7 +47,7 @@ series: 6
 <iframe width="100%" height="600" src="https://www.youtube.com/embed/-pzlWL-nwio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {:.center_div}
 
-*[NC] TDC 01 |  Project AVATAR - 4D Scan*
+*[NC] TDC 01 - Project AVATAR - 4D Scan*
 {:.center_div}
 
 <br/>
