@@ -49,6 +49,12 @@ $baseurl: "{{ site.baseurl }}";
     .item-filter {
       width: 15rem;
       height: auto;
+
+      .item-filter-title {
+        color: var(--gray800);
+        font-size: 1.125rem;
+        font-weight: 700;
+      }
     }
 
     .items {
