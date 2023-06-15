@@ -39,3 +39,9 @@
     title: "Large Language Model을 밀어서 잠금해제: Parameter-Efficient Fine-Tuning 1"
   - permalink: "c8416dcc21d8aad7f0ee65eaa47ad53854578b59"
     title: "Large Language Model을 밀어서 잠금해제: Parameter-Efficient Fine-Tuning 2"
+
+- id: 5
+  series_title: ""
+  list:
+  - permalink: "b00718e4d73e16be22ff722474cf51a2864225a8"
+    title: "MMORPG 시뮬레이터 개발부터 서비스 배포까지 1"
