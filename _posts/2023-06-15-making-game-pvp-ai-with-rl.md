@@ -19,6 +19,8 @@ series: -1
 * References
 {:toc}
 
+<br/>
+
 > 작성자
 > - 정지년(Intelligent Agent Lab)
 > - 사람의 의사 결정을 대신해 주는 Agent를 통해 가치를 만들어 내는 가치 창출자 입니다.
@@ -30,6 +32,8 @@ series: -1
 > 이 글로 확인할 수 있는 내용
 > - 게임에 PVP AI를 만들 때 경험하게 되는 기술적 이슈와 해결 방안
 > - Multi-agent Reinforcement Learning의 게임 적용 사례
+
+<br/>
 
 NC Research 블로그에 올릴 글을 요청받았을 때, 어떤 이야기를 해 드리면 좋을지 골똘히 고민했습니다. 이론적인 이야기는 다른 곳에서 접하실 수 있을 테니, 여기에는 **우리가 Game에서 AI를 만들어 온 경험담**을 들려 드리는 게 좋겠다는 생각이 들었습니다. 저희와 비슷한 길을 걷고자 하시는 분들에게 지금부터 적어가는 이야기가 도움이 되었으면 합니다. 😊 
 
@@ -102,7 +106,7 @@ NC Research 블로그에 올릴 글을 요청받았을 때, 어떤 이야기를 
 
 이제 1대 1 PVP를 통해 사람과 놀아주는 AI를 만든 우리는 이제 다음 단계를 바라보고 있었습니다. **바로 MMORPG에서 사람과 놀아 주는 AI, 즉 팀플레이를 통해 사람과 놀아주는 AI였습니다.**
 
-(Blade & Soul의 비무 AI 개발에 관한 더 자세한 이야기가 궁금하신 분들은 https://arxiv.org/abs/1904.03821, https://www.gdcvault.com/play/1025904/Reinforcement-Learning-in-Action-Creating 에서 더 많은 정보를 얻으실 수 있습니다. )
+(Blade & Soul의 비무 AI 개발에 관한 더 자세한 이야기가 궁금하신 분들은 [https://arxiv.org/abs/1904.03821](https://arxiv.org/abs/1904.03821), [https://www.gdcvault.com/play/1025904/Reinforcement-Learning-in-Action-Creating](https://www.gdcvault.com/play/1025904/Reinforcement-Learning-in-Action-Creating) 에서 더 많은 정보를 얻으실 수 있습니다. )
 
 <br/>
 
@@ -159,7 +163,7 @@ MMORPG는 팀플레이를 실현하기에 안성맞춤인 환경이었고, 이�
 
 그리고, 이제 우리는 처음에 우리가 가졌던 목표, "놀아 주는 AI"의 색다른 즐거움을 느끼실 수 있도록 나의 적으로서 싸우는 AI가 아닌, "내 편이 되어 함께 싸워 주는 AI"를 목표로 연구를 진행하고 있습니다. 곧 세상에 나올 예정이니 많은 기대와 관심 부탁드립니다.
 
-(거울 전쟁, 전설대현역 AI 개발과 관련된 더 자세한 이야기는 여기에서 확인해 주세요: https://www.gdcvault.com/play/1027645/AI-Summit-Multi-Agent-Reinforcement )
+(거울 전쟁, 전설대현역 AI 개발과 관련된 더 자세한 이야기는 여기에서 확인해 주세요: [https://www.gdcvault.com/play/1027645/AI-Summit-Multi-Agent-Reinforcement](https://www.gdcvault.com/play/1027645/AI-Summit-Multi-Agent-Reinforcement) )
 
 <br/>
 
