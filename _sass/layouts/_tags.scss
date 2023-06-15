@@ -74,6 +74,11 @@
       margin-right: 0.3rem;
     }
 
+    a:hover {
+      text-decoration: none;
+      color: var(--blue500);
+    }
+
     .tag_img {
       display: inline-block;
       background-image: url('/ncresearch/assets/img/renewal/ic_publications.png') !important;
