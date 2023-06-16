@@ -1,5 +1,9 @@
 $baseurl: "{{ site.baseurl }}";
 
+article {
+  padding: 6.875rem 20.0625rem;
+}
+
 #categories {
   .category-clouds {
     margin: 30px 0 30px;
@@ -40,7 +44,7 @@ $baseurl: "{{ site.baseurl }}";
 
   .publications-group {
     margin-top: 6.875rem;
-    
+
     .publications-title {
       color: var(--gray900);
       font-size: 2.5rem;
