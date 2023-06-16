@@ -927,3 +927,22 @@ h4.subtitle {
   margin-right: 0;
   margin-left: -1.1rem;
 }
+
+.blogs-title {
+  color: var(--gray900);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.blogs-link {
+  float: right;
+  color: var(--gray400);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none !important;
+}
+
+.blogs-link:hover {
+  color: var(--blue500);
+  text-decoration: none !important;
+}
