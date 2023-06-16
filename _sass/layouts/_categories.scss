@@ -135,6 +135,20 @@ article {
         width: 14.5rem;
       }
     }
+
+    .tag-list {
+      a {
+        margin: 0 0.325rem 0.625rem 0;
+        color: var(--gray700);
+        font-size: 1rem;
+      }
+      
+      a:hover {
+        text-decoration: none !important;
+        color: var(--white);
+        background-color: var(--blue);
+      }
+    }
   }
 
   .category-group {

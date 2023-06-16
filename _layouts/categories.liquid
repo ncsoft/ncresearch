@@ -55,15 +55,15 @@ layout: page
                     {% endif %}
                   </div>
                 {% endif %}
-                {% if post.tags.size > 0 %}
-                  <div class='tag-list'>
-                    {% for tag in post.tags %}
-                      <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
-                    {% endfor %}
-                  </div>
-                {% endif %}
-                {% include blog/post_info.liquid author=post.author date=post.date %}
               </a>
+              {% if post.tags.size > 0 %}
+                <div class='tag-list'>
+                  {% for tag in post.tags %}
+                    <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
+                  {% endfor %}
+                </div>
+              {% endif %}
+              {% include blog/post_info.liquid author=post.author date=post.date %}
             {% endif %}
           {% endfor %}
         </div>
