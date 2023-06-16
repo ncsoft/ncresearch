@@ -142,13 +142,27 @@ article {
         color: var(--gray700);
         font-size: 1rem;
       }
-      
+
       a:hover {
         text-decoration: none !important;
         color: var(--white);
         background-color: var(--blue);
       }
     }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"] + label {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 0.1rem solid var(--gray100);
+      border-radius: 0.25rem;
+      position: relative;
+    }
+
   }
 
   .category-group {
