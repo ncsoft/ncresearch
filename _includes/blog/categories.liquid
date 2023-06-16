@@ -40,8 +40,8 @@
                 <a class="publication-link" href="https://ncsoft.github.io/ncresearch/publications/">더보기</a>
             </div>
             <div class="publication-group">
-                {% assign pubs = site.data.publications | sort: "year" %}
-                {% for pub in pubs reversed limit:5 %}
+                {% assign pubs = site.data.publications | sort: "year" | reverse %}
+                {% for pub in pubs limit:5 %}
                     <div class="publication_div">
                         <h3 class="pub_title">
                             {{ pub.title }}
