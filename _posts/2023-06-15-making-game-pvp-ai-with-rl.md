@@ -9,7 +9,7 @@ tags: [Reinforcement_Learning, RL, Multi-agent_Reinforcement_Learning, MARL, Gam
 excerpt: Blade and Soul과 리니지 리마스터의 PVP AI 콘텐츠에 강화학습을 적용했던 경험담을 공유합니다.
 back_color: "#eff7ff"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 ---

@@ -9,7 +9,7 @@ tags: [Facial, Motion Capture, Performance Capture, 3D Scan, 4D Scan, 3D Reconst
 excerpt: 얼굴 움직임을 캡처하기 위한 4D Scan 처리 과정에 관해 소개합니다.
 back_color: "#eff7ff"
 toc: true
-show: false
+show: true
 new: true
 series: 6
 ---
