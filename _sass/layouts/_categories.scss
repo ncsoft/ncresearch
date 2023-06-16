@@ -119,6 +119,7 @@ article {
       }
 
       .blog-filter-big {
+        display: flex;
         margin-top: 1.875rem;
         margin-bottom: 1.875rem;
         font-size: 1.125rem;
@@ -128,6 +129,7 @@ article {
       }
 
       .blog-filter-small {
+        display: flex;
         margin-bottom: 0.75rem;
         font-size: 1rem;
         color: var(--gray400);
@@ -163,6 +165,9 @@ article {
       position: relative;
     }
 
+    input[type="checkbox"]:checked + label {
+      background-color: var(--blue500);
+    }
   }
 
   .category-group {
