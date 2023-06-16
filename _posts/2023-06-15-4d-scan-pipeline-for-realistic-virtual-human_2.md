@@ -8,7 +8,7 @@ categories: paper
 tags: [Facial, Motion Capture, Performance Capture, 3D Scan, 4D Scan, 3D Reconstruction, Registration, Graphics, AI]
 excerpt: 얼굴 움직임을 캡처하기 위한 4D Scan 처리 과정에 관해 소개합니다.
 back_color: "#eff7ff"
-img_name: "pic2.jpg"
+img_name: "pic4.png"
 toc: true
 show: true
 new: true
