@@ -77,11 +77,22 @@ article {
         font-weight: 700;
       }
 
-      .publications-meta {
+      .publications_meta {
         color: var(--gray700);
         font-size: 1.125rem;
         font-weight: 500;
       }
+
+      .publications_author {
+        color: var(--gray300);
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+
+    hr {
+      padding-top: 1.875rem;
+      padding-bottom: 0.75rem;
     }
   }
 
