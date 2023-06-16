@@ -38,6 +38,29 @@ $baseurl: "{{ site.baseurl }}";
     }
   }
 
+  .publications-group {
+    margin-top: 6.875rem;
+    
+    .publications-title {
+      color: var(--gray900);
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .publications-link {
+      float: right;
+      color: var(--gray400);
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-decoration: none !important;
+    }
+    
+    .publications-link:hover {
+      color: var(--blue500);
+      text-decoration: none !important;
+    }
+  }
+
   .category-group {
     display: grid;
     grid-gap: 1.875rem;
