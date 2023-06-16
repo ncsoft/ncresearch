@@ -5,12 +5,12 @@ icon: paper
 author: f0c9f1102deb254e64e66983dc240b434012afcc
 permalink: b00718e4d73e16be22ff722474cf51a2864225a8
 categories: paper
-tags: [GameAI, Windows_Docker, Performance, 리니지, 리니지리마스터, MMORPG, 시뮬레이터, AI서비스, AI_System, AI]
+tags: [GameAI, Docker, Performance, 리니지, 리니지리마스터, MMORPG, 시뮬레이터, AI서비스, AI_System, AI]
 excerpt: 리니지 리마스터에서 AI 학습을 위한 시뮬레이터와 서비스 개발 과정에 관해 설명합니다.
 back_color: "#eff7ff"
 img_name: "pic1.jpg"
 toc: true
-show: false
+show: true
 new: true
 series: 5
 ---
@@ -51,8 +51,6 @@ series: 5
 *리니지 거울전쟁 포스터*
 
 먼저 "리니지 리마스터: 거울전쟁"에 대해 처음 들어보는 분들을 위해 간략한 소개를 하겠습니다. '거울전쟁'은 AI 혈맹과 사람 혈맹이 대규모 그룹 전투를 펼치는 콘텐츠이며, 업계 최초의 AI 기반 MMORPG 콘텐츠입니다. '기란감옥 2층'에 오래전 지배 세력이었던 '훅' 혈맹이 침공해서 던전을 통제한다는 스토리를 가지고 있습니다. '훅' 혈맹의 캐릭터들은 AI 캐릭터들이며 던전에 들어오는 모든 유저를 공격합니다. AI 캐릭터들은 무리를 지어서 유저를 사냥하고, 유저가 없으면 몹이나 보스를 사냥하는 행동패턴을 가지고 있습니다. 더 자세한 내용을 알고 싶으신 분은 아래 링크를 참고하세요.
-
-(링크) [https://about.ncsoft.com/news/article/ai-reinforcement-learning-1](https://about.ncsoft.com/news/article/ai-reinforcement-learning-1)
 
 [(엔씨블로그) 세계 최초, 강화학습 AI 기술 기반 새로운 MMORPG 콘텐츠를 제시하다](https://about.ncsoft.com/news/article/ai-reinforcement-learning-1)
 
