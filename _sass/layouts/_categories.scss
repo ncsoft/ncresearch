@@ -114,7 +114,12 @@ article {
         margin-bottom: 1.875rem;
       }
 
+      .item-filter-title + .blog-filter-big {
+        margin-top: 0;
+      }
+
       .blog-filter-big {
+        margin-top: 1.875rem;
         margin-bottom: 1.875rem;
         font-size: 1.125rem;
         color: var(--gray700);
