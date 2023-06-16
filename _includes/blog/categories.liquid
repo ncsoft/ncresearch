@@ -7,10 +7,7 @@
             </div>
             <div class="category-group">
                 <div class="items">
-                    {% for post in site.posts %}
-                    {% if forloop.index0 == 6 %}
-                        {% break %}
-                    {% endif %}
+                    {% for post in site.posts limit:6 %}
                     {% if post.show %}
                         <a href="{{ post.url | relative_url }}" class="category-post-link">
                             <h3>
