@@ -173,6 +173,8 @@ article {
     input[type="checkbox"]:checked + label::after {
       content: '✓';
       font-size: 1rem;
+      font-weight: 900;
+      color: var(--white);
       width: 1.5rem;
       height: 1.5rem;
       text-align: center;
