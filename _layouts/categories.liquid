@@ -42,8 +42,8 @@ layout: page
         <div class="items">
           {% assign posts = site.posts | sort: "index" | reverse %}
           {% for post in posts %}
-            <div class="blog-post-item">
-              {% if post.show %}
+            {% if post.show %}
+              <div class="blog-post-item">
                 <a href="{{ post.url | relative_url }}" class="category-post-link">
                   <h3>
                     {{ post.title }}
@@ -66,8 +66,8 @@ layout: page
                   </div>
                 {% endif %}
                 {% include blog/post_info.liquid author=post.author date=post.date %}
-              {% endif %}
-            </div>
+              </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
