@@ -79,6 +79,14 @@ $baseurl: "{{ site.baseurl }}";
         height: 1.5625rem;
         background-image: url('/ncresearch/assets/img/renewal/new_badge.png');
       }
+      
+      .tag-list {
+        a {
+          margin: 0 0.625rem 0.625rem 0;
+          color: var(--gray700);
+          font-size: 1rem;
+        }
+      }
     }
 
     .category-item h3 {
