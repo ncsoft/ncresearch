@@ -8,6 +8,9 @@
             <div class="category-group">
                 <div class="items">
                     {% for post in site.posts %}
+                    {% if forloop.index0 == 6 %}
+                        {% break %}
+                    {% endif %}
                     {% if post.show %}
                         <a href="{{ post.url | relative_url }}" class="category-post-link">
                             <h3>
