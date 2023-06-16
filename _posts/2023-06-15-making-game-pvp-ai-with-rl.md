@@ -13,6 +13,7 @@ toc: true
 show: true
 new: true
 series: -1
+index: 16
 ---
 
 * Ep1. Blade & Soul 비무 AI 연구개발 이야기

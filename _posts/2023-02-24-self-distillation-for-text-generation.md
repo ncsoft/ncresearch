@@ -11,6 +11,7 @@ back_color: "#eff7ff"
 toc: true
 show: true
 series: -1
+index: 3
 ---
 
 * R-Drop: Regularized Dropout for Neural Networks[^2] (NeurIPS 2021)

@@ -13,6 +13,7 @@ toc: true
 show: true
 new: true
 series: -1
+index: 13
 ---
 
 * 기술 개발의 background

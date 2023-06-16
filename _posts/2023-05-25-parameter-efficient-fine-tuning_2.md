@@ -12,6 +12,7 @@ toc: true
 show: true
 series: 4
 new: true
+index: 11
 ---
 
 2부: Parameter-Efficient Fine-Tuning (PEFT) 방법들 (LLM)

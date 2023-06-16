@@ -12,6 +12,7 @@ toc: true
 show: true
 new: false
 series: 3
+index: 9
 ---
 
 * 개요

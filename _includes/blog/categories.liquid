@@ -6,7 +6,8 @@
                 <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/blogs/">더보기</a>
             </div>
             <div class="category-group">
-                {% for post in site.posts limit:6 %}
+                {% assign posts = site.posts | sort: "index" | reverse %}
+                {% for post in posts limit:6 %}
                 {% if post.show %}
                     <div class="category-item">
                         {% if post.img_name %}

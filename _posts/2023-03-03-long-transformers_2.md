@@ -11,6 +11,7 @@ back_color: "#eff7ff"
 toc: true
 show: true
 series: 1
+index: 6
 ---
 
 * 1. 개요

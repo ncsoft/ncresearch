@@ -14,6 +14,7 @@ toc: true
 show: true
 new: true
 series: -1
+index: 20
 ---
 
 * MMORPG의 또 다른 재미, 캐릭터 커스터마이징과 AI 기술

@@ -11,6 +11,7 @@ back_color: "#eff7ff"
 toc: true
 show: true
 series: 0
+index: 1
 ---
 
 * 인삿말

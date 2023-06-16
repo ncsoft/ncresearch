@@ -13,6 +13,7 @@ toc: true
 show: true
 new: true
 series: 6
+index: 18
 ---
 
 * 엔씨에서 4D Scan을 연구하는 이유

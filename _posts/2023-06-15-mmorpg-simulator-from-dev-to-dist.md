@@ -13,6 +13,7 @@ toc: true
 show: true
 new: true
 series: 5
+index: 15
 ---
 
 * 리니지 리마스터 거울전쟁 컨텐츠 소개
