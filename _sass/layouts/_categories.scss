@@ -105,6 +105,7 @@ article {
     .item-filter {
       width: 15rem;
       height: auto;
+      margin-top: 2.5rem;
       margin-right: 4.375rem;
   
       .item-filter-title {
@@ -126,6 +127,7 @@ article {
         color: var(--gray700);
         font-weight: 700;
         width: 14.5rem;
+        line-height: 1.4;
       }
 
       .blog-filter-small {
@@ -135,7 +137,7 @@ article {
         color: var(--gray400);
         font-weight: 400;
         width: 14.5rem;
-        line-height: 1.5;
+        line-height: 1.4;
       }
     }
 
@@ -185,6 +187,12 @@ article {
 
     label {
       cursor: pointer;
+    }
+
+    .blog-post-item {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--gray100);
     }
   }
 
