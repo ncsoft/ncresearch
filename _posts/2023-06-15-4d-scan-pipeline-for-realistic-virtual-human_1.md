@@ -8,6 +8,7 @@ categories: paper
 tags: [Facial, Motion_Capture, Performance_Capture, 3D_Scan, 4D_Scan, 3D_Reconstruction, Registration, Graphics, AI]
 excerpt: 게임에서 사실적인 사람 얼굴 표현을 위해 발전시켜 온 두 가지 기술을 소개합니다.
 back_color: "#eff7ff"
+img_name: "pic4.png"
 toc: true
 show: true
 new: true
