@@ -17,6 +17,9 @@
                         <a href="{{ post.url | relative_url }}" class="category-post-link">
                             <h3>
                                 {{ post.title }}
+                                {% if post.new == true %}
+                                    <span class="category-item-new"></span>
+                                {% endif %}
                             </h3>
                             {% if post.tags.size > 0 %}
                                 <div class='tag-list'>

@@ -69,7 +69,14 @@ $baseurl: "{{ site.baseurl }}";
           width: 100%;
           height: 100%;
           padding: 0;
+          object-fit: cover;
         }
+      }
+
+      .category-item-new {
+        width: 2.75rem;
+        height: 1.5625rem;
+        background-image: url('/ncresearch/assets/img/renewal/new_badge.png');
       }
     }
 
