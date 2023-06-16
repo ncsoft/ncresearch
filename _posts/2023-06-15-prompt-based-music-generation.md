@@ -8,7 +8,7 @@ categories: paper
 tags: [Music, Music_AI, Music_Generation, Prompt-based_Music_Generation, Prompt-based_Audio_Generation, Speech, AI]
 excerpt: Prompt 기반의 음악 생성 모델에 대한 소개와 향후 발전 가능성에 대해서 설명합니다.
 back_color: "#eff7ff"
-img_name: "pic3.png"
+img_name: "thumbnail.png"
 toc: true
 show: true
 new: true
@@ -93,9 +93,12 @@ index: 17
 
 <br/>
 
+![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic7.png"| relative_url}})
+*그림 3. 프롬프트 기반 음악 생성 모델 모식도*
+
 ## 4-1. 선행 연구
 
-프롬프트 기반의 음악 생성 모델은 음악을 이해하기 위한 전문적인 지식을 요구하지 않습니다. 단지 다양한 장르와 악기로 이루어진 음악과 음악의 장르와 스타일 등을 묘사하는 대량의 (텍스트, 음악) 쌍의 데이터셋이 필요합니다. 음악을 하나의 문장으로 설명할 수 없다면 하나의 음악에 여러 개의 문장을 만들어 학습에 사용할 수도 있습니다. 한발 더 나아가서는, 딥러닝 모델을 이용한다면 이러한 대량의 데이터셋을 일일이 수집하지 않아도 됩니다. Noise2Music [^11] 에서는 거대 언어 모델 (large language model, LLM)을 이용하여 음악을 묘사하는 문장에 대한 후보 텍스트 데이터셋을 만들고, (텍스트, 음악) 쌍의 데이터셋으로 사전에 학습된 딥러닝 모델을 이용하여 음악에 어울리는 텍스트를 추려냅니다. 심지어 MusicLM 에서는 (텍스트, 음악) 쌍의 데이터셋을 만들 필요가 없이 음악 데이터셋 만을 이용하여 학습합니다. MusicLM [^12]은 오디오와 텍스트로부터 학습된 세 개의 모델이 만들어내는 representation token들을 사용합니다. Music LM의 transformer decoder 모듈들은 음악데이터셋 만을 이용하여 해당 token들을 단계적으로 예측하는 방식으로 학습됩니다. 프롬프트 기반의 음악 생성 모델들은 텍스트로 장르를 변화시키거나 생성되는 음악의 악기를 변화시킬 수도 있고, 음악과 음악의 중간에 빈 부분이 있다면 문맥을 고려하여 채워줄 수도 있습니다. 어떻게 하면 이런 프롬프트 기반의 음악 생성 모델을 만들 수 있을까요? 최근의 모델에서는 두 가지 방법론이 주로 사용되고 있습니다. DALL-E2, AudioLDM과같이 diffusion 기반의 모델들 [^11] [^13]이 있고 AudioLM [^14]과 MusicLM [^12] 과 같이 LLM 모델들의 representation들을 이용하여 학습하는 방법론이 있습니다. 여기서 MusicLM에 대해 자세히 살펴보면서 프롬프트 기반의 음악 생성 모델이 어떻게 작동하는지 살펴보겠습니다. 
+프롬프트 기반의 음악 생성 모델은 음악을 이해하기 위한 전문적인 지식을 요구하지 않습니다(그림 3). 단지 다양한 장르와 악기로 이루어진 음악과 음악의 장르와 스타일 등을 묘사하는 대량의 (텍스트, 음악) 쌍의 데이터셋이 필요합니다. 음악을 하나의 문장으로 설명할 수 없다면 하나의 음악에 여러 개의 문장을 만들어 학습에 사용할 수도 있습니다. 한발 더 나아가서는, 딥러닝 모델을 이용한다면 이러한 대량의 데이터셋을 일일이 수집하지 않아도 됩니다. Noise2Music [^11] 에서는 거대 언어 모델 (large language model, LLM)을 이용하여 음악을 묘사하는 문장에 대한 후보 텍스트 데이터셋을 만들고, (텍스트, 음악) 쌍의 데이터셋으로 사전에 학습된 딥러닝 모델을 이용하여 음악에 어울리는 텍스트를 추려냅니다. 심지어 MusicLM 에서는 (텍스트, 음악) 쌍의 데이터셋을 만들 필요가 없이 음악 데이터셋 만을 이용하여 학습합니다. MusicLM [^12]은 오디오와 텍스트로부터 학습된 세 개의 모델이 만들어내는 representation token들을 사용합니다. Music LM의 transformer decoder 모듈들은 음악데이터셋 만을 이용하여 해당 token들을 단계적으로 예측하는 방식으로 학습됩니다. 프롬프트 기반의 음악 생성 모델들은 텍스트로 장르를 변화시키거나 생성되는 음악의 악기를 변화시킬 수도 있고, 음악과 음악의 중간에 빈 부분이 있다면 문맥을 고려하여 채워줄 수도 있습니다. 어떻게 하면 이런 프롬프트 기반의 음악 생성 모델을 만들 수 있을까요? 최근의 모델에서는 두 가지 방법론이 주로 사용되고 있습니다. DALL-E2, AudioLDM과같이 diffusion 기반의 모델들 [^11] [^13]이 있고 AudioLM [^14]과 MusicLM [^12] 과 같이 LLM 모델들의 representation들을 이용하여 학습하는 방법론이 있습니다. 여기서 MusicLM에 대해 자세히 살펴보면서 프롬프트 기반의 음악 생성 모델이 어떻게 작동하는지 살펴보겠습니다. 
 
 <br/>
 
@@ -108,12 +111,12 @@ index: 17
 MusicLM은 그림과 같이 세 개의 모델, SoundStream[^15], w2v-BERT[^16], 그리고 MuLan[^17] 을 사용합니다. SoundStream은 음질을 최대한 유지한 채 오디오를 압축시키는 neural audio codec 모델이고, w2v-BERT는 masked-language-modeling(MLM) 방식으로 audio representation을 만들어주는 모델로, 두 모델 모두 오디오 데이터셋만을 이용하여 학습됩니다. MuLan은 (오디오, 텍스트) 쌍을 이용하여 유사한 의미를 가진 오디오와 텍스트가 임베딩 공간상에 가까운 거리에 위치하도록 학습된 모델입니다.
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic3.png"| relative_url}})
-*그림 3. MusicLM의 논문 그림 Training 시 flow*
+*그림 4. MusicLM의 논문 그림 Training 시 flow*
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic4.png"| relative_url}})
-*그림 4. MusicLM의 논문 그림 Inference 시 flow*
+*그림 5. MusicLM의 논문 그림 Inference 시 flow*
 
-MusicLM은 그림 3과 같이 SoundStream의 중간 feature를 acoustic token으로 w2v-BERT의 중간 feature를 semantic token으로 명명하여 사용합니다. 학습 시에는 MuLan audio token으로부터 semantic token을 예측하는 semantic modeling을 진행하고, MuLan audio token과 semantic token으로 coarse acoustic token을 만들고 coarse acoustic token으로부터 fine acoustic token을 만드는 acoustic modeling을 진행합니다. 최종적으로 Fine acoustic token은 SoundStream을 통하여 waveform으로 변환되어 생성됩니다. 각각의 모델링에서는 transformer decoder 기반의 autoregressive 모델들이 사용됩니다. 생성 시에는 그림 4와 같이 MuLan text token을 입력으로 하여 semantic token과 acoustic token을 순차적으로 예측하는 방식을 취합니다.
+MusicLM은 그림 4과 같이 SoundStream의 중간 feature를 acoustic token으로 w2v-BERT의 중간 feature를 semantic token으로 명명하여 사용합니다. 학습 시에는 MuLan audio token으로부터 semantic token을 예측하는 semantic modeling을 진행하고, MuLan audio token과 semantic token으로 coarse acoustic token을 만들고 coarse acoustic token으로부터 fine acoustic token을 만드는 acoustic modeling을 진행합니다. 최종적으로 Fine acoustic token은 SoundStream을 통하여 waveform으로 변환되어 생성됩니다. 각각의 모델링에서는 transformer decoder 기반의 autoregressive 모델들이 사용됩니다. 생성 시에는 그림 5와 같이 MuLan text token을 입력으로 하여 semantic token과 acoustic token을 순차적으로 예측하는 방식을 취합니다.
 
 <br/>
 
@@ -122,10 +125,10 @@ MusicLM은 그림 3과 같이 SoundStream의 중간 feature를 acoustic token으
 MusicLM의 SoundStream과 w2v-BERT를 학습시키기 위해서 Free Music Archive (FMA) dataset을 사용하고, MuLan의 tokenizer와 semantic/acoustic modeling의 autoregressive model은 24kHz의 5백만개의 클립 (280K 시간)을 사용하여 학습합니다. MusicLM에서는 평가를 위한 새로운 데이터셋인 MusicCaps 제안하고 있습니다. MusicCaps는 AudioSet으로부터 5.5K 개의 음악 클립을 (텍스트, 오디오) 쌍으로 가지고 있습니다. text에는 장르, 분위기, 템포, 가수 음성, 악기, 리듬 등의 정보가 포함되어 있습니다. 장르에 대한 불균형 문제로 평가에 영향을 줄 수 있기 때문에 5.5K 클립에서 그림2와 같이 장르가 균등하도록 1K 샘플을 따로 준비하여 평가하였습니다. 
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic5.png"| relative_url}})
-*그림 5. MusicCaps*
+*그림 6. MusicCaps*
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic6.png"| relative_url}})
-*그림 6. MusicCaps에서 모든 장르가 균등하도록 뽑은 샘플*
+*그림 7. MusicCaps에서 모든 장르가 균등하도록 뽑은 샘플*
 
 <br/>
 
