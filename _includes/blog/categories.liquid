@@ -9,18 +9,23 @@
                 {% for post in site.posts limit:9 %}
                 {% if post.show %}
                     <div class="category-item">
-                    <a href="{{ post.url | relative_url }}" class="category-post-link">
-                        <h3>
-                            {{ post.title }}
-                        </h3>
-                        {% if post.tags.size > 0 %}
-                            <div class='tag-list'>
-                                {% for tag in post.tags %}
-                                    <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
-                                {% endfor %}
-                            </div>
+                        {% if post.img_name %}
+                        <div class="category-item-img">
+                            <img src="{{"/assets/img/post/" | post.permalink | "/" | post.img_name | relative_url }}"></img>
+                        </div>
                         {% endif %}
-                    </a>
+                        <a href="{{ post.url | relative_url }}" class="category-post-link">
+                            <h3>
+                                {{ post.title }}
+                            </h3>
+                            {% if post.tags.size > 0 %}
+                                <div class='tag-list'>
+                                    {% for tag in post.tags %}
+                                        <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </a>
                     </div>
                 {% endif %}
                 {% endfor %}

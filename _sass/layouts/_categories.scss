@@ -61,7 +61,14 @@ $baseurl: "{{ site.baseurl }}";
     }
 
     .category-item {
+      .category-item-img {
+        width: 24.75rem;
+        height: 17.75rem;
+      }
+    }
 
+    .category-item h3 {
+      padding-top: 1.25rem;
     }
 
     .items {
