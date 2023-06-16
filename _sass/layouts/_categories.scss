@@ -42,16 +42,16 @@ article {
     }
   }
 
-  .publications-group {
+  .publication-title-group {
     margin-top: 6.875rem;
 
-    .publications-title {
+    .publication-title {
       color: var(--gray900);
       font-size: 2.5rem;
       font-weight: 700;
     }
 
-    .publications-link {
+    .publication-link {
       float: right;
       color: var(--gray400);
       font-size: 1.25rem;
@@ -59,10 +59,14 @@ article {
       text-decoration: none !important;
     }
     
-    .publications-link:hover {
+    .publication-link:hover {
       color: var(--blue500);
       text-decoration: none !important;
     }
+  }
+
+  .publication-group {
+    
   }
 
   .category-group {
