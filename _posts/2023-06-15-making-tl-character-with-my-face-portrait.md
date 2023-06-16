@@ -40,6 +40,9 @@ series: -1
 
 <br/>
 
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/xZw564N15oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{:.center_div}
+
 *영상 1. TL 캐릭터 커스터마이징 장면*
 {:.center_div}
 
@@ -128,6 +131,8 @@ TL 캐릭터를 모방하는 뉴럴 렌더러를 완성하였지만, **아직 �
 
 또한, 게임에서 가상의 인물을 만드는 것은 게임을 즐기는 사용자뿐만 아니라, 게임을 만드는 개발자들에게도 필요한 과정입니다. 인물 사진으로부터 캐릭터를 생성하는 기술은 게임의 주요 등장인물의 외형을 기획하거나, 다양한 가상의 인물 사진을 생성하여 대량의 NPC 얼굴을 빠르게 제작하는 용도로도 활용될 수 있을 것으로 기대하고 있습니다. 현재 엔씨 Vision AI Lab에서는 이 글에서 소개한 기술 이외에도 다양한 생성 AI 기술을 바탕으로 게임에서 손쉽게 원하는 캐릭터를 만들 수 있도록 열심히 연구하고 있습니다. 기회가 되면 또 다른 프로젝트 소개로 찾아 뵙겠습니다. 😊
 
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/D03G0metORE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{:.center_div}
 
 *영상 2. 게임 클라이언트 동작 영상*
 {:.center_div}
