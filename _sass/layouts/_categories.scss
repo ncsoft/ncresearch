@@ -75,18 +75,21 @@ article {
         color: var(--gray900);
         font-size: 1.5rem;
         font-weight: 700;
+        margin-bottom: 0.875rem;
       }
 
       .publications_meta {
         color: var(--gray700);
         font-size: 1.125rem;
         font-weight: 500;
+        margin-bottom: 1.125rem;
       }
 
       .publications_author {
         color: var(--gray300);
         font-size: 1rem;
         font-weight: 600;
+        margin-bottom: 0;
       }
     }
 
@@ -147,6 +150,12 @@ article {
           margin: 0 0.325rem 0.625rem 0;
           color: var(--gray700);
           font-size: 1rem;
+        }
+
+        a:hover {
+          text-decoration: none !important;
+          color: var(--white);
+          background-color: var(--blue);
         }
       }
     }

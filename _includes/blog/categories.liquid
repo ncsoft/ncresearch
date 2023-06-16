@@ -49,11 +49,6 @@
                         </h3>
                         <div class='publications_meta'>{{ pub.conf }}</div>
                         <div class='publications_author'>{{ pub.authors }}</div>
-                        {% if pub.tags.size > 0 %}
-                            {% for tag in pub.tags %}
-                                <a class='publication_tag' href='' data-filter="{{ tag }}">{{ tag }}</a>
-                            {% endfor %}
-                        {% endif %}
                         <div>　</div>
                     </div>
                     {% if forloop.index < 5 %}
