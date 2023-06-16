@@ -122,7 +122,7 @@ MusicLM은 그림 4과 같이 SoundStream의 중간 feature를 acoustic token으
 
 ### 4-2-2. 데이터셋
 
-MusicLM의 SoundStream과 w2v-BERT를 학습시키기 위해서 Free Music Archive (FMA) dataset을 사용하고, MuLan의 tokenizer와 semantic/acoustic modeling의 autoregressive model은 24kHz의 5백만개의 클립 (280K 시간)을 사용하여 학습합니다. MusicLM에서는 평가를 위한 새로운 데이터셋인 MusicCaps 제안하고 있습니다. MusicCaps는 AudioSet으로부터 5.5K 개의 음악 클립을 (텍스트, 오디오) 쌍으로 가지고 있습니다. text에는 장르, 분위기, 템포, 가수 음성, 악기, 리듬 등의 정보가 포함되어 있습니다. 장르에 대한 불균형 문제로 평가에 영향을 줄 수 있기 때문에 5.5K 클립에서 그림2와 같이 장르가 균등하도록 1K 샘플을 따로 준비하여 평가하였습니다. 
+MusicLM의 SoundStream과 w2v-BERT를 학습시키기 위해서 Free Music Archive (FMA) dataset을 사용하고, MuLan의 tokenizer와 semantic/acoustic modeling의 autoregressive model은 24kHz의 5백만개의 클립 (280K 시간)을 사용하여 학습합니다. MusicLM에서는 평가를 위한 새로운 데이터셋인 MusicCaps 제안하고 있습니다. MusicCaps는 AudioSet으로부터 5.5K 개의 음악 클립을 (텍스트, 오디오) 쌍으로 가지고 있습니다. text에는 장르, 분위기, 템포, 가수 음성, 악기, 리듬 등의 정보가 포함되어 있습니다. 장르에 대한 불균형 문제로 평가에 영향을 줄 수 있기 때문에 5.5K 클립에서 그림 7과 같이 장르가 균등하도록 1K 샘플을 따로 준비하여 평가하였습니다. 
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic5.png"| relative_url}})
 *그림 6. MusicCaps*
