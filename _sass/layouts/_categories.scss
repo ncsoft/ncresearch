@@ -100,9 +100,12 @@ article {
   }
 
   .blog-page {
+    display: flex;
+
     .item-filter {
       width: 15rem;
       height: auto;
+      margin-right: 4.375rem;
   
       .item-filter-title {
         color: var(--gray800);
