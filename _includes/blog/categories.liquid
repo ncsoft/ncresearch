@@ -11,7 +11,7 @@
                     <div class="category-item">
                         {% if post.img_name %}
                         <div class="category-item-img">
-                            <img src="{{"/assets/img/post/" | post.permalink | "/" | post.img_name | relative_url }}"></img>
+                            <img src="{{site.baseurl}}/assets/img/post/{{post.permalink}}/{{post.img_name}}"></img>
                         </div>
                         {% endif %}
                         <a href="{{ post.url | relative_url }}" class="category-post-link">
