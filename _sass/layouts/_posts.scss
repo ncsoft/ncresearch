@@ -88,10 +88,11 @@ header {
   img {
     border-radius: 2.5em;
     padding: 0;
-    width: 2.5em;
-    height: 2.5em;
+    width: 2.5rem;
+    height: 2.5rem;
     height: 100%;
     margin-right: 0.5em;
+    object-fit: cover;
   }
 }
 
