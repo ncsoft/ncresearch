@@ -7,7 +7,7 @@
             </div>
             <div class="category-group">
                 <div class="items">
-                    {% for post in site.posts limit:6 %}
+                    {% for post in site.posts limit:12 %}
                     {% if post.show %}
                         <a href="{{ post.url | relative_url }}" class="category-post-link">
                             <h3>
