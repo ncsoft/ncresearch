@@ -47,10 +47,8 @@
                         <h3 class="pub_title">
                             {{ pub.title }}
                         </h3>
-                        <ul>
-                            <li class='publications_meta'>{{ pub.conf }}</li>
-                            <li class='publications_meta'>{{ pub.authors }}</li>
-                        </ul>
+                        <div class='publications_meta'>{{ pub.conf }}</div>
+                        <div class='publications_author'>{{ pub.authors }}</div>
                         {% if pub.tags.size > 0 %}
                             {% for tag in pub.tags %}
                                 <a class='publication_tag' href='' data-filter="{{ tag }}">{{ tag }}</a>
