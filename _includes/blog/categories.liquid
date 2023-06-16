@@ -21,16 +21,16 @@
                                     <span class="category-item-new"></span>
                                 {% endif %}
                             </h3>
-                            {% if post.tags.size > 0 %}
-                                <div class='tag-list'>
-                                    {% for tag in post.tags %}
-                                        {% if tag != ' ' %}
-                                            <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
-                                        {% endif %}
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
                         </a>
+                        {% if post.tags.size > 0 %}
+                            <div class='tag-list'>
+                                {% for tag in post.tags %}
+                                    {% if tag != ' ' %}
+                                        <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
                     </div>
                 {% endif %}
                 {% endfor %}
