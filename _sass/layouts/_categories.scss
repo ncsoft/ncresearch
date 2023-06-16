@@ -44,6 +44,7 @@ article {
 
   .publication-title-group {
     margin-top: 6.875rem;
+    margin-bottom: 3.125rem;
 
     .publication-title {
       color: var(--gray900);
@@ -66,7 +67,21 @@ article {
   }
 
   .publication-group {
-    
+    .publication_div {
+      border: none !important;
+
+      .pub_title {
+        color: var(--gray900);
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      .publications-meta {
+        color: var(--gray700);
+        font-size: 1.125rem;
+        font-weight: 500;
+      }
+    }
   }
 
   .category-group {
