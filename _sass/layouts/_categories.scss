@@ -43,8 +43,7 @@ $baseurl: "{{ site.baseurl }}";
     grid-gap: 1.875rem;
     grid-template-columns: repeat(auto-fit, 24.75rem);
     justify-content: center;
-
-    padding: 15px 0 10px;
+    padding: 3.125rem 0 0 0;
 
     .title {
       margin-bottom: 10px;
