@@ -81,8 +81,9 @@ $baseurl: "{{ site.baseurl }}";
       }
       
       .tag-list {
-        height: 4rem;
-        
+        height: 5.5rem;
+        overflow: hidden;
+
         a {
           margin: 0 0.325rem 0.625rem 0;
           color: var(--gray700);
