@@ -6,34 +6,34 @@
                 <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/blogs/">더보기</a>
             </div>
             <div class="category-group">
-                <div class="items">
-                    {% for post in site.posts limit:9 %}
-                    {% if post.show %}
-                        <a href="{{ post.url | relative_url }}" class="category-post-link">
-                            <h3>
-                                {{ post.title }}
-                            </h3>
-                            {% if site.excerpt or site.theme_settings.excerpt %}
-                                <div class="excerpt">
-                                    {% if site.excerpt == "truncate" %}
-                                        {{ post.content | strip_html | truncate: '250' | escape }}
-                                    {% else %}
-                                        {{ post.excerpt | strip_html | truncate: '75' | escape }}
-                                    {% endif %}
-                                </div>
-                            {% endif %}
-                            {% if post.tags.size > 0 %}
-                                <div class='tag-list'>
-                                    {% for tag in post.tags %}
-                                        <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
-                                    {% endfor %}
-                                </div>
-                            {% endif %}
-                            {% include blog/post_info.liquid author=post.author date=post.date %}
-                        </a>
-                    {% endif %}
-                    {% endfor %}
-                </div>
+                {% for post in site.posts limit:9 %}
+                {% if post.show %}
+                    <div class="category-item">
+                    <a href="{{ post.url | relative_url }}" class="category-post-link">
+                        <h3>
+                            {{ post.title }}
+                        </h3>
+                        {% if site.excerpt or site.theme_settings.excerpt %}
+                            <div class="excerpt">
+                                {% if site.excerpt == "truncate" %}
+                                    {{ post.content | strip_html | truncate: '250' | escape }}
+                                {% else %}
+                                    {{ post.excerpt | strip_html | truncate: '75' | escape }}
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                        {% if post.tags.size > 0 %}
+                            <div class='tag-list'>
+                                {% for tag in post.tags %}
+                                    <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+                        {% include blog/post_info.liquid author=post.author date=post.date %}
+                    </a>
+                    </div>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>

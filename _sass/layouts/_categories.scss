@@ -39,7 +39,11 @@ $baseurl: "{{ site.baseurl }}";
   }
 
   .category-group {
-    display: flex;
+    display: grid;
+    grid-gap: 1.875rem;
+    grid-template-columns: repeat(auto-fit, 24.75rem);
+    justify-content: center;
+
     padding: 15px 0 10px;
 
     .title {
@@ -55,6 +59,10 @@ $baseurl: "{{ site.baseurl }}";
         font-size: 1.125rem;
         font-weight: 700;
       }
+    }
+
+    .category-item {
+
     }
 
     .items {
