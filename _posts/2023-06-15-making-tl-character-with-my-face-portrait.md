@@ -11,7 +11,7 @@ excerpt: 인물 사진으로 게임 캐릭터 얼굴을 자동으로 커스터�
 back_color: "#eff7ff"
 img_name: "pic7.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 ---
