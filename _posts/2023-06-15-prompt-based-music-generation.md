@@ -10,7 +10,7 @@ excerpt: Prompt 기반의 음악 생성 모델에 대한 소개와 향후 발전
 back_color: "#eff7ff"
 img_name: "pic3.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 ---
