@@ -131,7 +131,7 @@ article {
         cursor: pointer;
       }
 
-      .blog-filter-big::after {
+      .blog-filter-big .chevron {
         content: " ";
         float: right;
         background-image: url('/ncresearch/assets/img/renewal/ic_chevron_up.png') !important;
