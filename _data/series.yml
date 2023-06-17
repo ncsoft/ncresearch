@@ -53,3 +53,9 @@
     title: "현실적인 가상 인물 제작을 위한 4D Scan 파이프라인 소개 1"
   - permalink: "4244afc8f68189c2d81073a9d5fccdd31f2439cc"
     title: "현실적인 가상 인물 제작을 위한 4D Scan 파이프라인 소개 2"
+
+- id: 7
+  series_title: ""
+  list:
+  - permalink: "481b04ee12af454ab1de6dde2576eb4c15f8047a"
+    title: "Cross Entropy, 최선인가요?: 딥러닝을 위한 여러 손실 함수들 1"
