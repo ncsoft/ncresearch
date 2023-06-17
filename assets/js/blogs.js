@@ -43,8 +43,10 @@ function initEventListener() {
           }
         }
 
+        console.log(checked_tag_array);
+
         for (let k = 0; k < blog_div_array.length; k += 1) {
-          const class_list = blog_div_array[k].classList.toString().split(" ");
+          const class_list = blog_div_array[k].classList.toString().toLowerCase().split(" ");
           let show = false;
           for (let m = 0; m < checked_tag_array.length; m += 1) {
             if (class_list.indexOf(checked_tag_array[m]) != -1) {
