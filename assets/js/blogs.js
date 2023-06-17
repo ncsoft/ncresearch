@@ -103,7 +103,7 @@ function initEventListener() {
     // show/hide sub tech
     for (let i = 0; i < blog_filter_big_array.length; i += 1) {
       blog_filter_big_array[i].addEventListener('click', (e) => {
-        e.stopPropagation();
+        // e.stopPropagation();
         // console.log(e.target.tagName)
         if (e.target.tagName == "INPUT" || e.target.tagName == "LABEL") {
           return;
