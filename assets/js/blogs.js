@@ -87,11 +87,11 @@ function initEventListener() {
         
         if (hasClass(subtech_div, 'hide')) {
           removeClass(subtech_div, 'hide');
-          removeClass(chevron, 'hide');
+          removeClass(chevron, "chevron_hide");
         }
         else {
           addClass(subtech_div, 'hide');
-          addClass(chevron, "hide");
+          addClass(chevron, "chevron_hide");
         }
       });
     }
