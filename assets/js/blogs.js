@@ -46,9 +46,26 @@ function initEventListener() {
         checkbox.checked = !checkbox.checked;
 
         if (checkbox.checked == false) {
+          // main uncheck when sub uncheck
           if (Object.keys(tech_object).indexOf(checkbox.id) == -1) {
             const main_tech_id = tech_object_reverse[checkbox.id];
             document.getElementById(main_tech_id).checked = false;
+          }
+        }
+        else {
+          // main check when all sub check
+          if (Object.keys(tech_object).indexOf(checkbox.id) == -1) {
+            const sub_array = tech_object[tech_object_reverse[checkbox.id]];
+            let all_checked = true;
+            sub_array.forEach(c => {
+              if (document.getElementById(c).checked == false) {
+                all_checked = false;
+              }
+            });
+            if (all_checked) {
+              const main_tech_id = tech_object_reverse[checkbox.id];
+              document.getElementById(main_tech_id).checked = true;
+            }
           }
         }
       });
