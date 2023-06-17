@@ -6,8 +6,13 @@
     {% if author.avatar  %}
       <img alt="Author's avatar" src="{{ author.avatar | relative_url }}">
     {% endif %}
+    {% if author2 %}
+      {% if author2.avatar %}
+        <img alt="Author2's avatar" src="{{ author2.avatar | relative_url }}">
+      {% endif %}
+    {% endif %}
     <p class="meta">
-      {% if author.name %}{{ author.name }}<pre> </pre>|<pre> </pre>{% endif %}
+      {% if author.name %}{{ author.name }}{% if author2 %}, {{ author2.name }}}{% endif %}{% endif %}
       {% assign x = date | date: "%m" | minus: 1 %}
 
     </p>
