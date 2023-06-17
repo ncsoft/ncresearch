@@ -43,7 +43,7 @@ layout: page
           {% assign posts = site.posts | sort: "index" | reverse %}
           {% for post in posts %}
             {% if post.show %}
-              <div class="blog-post-item">
+              <div class="blog-post-item {% if post.tags.size > 0 %}{% for tag in post.tags %}{{ tag }} {% endfor %}{% endif %}">
                 <a href="{{ post.url | relative_url }}" class="category-post-link">
                   <h3>
                     {{ post.title }}
