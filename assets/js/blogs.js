@@ -83,12 +83,15 @@ function initEventListener() {
 
         const checkbox = blog_filter_big_array[i].querySelector('input');
         const subtech_div = document.getElementById(`${checkbox.id}_subtech`);
+        const chevron = document.getElementById(`${checkbox.id}_chevron`);
         
         if (hasClass(subtech_div, 'hide')) {
           removeClass(subtech_div, 'hide');
+          removeClass(chevron, 'hide');
         }
         else {
           addClass(subtech_div, 'hide');
+          addClass(chevron, "hide");
         }
       });
     }
