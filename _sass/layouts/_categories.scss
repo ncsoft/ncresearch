@@ -199,6 +199,21 @@ article {
         margin: 0 0 1.875rem 0;
         line-height: 1;
       }
+
+      .post-info {
+
+        .meta {
+          color: var(--gray500);
+          font-size: 1rem;
+          font-weight: 600;
+        }
+
+        .meta2 {
+          color: var(--gray300);
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
     }
   }
 
