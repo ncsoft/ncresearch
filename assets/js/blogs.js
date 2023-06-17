@@ -6,6 +6,38 @@ let tech_object = {
 };
 let tech_object_reverse;
 
+function refreshList() {
+  // show checked blogs only
+  let checked_tag_array = [];
+  for (let j = 0; j < checkbox_array.length; j += 1) {
+    if (checkbox_array[j].checked) {
+      checked_tag_array.push(checkbox_array[j].id);
+    }
+  }
+
+  console.log(checked_tag_array);
+
+  for (let k = 0; k < blog_div_array.length; k += 1) {
+    const class_list = blog_div_array[k].classList
+      .toString()
+      .toLowerCase()
+      .split(" ");
+    let show = false;
+    for (let m = 0; m < checked_tag_array.length; m += 1) {
+      if (class_list.indexOf(checked_tag_array[m]) != -1) {
+        show = true;
+        break;
+      }
+    }
+
+    if (show) {
+      blog_div_array[k].style.display = "";
+    } else {
+      blog_div_array[k].style.display = "none";
+    }
+  }
+}
+
 function initEventListener() {
     console.log('blogs init');
 
@@ -35,42 +67,16 @@ function initEventListener() {
             break;
         }
         
-        // show checked blogs only
-        let checked_tag_array = [];
-        for (let j = 0; j < checkbox_array.length; j += 1) {
-          if (checkbox_array[j].checked) {
-            checked_tag_array.push(checkbox_array[j].id);
-          }
-        }
-
-        console.log(checked_tag_array);
-
-        for (let k = 0; k < blog_div_array.length; k += 1) {
-          const class_list = blog_div_array[k].classList.toString().toLowerCase().split(" ");
-          let show = false;
-          for (let m = 0; m < checked_tag_array.length; m += 1) {
-            if (class_list.indexOf(checked_tag_array[m]) != -1) {
-              show = true;
-              break;
-            }
-          }
-
-          if (show) {
-            blog_div_array[k].style.display = "";
-          }
-          else {
-            blog_div_array[k].style.display = "none";
-          }
-        }
+        refreshList();
       });
     }
 
     // label click to check
     for (let i = 0; i < blog_filter_small_array.length; i += 1) {
       blog_filter_small_array[i].addEventListener('click', (e) => {
-        if (e.target.tagName == 'INPUT') {
-          return;
-        }
+        // if (e.target.tagName == 'INPUT') {
+        //   return;
+        // }
         const checkbox = blog_filter_small_array[i].querySelector('input');
         checkbox.checked = !checkbox.checked;
 
@@ -97,6 +103,8 @@ function initEventListener() {
             }
           }
         }
+
+        refreshList();
       });
     }
 
@@ -106,6 +114,7 @@ function initEventListener() {
         // e.stopPropagation();
         // console.log(e.target.tagName)
         if (e.target.tagName == "INPUT" || e.target.tagName == "LABEL") {
+          refreshList();
           return;
         }
 
