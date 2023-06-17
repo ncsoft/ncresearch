@@ -456,7 +456,11 @@ table {
 }
 
 .modal-hide {
-    padding-bottom: 1em;
+  padding-top: 1.875rem;
+  padding-bottom: 1rem;
+  color: var(--gray600);
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .about_desc {
