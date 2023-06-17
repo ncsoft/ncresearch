@@ -131,13 +131,12 @@ article {
         cursor: pointer;
       }
 
-      .blog-filter-big::before {
+      .blog-filter-big::after {
         content: " ";
         float: right;
         background-image: url('/ncresearch/assets/img/renewal/ic_chevron_up.png') !important;
         width: 1.5rem;
         height: 1.5rem;
-        margin-top: 2.0625rem;
       }
 
       .blog-filter-small {
