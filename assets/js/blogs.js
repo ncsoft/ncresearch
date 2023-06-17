@@ -10,7 +10,9 @@ function initEventListener() {
 
     const blog_div_array = document.querySelectorAll('.blog-post-item');
     const checkbox_array = document.querySelectorAll('input[type=checkbox]');
+    const blog_filter_small_array = document.querySelectorAll(".blog-filter-small");
     
+    // main to sub check
     for (let i = 0; i < checkbox_array.length; i += 1) {
       checkbox_array[i].addEventListener('change', () => {
         switch (checkbox_array[i].id) {
@@ -23,6 +25,17 @@ function initEventListener() {
             }
             break;
         }
+      });
+    }
+
+    // label click to check
+    for (let i = 0; i < blog_filter_small_array.length; i += 1) {
+      blog_filter_small_array[i].addEventListener('click', (e) => {
+        if (e.target.tagName == 'INPUT') {
+          return;
+        }
+        const checkbox = blog_filter_small_array[i].querySelector('input');
+        checkbox.checked = !checkbox.checked;
       });
     }
 }
