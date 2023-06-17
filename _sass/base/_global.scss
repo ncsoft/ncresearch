@@ -1109,6 +1109,7 @@ h4.subtitle {
       font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 0.875rem;
+      line-height: 1.4;
     }
 
     .publications_meta {
@@ -1123,6 +1124,10 @@ h4.subtitle {
       font-size: 1rem;
       font-weight: 600;
       margin-bottom: 0;
+    }
+
+    .publications_tag_list {
+      margin-top: 1.125rem;
     }
   }
 
