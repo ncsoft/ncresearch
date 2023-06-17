@@ -58,8 +58,43 @@ function refreshList(retry=true) {
   if (count == 0 && checked_tag_array.length != 0 && retry == true) {
     // refresh again, because of tag hide
     now_selected_filter = "*";
+    refreshTagFilter(now_selected_filter);
     refreshList(false);
   }
+}
+
+function refreshTagFilter(selcted_filter) {
+    if (now_selected_filter == selcted_filter) {
+      now_selected_filter = "*";
+
+      for (let j = 0; j < pub_div_array.length; j += 1) {
+        pub_div_array[j].style.display = "";
+      }
+
+      // reset tag style
+      pub_tag_array.forEach((c) => {
+        removeClass(c, "selected_pub_tag");
+      });
+    } else {
+      now_selected_filter = selcted_filter;
+
+      for (let j = 0; j < pub_div_array.length; j += 1) {
+        if (hasClass(pub_div_array[j], now_selected_filter)) {
+          pub_div_array[j].style.display = "";
+        } else {
+          pub_div_array[j].style.display = "none";
+        }
+      }
+
+      // reset tag style
+      pub_tag_array.forEach((c) => {
+        if (c.dataset.filter == now_selected_filter) {
+          addClass(c, "selected_pub_tag");
+        } else {
+          removeClass(c, "selected_pub_tag");
+        }
+      });
+    }
 }
 
 function initEventListener() {
@@ -190,40 +225,7 @@ function initEventListener() {
         pub_tag_array[i].addEventListener('click', function(e) {
             e.preventDefault();
 
-            if (now_selected_filter == e.target.dataset.filter) {
-                now_selected_filter = '*';
-
-                for (let j = 0; j < pub_div_array.length; j += 1) {
-                    pub_div_array[j].style.display = '';
-                }
-
-                // reset tag style
-                pub_tag_array.forEach(c => {
-                    removeClass(c, 'selected_pub_tag');
-                });
-            }
-            else {
-                now_selected_filter = e.target.dataset.filter;
-
-                for (let j = 0; j < pub_div_array.length; j += 1) {
-                    if (hasClass(pub_div_array[j], now_selected_filter)) {
-                        pub_div_array[j].style.display = '';
-                    }
-                    else {
-                        pub_div_array[j].style.display = 'none';
-                    }
-                }
-
-                // reset tag style
-                pub_tag_array.forEach(c => {
-                    if (c.dataset.filter == now_selected_filter) {
-                        addClass(c, 'selected_pub_tag');
-                    }
-                    else {
-                        removeClass(c, 'selected_pub_tag');
-                    }
-                });
-            }
+            refreshTagFilter(e.target.dataset.filter);
         });
     }
 }
