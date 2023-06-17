@@ -4,9 +4,17 @@ let tech_object = {
   'nlp': ['understanding', 'dialogue', 'translation', 'search', 'data'],
   'applied_ai': ['curation', 'anomaly_detection', 'sequence_modeling', 'xai']
 };
+let tech_object_reverse;
 
 function initEventListener() {
     console.log('blogs init');
+
+    tech_object_reverse = {};
+    for (const [k, v] of Object.entries(tech_object)) {
+      for (let i = 0; i < v.length; i += 1) {
+        tech_object_reverse[v[i]] = k;
+      }
+    }
 
     const blog_div_array = document.querySelectorAll('.blog-post-item');
     const checkbox_array = document.querySelectorAll('input[type=checkbox]');
@@ -36,6 +44,13 @@ function initEventListener() {
         }
         const checkbox = blog_filter_small_array[i].querySelector('input');
         checkbox.checked = !checkbox.checked;
+
+        if (checkbox.checked == false) {
+          if (Object.keys(tech_object).indexOf(checkbox.id) == -1) {
+            const main_tech_id = tech_object_reverse[checkbox.id];
+            document.getElementById(main_tech_id).checked = false;
+          }
+        }
       });
     }
 }
