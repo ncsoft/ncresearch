@@ -21,9 +21,9 @@ function initEventListener() {
     const blog_filter_big_array = document.querySelectorAll(".blog-filter-big");
     const blog_filter_small_array = document.querySelectorAll(".blog-filter-small");
     
-    // main to sub check
     for (let i = 0; i < checkbox_array.length; i += 1) {
       checkbox_array[i].addEventListener('change', () => {
+        // main to sub check
         switch (checkbox_array[i].id) {
           case 'ai':
           case 'nlp':
@@ -33,6 +33,32 @@ function initEventListener() {
               sub_checkbox.checked = checkbox_array[i].checked;
             }
             break;
+        }
+        
+        // show checked blogs only
+        let checked_tag_array = [];
+        for (let j = 0; j < checkbox_array.length; j += 1) {
+          if (checkbox_array[j].checked) {
+            checked_tag_array.push(checkbox_array[j].id);
+          }
+        }
+
+        for (let k = 0; k < blog_div_array.length; k += 1) {
+          const class_list = blog_div_array[k].classList.toString().split(" ");
+          let show = false;
+          for (let m = 0; m < checked_tag_array.length; m += 1) {
+            if (class_list.indexOf(checked_tag_array[m]) != -1) {
+              show = true;
+              break;
+            }
+          }
+
+          if (show) {
+            blog_div_array[k].style.display = "";
+          }
+          else {
+            blog_div_array[k].style.display = "none";
+          }
         }
       });
     }

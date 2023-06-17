@@ -133,6 +133,10 @@ article {
         .blog-filter-big-title {
           width: 12rem;
         }
+
+        .blog-filter-big-title:hover {
+          color: var(--blue500);
+        }
       }
 
       .blog-filter-big .chevron {
