@@ -7,6 +7,9 @@ let tech_object = {
 let tech_object_reverse;
 
 function refreshList() {
+  const blog_div_array = document.querySelectorAll(".blog-post-item");
+  const checkbox_array = document.querySelectorAll("input[type=checkbox]");
+
   // show checked blogs only
   let checked_tag_array = [];
   for (let j = 0; j < checkbox_array.length; j += 1) {
