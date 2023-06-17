@@ -18,7 +18,7 @@ function refreshList() {
     }
   }
 
-  console.log(checked_tag_array);
+  // console.log(checked_tag_array);
 
   for (let k = 0; k < blog_div_array.length; k += 1) {
     const class_list = blog_div_array[k].classList
