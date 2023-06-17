@@ -128,7 +128,16 @@ article {
         font-weight: 700;
         width: 14.5rem;
         line-height: 1.4;
-        // cursor: pointer;
+        cursor: pointer;
+      }
+
+      .blog-filter-big::before {
+        content: " ";
+        float: right;
+        background-image: url('/ncresearch/assets/img/renewal/ic_chevron_up.png') !important;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: 2.0625rem;
       }
 
       .blog-filter-small {
