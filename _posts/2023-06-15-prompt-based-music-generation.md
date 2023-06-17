@@ -28,7 +28,7 @@ index: 17
 
 > **작성자**
 > - 이경훈(Speech AI Lab, Music AI 팀)
-> - AI를 활용한 가창 음성 및 음악 합성 연구를 하고 있습니다. AI를 통해 새로운 즐거움을 창조하고 싶습니다.
+> - AI를 활용한 가창 음성 합성 및 음악 생성 연구를 하고 있습니다.
 > 
 > **이런 분이 읽으면 좋습니다!**
 > -	프롬프트 기반의 음악 생성 연구의 배경이 궁금하신 분
@@ -43,9 +43,9 @@ index: 17
 
 엔씨 AI Center의 Speech AI Lab에서는 음성 인식, 음성 합성, 음악 생성 등과 같은 연구를 하고 있습니다. 그중 Music AI 팀은 가창 음성 합성 및 음악 생성 분야를 연구합니다.
 
-**이 글에서는, 엔씨 Music AI 팀이 주목하고 있는 최신 프롬프트(Prompt) 기반의 생성 모델에 대해서 알아보고, 사운드와 음악 생성 분야에서 어떻게 연구가 진행되고 있는지를 소개하고자 합니다.**
+**이 글에서는, 엔씨 Music AI 팀이 주목하고 있는 프롬프트(Prompt) 기반의 최신 생성 모델에 대해서 알아보고, 사운드와 음악 생성 분야에서 어떻게 연구가 진행되고 있는지를 소개하고자 합니다.**
 
-먼저 "엔씨에서 음악 AI 기술을 게임에 어떻게 활용하기 위하여 연구하게 되었는지"가 궁금하실 텐데요. Music AI 기술이 기여할 엔씨 게임의 미래를 설명해 드린 후, 본론으로 들어가도록 하겠습니다. 
+먼저 "엔씨에서 음악 AI 기술을 왜 연구하게 되었는지"가 궁금하실 텐데요. Music AI 기술이 기여할 엔씨 게임의 미래를 설명해 드린 후, 본론으로 들어가도록 하겠습니다. 
 
 **Music AI 팀의 연구 방향성**  
 - AI 기술을 활용하여 음악 제작과 녹음에 필요한 비용 절감, 음악 전문가들이 창의적인 음악 작업에 더 힘을 쏟을 수 있도록 도움
@@ -122,10 +122,12 @@ MusicLM은 그림 4과 같이 SoundStream의 중간 feature를 acoustic token으
 
 ### 4-2-2. 데이터셋
 
-MusicLM의 SoundStream과 w2v-BERT를 학습시키기 위해서 Free Music Archive (FMA) dataset을 사용하고, MuLan의 tokenizer와 semantic/acoustic modeling의 autoregressive model은 24kHz의 5백만개의 클립 (280K 시간)을 사용하여 학습합니다. MusicLM에서는 평가를 위한 새로운 데이터셋인 MusicCaps 제안하고 있습니다. MusicCaps는 AudioSet으로부터 5.5K 개의 음악 클립을 (텍스트, 오디오) 쌍으로 가지고 있습니다. text에는 장르, 분위기, 템포, 가수 음성, 악기, 리듬 등의 정보가 포함되어 있습니다. 장르에 대한 불균형 문제로 평가에 영향을 줄 수 있기 때문에 5.5K 클립에서 그림 7과 같이 장르가 균등하도록 1K 샘플을 따로 준비하여 평가하였습니다. 
+MusicLM의 SoundStream과 w2v-BERT를 학습시키기 위해서 Free Music Archive (FMA) dataset을 사용하고, MuLan의 tokenizer와 semantic/acoustic modeling의 autoregressive model은 24kHz의 5백만개의 클립 (280K 시간)을 사용하여 학습합니다. MusicLM에서는 평가를 위한 새로운 데이터셋인 MusicCaps를 제안하고 있습니다.
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic5.png"| relative_url}})
 *그림 6. MusicCaps*
+
+MusicCaps는 AudioSet으로부터 5.5K 개의 음악 클립을 (텍스트, 오디오) 쌍으로 가지고 있습니다. text에는 장르, 분위기, 템포, 가수 음성, 악기, 리듬 등의 정보가 포함되어 있습니다. 장르에 대한 불균형 문제로 평가에 영향을 줄 수 있기 때문에 5.5K 클립에서 그림 7과 같이 장르가 균등하도록 1K 샘플을 따로 준비하여 평가하였습니다. 
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic6.png"| relative_url}})
 *그림 7. MusicCaps에서 모든 장르가 균등하도록 뽑은 샘플*
