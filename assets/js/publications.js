@@ -64,6 +64,9 @@ function refreshList(retry=true) {
 }
 
 function refreshTagFilter(selcted_filter) {
+    const pub_div_array = document.querySelectorAll(".publication_div");
+    const pub_tag_array = document.querySelectorAll(".publication_tag");
+    
     if (now_selected_filter == selcted_filter) {
       now_selected_filter = "*";
 

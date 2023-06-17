@@ -1148,4 +1148,8 @@ h4.subtitle {
   .publication_div {
     border-bottom: 1px solid var(--gray50) !important;
   }
+
+  .publication_div:hover {
+    color: var(--blue500);
+  }
 }
