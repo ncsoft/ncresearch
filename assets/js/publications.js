@@ -8,27 +8,27 @@ let tech_object_reverse;
 
 function initEventListener() {
     console.log('publications init');
-    // const anchor_array = document.getElementsByClassName('show-message');
+    const anchor_array = document.getElementsByClassName('show-message');
 
-    // for (let i = 0; i < anchor_array.length; i += 1) {
-    //     anchor_array[i].addEventListener('click', function(e) {
-    //         e.preventDefault();
+    for (let i = 0; i < anchor_array.length; i += 1) {
+        anchor_array[i].addEventListener('click', function(e) {
+            e.preventDefault();
 
-    //         // console.log(e.target)
-    //         let clicked_div = e.target;
-    //         while (clicked_div.tagName != 'A') {
-    //             clicked_div = clicked_div.parentElement;
-    //         }
-    //         let div = document.getElementById(`pub_popup_${clicked_div.dataset.id}`);
-    //         // console.log(div);
-    //         if (div.style.display == 'none') {
-    //             div.style.display = 'block';
-    //         }
-    //         else {
-    //             div.style.display = 'none';
-    //         }
-    //     });
-    // }
+            // console.log(e.target)
+            let clicked_div = e.target;
+            while (clicked_div.tagName != 'A') {
+                clicked_div = clicked_div.parentElement;
+            }
+            let div = document.getElementById(`pub_popup_${clicked_div.dataset.id}`);
+            // console.log(div);
+            if (div.style.display == 'none') {
+                div.style.display = 'block';
+            }
+            else {
+                div.style.display = 'none';
+            }
+        });
+    }
 
     const pub_div_array = document.querySelectorAll('.publication_div');
     const pub_tag_array = document.querySelectorAll('.publication_tag');

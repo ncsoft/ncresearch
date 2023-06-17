@@ -1043,14 +1043,14 @@ h4.subtitle {
   }
 
   input[type="checkbox"]:checked+label {
-    background-color: var(--blue500);
+    background-color: var(--gray50);
   }
 
   input[type="checkbox"]:checked+label::after {
     content: '✓';
     font-size: 1rem;
     font-weight: 900;
-    color: var(--white);
+    color: var(--blue500);
     width: 1.5rem;
     height: 1.5rem;
     text-align: center;
@@ -1134,5 +1134,11 @@ h4.subtitle {
   hr {
     margin-top: 1.875rem;
     margin-bottom: 0.75rem;
+  }
+}
+
+.blog-page {
+  .publication_div {
+    border-bottom: 1px solid var(--gray50) !important;
   }
 }
