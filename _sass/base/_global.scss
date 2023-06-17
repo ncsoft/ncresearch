@@ -1098,3 +1098,36 @@ h4.subtitle {
     }
   }
 }
+
+.publication-group {
+  .publication_div {
+    border: none !important;
+    padding: 1.875rem 0 0 0;
+
+    .pub_title {
+      color: var(--gray900);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.875rem;
+    }
+
+    .publications_meta {
+      color: var(--gray700);
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-bottom: 1.125rem;
+    }
+
+    .publications_author {
+      color: var(--gray300);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+
+  hr {
+    margin-top: 1.875rem;
+    margin-bottom: 0.75rem;
+  }
+}

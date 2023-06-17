@@ -1,4 +1,3 @@
-let now_selected_filter = "*";
 let tech_object = {
   'ai': ['speech', 'vision', 'graphics', 'reinforcement_learning', 'ai_system'],
   'nlp': ['understanding', 'dialogue', 'translation', 'search', 'data'],

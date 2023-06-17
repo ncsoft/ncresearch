@@ -46,25 +46,23 @@ page-type: main_page
             <div class="blog-filter-small"><input type="checkbox" id="xai" checked/><label for="xai"></label>　XAI</div>
           </div>
         </div>
-        <div class="items">
+        <div class="publication-group">
             {% assign pubs = site.data.publications | sort: "year" %}
             {% for pub in pubs reversed %}
                 <div class='publication_div {% if pub.tags.size > 0 %}{% for tag in pub.tags %}{{ tag }} {% endfor %}{% endif %}'>
-                    <a href='' class='show-message' data-id='{{ pub.id }}'>
-                        <h3 class='pub_title'>
-                            {{ pub.title }}
-                        </h3>
-                        <ul>
-                            <li class='publications_meta'>{{ pub.conf }}</li>
-                            <li class='publications_meta'>{{ pub.authors }}</li>
-                        </ul>
-                        {% if pub.tags.size > 0 %}
-                            {% for tag in pub.tags %}
-                                <a class='publication_tag' href='' data-filter="{{ tag }}">{{ tag }}</a>
-                            {% endfor %}
-                        {% endif %}
-                        <div>　</div>
-                    </a>
+                    <!-- <a href='' class='show-message' data-id='{{ pub.id }}'> -->
+                    <h3 class='pub_title'>
+                        {{ pub.title }}
+                    </h3>
+                    <div class='publications_meta'>{{ pub.conf }}</div>
+                    <div class='publications_author'>{{ pub.authors }}</div>
+                    {% if pub.tags.size > 0 %}
+                        {% for tag in pub.tags %}
+                            <a class='publication_tag' href='' data-filter="{{ tag }}">{{ tag }}</a>
+                        {% endfor %}
+                    {% endif %}
+                    <div>　</div>
+                    <!-- </a> -->
                     <div class="modal-hide" id="pub_popup_{{ pub.id }}" style="display:none;">{{ pub.abstract }}</div>
                 </div>
             {% endfor %}
