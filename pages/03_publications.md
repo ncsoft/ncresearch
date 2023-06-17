@@ -11,7 +11,7 @@ page-type: main_page
 <script src="{{ site.baseurl | prepend: site.url }}/assets/js/publications.js"></script>
 
 <div class="home">
-    <div class="publication-page">
+    <div class="blog-page">
         <div class="item-filter">
           <div class="item-filter-title">
             FILTERS
