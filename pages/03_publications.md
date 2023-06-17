@@ -56,7 +56,7 @@ page-type: main_page
                     </h3>
                     <div class='publications_meta'>{{ pub.conf }}</div>
                     <div class='publications_author'>{{ pub.authors }}</div>
-                    <div>
+                    <div class="publications_tag_list">
                     {% if pub.tags.size > 0 %}
                         {% for tag in pub.tags %}
                             <a class='publication_tag' href='' data-filter="{{ tag }}">{{ tag }}</a>
