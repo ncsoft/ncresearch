@@ -1044,6 +1044,7 @@ h4.subtitle {
 
   input[type="checkbox"]:checked+label {
     background-color: var(--gray50);
+    border: none;
   }
 
   input[type="checkbox"]:checked+label::after {
@@ -1102,7 +1103,7 @@ h4.subtitle {
 .publication-group {
   .publication_div {
     border: none !important;
-    padding: 1.875rem 0 0 0;
+    padding: 1.875rem 0 2.5rem 0;
 
     .pub_title {
       color: var(--gray900);
@@ -1110,6 +1111,7 @@ h4.subtitle {
       font-weight: 700;
       margin-bottom: 0.875rem;
       line-height: 1.4;
+      width: 90%;
     }
 
     .publications_meta {
