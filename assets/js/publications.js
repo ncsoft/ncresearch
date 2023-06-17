@@ -53,7 +53,9 @@ function refreshList(retry=true) {
     }
   }
 
-  if (count == 0 && checked_tag_array.length == 0 && retry == true) {
+  console.log(count);
+
+  if (count == 0 && checked_tag_array.length != 0 && retry == true) {
     // refresh again, because of tag hide
     now_selected_filter = "";
     refreshList(false);
