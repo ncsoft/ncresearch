@@ -53,11 +53,11 @@ function refreshList(retry=true) {
     }
   }
 
-  console.log(count);
+  console.log(count, checked_tag_array, retry);
 
   if (count == 0 && checked_tag_array.length != 0 && retry == true) {
     // refresh again, because of tag hide
-    now_selected_filter = "";
+    now_selected_filter = "*";
     refreshList(false);
   }
 }
