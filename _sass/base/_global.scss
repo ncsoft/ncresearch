@@ -992,7 +992,7 @@ h4.subtitle {
       }
 
       .blog-filter-small-title:hover {
-        color: var(--blue500);
+        color: var(--blue500) !important;
       }
     }
 
@@ -1152,9 +1152,9 @@ h4.subtitle {
 .blog-page {
   .publication_div {
     border-bottom: 1px solid var(--gray50) !important;
-  }
 
-  .publication_div:hover {
-    color: var(--blue500);
+    .pub_title:hover {
+      color: var(--blue500) !important;
+    }
   }
 }
