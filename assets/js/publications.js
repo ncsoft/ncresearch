@@ -6,7 +6,7 @@ let tech_object = {
 };
 let tech_object_reverse;
 
-function refreshList() {
+function refreshList(retry=true) {
   const pub_div_array = document.querySelectorAll(".publication_div");
   const checkbox_array = document.querySelectorAll("input[type=checkbox]");
 
@@ -19,6 +19,8 @@ function refreshList() {
   }
 
   // console.log(checked_tag_array);
+
+  let count = 0;
 
   for (let k = 0; k < pub_div_array.length; k += 1) {
     const class_list = pub_div_array[k].classList
@@ -36,9 +38,11 @@ function refreshList() {
     if (show) {
       if (now_selected_filter == '*') {
         pub_div_array[k].style.display = "";
+        count += 1;
       } else {
         if (hasClass(pub_div_array[k], now_selected_filter)) {
           pub_div_array[k].style.display = "";
+          count += 1;
         }
         else {
           pub_div_array[k].style.display = "none";
@@ -47,6 +51,12 @@ function refreshList() {
     } else {
       pub_div_array[k].style.display = "none";
     }
+  }
+
+  if (count == 0 && checked_tag_array.length == 0 && retry == true) {
+    // refresh again, because of tag hide
+    now_selected_filter = "";
+    refreshList(false);
   }
 }
 
