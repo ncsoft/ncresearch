@@ -18,6 +18,7 @@ function initEventListener() {
 
     const blog_div_array = document.querySelectorAll('.blog-post-item');
     const checkbox_array = document.querySelectorAll('input[type=checkbox]');
+    const blog_filter_big_array = document.querySelectorAll(".blog-filter-big");
     const blog_filter_small_array = document.querySelectorAll(".blog-filter-small");
     
     // main to sub check
@@ -67,6 +68,25 @@ function initEventListener() {
               document.getElementById(main_tech_id).checked = true;
             }
           }
+        }
+      });
+    }
+
+    // show/hide sub tech
+    for (let i = 0; i < blog_filter_big_array.length; i += 1) {
+      blog_filter_big_array[i].addEventListener('click', (e) => {
+        if (e.target.tagName == "INPUT") {
+          return;
+        }
+
+        const checkbox = blog_filter_big_array[i].querySelector('input');
+        const subtech_div = document.getElementById(`${checkbox.id}_subtech`);
+        
+        if (hasClass(subtech_div, 'hide')) {
+          removeClass(subtech_div, 'hide');
+        }
+        else {
+          addClass(subtech_div, 'hide');
         }
       });
     }
