@@ -8,7 +8,7 @@ categories: paper
 tags: [computer_vision, loss_function, cross_entropy, focal_loss, asymmetric_loss, imbalanced_data, Understanding, NLP]
 excerpt: Vision 분야에서 발표된, 특정 조건 하에서 Cross Entropy Loss보다 더 좋은 효과를 보이는 손실 함수를 소개합니다.
 back_color: "#eff7ff"
-img_name: "thumbnail.png"
+img_name: "3_object_detection_example.jpg"
 toc: true
 show: false
 new: true

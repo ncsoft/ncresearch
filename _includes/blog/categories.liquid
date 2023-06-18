@@ -7,7 +7,7 @@
             </div>
             <div class="category-group">
                 {% assign posts = site.posts | sort: "index" | reverse %}
-                {% for post in posts limit:6 %}
+                {% for post in posts limit:7 %}
                 {% if post.show %}
                     <div class="category-item">
                         {% if post.img_name %}
