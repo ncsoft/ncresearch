@@ -122,21 +122,21 @@ MusicLM은 그림 4과 같이 SoundStream의 중간 feature를 acoustic token으
 
 ### 4-2-2. 데이터셋
 
-MusicLM의 SoundStream과 w2v-BERT를 학습시키기 위해서 Free Music Archive (FMA) dataset을 사용하고, MuLan의 tokenizer와 semantic/acoustic modeling의 autoregressive model은 24kHz의 5백만개의 클립 (280K 시간)을 사용하여 학습합니다. MusicLM에서는 평가를 위한 새로운 데이터셋인 MusicCaps를 제안하고 있습니다.
+MusicLM의 SoundStream과 w2v-BERT를 학습시키기 위해서 Free Music Archive (FMA) dataset을 사용하고, MuLan의 tokenizer와 semantic/acoustic modeling의 autoregressive model은 24kHz의 5백만개의 클립 (280K 시간)을 사용하여 학습합니다. MusicLM에서는 평가를 위한 새로운 데이터셋인 Music Caps를 제안하고 있습니다.
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic5.png"| relative_url}})
-*그림 6. MusicCaps*
+*그림 6. Music Caps*
 
-MusicCaps는 AudioSet으로부터 5.5K 개의 음악 클립을 (텍스트, 오디오) 쌍으로 가지고 있습니다. text에는 장르, 분위기, 템포, 가수 음성, 악기, 리듬 등의 정보가 포함되어 있습니다. 장르에 대한 불균형 문제로 평가에 영향을 줄 수 있기 때문에 5.5K 클립에서 그림 7과 같이 장르가 균등하도록 1K 샘플을 따로 준비하여 평가하였습니다. 
+Music Caps는 AudioSet으로부터 5.5K 개의 음악 클립을 (텍스트, 오디오) 쌍으로 가지고 있습니다. text에는 장르, 분위기, 템포, 가수 음성, 악기, 리듬 등의 정보가 포함되어 있습니다. 장르에 대한 불균형 문제로 평가에 영향을 줄 수 있기 때문에 5.5K 클립에서 그림 7과 같이 장르가 균등하도록 1K 샘플을 따로 준비하여 평가하였습니다. 
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/pic6.png"| relative_url}})
-*그림 7. MusicCaps에서 모든 장르가 균등하도록 뽑은 샘플*
+*그림 7. Music Caps에서 모든 장르가 균등하도록 뽑은 샘플*
 
 <br/>
 
 ### 4-2-3. 결과
 
-프롬프트 기반의 음악 생성 모델을 평가하는 방법은 크게 두 가지로, 생성된 음악의 품질이 얼마나 좋은지, 주어진 프롬프트를 얼마나 잘 반영하여 음악이 만들어졌는지로 나눌 수 있습니다. MusicLM에서는 평가를 위한 metric으로 Fréchet Audio Distance(FAD), KL Divergence (KLD), MuLan Cycle Consistenc y (MCC) 로 3개의 metric을 사용하였습니다. FAD score가 낮은 샘플을 생성하는 모델이 더 실제와 유사한 오디오를 생성할 것으로 예상할 수 있고, 생성된 샘플의 KLD 가 낮을수록 실제 참조(reference) 음악과 음향적 특징이 비슷하다고 기대할 수 있습니다. MCC는 MusicCaps의 텍스트와 생성된 음악의 MuLan 임베딩을 각각 계산하고 두 임베딩 간의 코사인 유사도를 측정하는 값으로, 값이 클수록 해당 텍스트를 잘 반영하는 음악을 생성했다고 평가할 수 있습니다.
+프롬프트 기반의 음악 생성 모델을 평가하는 방법은 크게 두 가지로, 생성된 음악의 품질이 얼마나 좋은지, 주어진 프롬프트를 얼마나 잘 반영하여 음악이 만들어졌는지로 나눌 수 있습니다. MusicLM에서는 평가를 위한 metric으로 Fréchet Audio Distance(FAD), KL Divergence (KLD), MuLan Cycle Consistenc y (MCC) 로 3개의 metric을 사용하였습니다. FAD score가 낮은 샘플을 생성하는 모델이 더 실제와 유사한 오디오를 생성할 것으로 예상할 수 있고, 생성된 샘플의 KLD 가 낮을수록 실제 참조(reference) 음악과 음향적 특징이 비슷하다고 기대할 수 있습니다. MCC는 Music Caps의 텍스트와 생성된 음악의 MuLan 임베딩을 각각 계산하고 두 임베딩 간의 코사인 유사도를 측정하는 값으로, 값이 클수록 해당 텍스트를 잘 반영하는 음악을 생성했다고 평가할 수 있습니다.
 
 ![]({{"/assets/img/post/f27188f9c5fdfec1298f8fd78fbf3718125cf5a3/tab1.png"| relative_url}})
 *표 1. MusicLM의 표*

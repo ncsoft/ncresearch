@@ -404,7 +404,7 @@
   conf: "IEEE Transactions on Games, Volume: 14, Issue: 2, June 2022, pp. 212 - 220 "
   year: 2022
   abstract: "Reinforcement learning (RL) combined with deep neural networks has performed remarkably well in many genres of games recently. It has surpassed human-level performance in fixed game environments and turn-based two-player board games. However, to the best of our knowledge, current research has yet to produce a result that has surpassed human-level performance in modern complex fighting games. This is due to the inherent difficulties with real-time fighting games, including: vast action spaces, action dependencies, and imperfect information. We overcame these challenges and made 1v1 battle AI agents for the commercial game Blade and Soul . The trained agents competed against five professional gamers and achieved a winning rate of 62%. This article presents a practical RL method that includes a novel self-play curriculum and data skipping techniques. Through the curriculum, three different styles of agents were created by reward shaping and were trained against each other. Additionally, this article suggests data-skipping techniques that could increase data efficiency and facilitate explorations in vast spaces. Since our method can be generally applied to all two-player competitive games with vast action spaces, we anticipate its application to game development including level design and automated balancing."
-  tags: ["IEEE_Transactions_on_Games_2022", "Reinforcement_Learning", "Deep_learning", "fighting_game", "self-play_curriculum_learning", "AI"]
+  tags: ["IEEE_Transactions_on_Games_2022", "Reinforcement_Learning", "Deep_learning", "fighting_game", "self-play_curriculum_learning", "AI_System", "AI"]
   id: 50
 
 - authors: "Jinyun Chung, Seungeun Rho"
@@ -420,7 +420,7 @@
   conf: "Game Developers Conference (GDC) (2022) (AI Summit)"
   year: 2022
   abstract: "Lineage is a massively multiplayer online role-playing game played by millions of players around the world. For the first time ever, we developed two types of multi-agent AI battle content in the Lineage universe using reinforcement learning. Clone Wars and Rookies vs. Veterans offer a chance for users to experience an exhilarating battle against AI opponents. In the future, reinforcement learning will be applied in new ways to create more MMORPG content where users can engage in multiplayer battles with AIs."
-  tags: ["GDC2022","AI_Summit","Reinforcement_Learning", "Multi-agent_Reinforcement_Learning", "AI"]
+  tags: ["GDC2022","AI_Summit","Reinforcement_Learning", "Multi-agent_Reinforcement_Learning", "AI_System", "AI"]
   id: 52
 
 - authors: "양진혁(NCSOFT), 배재성(NCSOFT), 박태준(NCSOFT), 김영익(NCSOFT), 조훈영(NCSOFT)"
