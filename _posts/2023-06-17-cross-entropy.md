@@ -33,7 +33,7 @@ index: 21
 
 또한, 이전 학습 때 설정했던 여러 하이퍼파라미터(Hyperparameter) 등을 바꿔볼 수도 있을 것 같습니다. 배치 크기(Batch-size)나 옵티마이저(Optimizer), 학습률(Learning rate) 등을 변경해 보고 평가 데이터 셋(Test dataset)에서 가장 좋은 성능을 보이는 하이퍼파라미터를 찾는 거죠. 이것저것 해보려면 꽤 많은 시간이 소요되겠네요.
 
-![]({{"/assets/img/post/481b04ee12af454ab1de6dde2576eb4c15f8047a/1_brain_meme.png"| relative_url}})
+![]({{"/assets/img/post/481b04ee12af454ab1de6dde2576eb4c15f8047a/1_brain_meme.png"| relative_url}}){: width="400" height="400"}
 *다들 이런 경험 한 번씩 해보지 않았나요?*
 
 이렇듯, 좋은 분류 모델을 만드는 것은 것은 매우 까다로운 작업입니다. 우리는 모델을 잘 훈련시키기 위해 앞서 언급했던 모델 학습에 영향을 주는 여러 요소들을 신중하게 고려해서 선택합니다. 그런데, 분류 모델을 학습하기 위한 이런 여러 요소들 중에서 일반적으로 **당연하게** 여겨지는 것이 있습니다. 제목을 통해 이미 알고 계셨겠지만, 그건 바로 **Cross Entropy Loss**입니다.
