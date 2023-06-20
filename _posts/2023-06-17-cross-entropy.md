@@ -130,7 +130,7 @@ Modulating factor의 역할은 모델이 분류를 잘 수행할 수 있는 예�
 
 사실 위에서 설명드린 Focal Loss는 명확한 한계점이 존재합니다. 앞서 Focal Loss의 목적은 Easy example에 대한 Loss를 상대적으로 작게 가져가는 것이라고 설명 드렸습니다. 자, 아래 그림을 보시죠.
 
-![]({{"/assets/img/post/481b04ee12af454ab1de6dde2576eb4c15f8047a/13_ASL_focal_loss.png"| relative_url}}){: width="70%"}
+![]({{"/assets/img/post/481b04ee12af454ab1de6dde2576eb4c15f8047a/13_ASL_focal_loss.png"| relative_url}}){: width="90%"}
 
 위 그림은 Negative example과 Positive example에 대한 Focal Loss의 그래프를 각각 나타낸 그림입니다. 먼저 Negative example에 대한 왼쪽 그래프를 보면, $$\gamma$$가 커질수록 Easy negative example에 대한 Loss 값이 크게 줄어드는 것이 보입니다. 하지만, 오른쪽 그래프를 보면 $$\gamma$$가 커졌기 때문에 Positive example에 대한 Loss 또한 전체적으로 줄어들고 말았습니다. 즉, Focal Loss에서 전체 Loss에 대한 Easy negative example들의 기여를 줄이려고 $$\gamma$$를 키울수록, 우리가 실제로 집중해야 할 Positive example에 대한 Loss 또한 줄어든다는 것입니다. 
 
