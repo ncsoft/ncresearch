@@ -10,7 +10,7 @@ excerpt: Vision 분야에서 발표된, 특정 조건 하에서 Cross Entropy Lo
 back_color: "#eff7ff"
 img_name: "3_object_detection_example.jpg"
 toc: true
-show: false
+show: true
 new: true
 series: 7
 index: 21
