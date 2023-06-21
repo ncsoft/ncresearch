@@ -100,7 +100,7 @@ Focal Loss의 수식을 살펴보기 전에, 먼저 위의 BCE Loss의 수식을
 
 ![]({{"/assets/img/post/481b04ee12af454ab1de6dde2576eb4c15f8047a/10_FL.png"| relative_url}}){: width="50%"}
 
-여기서 $$\gamma >= 0$$ 이고 $$\alpha \in [0,1]$$ 입니다. 이 Weighting factor $$\alpha$$는 Balanced Cross Entropy$$(CE(p_t)=\alpha*log(p_t))$$에서 영감을 받은 것 같아 보입니다.
+여기서 $$\gamma >= 0$$ 이고 $$\alpha \in [0,1]$$ 입니다. 이 Weighting factor $$\alpha$$는 Balanced Cross Entropy-!$$(CE(p_t)=-\alpha*log(p_t))$$!-에서 영감을 받은 것 같아 보입니다.
 
 Modulating factor의 역할은 모델이 분류를 잘 수행할 수 있는 예시(Well-classified example 혹은 Easy example)에 대한 Loss를 줄이는 것입니다. 모델이 예측을 잘 수행하지 못해서 $$p_t$$가 작은 경우, 이 Modulating factor는 1에 가까워지고 Loss는 이에 대한 영향을 거의 받지 않게 됩니다. 반대로 모델이 예측을 잘 수행해서 $$p_t$$가 1에 가까운 경우, Modulating factor는 0에 가까워지고 Loss는 이 인자의 영향을 받아 더욱 작아지게 됩니다. 여기서 Focusing factor라 불리는 $$\gamma$$는 Easy example의 범위를 조절하는 역할을 한다고 볼 수 있는데, $$\gamma$$가 커질수록 Easy example에 대한 Loss가 크게 줄어들면서 Easy example에 대한 범위도 커집니다. 
 
@@ -166,11 +166,13 @@ Zamir et al. (ICCV2021)[^4]에서는 이에 대한 해결책으로 Positive와 N
 
 위 그림은 세 손실 함수의 학습 과정 동안 반복(Iteration) 수에 따른 평균 $$p_t$$를 각각 나타낸 그래프입니다. Cross Entropy와 Focal Loss의 그래프를 보면, 전체 학습 과정 동안 Negative example $$p_t^-$$가 positive example $$p_t^+$$보다 크다는 것을 확인할 수 있습니다. 이는 이 두 손실 함수가 Optimization 과정 동안 Negative example에 상당히 많은 가중치를 부여했음을 의미합니다. 심지어 Cross Entropy의 경우는 반복 수가 거의 1,000이 다 되어서야 $$p_t^+$$가 상승하는 모습을 보입니다. 이는 Positive example에 대한 학습이 매우 느리게 진행된다는 것을 의미하죠. 반면, ASL 의 경우는 우리가 원하는 $$p_t^+$$에 좀 더 집중하는 모습을 보이고 다른 두 손실 함수에 비해 Positive example에 대한 학습이 빠르게 진행된다는 것을 알 수 있습니다. 
 
-이제 세 손실 함수의 성능을 비교한 결과를 볼 시간입니다. 이 논문에서는 MS-COCO 데이터 셋을 사용하여 총 세 가지 Backbone(TResNet-L, ResNet101, OFA-595[^6])으로 세 손실 함수를 각각 적용한 성능을 비교 했습니다. 결과적으로, 모든 실험 결과에서 **ASL > Focal Loss > Cross Entropy** 순으로 성능(mAP score)이 좋았다고 합니다(아래 그림).
+이제 세 손실 함수의 성능을 비교한 결과를 볼 시간입니다.
+
+이 논문에서는 MS-COCO 데이터 셋을 사용하여 총 세 가지 Backbone(TResNet-L, ResNet101, OFA-595[^6])으로 세 손실 함수를 각각 적용한 성능을 비교 했습니다. 결과적으로, 모든 실험 결과에서 **ASL > Focal Loss > Cross Entropy** 순으로 성능(mAP score)이 좋았다고 합니다(아래 그림).
 
 ![]({{"/assets/img/post/481b04ee12af454ab1de6dde2576eb4c15f8047a/17_ASL_performance_comp.png"| relative_url}})
 
-요약하자면, `Asymmetric한 분포를 가진 Imbalanced 데이터 셋 상에서, Focal Loss 와 ASL 방법론 모두 기존 아키텍처를 변경하지 않기 때문에 모델 학습 시간이나 추론 시간의 부하는 거의 없으면서, 단순히 손실 함수를 변경하는 것 만으로도 좋은 성능을 보였다`라고 볼 수 있습니다.
+요약하자면, **Asymmetric한 분포를 가진 Imbalanced 데이터 셋 상에서, Focal Loss 와 ASL 방법론 모두 기존 아키텍처를 변경하지 않기 때문에 모델 학습 시간이나 추론 시간의 부하는 거의 없으면서, 단순히 손실 함수를 변경하는 것 만으로도 좋은 성능을 보였다**라고 볼 수 있습니다.
 
 <br/>
 
@@ -203,6 +205,8 @@ Zamir et al. (ICCV2021)[^4]에서는 이에 대한 해결책으로 Positive와 N
 [^8]: [Combo loss: Handling input and output imbalance in multi-organ segmentation.](https://arxiv.org/abs/1805.02798) (Taghanaki et al., CMIG 2019)
 
 [^9]: [Distribution-Balanced Loss for Multi-Label Classification in Long-Tailed Datasets.](https://arxiv.org/abs/2007.09654) (Wu et al., ECCV 2020)
+
+* [https://gaussian37.github.io/dl-concept-focal_loss/](https://gaussian37.github.io/dl-concept-focal_loss/)
 
 * [https://seokdonge.tistory.com/7](https://seokdonge.tistory.com/7)
 
