@@ -100,7 +100,7 @@ Focal Loss의 수식을 살펴보기 전에, 먼저 위의 BCE Loss의 수식을
 
 ![]({{"/assets/img/post/481b04ee12af454ab1de6dde2576eb4c15f8047a/10_FL.png"| relative_url}}){: width="50%"}
 
-여기서 $$\gamma >= 0$$ 이고 $$\alpha \in [0,1]$$ 입니다. 이 Weighting factor $$\alpha$$는 Balanced Cross Entropy-!$$(CE(p_t)=-\alpha*log(p_t))$$!-에서 영감을 받은 것 같아 보입니다.
+여기서 $$\gamma >= 0$$ 이고 $$\alpha \in [0,1]$$ 입니다. 이 Weighting factor $$\alpha$$는 Balanced Cross Entropy-!$$CE(p_t)=-\alpha*log(p_t)$$!-에서 영감을 받은 것 같아 보입니다.
 
 Modulating factor의 역할은 모델이 분류를 잘 수행할 수 있는 예시(Well-classified example 혹은 Easy example)에 대한 Loss를 줄이는 것입니다. 모델이 예측을 잘 수행하지 못해서 $$p_t$$가 작은 경우, 이 Modulating factor는 1에 가까워지고 Loss는 이에 대한 영향을 거의 받지 않게 됩니다. 반대로 모델이 예측을 잘 수행해서 $$p_t$$가 1에 가까운 경우, Modulating factor는 0에 가까워지고 Loss는 이 인자의 영향을 받아 더욱 작아지게 됩니다. 여기서 Focusing factor라 불리는 $$\gamma$$는 Easy example의 범위를 조절하는 역할을 한다고 볼 수 있는데, $$\gamma$$가 커질수록 Easy example에 대한 Loss가 크게 줄어들면서 Easy example에 대한 범위도 커집니다. 
 
