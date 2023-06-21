@@ -7,32 +7,36 @@
             </div>
             <div class="category-group">
                 {% assign posts = site.posts | sort: "index" | reverse %}
-                {% for post in posts limit:7 %}
-                {% if post.show %}
-                    <div class="category-item">
-                        {% if post.img_name %}
-                        <div class="category-item-img">
-                            <img src="{{site.baseurl}}/assets/img/post/{{post.permalink}}/{{post.img_name}}"></img>
-                        </div>
-                        {% endif %}
-                        <a href="{{ post.url | relative_url }}" class="category-post-link">
-                            <h3>
-                                {{ post.title }}
-                                {% if post.new == true %}
-                                    <span class="category-item-new"></span>
-                                {% endif %}
-                            </h3>
-                        </a>
-                        {% if post.tags.size > 0 %}
-                            <div class='tag-list'>
-                                {% for tag in post.tags %}
-                                    {% if tag != ' ' %}
-                                        <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
-                                    {% endif %}
-                                {% endfor %}
+                {% assign counter = 0 %}
+                {% for post in posts %}
+                {% if counter < 6 %}
+                    {% assign counter=counter | plus:1 %} 
+                    {% if post.show %}
+                        <div class="category-item">
+                            {% if post.img_name %}
+                            <div class="category-item-img">
+                                <img src="{{site.baseurl}}/assets/img/post/{{post.permalink}}/{{post.img_name}}"></img>
                             </div>
-                        {% endif %}
-                    </div>
+                            {% endif %}
+                            <a href="{{ post.url | relative_url }}" class="category-post-link">
+                                <h3>
+                                    {{ post.title }}
+                                    {% if post.new == true %}
+                                        <span class="category-item-new"></span>
+                                    {% endif %}
+                                </h3>
+                            </a>
+                            {% if post.tags.size > 0 %}
+                                <div class='tag-list'>
+                                    {% for tag in post.tags %}
+                                        {% if tag != ' ' %}
+                                            <a class='button' href='{{site.baseurl}}/tags/#{{ tag }}'>{{ tag }}</a>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endif %}
                 {% endif %}
                 {% endfor %}
             </div>
