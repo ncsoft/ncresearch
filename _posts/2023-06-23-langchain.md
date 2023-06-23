@@ -66,7 +66,7 @@ LLM을 사용하여 챗봇을 구현하기 위해 필요한 작업들을 대략 
 
 - Models:
 
-  LLM을 나타냅니다. 질문을 넣으면 답변을 하거나, 미완성 된 텍스트를 넣으면 완성을 하는 기능을 제공합니다. LLM과 ChatModel이라는 API 구성이 다른 클래스가 있는데, 2023년 6월 현재 ChatModel의 API가 확정되지 않아서 아직 Custom ChatModel을 만들 수 있는 방법이 제공되지 않고 있습니다. 이 글에서는 LLM 클래스만을 언급하겠습니다.
+  LLM을 나타냅니다. 질문을 넣으면 답변을 하거나, 미완성 된 문자열을 넣으면 완성을 하는 등의 기능을 제공합니다. LLM과 ChatModel이라는 클래스가 있는데, 2023년 6월 현재 ChatModel의 API가 확정되지 않아서 아직 Custom ChatModel을 만들 수 있는 방법이 제공되지 않고 있습니다. 이 글에서는 LLM 클래스만을 언급하겠습니다.
 
 - Prompts:
 
@@ -705,8 +705,8 @@ LangChain은 LLM과 LLM을 활용하는 애플리케이션을 개발하는 데 �
 
 # References
 
-* https://python.langchain.com/en/latest/index.html
+* [https://python.langchain.com/en/latest/index.html](https://python.langchain.com/en/latest/index.html)
 
-* https://medium.com/databutton/getting-started-with-langchain-a-powerful-tool-for-working-with-large-language-models-286419ba0842
+* [https://medium.com/databutton/getting-started-with-langchain-a-powerful-tool-for-working-with-large-language-models-286419ba0842](https://medium.com/databutton/getting-started-with-langchain-a-powerful-tool-for-working-with-large-language-models-286419ba0842)
 
-* https://revf.tistory.com/280
+* [https://revf.tistory.com/280](https://revf.tistory.com/280)
