@@ -64,31 +64,31 @@ LLM을 사용하여 챗봇을 구현하기 위해 필요한 작업들을 대략 
 
 각 모듈들의 종류와 간략한 설명은 아래와 같습니다.
 
-- Models
+- Models:
 
   LLM을 나타냅니다. 질문을 넣으면 답변을 하거나, 미완성 된 텍스트를 넣으면 완성을 하는 기능을 제공합니다. LLM과 ChatModel이라는 API 구성이 다른 클래스가 있는데, 2023년 6월 현재 ChatModel의 API가 확정되지 않아서 아직 Custom ChatModel을 만들 수 있는 방법이 제공되지 않고 있습니다. 이 글에서는 LLM 클래스만을 언급하겠습니다.
 
-- Prompts
+- Prompts:
 
   말그대로 LLM에 들어갈 프롬프트를 추상화시킨 템플릿입니다. 사용자에게는 일반적으로 노출하지 않는 숨겨진 프롬프트나 후에 언급할 Memory, 혹은 채팅의 경우 메시지 목록을 LLM에 입력할 수 있도록 문자열을 잘 조립하여 반환하는 기능을 제공합니다.
 
-- Memory
+- Memory:
 
   채팅 기록이나 특정 시점에서 이전의 상호작용을 기억하기 위한 저장소와 같이 사용됩니다. 입력과 출력의 History를 저장하는 리스트라고 생각하면 됩니다.
 
-- Indexes
+- Indexes:
 
   LLM이 쉽게 접근할 수 있도록 문서에 접근하는 표준적인 인터페이스를 제공합니다. 이를테면 Retrievers가 있는데, 어떤 문자열을 주고 그 문자열과 관련된 Document(이 목록에는 없지만 Document 또한 LangChain에서 정의해놓은 클래스입니다)의 목록을 불러오는 기능을 제공합니다. 이 모듈에 대해서는 이 글에서는 자세히 다루지 않겠습니다.
 
-- Chains
+- Chains:
 
   다른 모듈들을 묶어서 같이 맞물려 동작할 수 있도록 해주는 중심적인 모듈입니다. 체인을 생성하면서 해당 체인에 어떤 Model을 사용하고, 어떤 Prompt를 사용하고, 어떤 Memory를 사용할지 등등을 결정합니다.
 
-- Agents
+- Agents:
 
   LLM이 직접 답하는 것이 아니라 다른 외부의 도구를 사용하는 것이 더 정확하거나 유용한 것들, 이를테면 수학적인 계산이나 잘 구조화 된 데이터의 조회(예시: 특정 배우의 나이, 출연작을 조회하고 싶다)같은 LLM 외부 기능이 필요할 때에 호출될 수 있는 인터페이스를 제공하는 모듈입니다. 도구의 호출 방식을 규격화하는 Tool이 같이 사용됩니다.
 
-- Callbacks
+- Callbacks:
 
   LangChain의 각 동작 단계마다 hooking을 할 수 있도록 Callback을 제공합니다. 모니터링, 로깅이나 스트리밍에 관련된 기능이기 때문에 이 글에서는 자세히 다루지 않을 예정입니다.
 
@@ -143,6 +143,8 @@ llm = CustomLLM(reply='나는 제대로 된 LLM이 아니라서 항상 같은 �
 print(llm('당신은 어떤 질문에 대해 답할 수 있습니까?'))
 ```
 
+_출력:_
+
 ```
 나는 제대로 된 LLM이 아니라서 항상 같은 대답만 합니다.
 ```
@@ -177,6 +179,8 @@ if __name__ == '__main__':
 
 ```
 
+_출력:_
+
 ```
 > Entering new  chain...
 Prompt after formatting:
@@ -207,12 +211,14 @@ def answer_with_llm(question):
     return chain.run(question)
 ```
 
+명령창:
+
 ```shell
 $ uvicorn app.ex01_basic:app --reload
 ```
 
 ![]({{"/assets/img/post/f4a00ed849299e3c91fb3244e74ea7f9b974ebb7/img01.png"| relative_url}})
-*정말로 어떤 질문을 해도 똑같은 대답만 합니까?"라는 질문을 하니 "나는 제대로 된 LLM이 아니라서 항상 같은 대답만 합니다."라는 답변이 돌아온 API 테스트 페이지*
+*"정말로 어떤 질문을 해도 똑같은 대답만 합니까?"라는 질문을 하면 "나는 제대로 된 LLM이 아니라서 항상 같은 대답만 합니다."라는 답변이 돌아오는 OpenAPI 테스트의 이미지*
 
 
 <br/>
@@ -258,6 +264,8 @@ chain.predict(input='정말 항상 같은 대답만 합니까?')
 chain.predict(input='하지만 이전에 했던 대화들은 기억하고 있으리라 믿습니다.')
 pprint(memory.chat_memory.messages)
 ```
+
+_출력:_
 
 ```
 > Entering new  chain...
@@ -368,6 +376,8 @@ chain.predict(input="이제 몇 번째 전 대화까지 기억하고 있는지 �
 
 pprint(memory.chat_memory.messages)
 ```
+
+_출력:_
 
 ```
 > Entering new  chain...
@@ -502,6 +512,8 @@ agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION
 
 agent.run('적당한 Python 코드 실행 예제와 requests 실행 예제를 보여주세요.')
 ```
+
+_출력:_
 
 ```
 > Entering new  chain...
@@ -646,6 +658,8 @@ for i in range(5, 0, -1):
 
 ```
 
+_출력:_
+
 ```
 > Entering new  chain...
  I need to execute the code to see the output
@@ -683,7 +697,7 @@ LangChain은 LLM과 LLM을 활용하는 애플리케이션을 개발하는 데 �
 약간 아쉬운 점이 있다면 예제에서 사용한 `ZERO_SHOT_REACT_DESCRIPTION` Agent는 사실상 OpenAI나 그와 비슷한 성능의 상업적인 LLM이 아니면 동작시키기가 꽤 힘들다는 것입니다.
 GPT2, llama, vicuna 등의 무료로 사용할 수 있는 모델에 대단한 설정 없이 사용할 경우, Agent가 요구하는 형식을 약간씩 어기거나, Observation(Action 실행의 결과)까지 자동완성해버리는 어처구니 없는 경우가 생겨서 운이 좋을 때에만 문제 없이 동작합니다.
 
-하지만 그런 한계에도 불구하고 LLM을 활용하면서 자주 발생하는 전처리/후처리가 있다면 LangChain의 인터페이스를 활용하여 문제를 정리하는 것은 설계의 교통정리에 꽤 도움이 될 듯 합니다.
+하지만 그런 한계에도 불구하고 LLM을 활용하면서 자주 발생하는 전처리/후처리가 있거나 연속해서 LLM을 호출해야 할 필요가 있다면 LangChain의 인터페이스를 활용하여 문제를 정리하는 것은 설계의 교통정리에 꽤 도움이 될 듯 합니다.
 
 그리고 (만약 잘 동작한다면) `Agent`가 명령 한 번에 여러 Tool을 오가며 마법처럼 여러가지 동작을 하는 것은 터미널 창에 지나가는 실행 과정 텍스트를 보는 것만으로 만족스러운 점이 있습니다.
 
