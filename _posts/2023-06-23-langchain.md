@@ -10,7 +10,7 @@ excerpt: Langchain을 통해 LLM(Large Language Model)을 이용한 애플리케
 back_color: "#eff7ff"
 img_name: "img01.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 22
