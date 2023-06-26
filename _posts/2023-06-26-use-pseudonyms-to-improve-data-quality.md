@@ -10,7 +10,7 @@ excerpt: 생성AI의 시대, 데이터 품질 향상을 위해 가명정보 어�
 back_color: "#eff7ff"
 img_name: "img02.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 23
