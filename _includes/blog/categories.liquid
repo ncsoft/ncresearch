@@ -10,8 +10,8 @@
                 {% assign counter = 0 %}
                 {% for post in posts %}
                 {% if counter < 6 %}
-                    {% assign counter=counter | plus:1 %} 
                     {% if post.show %}
+                        {% assign counter=counter | plus:1 %} 
                         <div class="category-item">
                             {% if post.img_name %}
                             <div class="category-item-img">
