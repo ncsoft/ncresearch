@@ -43,7 +43,7 @@
   conf: "AACL 2022"
   year: 2022
   abstract: "One of the challenges of developing a summarization model arises from the difficulty in measuring the factual inconsistency of the generated text. In this study, we reinterpret the decoder overconfidence-regularizing objective suggested in (Miao et al., 2021) as a hallucination risk measurement to better estimate the quality of generated summaries. We propose a reference-free metric, HaRiM+, which only requires an off-the-shelf summarization model to compute the hallucination risk based on token likelihoods. Deploying it requires no additional training of models or ad-hoc modules, which usually need alignment to human judgments. For summary-quality estimation, HaRiM+ records state-of-the-art correlation to human judgment on three summary-quality annotation sets: FRANK, QAGS, and SummEval. We hope that our work, which merits the use of summarization models, facilitates the progress of both automated evaluation and generation of summary."
-  tags: ["AACL2022", "Translation", "NLP"]
+  tags: ["AACL2022", "Generation", "Evaluation", "NLP"]
   id: 5
 
 - authors: "Hojun Cho (KAIST), Dohee Kim (KAIST), Seungwoo Ryu (KAIST), ChaeHun Park (KAIST), Hyungjong Noh (NCSOFT), Jeong-in Hwang (NCSOFT), Minseok Choi (KAIST), Edward Choi (KAIST), Jaegul Choo (KAIST)"
