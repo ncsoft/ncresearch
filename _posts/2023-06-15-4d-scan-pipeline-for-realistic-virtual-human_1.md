@@ -25,7 +25,7 @@ index: 18
 <br/>
 
 > **작성자**
-> - 윤두밈(Graphics AI Lab, Digital Double 팀)
+> - 윤두밈(Graphics AI Lab)
 > - 자연스러운 사람의 얼굴 모션을 캡처하는 일을 하고 있습니다.
 > 
 > **이런 분이 읽으면 좋습니다!**
