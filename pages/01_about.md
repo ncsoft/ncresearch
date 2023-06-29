@@ -65,7 +65,20 @@ page-type: main_page
 
 > # NLP R&D
 >
-> NLP센터는 사람이 하는 말을 기계가 알아듣고 거기에 지식을 결합하거나, 추론하거나, 인간 뇌에 해당하는 여러 (사고) 과정을 연구해 사람의 말을 생성하기까지 모든 단계에 대해 종합적으로 연구합니다. 전사 AI 연구 차원에서 NLP 분야 중요도를 높게 보고 있어 NLP센터 내에 주 연구 단위별(언어이해, 대화, 생성·번역, 검색) 기술실 네 개를 둘 만큼 심층적으로 연구를 수행하고 있습니다. 게임 사업을 위한 AI 연구조직처럼 보일 수 있지만 그렇지 않고 게임뿐만 아니라 게임과 무관한 다양한 영역에서도 AI 연구를 하고 있습니다.　
+> NC의 NLP R&D는 사람이 하는 말을 기계가 알아듣고, 사고하여 적절한 말을 생성해내는 인간 뇌에 해당하는 AI 기술을 종합적으로 연구합니다. 소통과 분석, 창작 과정에서 NLP 기술을 통해 게임업의 경쟁력을 강화하고, 더 나아가 AI가 엔씨소프트의 새로운 성장 동력이 될 수 있도록 다양한 연구와 시도를 합니다.  
+> NLP R&D는 거대 언어모델과 같은 기반 기술 부터 AI 자동 번역과 같은 응용 기술을 연구하며, 최종적으로는 기술 서비스를 통해 연구의 완성도를 높여가고자 합니다.
+>
+> **NLP 기반기술 R&D**
+> - 언어모델과 대화 AI(Language Model & Dialogue AI)
+> - 언어생성과 번역 AI(Language Generation& Translation AI)
+> - 다국어 이해 AI (Multi-Lingual Understanding AI)
+> - 검색 기술 (Intelligent Search Tech)
+> - 언어 데이터 기술 (Language Data Tech)
+>
+> **NLP 응용기술 R&D**
+> - AI 번역 서비스(AI Translation Service)
+> - 응용 AI 기술(Applied AI Tech)
+> - 생성 AI 플랫폼 서비스(Generative AI Platform Service)　
 {:.about_center_desc}
 
 <br/>
