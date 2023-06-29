@@ -27,31 +27,31 @@ page-type: main_page
 </thead>
 <tbody>
   <tr>
-    <td class="about_td"><a class="about_link_text" href="#언어이해기술실">언어모델과 대화 AI</a><div class='about_link_img'></div></td>
-    <td class="about_td"><a class="about_link_text" href="#vision-ai-lab">Vision AI</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#언어모델과-대화-ai">언어모델과 대화 AI</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#vision-ai">Vision AI</a><div class='about_link_img'></div></td>
   </tr>
   <tr>
-    <td class="about_td"><a class="about_link_text" href="#대화기술실">언어생성과 번역 AI</a><div class='about_link_img'></div></td>
-    <td class="about_td"><a class="about_link_text" href="#graphics-ai-lab">Graphics AI</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#언어생성과-번역-ai">언어생성과 번역 AI</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#graphics-ai">Graphics AI</a><div class='about_link_img'></div></td>
   </tr>
   <tr>
-    <td class="about_td"><a class="about_link_text" href="#생성번역기술실">다국어 이해 AI</a><div class='about_link_img'></div></td>
-    <td class="about_td"><a class="about_link_text" href="#speech-ai-lab">Speech AI</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#다국어-이해-ai">다국어 이해 AI</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#speech-ai">Speech AI</a><div class='about_link_img'></div></td>
   </tr>
   <tr>
-    <td class="about_td"><a class="about_link_text" href="#검색기술실">검색 기술</a><div class='about_link_img'></div></td>
-    <td class="about_td"><a class="about_link_text" href="#intelligent-agent-lab">Intelligent Agent</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#검색-기술">검색 기술</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#intelligent-agent">Intelligent Agent</a><div class='about_link_img'></div></td>
   </tr>
   <tr>
-    <td class="about_td"><a class="about_link_text" href="#nlp데이터기술실">언어 데이터 기술</a><div class='about_link_img'></div></td>
-    <td class="about_td"><a class="about_link_text" href="#ai-production실">AI Production Tech</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#언어-데이터-기술">언어 데이터 기술</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#ai-production-tech">AI Production Tech</a><div class='about_link_img'></div></td>
   </tr>
   <tr>
-    <td class="about_td"><a class="about_link_text" href="#ai번역서비스실">응용 AI 기술</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#응용-ai-기술">응용 AI 기술</a><div class='about_link_img'></div></td>
     <td class="blank"></td>
   </tr>
   <tr>
-    <td class="about_td"><a class="about_link_text" href="#ai번역서비스실">AI 번역 서비스</a><div class='about_link_img'></div></td>
+    <td class="about_td"><a class="about_link_text" href="#ai-번역-서비스">AI 번역 서비스</a><div class='about_link_img'></div></td>
     <td class="blank"></td>
   </tr>
 </tbody>
