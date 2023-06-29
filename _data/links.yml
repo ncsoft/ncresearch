@@ -2,9 +2,9 @@
   url: https://kr.ncsoft.com/
   desc: "엔씨소프트 메인 홈페이지입니다."
 
-- name: "엔씨블로그"
+- name: "NC PLAY"
   url: https://about.ncsoft.com/
-  desc: 엔씨소프트 서비스 소개 페이지입니다.
+  desc: 엔씨소프트의 공식 브랜드 미디어로 기업의 소식을 전합니다.
 
 - name: "AI Center 유튜브 채널"
   url: https://www.youtube.com/channel/UCCEMC6k5fZWzOUcv-bnSWZA
