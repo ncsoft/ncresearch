@@ -3,7 +3,7 @@ layout: page
 title: About
 title2: NC Research
 permalink: /about/
-subtitle: "NC Research 소개 및 연구 조직"
+subtitle: "NC의 다양한 R&D 분야를 자세하게 소개합니다."
 page-type: main_page
 ---
 
@@ -63,7 +63,7 @@ page-type: main_page
 
 <br/>
 
-> # NLP Center
+> # NLP R&D
 >
 > NLP센터는 사람이 하는 말을 기계가 알아듣고 거기에 지식을 결합하거나, 추론하거나, 인간 뇌에 해당하는 여러 (사고) 과정을 연구해 사람의 말을 생성하기까지 모든 단계에 대해 종합적으로 연구합니다. 전사 AI 연구 차원에서 NLP 분야 중요도를 높게 보고 있어 NLP센터 내에 주 연구 단위별(언어이해, 대화, 생성·번역, 검색) 기술실 네 개를 둘 만큼 심층적으로 연구를 수행하고 있습니다. 게임 사업을 위한 AI 연구조직처럼 보일 수 있지만 그렇지 않고 게임뿐만 아니라 게임과 무관한 다양한 영역에서도 AI 연구를 하고 있습니다.　
 {:.about_center_desc}
@@ -345,7 +345,7 @@ page-type: main_page
 
 <br/>
 
-> # AI Center
+> # AI R&D
 >
 > NC AI Center는 사람들에게 새로운 즐거움을, 기업에는 새로운 성장 동력을 만들어 낼 수 있는 AI 기술을 연구합니다. 어떻게 하면 사람이 AI와 함께 재미있고 편리하게 즐기고 일할 수 있는지 고민하며, 나아가 과거에 꿈꾸기 어려웠던 새로운 산업 분야와 NC의 차세대 성장 동력을 만들어 내고자 합니다. 이를 위해 AI Center는 폭넓은 분야의 AI 원천 기술을 연구하고 있습니다.
 >  

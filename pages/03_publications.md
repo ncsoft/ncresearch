@@ -4,7 +4,7 @@ title : Publications
 title2 : Publications
 permalink: /publications/
 h_color: var(--gray0)
-subtitle: "NC Research의 연구 논문, 발표 자료"
+subtitle: "NC Research가 발표한 최근 2년간의 논문들입니다."
 page-type: main_page
 ---
 
