@@ -21,8 +21,10 @@
   bottom: 0;
   
   padding: 1.8rem 3.125rem 1.6rem 3.125rem;
-  background-image: url('/ncresearch/assets/img/renewal/header.png');
-  background-size: cover;
+  // background-image: url('/ncresearch/assets/img/renewal/header.png');
+  background-image: none !important;
+  background: var(--white);
+  // background-size: cover;
   // background: var(--background) !important;
   display: inline-block;
   float: left;
@@ -40,7 +42,7 @@
   }
 
   .main_page_a {
-    color: var(--gray50);
+    // color: var(--gray50);
     text-decoration: none;
   }
 

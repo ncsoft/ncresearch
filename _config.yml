@@ -5,7 +5,7 @@ url: "https://ncsoft.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: 　                                 # site's title
 description: "NC Research"      # used by search engines
-avatar: assets/img/renewal/text_logo_blue.png                         # Empty for no avatar in navbar
+avatar: assets/img/renewal/text_logo_black.svg                         # Empty for no avatar in navbar
 avatar2: assets/img/renewal/text_logo_white.png
 favicon: assets/img/renewal/Vector.svg                             # Icon displayed in the tab
 
