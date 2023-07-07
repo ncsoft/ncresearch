@@ -512,7 +512,7 @@ table {
 .about_desc::before {
   content: " ";
   float: right;
-  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down.png') !important;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down.svg') !important;
   width: 1.5rem;
   height: 1.5rem;
   margin-top: 2.0625rem;
@@ -520,13 +520,16 @@ table {
 .about_desc:hover::before {
   content: " ";
   float: right;
-  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down_hover.png') !important;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down_hover.svg') !important;
   width: 1.5rem;
   height: 1.5rem;
   margin-top: 2.0625rem;
 }
 .about_desc.active::before {
-  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_up.png') !important;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_up.svg') !important;
+}
+.about_desc.active:hover::before {
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_up_hover.svg') !important;
 }
 
 .about_desc h3 {
