@@ -10,7 +10,7 @@ avatar2: assets/img/renewal/text_logo_white.png
 favicon: assets/img/renewal/Vector.svg                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: "Explore future values"  # Change Blog header text
+header_text: "Build future values"  # Change Blog header text
 header_text2: "with technology and creativity"
 header_feature_image: assets/img/renewal/header.png
 og_feature_image: assets/img/renewal/thumbnail.png
