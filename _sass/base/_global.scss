@@ -669,7 +669,7 @@ a > h3:hover {
 }
 
 .link_div:hover .link_img {
-  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_blue.png') !important;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right.svg') !important;
 }
 
 .link_div:hover a {
@@ -720,7 +720,7 @@ a > h3:hover {
   right: 0.75rem;
   width: 0.75rem;
   height: 0.75rem;
-  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_s.png') !important;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right.svg') !important;
   margin-top: 0.2rem;
 }
 
@@ -915,7 +915,7 @@ h4.subtitle {
 
 .about_th:hover .about_link_img {
   text-decoration: none !important;
-  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_s_blue.png') !important;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_hover.svg') !important;
 }
 
 .about_td:hover a {
@@ -925,7 +925,7 @@ h4.subtitle {
 
 .about_td:hover .about_link_img {
   text-decoration: none !important;
-  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_s_blue.png') !important;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_hover.svg') !important;
 }
 
 .navbar_glass_icon {
@@ -1086,7 +1086,7 @@ h4.subtitle {
       .category-item-new {
         display: inline-block;
         width: 2.75rem;
-        height: 1.5625rem;
+        height: 1.5rem;
         background-image: url('/ncresearch/assets/img/renewal/new_badge.svg');
         background-size: contain;
       }
