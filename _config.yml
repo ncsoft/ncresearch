@@ -7,7 +7,7 @@ title: 　                                 # site's title
 description: "NC Research"      # used by search engines
 avatar: assets/img/renewal/text_logo_black.svg                         # Empty for no avatar in navbar
 avatar2: assets/img/renewal/text_logo_white.png
-favicon: assets/img/renewal/Vector.svg                             # Icon displayed in the tab
+favicon: assets/img/renewal/favicon.png                             # Icon displayed in the tab
 
 # Header and footer text
 header_text: "Build future values"  # Change Blog header text
