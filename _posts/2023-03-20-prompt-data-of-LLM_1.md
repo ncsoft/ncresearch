@@ -4,7 +4,7 @@ title: "거대언어모델의 프롬프트 데이터 1"
 icon: paper
 author: 3f45ac8b410aa36f06945e2a709d0b8ee5d20dec
 permalink: 3147b0357afb32f7da8b67f2f76d6d626813f38b
-categories: paper
+categories: Data
 tags: [프롬프트, 프롬프트_엔지니어링, 거대언어모델, GPT-3, 학습데이터, NLP, Data]
 excerpt: 대용량 사이즈 접근법에서 벗어나 언어모델이 사람의 의도와 가까워질 수 있게 도와주는 프롬프트 데이터셋을 소개합니다.
 back_color: "#ffffff"

@@ -4,7 +4,7 @@ title: "MMORPG 시뮬레이터 개발부터 서비스 배포까지 1"
 icon: paper
 author: f0c9f1102deb254e64e66983dc240b434012afcc
 permalink: b00718e4d73e16be22ff722474cf51a2864225a8
-categories: paper
+categories: AI System
 tags: [GameAI, Docker, Performance, 리니지, 리니지리마스터, MMORPG, 시뮬레이터, AI서비스, AI_System, AI]
 excerpt: 리니지 리마스터에서 AI 학습을 위한 시뮬레이터와 서비스 개발 과정에 관해 설명합니다.
 back_color: "#ffffff"

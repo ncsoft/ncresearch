@@ -5,7 +5,7 @@ icon: paper
 author: 70a26045ea7e39f897b811b6fc9a5af66dbdfed8
 author2: ac420aa2ea8b6ce85f2724a06e6e351cb5a674fe
 permalink: f00b54e34d364846ce3dc534cb7c7817d368dd5e
-categories: paper
+categories: Vision
 tags: [Throne_and_Liberty, Game_Character_Customization, Neural_Rendering, GAN, Image_Translation, Face_Parsing, Vision, AI]
 excerpt: 인물 사진으로 게임 캐릭터 얼굴을 자동으로 커스터마이징하는 기능을 만들기까지 기술적 내용을 소개합니다.
 back_color: "#ffffff"

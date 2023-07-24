@@ -4,7 +4,7 @@ title: "거대언어모델의 프롬프트 데이터 2"
 icon: paper
 author: 3f45ac8b410aa36f06945e2a709d0b8ee5d20dec
 permalink: f596e51b591092dda565cff8cb37ae91cda2e84c
-categories: paper
+categories: Data
 tags: [거대언어모델, GPT-3, 학습데이터, FLAN, InstructGPT, Super-naturalinstructions, Instruction, NLP, Data]
 excerpt: 대용량 사이즈 접근법에서 벗어나 언어모델이 사람의 의도와 가까워질 수 있게 도와주는 프롬프트 데이터셋을 소개합니다.
 back_color: "#ffffff"

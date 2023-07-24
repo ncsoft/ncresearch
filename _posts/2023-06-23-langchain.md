@@ -4,7 +4,7 @@ title: "LangChain에 대하여"
 icon: tech
 author: 3305e2d4ec867d5e010d94d4f1ce9b04192e023c
 permalink: f4a00ed849299e3c91fb3244e74ea7f9b974ebb7
-categories: tech
+categories: NLP
 tags: [langchain, llm, chatbot, NLP, AI, 랭체인, 챗봇]
 excerpt: Langchain을 통해 LLM(Large Language Model)을 이용한 애플리케이션을 더 쉽게 만듭니다.
 back_color: "#ffffff"

@@ -4,7 +4,7 @@ title: "프롬프트로부터 음악을 만들어내는 AI 생성 모델(prompt-
 icon: paper
 author: 899030136cd909966548fda31ad67f3ce0d9d38d
 permalink: f27188f9c5fdfec1298f8fd78fbf3718125cf5a3
-categories: paper
+categories: Speech
 tags: [Music, Music_AI, Music_Generation, Prompt-based_Music_Generation, Prompt-based_Audio_Generation, Speech, AI]
 excerpt: Prompt 기반의 음악 생성 모델에 대한 소개와 향후 발전 가능성에 대해서 설명합니다.
 back_color: "#ffffff"

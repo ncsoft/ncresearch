@@ -4,7 +4,7 @@ title: "현실적인 가상 인물 제작을 위한 4D Scan 파이프라인 소�
 icon: paper
 author: 004ad32a67ba919cf06f099446894c27a3c028d3
 permalink: 61fda2c4f6b3c54a863755104a7948d2e4cb9fd8
-categories: paper
+categories: Graphics
 tags: [Facial, Motion_Capture, Performance_Capture, 3D_Scan, 4D_Scan, 3D_Reconstruction, Registration, Graphics, AI]
 excerpt: 게임에서 사실적인 사람 얼굴 표현을 위해 발전시켜 온 두 가지 기술을 소개합니다.
 back_color: "#ffffff"

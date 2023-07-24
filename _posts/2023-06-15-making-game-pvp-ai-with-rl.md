@@ -4,7 +4,7 @@ title: "강화학습으로 Game을 위한 PVP AI 만들기"
 icon: paper
 author: 130be05757f6bcbcbe41c121e6ce6aae5b3392f8
 permalink: 4aaacfad779c194303280d426d790a199c331378
-categories: paper
+categories: Reinforcement Learning
 tags: [Reinforcement_Learning, RL, Multi-agent_Reinforcement_Learning, MARL, GameAI, PVP, AI]
 excerpt: Blade and Soul과 리니지 리마스터의 PVP AI 콘텐츠에 강화학습을 적용했던 경험담을 공유합니다.
 back_color: "#ffffff"

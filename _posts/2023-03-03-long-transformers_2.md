@@ -4,7 +4,7 @@ title: "긴 글을 위한 트랜스포머 모델 - Longformer와 BigBird (2편)"
 icon: paper
 author: 97c27168919f1b883a64fe978b8abac68124308b
 permalink: f5e43053b8efa07947ea8dd57dbcbb2967c7deb1
-categories: paper
+categories: Search
 tags: [머신러닝, 딥러닝, 트랜스포머, 문서처리, Longformer, BigBird, 어텐션, NLP, Search]
 excerpt: Longformer, BigBird 모델이 보인 성능과 이들의 유사/파생 모델에 대해서도 간단히 알아봅니다.
 back_color: "#ffffff"

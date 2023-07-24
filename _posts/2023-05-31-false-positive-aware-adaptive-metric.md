@@ -4,7 +4,7 @@ title: "Metric learning을 활용한 추천 시스템에서의 클릭 실수 반
 icon: paper
 author: e0802b67c9cc81bc165dba7245d7441f9eb86c9e
 permalink: 9be54695f02af4443a7b264e711c696da8192fc6
-categories: paper
+categories: Applied AI
 tags: [Recommendation, Session-based, Metric-learning, Applied_AI]
 excerpt: 이 글에서는 세션 기반의 추천에서 잘못된 클릭 시그널들을 고려하는 방법에 대해 연구한 내용을 소개합니다.
 back_color: "#ffffff"

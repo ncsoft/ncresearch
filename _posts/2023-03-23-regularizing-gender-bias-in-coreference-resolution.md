@@ -4,7 +4,7 @@ title: "WSDM2023 - 언어모델 성별 편향 개선 방법"
 icon: conf
 author: 52962bb6e3dff29d61f814ef6e37dbb520dc19a7
 permalink: 8b862db09d7f793a8a2c7c443c952ab1e7b98d8f
-categories: conf
+categories: Search
 tags: [Pre-trainedLanguageModels, GenderBias, Debiasing, NaturalLanguageUnderstanding, EthicalAI, NLP, Search]
 excerpt: 언어모델 내 성별 편향을 제거하기 위한 방법론을 소개하는 논문입니다.
 back_color: "#ffffff"
