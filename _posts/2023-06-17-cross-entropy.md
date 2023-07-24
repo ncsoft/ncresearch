@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "3_object_detection_example.jpg"
 toc: true
 show: true
-new: true
+new: false
 series: 7
 index: 21
 ---
