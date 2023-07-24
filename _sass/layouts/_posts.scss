@@ -116,6 +116,10 @@ header {
       color: var(--gray6);
       filter: opacity(0.7);
     }
+
+    .title-padder {
+      border-bottom: 1px solid var(--gray100);
+    }
   }
 
   .post-content {
@@ -138,7 +142,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: $xl-break) {
-    padding: 10.625rem 30.9375rem;
+    padding: 10.625rem 30.9375rem 0 30.9375rem;
   }
 
   @media screen and (min-width: $break) {
