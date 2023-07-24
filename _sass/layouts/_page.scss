@@ -17,6 +17,8 @@ h1.title {
   // padding: 0.5em 0;
   // text-align: left;
   padding: 0.1em 0;
+  color: var(--gray900);
+  font-size: 3rem;
   @media screen and (max-width: 1400px) {
       padding: 0.1em 6%;
   }
