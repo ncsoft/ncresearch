@@ -7,7 +7,7 @@ permalink: f4a00ed849299e3c91fb3244e74ea7f9b974ebb7
 categories: tech
 tags: [langchain, llm, chatbot, NLP, AI, 랭체인, 챗봇]
 excerpt: Langchain을 통해 LLM(Large Language Model)을 이용한 애플리케이션을 더 쉽게 만듭니다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 img_name: "img01.png"
 toc: true
 show: true

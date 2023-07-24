@@ -7,7 +7,7 @@ permalink: 8b862db09d7f793a8a2c7c443c952ab1e7b98d8f
 categories: conf
 tags: [Pre-trainedLanguageModels, GenderBias, Debiasing, NaturalLanguageUnderstanding, EthicalAI, NLP, Search]
 excerpt: 언어모델 내 성별 편향을 제거하기 위한 방법론을 소개하는 논문입니다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 toc: true
 show: true
 series: -1

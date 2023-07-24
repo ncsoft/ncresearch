@@ -7,7 +7,7 @@ permalink: f27188f9c5fdfec1298f8fd78fbf3718125cf5a3
 categories: paper
 tags: [Music, Music_AI, Music_Generation, Prompt-based_Music_Generation, Prompt-based_Audio_Generation, Speech, AI]
 excerpt: Prompt 기반의 음악 생성 모델에 대한 소개와 향후 발전 가능성에 대해서 설명합니다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 img_name: "thumbnail.png"
 toc: true
 show: true

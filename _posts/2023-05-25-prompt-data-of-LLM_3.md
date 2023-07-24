@@ -7,7 +7,7 @@ permalink: e36b37cd7298f4ed2458cbea6029922c13761a63
 categories: paper
 tags: [FLAN, InstructGPT, Super-naturalinstructions, Instruction, Evaluation, Performance, NLP, Data]
 excerpt: 대용량 사이즈 접근법에서 벗어나 언어모델이 사람의 의도와 가까워질 수 있게 도와주는 프롬프트 데이터셋을 소개합니다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 img_name: "figure5.jpg"
 toc: true
 show: true

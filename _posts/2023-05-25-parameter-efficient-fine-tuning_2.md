@@ -7,7 +7,7 @@ permalink: c8416dcc21d8aad7f0ee65eaa47ad53854578b59
 categories: tech
 tags: [Large_Language_Model, PEFT, NLP, Translation]
 excerpt: Parameter-Efficient Fine-Tuning (PEFT) 방법들
-back_color: "#eff7ff"
+back_color: "#ffffff"
 toc: true
 show: true
 series: 4

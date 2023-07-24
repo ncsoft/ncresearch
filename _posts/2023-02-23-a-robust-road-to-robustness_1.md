@@ -7,7 +7,7 @@ permalink: abb25deb34567f41e96fe4b9250719cb0f1399fe
 categories: nlp
 tags: [robustness, natural_language_inference, spurious_correlations, out-of-distribution_generalization, NLP, Understanding]
 excerpt: 인간의 개입 없이 robust한 학습 방법론을 소개하기 전, 관련 개념, 연구, 및 NLI 모델 구조 등을 쉽게 설명한다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 toc: true
 show: true
 series: 0

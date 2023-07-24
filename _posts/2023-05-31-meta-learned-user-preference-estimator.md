@@ -7,7 +7,7 @@ permalink: 228ac36aaec993243384ef1046c0074746f03208
 categories: paper
 tags: [Recommendation, Meta-learning, Cold-start, Applied_AI]
 excerpt: 정보가 부족한 초기 사용자의 아이템 선호도를 예측하기 위한 메타러닝 기반의 방법을 제안하는 논문입니다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 img_name: "image7.png"
 toc: true
 show: true

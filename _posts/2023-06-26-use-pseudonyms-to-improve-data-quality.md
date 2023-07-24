@@ -7,7 +7,7 @@ permalink: b7ec86b60700d047cf4b548a1add5b294d68b23e
 categories: tech
 tags: [데이터품질, 가명정보, 개인정보, 비식별화, NLP, Data]
 excerpt: 생성AI의 시대, 데이터 품질 향상을 위해 가명정보 어떻게 현명하게 이용할 수 있을지 소개드립니다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 img_name: "img02.png"
 toc: true
 show: true

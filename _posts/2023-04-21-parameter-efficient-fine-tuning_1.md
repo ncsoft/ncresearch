@@ -7,7 +7,7 @@ permalink: 1f6f252aef508cb69fbb05b893f2f2f27639d869
 categories: tech
 tags: [ChatGPT, Large_Language_Model, 거대언어모델, History, NLP, Translation]
 excerpt: 생각보다는 연속적인 기술의 발전으로 등장한 Large Language Model (LLM)
-back_color: "#eff7ff"
+back_color: "#ffffff"
 toc: true
 show: true
 series: 4

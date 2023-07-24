@@ -7,7 +7,7 @@ permalink: 64da1f4997161eff97aa5d3ce09e9ad83d751a79
 categories: nlp
 tags: [robustness, out-of-distribution_generalization, spurious_correlations, kernel_mapping, analysis, algebra, statistics, NLP, Understanding]
 excerpt: 인간의 개입 없이 수학적인 접근으로 피처 간 의존을 줄여 인공지능의 robustness를 개선하는 방법론을 소개한다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 toc: true
 show: true
 series: 0

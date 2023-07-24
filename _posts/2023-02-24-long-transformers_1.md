@@ -7,7 +7,7 @@ permalink: 6fc502ede05ca318787928fa22332a82b112805b
 categories: paper
 tags: [머신러닝, 딥러닝, 트랜스포머, 문서처리, Longformer, BigBird, 어텐션, NLP, Search]
 excerpt: 긴 문서를 처리하기 위해 고안된 두 모델 Longformer, BigBird의 원리에 대해서 이야기합니다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 toc: true
 show: true
 series: 1

@@ -7,7 +7,7 @@ permalink: b00718e4d73e16be22ff722474cf51a2864225a8
 categories: paper
 tags: [GameAI, Docker, Performance, 리니지, 리니지리마스터, MMORPG, 시뮬레이터, AI서비스, AI_System, AI]
 excerpt: 리니지 리마스터에서 AI 학습을 위한 시뮬레이터와 서비스 개발 과정에 관해 설명합니다.
-back_color: "#eff7ff"
+back_color: "#ffffff"
 img_name: "pic1.jpg"
 toc: true
 show: true
