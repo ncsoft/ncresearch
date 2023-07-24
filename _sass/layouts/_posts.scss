@@ -103,6 +103,11 @@ header {
     color: var(--header-text);
   }
 
+  .post_category {
+    color: var(--gray400);
+    font-size: 1.125rem;
+  }
+
   h1.title, .post-info {
     // @extend .txt-shadow;
   }

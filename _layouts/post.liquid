@@ -7,6 +7,7 @@ layout: default
       {% if page.hide_title %}
         <div class="feature-image-padding"></div>
       {% else %}
+        <div class="post_category">{{ page.categories }}</div>
         <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
         {% include blog/post_info.liquid author=page.author date=page.date %}
       {% endif %}
