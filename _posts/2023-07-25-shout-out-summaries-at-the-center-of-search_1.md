@@ -74,7 +74,7 @@ Figure 3.[^7] 의 결과처럼 **추출요약**은 **문서 내에 있는 원본
 
 초기에는 News 데이터를 이용한 데이터들이 대부분이였지만 위키피디아, 과학, 의학 등 **다양한 분야의 데이터도 점점 공개되고 있습니다**. Figure 4. 은 각 많은 논문들에서 사용되고 있는 대표적인 데이터에 대해 간략히 정리하였으며 궁금하신 분들은 참고해서 보면 좋을 것 같습니다.
 
-|**Dataset**|**Domain**|**Task**|**논문**|
+|Dataset|Domain|Task|논문|
 |:---:|:---:|:---:|:---:|
 |DUC2004|News|Multi Document|Overview of DUC 2005[^8]|
 |Multi-News|News|Multi Document|Multi-News: a Large-Scale Multi-Document Summarization Dataset and Abstractive Hierarchical Model[^9]|
