@@ -86,18 +86,7 @@ Figure 3.[^7] 의 결과처럼 **추출요약**은 **문서 내에 있는 원본
 |ArXiv|Science|Single Document|A Discourse-Aware Attention Model for Abstractive Summarization of Long Documents[^15]|
 
 *Figure 4. Task별 대표적인 데이터셋*
-
-|Dataset|Domain|Task|논문|
-|:---:|:---:|:---:|:---:|
-|DUC2004|News|Multi Document|Overview of DUC 2005[^8]|
-|Multi-News|News|Multi Document|Multi-News: a Large-Scale Multi-Document Summarization Dataset and Abstractive Hierarchical Model[^9]|
-|Wikisum|Wikipedia|Multi Document|Generating Wikipedia by Summarizing Long Sequences[^10]|
-|WCEP|Wikipedia|Multi Document|A Large-Scale Multi-Document Summarization Dataset from the Wikipedia Current Events Portal[^11]|
-|Multi-XScience|Science|Multi Document|Multi-XScience: A Large-scale Dataset for Extreme Multi-document Summarization of Scientific Articles[^12]|
-|MS^2|Medical|Multi Document|MS^2: Multi-Document Summarization of Medical Studies[^13]|
-|CNN/DailyMail|News|Single Document|Abstractive Text Summarization Using Sequence-to-Sequence RNNs and Beyond[^14]|
-|ArXiv|Science|Single Document|A Discourse-Aware Attention Model for Abstractive Summarization of Long Documents[^15]|
-*Figure 4. Task별 대표적인 데이터셋*
+{:.center_div}
 
 데이터에 대해서는 간략히 알아보았으니 모델에 대해 알아보도록 하겠습니다.
 
