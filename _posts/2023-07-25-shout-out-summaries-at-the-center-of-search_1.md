@@ -10,7 +10,7 @@ excerpt: 텍스트 요약(Text Summarization)에 대한 설명과 어떤 유형�
 back_color: "#ffffff"
 img_name: "figure7.png"
 toc: true
-show: false
+show: true
 new: true
 series: 8
 index: 24
