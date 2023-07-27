@@ -155,8 +155,8 @@ Figure 7. 은 PRIMERA의 모델 구조인데 글을 전체적으로 파악하고
 
 이러한 단점을 보완하고자 PRIMERA에서는 Entity 기반의 Pyramid Sentence Selection 방식으로 바꾸었습니다. Pyramid Sentence Selection 방식에 대해 생소할 수 있을텐데요, **요약 성능을 평가하기 위한 방법 중에 하나**로 정성평가를 기반으로 한 정량 평가 방법의 일종이라고 하며 방식은 다음과 같습니다.
 
->1.평가자들이 Reference(=Gold) 요약문을 통해 정보 단위(SCUs; Summary Content Units) 선정
->2.각 정보단위는 Reference 요약문 포함여부에 따라 비례하여 점수(Weight) 측정
+>1.평가자들이 Reference(=Gold) 요약문을 통해 정보 단위(SCUs; Summary Content Units) 선정  
+>2.각 정보단위는 Reference 요약문 포함여부에 따라 비례하여 점수(Weight) 측정  
 >3.정보단위들의 점수를 정규화하여 평균으로 계산
 
 피라미드 모형처럼 중요 정보단위가 꼭대기를, 반대의 정보단위가 바닥을 차지하게 되는데요, 여기서 정보단위와 Entity를 치환해서 생각해보면 어떻게 될까요? **여러 문장을 반복적으로 나타나게 되면 중요한 Entity로 판단**할 수 있으며 **중요한 Entity이 포함된 문장을 중요한 문장을 선정**할 수 있을텐데요.
