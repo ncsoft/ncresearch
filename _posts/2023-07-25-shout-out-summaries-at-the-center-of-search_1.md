@@ -113,18 +113,18 @@ Figure 5. 은 PEGASUS의 모델 구조 그림인데요, Encoder 부분에 2가�
 
 그럼 어떤 문장이 선정되어서 masking되는지 궁금하실텐데요. 해당 논문에서는 문서 내 전체 문맥을 설명할 수 있는 중요한 문장을 선정하기 위해 3가지 방법을 사용했습니다.
 
->Random: 무작위로 m개 문장 선정
->Lead: 첫 m개 문장 선정
+>Random: 무작위로 m개 문장 선정  
+>Lead: 첫 m개 문장 선정  
 >Principal: 선택한 문장과 나머지 문장들 간의 ROUGE-1 F1을 계산하여 Top-m개 선정,  $$s_{i}=rouge(x_{i}, D \setminus \{x_{i}\}), \forall i.$$
 
 Principal은 문장을 선택하는 방식과 계산하는 방식으로 나뉘며, 문장을 선택하는 방식으로는 **Ind**(independently)과 **Seq**(Sequentially), 계산방법으로는 **Uniq**(a set)과 **Orig**(Original) 로 나뉩니다.
 
 > 문장 선택 방식
->>**Ind**: 모든 문장에 대해 **각 문장을 개별적으로 평가**하여 상위 m개 선택
+>>**Ind**: 모든 문장에 대해 **각 문장을 개별적으로 평가**하여 상위 m개 선택  
 >>**Seq**: ROUGE-F1을 최대화하는 **문장을 하나씩 선택**하면서 요약문을 만들어 나가는 방식
 
 > 계산 방식
->>**Uniq**: 중복되는 n-gram을 **하나로 취급**하여 계산
+>>**Uniq**: 중복되는 n-gram을 **하나로 취급**하여 계산  
 >>**Orig**: 중복되는 n-gram을 **여러번** 계산
 
 Principal은 Ind-Uniq, Ind-Orig, Seq-Uniq, Seq-Orig 4가지 방식의 문장 선정 방법이 있는데 실험을 통해 최종적으로 Ind-Orig 방식을 채택했다고 합니다.
