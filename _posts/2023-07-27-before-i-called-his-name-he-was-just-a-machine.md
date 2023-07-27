@@ -8,7 +8,7 @@ categories: Speech
 tags: [KWS, User-Defined_KWS, Zero-Shot, 호출어인식, 사용자정의_호출어인식, Speech, AI]
 excerpt: 하나의 모델로 다양한 이름에 반응하는 호출어 인식 기술 연구 경험을 공유합니다.
 back_color: "#ffffff"
-img_name: ".png"
+img_name: "pic4.png"
 toc: true
 show: false
 new: true
