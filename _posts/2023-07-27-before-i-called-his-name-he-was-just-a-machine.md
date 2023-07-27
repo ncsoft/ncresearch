@@ -86,7 +86,7 @@ index: 25
 
 종합해 보면 호출어 변경 시 추가 학습 자료가 필요 없으면서, 가볍고, 성능이 좋아야 합니다. 가능할까요? 
 
-<iframe width="100%" height="600" src="https://youtu.be/F3xSQQR3jnw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/F3xSQQR3jnw" title="이 강아지들은 다 자기 이름을 알까?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {:.center_div}
 
 *[영상 1] 어떻게 하면 이 강아지들처럼 자기 이름을 정확하고 빠르게 알아들을 수 있을까요?*
