@@ -1112,6 +1112,14 @@ h4.subtitle {
   }
 }
 
+.post-new-badge {
+  display: inline-block;
+  width: 2.75rem;
+  height: 1.5rem;
+  background-image: url('/ncresearch/assets/img/renewal/new_badge.svg');
+  background-size: contain;
+}
+
 .publication-group {
   .publication_div {
     border: none !important;
