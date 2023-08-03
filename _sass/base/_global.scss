@@ -350,7 +350,6 @@ img + em {
 }
 
 img + em + em {
-  margin-top: 1rem;
   display: block;
   text-align: center;
   color: var(--gray5);
@@ -358,7 +357,6 @@ img + em + em {
 }
 
 img + em + em + em {
-  margin-top: 1rem;
   display: block;
   text-align: center;
   color: var(--gray5);
@@ -366,7 +364,6 @@ img + em + em + em {
 }
 
 img + em + em + em + em {
-  margin-top: 1rem;
   display: block;
   text-align: center;
   color: var(--gray5);
@@ -374,9 +371,10 @@ img + em + em + em + em {
 }
 
 .center_div {
-    display: block;
-    text-align: center;
-    color: var(--gray5);
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  color: var(--gray5);
 }
 
 // image centering
