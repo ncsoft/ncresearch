@@ -342,27 +342,31 @@ kbd {
 
 // image caption
 img + em {
-    display: block;
-    text-align: center;
-    color: var(--gray5);
-    font-size: 1rem;
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  color: var(--gray5);
+  font-size: 1rem;
 }
 
 img + em + em {
-    display: block;
-    text-align: center;
-    color: var(--gray5);
-    font-size: 1rem;
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  color: var(--gray5);
+  font-size: 1rem;
 }
 
 img + em + em + em {
-    display: block;
-    text-align: center;
-    color: var(--gray5);
-    font-size: 1rem;
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  color: var(--gray5);
+  font-size: 1rem;
 }
 
 img + em + em + em + em {
+  margin-top: 1rem;
   display: block;
   text-align: center;
   color: var(--gray5);
