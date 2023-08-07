@@ -39,7 +39,10 @@ hide: true
 
 <br/>
 
-# 모델 공개 리스트
+<div>
+  <h1>모델 공개 리스트</h1>
+  <a class="blogs-link" href="">자세히 보기</a>
+</div>
 
 <h6>VARCO LLM 은 NC의 거대 언어모델입니다.</h6>
 <h6>Q&A, 챗봇, 요약, 정보 추출 등 다양한 NLP 기반 AI 서비스 개발에 활용될 수 있습니다.</h6>
