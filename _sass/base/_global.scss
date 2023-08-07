@@ -126,6 +126,11 @@ h4 {
   font-size: 1.25rem;
 }
 
+h6 {
+  color: var(--gray600);
+  margin: 0;
+}
+
 iframe,
 img,
 embed,
@@ -855,6 +860,7 @@ h1.main_page {
 h4.subtitle {
   padding: 0.1rem;
   color: var(--gray400) !important;
+  font-weight: 500;
 }
 
 #about_div {
