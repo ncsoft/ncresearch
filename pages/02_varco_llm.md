@@ -40,7 +40,7 @@ hide: true
 <br/>
 
 <div>
-  <h1>모델 공개 리스트</h1>
+  <span class="blogs-title">모델 공개 리스트</span>
   <a class="blogs-link" href="">자세히 보기</a>
 </div>
 
