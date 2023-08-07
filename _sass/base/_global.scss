@@ -1181,6 +1181,53 @@ h4.subtitle {
   color: var(--blue) !important;
 }
 
+.llm_desc {
+  // text-align: center;
+  padding-left: 3em;
+  padding-right: 3em;
+  border: none;
+  margin: 1.5rem 0;
+  background-color: var(--gray50);
+  box-shadow: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+.llm_desc>h2 {
+  display: inline-block;
+  margin-bottom: 0.1em;
+  font-size: 2rem !important;
+}
+.llm_desc:hover h2 {
+  color: var(--blue500) !important;
+}
+.llm_desc>p {
+  line-height: 1.875em;
+  font-size: 1.125em;
+  color: var(--gray700);
+}
+.llm_desc::before {
+  content: " ";
+  float: right;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down.svg') !important;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 2.0625rem;
+}
+.llm_desc:hover::before {
+  content: " ";
+  float: right;
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down_hover.svg') !important;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 2.0625rem;
+}
+.llm_desc.active::before {
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_up.svg') !important;
+}
+.llm_desc.active:hover::before {
+  background-image: url('/ncresearch/assets/img/renewal/ic_chevron_up_hover.svg') !important;
+}
+
 .llm_desc h3 {
   display: none;
 }
