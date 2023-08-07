@@ -19,6 +19,7 @@ hide: true
   }
   h1 {
     padding-bottom: 1.875rem;
+    margin: 0;
   }
   h6 a {
     text-decoration: underline;
