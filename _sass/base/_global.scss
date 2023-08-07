@@ -1171,3 +1171,12 @@ h4.subtitle {
     }
   }
 }
+
+#markdown-toc a {
+  color: var(--gray800) !important;
+  text-decoration: none !important;
+}
+
+#markdown-toc a:hover {
+  color: var(--blue) !important;
+}
