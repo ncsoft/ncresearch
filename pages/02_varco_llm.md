@@ -39,7 +39,7 @@ hide: true
 
 <br/>
 
-<div>
+<div class="llm-div">
   <span class="llm-title">모델 공개 리스트</span>
   <a class="blogs-link" href="">자세히 보기</a>
 </div>
@@ -51,7 +51,6 @@ hide: true
 <h6>모델의 추가적인 성능 개선이나 튜닝, 서비스 적용을 위한 협업 문의는 메일(<a href="mailto:varco_llm@ncsoft.com">varco_llm@ncsoft.com</a>) 로 연락주십시오.</h6>
 
 |공개 일정|모델명|
-|-|-|
 |**1111.11.11**|VARCO LLM ?.?B-??|
 |**1111.11.11**|VARCO LLM ?.?B-??|
 |**1111.11.11**|VARCO LLM ?.?B-??|

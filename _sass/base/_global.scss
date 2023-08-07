@@ -1255,11 +1255,21 @@ h4.subtitle {
 
 .llm_table {
   display: table;
+  font-size: 1.125rem;
+  color: var(--gray700);
+
+  th, td {
+    border-bottom: 1px solid var(--gray100);
+    padding: 1.5rem;
+  }
 }
 
 .llm-title {
   color: var(--gray900);
   font-size: 2.5rem;
   font-weight: 700;
+}
+
+.llm-div {
   padding-bottom: 1.875rem;
 }
