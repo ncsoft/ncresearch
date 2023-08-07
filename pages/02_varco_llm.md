@@ -8,6 +8,8 @@ page-type: main_page
 hide: true
 ---
 
+<script src="{{ site.baseurl | prepend: site.url }}/assets/js/about.js"></script>
+
 <h6>VVVVVVV</h6>
 <h6>VVVVVVV</h6>
 <h6>VVVVVVV</h6>
