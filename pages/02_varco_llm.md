@@ -17,6 +17,9 @@ hide: true
   h1.main_page {
     padding: 0 !important;
   }
+  h1 {
+    padding-bottom: 1.875rem;
+  }
   h6 a {
     text-decoration: underline;
     color: var(--gray600);
