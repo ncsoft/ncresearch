@@ -17,6 +17,10 @@ hide: true
   h1.main_page {
     padding: 0 !important;
   }
+  h6 a {
+    text-decoration: underline;
+    color: var(--gray600);
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
