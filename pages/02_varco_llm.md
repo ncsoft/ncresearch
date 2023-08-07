@@ -8,7 +8,7 @@ page-type: main_page
 hide: true
 ---
 
-<script src="{{ site.baseurl | prepend: site.url }}/assets/js/about.js"></script>
+<script src="{{ site.baseurl | prepend: site.url }}/assets/js/about_llm.js"></script>
 
 <h6>VVVVVVV</h6>
 <h6>VVVVVVV</h6>
@@ -54,53 +54,53 @@ hide: true
 <h4 class="subtitle">VVVVVVVV</h4>
 
 > ## ㅇㅇ ㅇㅇㅇ
->
+> 　
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
-{:.about_desc}
+{:.llm_desc}
 
 <br/>
 
 > ## ㅇㅇ ㅇㅇㅇ
->
+> 　
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
-{:.about_desc}
+{:.llm_desc}
 
 <br/>
 
 > ## ㅇㅇ ㅇㅇㅇ
->
+> 　
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
-{:.about_desc}
+{:.llm_desc}
 
 <br/>
 
 > ## ㅇㅇ ㅇㅇㅇ
->
+> 　
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
-{:.about_desc}
+{:.llm_desc}
 
 <br/>
 
 > ## ㅇㅇ ㅇㅇㅇ
->
+> 　
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
-{:.about_desc}
+{:.llm_desc}
 
 <br/>
 
 > ## ㅇㅇ ㅇㅇㅇ
->
+> 　
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
-{:.about_desc}
+{:.llm_desc}
