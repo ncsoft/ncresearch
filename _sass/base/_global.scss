@@ -1260,6 +1260,9 @@ h4.subtitle {
 
   th, td {
     border-bottom: 1px solid var(--gray100);
+    border-top: none;
+    border-left: none;
+    border-right: none;
     padding: 1.5rem;
   }
 }
