@@ -56,6 +56,7 @@ hide: true
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
+{:.about_desc}
 
 <br/>
 
@@ -64,6 +65,7 @@ hide: true
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
+{:.about_desc}
 
 <br/>
 
@@ -72,6 +74,7 @@ hide: true
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
+{:.about_desc}
 
 <br/>
 
@@ -80,6 +83,7 @@ hide: true
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
+{:.about_desc}
 
 <br/>
 
@@ -88,6 +92,7 @@ hide: true
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
+{:.about_desc}
 
 <br/>
 
@@ -96,3 +101,4 @@ hide: true
 > ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 >
 > ![]({{"/assets/img/renewal/header.png"| relative_url}})
+{:.about_desc}
