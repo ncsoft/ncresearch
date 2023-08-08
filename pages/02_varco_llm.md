@@ -22,6 +22,9 @@ hide: true
     padding-bottom: 1.875rem;
     margin: 0;
   }
+  h4.subtitle {
+    padding-bottom: 1.75rem;
+  }
   h6 a {
     text-decoration: underline;
     color: var(--gray600);
@@ -71,12 +74,12 @@ hide: true
     border-radius: 0.375rem;
     border: 1.5px solid var(--blue);
     padding: 0.75rem 1rem;
-    color: var(--blue);
+    color: var(--blue) !important;
   }
   .aws_button:hover {
     text-decoration: none !important;
-    background-color: var(--blue);
-    color: white;
+    background-color: var(--blue) !important;
+    color: white !important;
   }
 </style>
 
