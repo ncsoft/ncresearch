@@ -20,6 +20,7 @@ hide: true
     padding-top: 3rem;
     padding-bottom: 1.5rem;
     margin: 0;
+    scroll-margin-top: 8rem;
   }
 </style>
 
