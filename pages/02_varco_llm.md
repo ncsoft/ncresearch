@@ -75,6 +75,8 @@ hide: true
     border: 1.5px solid var(--blue);
     padding: 0.75rem 1rem;
     color: var(--blue) !important;
+    font-size: 1.25rem;
+    font-weight: 700;
   }
   .aws_button:hover {
     text-decoration: none !important;
