@@ -33,6 +33,9 @@ hide: true
   .llm_table ul {
     margin-left: 1.25rem !important;
   }
+  .llm_table .gray_p {
+    color: var(--gray300);
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
@@ -69,7 +72,7 @@ hide: true
 |**1111.11.11**|VARCO LLM ?.?B-??|
 |**1111.11.11**|VARCO LLM ?.?B-??|
 |**1111.11.11**|VARCO LLM ?.?B-??|
-|**2023.09 공개 예정**|VARCO LLM ?.?B-??|
+|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|VARCO LLM ?.?B-??|
 |**2023.09 공개 예정**|VARCO LLM ?.?B-??|
 |**2023.11 공개 예정**|VARCO LLM ?.?B-??|
 |**2024.01 공개 예정**|VARCO LLM ?.?B-??|
