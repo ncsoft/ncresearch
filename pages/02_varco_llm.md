@@ -36,7 +36,7 @@ hide: true
   .llm_table .gray_p {
     color: var(--gray300);
   }
-  .llm_table tr:first-child {
+  .llm_table td:first-child {
     width: 14rem;
   }
 </style>
@@ -75,10 +75,10 @@ hide: true
 |**2023.??.??**|{::nomarkdown}<p><b>VARCO LLM ?.?B-???</b></p><ul><li>VARCO LLM ?.?B IST 모델은 ?.?B FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.</li><li>?.?B FM 모델의 기본적인 성능에 더하여 사용자의 지시를 따르도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.</li></ul>{:/}|
 |**2023.??.??**|{::nomarkdown}<p><b>VARCO LLM ??B-??</b></p><ul><li>VARCO LLM ??B 모델은 현재 시점에서 NC가 제공하는 가장 강력한 성능의 언어모델입니다.</li><li>VARCO LLM ?.?B, ?.?B 모델이 잘 수행할 수 있는 모든 NLP 태스크를 더욱 뛰어난 품질로 수행 가능합니다.</li><li>??B FM을 활용하면 수행 속도보다 품질이 더욱 중요한 AI 서비스를 합리적인 비용으로 제공할 수 있습니다.</li></ul>{:/}|
 |**2023.??.??**|{::nomarkdown}<p><b>VARCO LLM ??B-???</b></p><ul><li>VARCO LLM ??B IST 모델은 ??B FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.</li><li>??B FM 모델의 기본적인 성능에 더하여 사용자의 지시를 따르도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.</li></ul>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><ul><li>페르소나/감정/의도를 주입하여 대화 흐름을 제어할 수 있는 고품질 챗봇 서비스용 언어모델입니다.</li></ul>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><ul><li>사용자와의 상호작용을 통해 다양한 형태의 스토리나 게임 퀘스트 생성을 지원하는 모델입니다.</li></ul>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2023.11 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><ul><li>성능이 절대적으로 중요한 태스크나 중/소 규모 언어모델 학습용 데이터 생성에 활용 가능한 모델입니다.</li></ul>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2024.01 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><ul><li>텍스트와 함께 그림이나 사진을 하나의 맥락으로써 이해하고 응답할 수 있는 초거대 언어모델입니다.</li></ul>{:/}|
+|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><p>페르소나/감정/의도를 주입하여 대화 흐름을 제어할 수 있는 고품질 챗봇 서비스용 언어모델입니다.</p>{:/}|
+|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><p>사용자와의 상호작용을 통해 다양한 형태의 스토리나 게임 퀘스트 생성을 지원하는 모델입니다.</p>{:/}|
+|{::nomarkdown}<p class="gray_p"><b>2023.11 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><p>성능이 절대적으로 중요한 태스크나 중/소 규모 언어모델 학습용 데이터 생성에 활용 가능한 모델입니다.</p>{:/}|
+|{::nomarkdown}<p class="gray_p"><b>2024.01 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><p>텍스트와 함께 그림이나 사진을 하나의 맥락으로써 이해하고 응답할 수 있는 초거대 언어모델입니다.</p>{:/}|
 {:.llm_table}
 
 <br/>
