@@ -18,6 +18,7 @@ hide: true
     padding: 0 !important;
   }
   h1 {
+    padding-top: 4.76rem;
     padding-bottom: 1.875rem;
     margin: 0;
   }
