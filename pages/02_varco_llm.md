@@ -26,6 +26,14 @@ hide: true
     text-decoration: underline;
     color: var(--gray600);
   }
+  a {
+    color: var(--gray700) !important;
+    text-decoration: none !important;
+  }
+  a:hover {
+    color: var(--blue) !important;
+    text-decoration: underline !important;
+  }
   .llm_table p, ul {
     margin: 0;
     line-height: 1.5;
