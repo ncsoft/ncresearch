@@ -59,13 +59,17 @@ hide: true
     line-height: 1;
     padding: 1.5rem 2rem;
     border-left: none;
-
-    h3 {
-      margin: 0;
-    }
   }
   .llm_blockquote ul {
     margin-left: 1.25rem;
+  }
+  .llm_blockquote h3 {
+    margin: 0 !important;
+  }
+  .aws_button {
+    float: right;
+    border-radius: 0.375rem;
+    border: 1.5px solid var(--blue);
   }
 </style>
 
@@ -114,9 +118,13 @@ hide: true
 > - 서비스 문의 : [varco_llm@ncsoft.com](mailto:varco_llm@ncsoft.com)
 {:.llm_blockquote}
 
-> ### AWS 클라우드 서비스
-> - AWS SageMaker 인프라를 활용하여 서비스합니다. (ex 프라이빗 인프라 &  글로벌 서비스 제공)
-{:.llm_blockquote}
+<blockquote class="llm_blockquote">
+  <h3 id="aws-클라우드-서비스">AWS 클라우드 서비스</h3>
+  <ul>
+    <li>AWS SageMaker 인프라를 활용하여 서비스합니다. (ex 프라이빗 인프라 &amp;  글로벌 서비스 제공)</li>
+  </ul>
+  <a class="aws_button" href="">AWS SageMaker로 이동</a>
+</blockquote>
 
 <br/>
 
