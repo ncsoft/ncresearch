@@ -72,10 +72,10 @@ hide: true
 |**1111.11.11**|VARCO LLM ?.?B-??|
 |**1111.11.11**|VARCO LLM ?.?B-??|
 |**1111.11.11**|VARCO LLM ?.?B-??|
-|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|VARCO LLM ?.?B-??|
-|**2023.09 공개 예정**|VARCO LLM ?.?B-??|
-|**2023.11 공개 예정**|VARCO LLM ?.?B-??|
-|**2024.01 공개 예정**|VARCO LLM ?.?B-??|
+|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p>{:/}|
+|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p>{:/}|
+|{::nomarkdown}<p class="gray_p"><b>2023.11 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p>{:/}|
+|{::nomarkdown}<p class="gray_p"><b>2024.01 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p>{:/}|
 {:.llm_table}
 
 <br/>
