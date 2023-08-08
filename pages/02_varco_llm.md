@@ -55,7 +55,7 @@ hide: true
 <h6>모델의 추가적인 성능 개선이나 튜닝, 서비스 적용을 위한 협업 문의는 메일(<a href="mailto:varco_llm@ncsoft.com">varco_llm@ncsoft.com</a>) 로 연락주십시오.</h6>
 
 |공개 일정|모델명|
-|**1111.11.11**|{::nomarkdown}<b>VARCO LLM ?.?B-??</b><ul><li>VARCO LLM ?.?B-?? 모델은</li><li>?.?B-?? 모델의 기본적인 성능에 더하여</li></ul>{:/}|
+|**1111.11.11**|{::nomarkdown}<p><b>VARCO LLM ?.?B-??</b></p><ul><li>VARCO LLM ?.?B-?? 모델은</li><li>?.?B-?? 모델의 기본적인 성능에 더하여</li></ul>{:/}|
 |**1111.11.11**|VARCO LLM ?.?B-??|
 |**1111.11.11**|VARCO LLM ?.?B-??|
 |**1111.11.11**|VARCO LLM ?.?B-??|
