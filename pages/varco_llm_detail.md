@@ -8,6 +8,19 @@ page-type: main_page
 hide: true
 ---
 
+<style>
+  .title-padder {
+    padding-bottom: 3rem;
+  }
+  h2 {
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+  h3 {
+    padding-top: 3rem;
+    margin: 0;
+  }
+</style>
 
 
 ## VARCO-LLM
