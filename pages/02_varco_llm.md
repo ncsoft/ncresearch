@@ -50,6 +50,9 @@ hide: true
   .llm_desc img {
     padding-bottom: 2.375rem;
   }
+  img {
+    padding: 0;
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
@@ -63,7 +66,7 @@ hide: true
 
 # 로드맵
 
-![]({{"/assets/img/renewal/header.png"| relative_url}})
+![]({{"/assets/img/renewal/roadmap.png"| relative_url}})
 
 
 <br/>
@@ -91,6 +94,14 @@ hide: true
 |{::nomarkdown}<p class="gray_p"><b>2023.11 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><p class="gray_p">성능이 절대적으로 중요한 태스크나 중/소 규모 언어모델 학습용 데이터 생성에 활용 가능한 모델입니다.</p>{:/}|
 |{::nomarkdown}<p class="gray_p"><b>2024.01 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM ?.?B-??</b></p><p class="gray_p">텍스트와 함께 그림이나 사진을 하나의 맥락으로써 이해하고 응답할 수 있는 초거대 언어모델입니다.</p>{:/}|
 {:.llm_table}
+
+> ### NC 자체 서비스
+> - NC 자체 인프라를 활용하여 서비스 합니다. (ex 공공, 뉴스 분야 등)  
+> - 서비스 문의 : [varco_llm@ncsoft.com](mailto:varco_llm@ncsoft.com)
+
+> ### AWS 클라우드 서비스
+> - AWS SageMaker 인프라를 활용하여 서비스합니다. (ex 프라이빗 인프라 &  글로벌 서비스 제공)
+
 
 <br/>
 
