@@ -25,6 +25,13 @@ hide: true
     text-decoration: underline;
     color: var(--gray600);
   }
+  .llm_table p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .llm_table ul {
+    line-height: 1.5;
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
