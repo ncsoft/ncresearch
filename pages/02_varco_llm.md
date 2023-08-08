@@ -58,6 +58,11 @@ hide: true
     border-radius: 0.625rem;
     line-height: 1;
     padding: 1.5rem 2rem;
+    border-left: none;
+
+    h3 {
+      margin: 0;
+    }
   }
   .llm_blockquote ul {
     margin-left: 1.25rem;
