@@ -30,6 +30,9 @@ hide: true
     margin: 0;
     line-height: 1.5;
   }
+  .llm_table ul {
+    margin-left: 1.25rem !important;
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
