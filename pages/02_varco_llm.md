@@ -36,6 +36,9 @@ hide: true
   .llm_table .gray_p {
     color: var(--gray300);
   }
+  .llm_table th:first-child {
+    width: 14rem;
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
