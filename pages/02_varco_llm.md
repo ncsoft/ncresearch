@@ -72,11 +72,12 @@ hide: true
   .aws_button {
     float: right;
     border-radius: 0.375rem;
-    border: 1.5px solid var(--blue);
+    border: 2px solid var(--blue);
     padding: 0.75rem 1rem;
     color: var(--blue) !important;
     font-size: 1.25rem;
     font-weight: 700;
+    margin-top: -4rem;
   }
   .aws_button:hover {
     text-decoration: none !important;
