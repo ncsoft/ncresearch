@@ -25,11 +25,8 @@ hide: true
     text-decoration: underline;
     color: var(--gray600);
   }
-  .llm_table p {
+  .llm_table p, ul {
     margin: 0;
-    line-height: 1.5;
-  }
-  .llm_table ul {
     line-height: 1.5;
   }
 </style>
