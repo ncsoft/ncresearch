@@ -39,6 +39,9 @@ hide: true
   .llm_table td:first-child {
     width: 14rem;
   }
+  .llm_desc img {
+    padding-bottom: 2.375rem;
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
