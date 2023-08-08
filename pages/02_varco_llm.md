@@ -53,6 +53,15 @@ hide: true
   img {
     padding: 0;
   }
+  .llm_blockquote {
+    background-color: #fbfbfc;
+    border-radius: 0.625rem;
+    line-height: 1;
+    padding: 1.5rem 2rem;
+  }
+  .llm_blockquote ul {
+    margin-left: 1.25rem;
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
@@ -98,10 +107,11 @@ hide: true
 > ### NC 자체 서비스
 > - NC 자체 인프라를 활용하여 서비스 합니다. (ex 공공, 뉴스 분야 등)  
 > - 서비스 문의 : [varco_llm@ncsoft.com](mailto:varco_llm@ncsoft.com)
+{:.llm_blockquote}
 
 > ### AWS 클라우드 서비스
 > - AWS SageMaker 인프라를 활용하여 서비스합니다. (ex 프라이빗 인프라 &  글로벌 서비스 제공)
-
+{:.llm_blockquote}
 
 <br/>
 
