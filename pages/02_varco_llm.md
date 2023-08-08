@@ -70,6 +70,13 @@ hide: true
     float: right;
     border-radius: 0.375rem;
     border: 1.5px solid var(--blue);
+    padding: 0.75rem 1rem;
+    color: var(--blue);
+  }
+  .aws_button:hover {
+    text-decoration: none !important;
+    background-color: var(--blue);
+    color: white;
   }
 </style>
 
