@@ -39,6 +39,7 @@ hide: true
 <h6>지속적으로 성능이 개선된 모델이 업데이트 될 예정이며, 다국어 및 개별 태스크에 특화된 모델들도 순차적으로 공개됩니다.</h6>
 <h6>모델의 추가적인 성능 개선이나 튜닝, 서비스 적용을 위한 협업 문의는 메일(<a href="mailto:varco_llm@ncsoft.com">varco_llm@ncsoft.com</a>) 로 연락주십시오.</h6>
 
+![]({{"/assets/img/renewal/model_desc.png"| relative_url}})
 
 
 ## Data Details
