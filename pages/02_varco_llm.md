@@ -84,6 +84,9 @@ hide: true
     background-color: var(--blue) !important;
     color: white !important;
   }
+  iframe {
+    padding: 0;
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
