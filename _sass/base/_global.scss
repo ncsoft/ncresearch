@@ -1238,18 +1238,18 @@ h4.subtitle {
 .llm_desc h3 {
   display: none;
 }
-.llm_desc h2+p {
-  display: none;
-}
+// .llm_desc h2+p {
+//   display: none;
+// }
 .llm_desc h2+p+p {
   display: none;
 }
 .llm_desc.active h3 {
   display: block;
 }
-.llm_desc.active h2+p {
-  display: block;
-}
+// .llm_desc.active h2+p {
+//   display: block;
+// }
 .llm_desc.active h2+p+p {
   display: block;
 }
