@@ -25,7 +25,7 @@ hide: true
 </style>
 
 
-# VARCO-LLM
+# VARCO LLM
 
 <h6>VARCO LLM 모델을 활용하여 NLP 기반의 고수준 AI 서비스를 구축해 보세요.</h6>
 <h6>VARCO LLM은 고품질 사전학습 데이터를 사용하여 NC가 처음부터 학습한 고성능 언어모델입니다.</h6>
