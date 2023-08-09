@@ -22,6 +22,9 @@ hide: true
     margin: 0;
     scroll-margin-top: 6rem;
   }
+  h3 {
+    scroll-margin-top: 6rem;
+  }
   img {
     padding: 0 0 5rem 0;
     margin-top: 1.875rem;
