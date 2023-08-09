@@ -25,7 +25,7 @@ hide: true
   h3 {
     scroll-margin-top: 6rem;
   }
-  img .post_img {
+  .post_img img {
     padding: 0 0 5rem 0;
     margin-top: 1.875rem;
   }
