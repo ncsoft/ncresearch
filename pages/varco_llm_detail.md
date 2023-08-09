@@ -61,9 +61,14 @@ hide: true
 
 ### Instruction Tuning Datasets
 
-- Chain-of-thought를 활용한 [Orca-Style Instruction Tuning Dataset](https://arxiv.org/abs/2306.02707){:.post_a}[^1]을 자체 구축하여 학습하였습니다.
-
-[^1]: Mukherjee, Subhabrata, et al. "Orca: Progressive learning from complex explanation traces of gpt-4." arXiv preprint arXiv:2306.02707 (2023).
+<ul>
+  <li>Chain-of-thought를 활용한 <a href="https://arxiv.org/abs/2306.02707" class="post_a">Orca-Style Instruction Tuning Dataset</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>을 자체 구축하여 학습하였습니다.</li>
+</ul>
+<ol>
+  <li id="fn:1" role="doc-endnote">
+    <p>Mukherjee, Subhabrata, et al. “Orca: Progressive learning from complex explanation traces of gpt-4.” arXiv preprint arXiv:2306.02707 (2023).&nbsp;<a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+  </li>
+</ol>
 
 ## Model Details
 
