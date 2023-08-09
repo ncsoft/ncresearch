@@ -10,7 +10,7 @@ hide: true
 
 <style>
   .title-padder {
-    padding-bottom: 3rem;
+    padding-bottom: 0 !important;
   }
   h1 {
     padding-bottom: 2rem;
@@ -28,6 +28,14 @@ hide: true
   img {
     padding: 0 0 5rem 0;
     margin-top: 1.875rem;
+  }
+  a {
+    color: var(--text) !important;
+    text-decoration: underline !important;
+  }
+  a:hover {
+    color: var(--blue) !important;
+    text-decoration: underline !important;
   }
 </style>
 
