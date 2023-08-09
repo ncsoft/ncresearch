@@ -30,7 +30,7 @@ hide: true
     margin-top: 1.875rem;
   }
   a {
-    color: var(--text) !important;
+    color: var(--gray600) !important;
     text-decoration: underline !important;
   }
   a:hover {
