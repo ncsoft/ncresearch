@@ -1,7 +1,7 @@
 ---
 layout: page
 title: VARCO LLM Details
-title2: 공개 모델 안내 정보
+title2: VARCO LLM 모델 상세 정보
 permalink: /varco-llm-details/
 subtitle: ""
 page-type: main_page
@@ -31,8 +31,6 @@ hide: true
   }
 </style>
 
-
-# VARCO LLM 모델 상세 정보
 
 ## Model Description
 
