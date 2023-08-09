@@ -56,10 +56,11 @@ hide: true
 ![]({{"/assets/img/renewal/data_details.png"| relative_url}})
 
 
-### Fine-Tuning Datasets
+### Instruction Tuning Datasets
 
-- Orca-Style Dataset
+- Chain-of-thought를 활용한 [Orca-Style Instruction Tuning Dataset](https://arxiv.org/abs/2306.02707)[^1]을 자체 구축하여 학습하였습니다.
 
+[^1]: Mukherjee, Subhabrata, et al. "Orca: Progressive learning from complex explanation traces of gpt-4." arXiv preprint arXiv:2306.02707 (2023).
 
 ## Model Details
 
@@ -67,7 +68,7 @@ hide: true
 
 - VARCO LLM 1.3B 모델은 작지만 7B급 언어모델에 준하는 높은 성능을 보유하고 있는 경제적인 모델입니다.  
 - 특히, 텍스트의 감성/감정 분석이나 문서 분류와 같은 태스크에서 뛰어난 성능을 보이며, 간단한 일상 대화 챗봇 개발에도 활용 가능합니다.  
-- 모델 성능은 KOBEST 데이터 셋을 이용하여 5개의 벤치마크 테스트를 진행하였습니다.  
+- 모델 성능은 [KOBEST 데이터 셋](https://huggingface.co/datasets/skt/kobest_v1)을 이용하여 4개의 벤치마크 테스트를 진행하였습니다.  
 - VARCO LLM은 기존 공개된 비슷한 파라미터의 모델과 비교하여 가장 우수한 성능을 달성하였습니다.
 
 ![]({{"/assets/img/renewal/model_details1.png"| relative_url}})
@@ -77,7 +78,7 @@ hide: true
 
 - VARCO LLM 1.3B-IST 모델은 1.3B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.  
 - 1.3B-FM 모델의 기본적인 성능에 더하여 사용자의 지시를 따르도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.  
-- 모델 성능은 KOBEST 데이터 셋을 이용하여 5개의 벤치마크 테스트를 진행하였습니다.
+- 모델 성능은 KOBEST 데이터 셋을 이용하여 4개의 벤치마크 테스트를 진행하였습니다.
 
 ![]({{"/assets/img/renewal/model_details2.png"| relative_url}})
 
@@ -86,7 +87,7 @@ hide: true
 
 - VARCO LLM 6.4B 모델은 대부분의 NLP 태스크에서 뛰어난 성능을 보이는 고성능 언어모델입니다.  
 - Q&A, 문서 요약, 정보 추출, 챗봇 등 다양한 NLP 태스크에 적용 가능하며, 높은 성능이 요구되는 고품질 AI 서비스 개발에 적합합니다.  
-- 모델 성능은 KOBEST 데이터 셋을 이용하여 5개의 벤치마크 테스트를 진행하였습니다.  
+- 모델 성능은 KOBEST 데이터 셋을 이용하여 4개의 벤치마크 테스트를 진행하였습니다.  
 - VARCO LLM은 기존 공개된 비슷한 파라미터의 모델과 비교하여 가장 우수한 성능을 달성하였습니다.
 
 ![]({{"/assets/img/renewal/model_details3.png"| relative_url}})
@@ -96,7 +97,7 @@ hide: true
 
 - VARCO LLM 6.4B-IST 모델은 6.4B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.  
 - 6.4B-FM 모델의 기본적인 성능에 더하여 사용자의 지시를 따르도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.  
-- 모델 성능은 KOBEST 데이터 셋을 이용하여 5개의 벤치마크 테스트를 진행하였습니다.  
+- 모델 성능은 KOBEST 데이터 셋을 이용하여 4개의 벤치마크 테스트를 진행하였습니다.  
 - VARCO LLM은 기존 공개된 비슷한 파라미터의 모델과 비교하여 가장 우수한 성능을 달성하였습니다.
 
 ![]({{"/assets/img/renewal/model_details4.png"| relative_url}})
@@ -107,7 +108,7 @@ hide: true
 - VARCO LLM 13B 모델은 현재 시점에서 NC가 제공하는 가장 강력한 성능의 언어모델입니다.  
 - VARCO LLM 1.3B, 6.4B 모델이 잘 수행할 수 있는 모든 NLP 태스크를 더욱 뛰어난 품질로 수행 가능합니다.  
 - 13B-FM을 활용하면 수행 속도보다 품질이 더욱 중요한 AI 서비스를 합리적인 비용으로 제공할 수 있습니다.  
-- 모델 성능은 KOBEST 데이터 셋을 이용하여 5개의 벤치마크 테스트를 진행하였습니다.  
+- 모델 성능은 KOBEST 데이터 셋을 이용하여 4개의 벤치마크 테스트를 진행하였습니다.  
 - VARCO LLM은 기존 공개된 비슷한 파라미터의 모델과 비교하여 가장 우수한 성능을 달성하였습니다.
 
 ![]({{"/assets/img/renewal/model_details5.png"| relative_url}})
@@ -117,7 +118,7 @@ hide: true
 
 - VARCO LLM 13B-IST 모델은 13B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.  
 - 13B-FM 모델의 기본적인 성능에 더하여 사용자의 지시를 따르도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.  
-- 모델 성능은 KOBEST 데이터 셋을 이용하여 5개의 벤치마크 테스트를 진행하였습니다.  
+- 모델 성능은 KOBEST 데이터 셋을 이용하여 4개의 벤치마크 테스트를 진행하였습니다.  
 - VARCO LLM은 기존 공개된 비슷한 파라미터의 모델과 비교하여 가장 우수한 성능을 달성하였습니다.
 
 ![]({{"/assets/img/renewal/model_details6.png"| relative_url}})
