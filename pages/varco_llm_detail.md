@@ -28,6 +28,7 @@ hide: true
   .post_img img {
     padding: 0 0 5rem 0;
     margin-top: 1.875rem;
+    max-width: 77.875rem;
   }
   a.post_a {
     color: var(--gray600) !important;
