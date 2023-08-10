@@ -57,7 +57,7 @@ index: 26
 
 <br/>
 
-<iframe width="100%" height="600" src="https://www.youtube.com/embed/Blw4COK4vhc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="600" src="https://www.youtube.com/embed/Blw4COK4vhc?start=24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {:.center_div}
 
 *[영상 1] 디지털 휴먼의 이름이 모두 같다면…?*
@@ -88,7 +88,7 @@ index: 26
 
 이렇게 학습한 호출어 인식 모델을 어떻게 학습하고 테스트해볼 수 있을까요? 연구자들이야 고성능 서버 환경에서 복잡한 명령어를 써 내려가며 어떻게든 모델을 학습하고 테스트해볼 수 있지만, 일반 사용자나 AI에 익숙하지 않은 개발자들은 대부분 그렇지 못할 것입니다. 그렇다고 Windows, macOS, 안드로이드, iOS 등 각 OS에서 동작하는 호출어 인식 SDK를 개별적으로 준비하기에는 배보다 배꼽이 더 커지는 상황입니다. 코드 한 벌로 OS와 관계없이 범용적으로 호출어 인식 모델을 구동할 수 있는 플랫폼은 없을까요? 또, 사용자가 쉽게 사용할 수 있는 UI를 제공하려면 어떤 플랫폼이 가장 적합할까요? 고민 끝에 내린 결론은 바로 웹브라우저 환경이었습니다! 웹브라우저(Chromium)는 Windows, macOS, Linux 등 다양한 플랫폼에서 일관된 동작을 보장합니다. 따라서, 웹 표준을 준수하여 개발할 경우, 하나의 코드 베이스로 동일한 동작을 기대할 수 있습니다. 이미 유수한 프로그램들 (VSCode, MS Teams, Discord, Slack 등) 이 동일한 방법으로 멀티플랫폼을 지원하고 있습니다. 이 때, 호출어 인식 모델이 웹브라우저에서 standalone 형태로 구동되기를 원했는데요. 낮은 지연 시간이 덕목인 호출어 인식 모델 구현을 서버-클라이언트 형태로 만드는 것보다 이 방법이 효과적이었기 때문입니다. 
 
-이렇게 다양한 요구사항들에 대한 해결책을 상상하는 건 쉬웠지만, 개발 친화적이지 않은 연구자들에게는 먼 산을 바라보며 '그래서 어떻게 구현해야 하지…' 하며 막막해질 뿐이었습니다. 다행히, 저희 랩은 연구자뿐만 아니라 유능한 개발자분들도 계시기 때문에, 이러한 상상을 현실로 금세 만들어 주셨습니다! 핵심은 WebAssembly (Wasm) 와 Emscripten 이라는 도구를 활용하는 것이었는데요, 그 결과 웹브라우저에서도 딥러닝 모델을 standalone으로 구동할 수 있는 환경을 구축할 수 있었습니다!  
+이렇게 다양한 요구사항들에 대한 해결책을 상상하는 건 쉬웠지만, 개발 친화적이지 않은 연구자들에게는 먼 산을 바라보며 '그래서 어떻게 구현해야 하지…' 하며 막막해질 뿐이었습니다. 다행히, 저희 랩은 연구자뿐만 아니라 유능한 개발자분들도 계시기 때문에, 이러한 상상을 현실로 금세 만들어 주셨습니다! 핵심은 WebAssembly(Wasm)[^3] 와 Emscripten[^4] 이라는 도구를 활용하는 것이었는데요, 그 결과 웹브라우저에서도 딥러닝 모델을 standalone으로 구동할 수 있는 환경을 구축할 수 있었습니다!  
 
 ![]({{"/assets/img/post/96cc8bb213c692eadcb2f82241b493b1531b0ffb/pic2.png"| relative_url}})
 *[그림 2] 본 논문에서 제안한 FES-KWS 시스템 구조도*
