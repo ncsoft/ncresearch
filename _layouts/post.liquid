@@ -13,7 +13,7 @@ layout: default
             <span class="post-new-badge"></span>
           {% endif %}
         </h1>
-        {% assign _author2 = post.author2 %}
+        {% assign _author2 = page.author2 %}
         {% include blog/post_info.liquid author=page.author author2=_author2 date=page.date %}
       {% endif %}
     </div>
