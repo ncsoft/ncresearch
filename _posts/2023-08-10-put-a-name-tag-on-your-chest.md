@@ -11,7 +11,7 @@ excerpt: 웹브라우저에서 구동할 수 있고, 한 번의 발화만으로�
 back_color: "#ffffff"
 img_name: "pic2.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 26
