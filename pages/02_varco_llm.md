@@ -77,7 +77,7 @@ hide: true
     color: var(--blue) !important;
     font-size: 1.25rem;
     font-weight: 700;
-    margin-top: -11.5rem;
+    margin-top: -11rem;
   }
   .aws_button:hover {
     text-decoration: none !important;
