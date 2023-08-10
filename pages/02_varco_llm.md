@@ -139,8 +139,8 @@ hide: true
   <h3 id="aws-클라우드-서비스">AWS 클라우드 서비스</h3>
   <ul>
     <li>AWS SageMaker 인프라를 활용하여 서비스합니다. (ex 프라이빗 인프라 &amp;  글로벌 서비스 제공)</li>
-    <li>VARCO LLM은 사용자가 직접 보안이 유지된 자신만의 환경에서 안전하게 도메인 데이터로 커스터마이징하여 구동할 수 있도록 AWS Private Cloud에서 제공할 계획입니다. </li>
-    <li>고객은 인프라를 준비할 필요도 없고, 보안을 걱정할 필요도 없이, 글로벌 어느 지역에서나 구독을 통해 즉시 사용하고, 이를 활용하여 글로벌하게 자신만의 서비스를 개시할 수 있습니다.</li>
+    <li>VARCO LLM은 사용자가 직접 보안이 유지된 자신만의 환경에서 안전하게 도메인 데이터로 커스터마이징하여<br/>구동할 수 있도록 AWS Private Cloud에서 제공할 계획입니다. </li>
+    <li>고객은 인프라를 준비할 필요도 없고, 보안을 걱정할 필요도 없이, 글로벌 어느 지역에서나 구독을 통해 즉시 사용하고,<br/>이를 활용하여 글로벌하게 자신만의 서비스를 개시할 수 있습니다.</li>
   </ul>
   <a class="aws_button" href="https://aws.amazon.com/marketplace/seller-profile?id=seller-tkuvdeznmi2w4">AWS SageMaker로 이동</a>
 </blockquote>
