@@ -102,15 +102,11 @@ hide: true
 <h6>그동안 풀지 못한 문제의 솔루션을 개발하고, 고객에게 새로운 소통과 경험을 줄 수 있습니다.</h6>
 <h6>우리는 기업과 개인이 창작과 생산을 위해 고민하는 긴 과정에서 AI 가 인간의 든든한 동반자가 되어 주기를 바랍니다.</h6>
 
-<br/>
-
 # 로드맵
 
 ![]({{"/assets/img/renewal/roadmap.png"| relative_url}})
 {:.post_img}
 
-
-<br/>
 
 <div class="llm-div">
   <span class="llm-title">모델 공개 리스트</span>
@@ -152,7 +148,6 @@ hide: true
   <a class="aws_button" href="https://aws.amazon.com/marketplace/seller-profile?id=seller-tkuvdeznmi2w4">AWS SageMaker로 이동</a>
 </blockquote>
 
-<br/>
 
 # VARCO Studio 영상
 
@@ -163,8 +158,6 @@ hide: true
 <iframe width="100%" height="600" src="https://www.youtube.com/embed/sCv4jql5URY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {:.center_div}
 
-
-<br/>
 
 # 파트너
 
@@ -180,8 +173,6 @@ hide: true
 > ![]({{"/assets/img/renewal/partner_car.png"| relative_url}})
 {:.llm_desc}
 
-<br/>
-
 > ## 교육
 > 
 >VARCO LLM은 단순히 문제에 대한 답을 제공하기 보다는 학생으로 하여금 사고력을 강화시킬 수 있는 방향으로 풀이를 유도할 수 있습니다.  
@@ -191,7 +182,6 @@ hide: true
 > ![]({{"/assets/img/renewal/partner_edu.png"| relative_url}})
 {:.llm_desc}
 
-<br/>
 
 > ## 로봇
 > 
@@ -201,8 +191,6 @@ hide: true
 > ![]({{"/assets/img/renewal/partner_robot.png"| relative_url}})
 {:.llm_desc}
 
-<br/>
-
 > ## 금융
 > 
 >과거 및 산업 전반에 일어나고 있는 데이터들을 활용하여 VARCO LLM은 사용자로 하여금 위험을 감지하여 올바른 투자판단을 할 수 있도록 돕고,  
@@ -210,8 +198,6 @@ hide: true
 >
 > ![]({{"/assets/img/renewal/partner_finance.png"| relative_url}})
 {:.llm_desc}
-
-<br/>
 
 > ## 바이오
 > 
@@ -221,7 +207,6 @@ hide: true
 > ![]({{"/assets/img/renewal/partner_bio.png"| relative_url}})
 {:.llm_desc}
 
-<br/>
 
 > ## 공공
 > 
