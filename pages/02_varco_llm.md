@@ -95,7 +95,7 @@ hide: true
   }
   .post_img img {
     padding: 0 0 0 0;
-    margin-top: 1.875rem;
+    /* margin-top: 1.875rem; */
     /* max-width: 77.875rem; */
   }
   a.blogs-link {
