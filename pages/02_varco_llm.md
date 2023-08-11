@@ -52,7 +52,7 @@ hide: true
     width: 14rem;
   }
   .llm_desc img {
-    padding-bottom: 2.375rem;
+    /* padding-bottom: 2.375rem; */
   }
   img {
     padding: 0;
