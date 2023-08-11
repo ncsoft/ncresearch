@@ -52,6 +52,7 @@ hide: true
   }
   .llm_desc img {
     padding-bottom: 2.375rem;
+    max-width: 77.875rem;
   }
   img {
     padding: 0;
@@ -87,6 +88,11 @@ hide: true
   iframe {
     padding: 0;
   }
+  .post_img img {
+    padding: 0 0 5rem 0;
+    margin-top: 1.875rem;
+    max-width: 77.875rem;
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
@@ -101,6 +107,7 @@ hide: true
 # 로드맵
 
 ![]({{"/assets/img/renewal/roadmap.png"| relative_url}})
+{:.post_img}
 
 
 <br/>
