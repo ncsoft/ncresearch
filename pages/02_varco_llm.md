@@ -93,6 +93,9 @@ hide: true
     margin-top: 1.875rem;
     /* max-width: 77.875rem; */
   }
+  a.blogs-link {
+    margin-top: 0.75rem;
+  }
 </style>
 
 <h6>AI를 통해 당신의 독창성을 실현하세요.</h6>
