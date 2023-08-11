@@ -24,6 +24,7 @@ hide: true
   }
   h4.subtitle {
     padding-bottom: 1.75rem;
+    margin-bottom: 0;
   }
   h6 a {
     text-decoration: underline;
@@ -90,7 +91,7 @@ hide: true
   .post_img img {
     padding: 0 0 5rem 0;
     margin-top: 1.875rem;
-    max-width: 77.875rem;
+    /* max-width: 77.875rem; */
   }
 </style>
 
