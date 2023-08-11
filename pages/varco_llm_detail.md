@@ -16,6 +16,15 @@ hide: true
     padding-bottom: 2rem;
     margin: 0;
   }
+  h1.main_page {
+    padding: 0;
+  }
+  h2#model-description {
+    padding-top: 3.125rem;
+  }
+  h4.subtitle {
+    display: none;
+  }
   h2 {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
