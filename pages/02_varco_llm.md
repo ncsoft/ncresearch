@@ -52,7 +52,6 @@ hide: true
   }
   .llm_desc img {
     padding-bottom: 2.375rem;
-    max-width: 77.875rem;
   }
   img {
     padding: 0;
