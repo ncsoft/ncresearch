@@ -49,9 +49,11 @@ hide: true
   }
   .llm_detail_ul {
     margin-bottom: 0;
+    color: var(--gray700) !important;
   }
   .llm_detail_ol {
     margin-left: 2.5rem;
+    color: var(--gray700) !important;
   }
 </style>
 
