@@ -33,6 +33,7 @@ body {
   font-size: $font-size;
   word-wrap: break-word;
   counter-reset: sidenote-counter;
+  overflow-x: hidden;
 }
 
 .side_note {
