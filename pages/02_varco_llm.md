@@ -61,9 +61,10 @@ hide: true
     background-color: #fbfbfc;
     border-radius: 0.625rem;
     line-height: 1;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2rem 2rem 2rem;
     border-left: none;
     margin: 1.875rem 0;
+    color: var(--gray800);
   }
   .llm_blockquote ul {
     margin-left: 1.25rem;
@@ -88,6 +89,9 @@ hide: true
   }
   iframe {
     padding: 0;
+  }
+  .post_img {
+    margin-bottom: 0;
   }
   .post_img img {
     padding: 0 0 0 0;
