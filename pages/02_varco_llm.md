@@ -100,7 +100,6 @@ hide: true
   }
   a.blogs-link {
     margin-top: 0.75rem;
-    color: var(--gray800) !important;
   }
 </style>
 
