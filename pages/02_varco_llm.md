@@ -63,7 +63,7 @@ hide: true
     line-height: 1;
     padding: 1.5rem 2rem 2rem 2rem;
     border-left: none;
-    margin: 1.875rem 0;
+    margin: 2rem 0;
     color: var(--gray800);
   }
   .llm_blockquote ul {

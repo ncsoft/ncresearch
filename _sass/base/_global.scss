@@ -1190,27 +1190,28 @@ h4.subtitle {
 
 .llm_desc {
   // text-align: center;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
   border: none;
   margin: 1.5rem 0;
   background-color: var(--gray50);
   box-shadow: none;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 .llm_desc>h2 {
   display: inline-block;
   margin-bottom: 1.875rem;
-  margin-top: 2.4rem;
+  margin-top: 3.125rem;
   font-size: 2rem !important;
+  line-height: normal;
 }
 .llm_desc:hover h2 {
   color: var(--blue500) !important;
 }
 .llm_desc>p {
-  line-height: 1.875em;
-  font-size: 1.125em;
+  line-height: 1.875rem;
+  font-size: 1.125rem;
   color: var(--gray700);
 }
 .llm_desc::before {
