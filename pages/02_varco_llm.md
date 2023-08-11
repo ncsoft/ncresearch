@@ -18,7 +18,7 @@ hide: true
     padding: 0 !important;
   }
   h1 {
-    padding-top: 4.76rem;
+    padding-top: 6.875rem;
     padding-bottom: 1.875rem;
     margin: 0;
   }
@@ -89,7 +89,7 @@ hide: true
     padding: 0;
   }
   .post_img img {
-    padding: 0 0 5rem 0;
+    padding: 0 0 0 0;
     margin-top: 1.875rem;
     /* max-width: 77.875rem; */
   }
