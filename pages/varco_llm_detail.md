@@ -40,7 +40,7 @@ hide: true
   h3 {
     scroll-margin-top: 6rem;
     margin-top: 1.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
     line-height: normal !important;
   }
   h3#instruction-tuning-datasets {
