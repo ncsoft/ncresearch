@@ -5,7 +5,6 @@ title2: 거대언어모델
 permalink: /varco-llm/
 subtitle: "VARCO(Via AI, Realize your Creativity and Originality) LLM"
 page-type: main_page
-hide: true
 ---
 
 <script src="{{ site.baseurl | prepend: site.url }}/assets/js/about_llm.js"></script>
