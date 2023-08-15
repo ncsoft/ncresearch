@@ -953,7 +953,7 @@ h4.subtitle {
 
 .blogs-link {
   float: right;
-  color: var(--gray400);
+  color: var(--gray400) !important;
   font-size: 1.25rem;
   font-weight: 500;
   text-decoration: none !important;
