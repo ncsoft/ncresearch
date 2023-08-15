@@ -1333,10 +1333,10 @@ article {
     }
   }
 
-  // .news_title:hover {
-  //   text-decoration: none !important;
-  //   color: var(--blue) !important;
-  // }
+  .news_title:hover {
+    text-decoration: none !important;
+    color: var(--blue) !important;
+  }
 
   .news_subtitle {
     color: var(--gray800);
