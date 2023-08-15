@@ -1,6 +1,6 @@
 - title: "VARCO LLM 공개"
   subtitle: "현재까지 공개된 동일 크기의 한국어 언어모델 중 최고의 성능"
   date: 2023-08-16
-  contents: ["VARCO LLM 1.3B-FM","VARCO LLM 1.3B-IST","VARCO LLM 6.4B-FM","VARCO LLM 6.4B-IST","VARCO LLM 13B-FM","VARCO LLM 13B-IST"]
+  contents: ["VARCO LLM 13B-IST","VARCO LLM 13B-FM","VARCO LLM 6.4B-IST","VARCO LLM 6.4B-FM","VARCO LLM 1.3B-IST","VARCO LLM 1.3B-FM"]
   new: true
   show: true
