@@ -10,7 +10,7 @@ excerpt: 음성과 텍스트를 이용한 감정인식 연구를 소개합니다
 back_color: "#ffffff"
 img_name: "pic3.png"
 toc: true
-show: true
+show: false
 new: true
 series: -1
 index: 27
