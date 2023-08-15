@@ -1309,6 +1309,11 @@ article {
     padding: 1.5rem 2rem;
     background-color: #fbfbfc;
     border-radius: 0.625rem;
+
+    a:hover {
+      text-decoration: none !important;
+      color: var(--blue) !important;
+    }
   }
 
   .news_title {
@@ -1328,10 +1333,10 @@ article {
     }
   }
 
-  .news_title:hover {
-    text-decoration: none !important;
-    color: var(--blue) !important;
-  }
+  // .news_title:hover {
+  //   text-decoration: none !important;
+  //   color: var(--blue) !important;
+  // }
 
   .news_subtitle {
     color: var(--gray800);
