@@ -1302,6 +1302,8 @@ article {
 }
 
 .news-group {
+  margin-bottom: 6.875rem;
+
   .news_div {
     border: none !important;
     padding: 1.5rem 2rem;
@@ -1330,6 +1332,7 @@ article {
     color: var(--gray800);
     font-size: 1.25rem;
     font-weight: 500;
+    margin-bottom: 0.5rem;
   }
 
   .news_date {
@@ -1340,6 +1343,6 @@ article {
   }
 
   ul {
-    margin-left: 1.5rem;
+    margin-left: 3.5rem;
   }
 }
