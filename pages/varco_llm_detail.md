@@ -22,6 +22,9 @@ hide: true
   h2#model-description {
     padding-top: 3.125rem;
   }
+  h2#data-details {
+    margin-top: 1.875rem;
+  }
   h4.subtitle {
     display: none;
   }
@@ -33,6 +36,9 @@ hide: true
   }
   h3 {
     scroll-margin-top: 6rem;
+  }
+  .post_img {
+    margin-bottom: 0;
   }
   .post_img img {
     padding: 0 0 5rem 0;
