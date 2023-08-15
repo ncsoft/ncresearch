@@ -63,7 +63,9 @@ hide: true
   }
 </style>
 <script>
-  window.scrollTo(0, window.scrollY)
+  window.onload = function() {
+    window.scrollTo(0, window.scrollY);
+  }
 </script>
 
 

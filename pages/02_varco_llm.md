@@ -10,7 +10,9 @@ hide: true
 
 <script src="{{ site.baseurl | prepend: site.url }}/assets/js/about_llm.js"></script>
 <script>
-  window.scrollTo(0, window.scrollY)
+  window.onload = function() {
+    window.scrollTo(0, window.scrollY);
+  }
 </script>
 
 <style>
