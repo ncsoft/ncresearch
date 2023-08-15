@@ -59,7 +59,7 @@ hide: true
     padding-bottom: 3.125rem !important;
   }
   .data_detail_img img {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
   }
   .post_img img {
     padding: 0 0 5rem 0;
