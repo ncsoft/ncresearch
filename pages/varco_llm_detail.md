@@ -56,6 +56,9 @@ hide: true
     color: var(--gray700) !important;
   }
 </style>
+<script>
+  window.scrollTo(0, window.scrollY)
+</script>
 
 
 ## Model Description
