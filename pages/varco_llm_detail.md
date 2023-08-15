@@ -35,13 +35,22 @@ hide: true
     padding-bottom: 1.5rem;
     margin: 0;
     scroll-margin-top: 6rem;
-    line-height: normal;
+    line-height: normal !important;
   }
   h3 {
     scroll-margin-top: 6rem;
     margin-top: 1.5rem;
     margin-bottom: 0;
-    line-height: normal;
+    line-height: normal !important;
+  }
+  h3#instruction-tuning-datasets {
+    margin-top: 0;
+  }
+  h2#model-details {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 6.875rem;
+    margin-bottom: 1.875rem;
   }
   .post_img {
     margin-bottom: 0;
