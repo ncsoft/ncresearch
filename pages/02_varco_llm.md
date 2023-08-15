@@ -11,7 +11,7 @@ hide: true
 <script src="{{ site.baseurl | prepend: site.url }}/assets/js/about_llm.js"></script>
 <script>
   window.onload = function() {
-    window.scrollTo(0, window.scrollY);
+    setTimeout(window.scrollTo(0, window.scrollY), 1000);
   }
 </script>
 

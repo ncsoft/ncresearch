@@ -24,6 +24,8 @@ hide: true
   }
   h2#data-details {
     margin-top: 1.875rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   h4.subtitle {
     display: none;
@@ -33,9 +35,13 @@ hide: true
     padding-bottom: 1.5rem;
     margin: 0;
     scroll-margin-top: 6rem;
+    line-height: normal;
   }
   h3 {
     scroll-margin-top: 6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    line-height: normal;
   }
   .post_img {
     margin-bottom: 0;
@@ -64,7 +70,7 @@ hide: true
 </style>
 <script>
   window.onload = function() {
-    window.scrollTo(0, window.scrollY);
+    setTimeout(window.scrollTo(0, window.scrollY), 1000);
   }
 </script>
 
