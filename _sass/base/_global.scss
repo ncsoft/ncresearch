@@ -521,16 +521,16 @@ table {
   content: " ";
   float: right;
   background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down.svg') !important;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-top: 2.0625rem;
 }
 .about_desc:hover::before {
   content: " ";
   float: right;
   background-image: url('/ncresearch/assets/img/renewal/ic_chevron_down_hover.svg') !important;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-top: 2.0625rem;
 }
 .about_desc.active::before {
