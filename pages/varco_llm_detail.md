@@ -55,6 +55,9 @@ hide: true
   .post_img {
     margin-bottom: 0;
   }
+  .data_detail_img {
+    padding-bottom: 3.125rem !important;
+  }
   .post_img img {
     padding: 0 0 5rem 0;
     margin-top: 1.875rem;
@@ -101,7 +104,7 @@ hide: true
 ### Pre-training Datasets
 
 ![]({{"/assets/img/renewal/data_details.png"| relative_url}})
-{:.post_img}
+{:.post_img .data_detail_img}
 
 ### Instruction Tuning Datasets
 
