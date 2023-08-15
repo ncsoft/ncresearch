@@ -1304,7 +1304,7 @@ article {
 .news-group {
   .news_div {
     border: none !important;
-    padding: 1.875rem 0 2.5rem 0;
+    padding: 1.5rem 2rem;
     background-color: #fbfbfc;
     border-radius: 0.625rem;
   }
@@ -1316,6 +1316,14 @@ article {
     margin-top: 0;
     line-height: 1.4;
     width: 90%;
+
+    .news-item-new {
+      display: inline-block;
+      width: 2.75rem;
+      height: 1.5rem;
+      background-image: url('/ncresearch/assets/img/renewal/new_badge.svg');
+      background-size: contain;
+    }
   }
 
   .news_subtitle {
@@ -1329,5 +1337,9 @@ article {
     font-size: 1.125rem;
     font-weight: 400;
     margin-bottom: 1.125rem;
+  }
+
+  ul {
+    margin-left: 1.5rem;
   }
 }
