@@ -1326,6 +1326,11 @@ article {
       background-image: url('/ncresearch/assets/img/renewal/new_badge.svg');
       background-size: contain;
     }
+
+    a h3:hover {
+      text-decoration: none !important;
+      color: var(--blue) !important;
+    }
   }
 
   .news_subtitle {
