@@ -1297,10 +1297,16 @@ article {
   font-weight: 700;
 }
 
+.news-title-group {
+  margin-bottom: 1.625rem;
+}
+
 .news-group {
   .news_div {
     border: none !important;
     padding: 1.875rem 0 2.5rem 0;
+    background-color: #fbfbfc;
+    border-radius: 0.625rem;
   }
 
   .news_title {

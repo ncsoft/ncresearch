@@ -1,7 +1,7 @@
 <div class="home">
     <div id="categories">
         <div class="category-groups">
-            <div>
+            <div class="news-title-group">
                 <span class="news-title">거대언어모델</span>
                 <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/varco-llm/"></a>
             </div>
@@ -11,6 +11,9 @@
                     <div class="news_div">
                         <h3 class="news_title">
                             {{ _news.title }}
+                            {% if _news.new == true %}
+                                <span class="category-item-new"></span>
+                            {% endif %}
                         </h3>
                         <div class="news_subtitle">
                             {{ _news.subtitle }}
