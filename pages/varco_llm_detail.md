@@ -58,6 +58,9 @@ hide: true
   .data_detail_img {
     padding-bottom: 3.125rem !important;
   }
+  .data_detail_img img {
+    padding-bottom: 0;
+  }
   .post_img img {
     padding: 0 0 5rem 0;
     margin-top: 1.875rem;
