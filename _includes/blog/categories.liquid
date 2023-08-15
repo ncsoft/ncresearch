@@ -2,6 +2,33 @@
     <div id="categories">
         <div class="category-groups">
             <div>
+                <span class="news-title">거대언어모델</span>
+                <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/varco-llm/"></a>
+            </div>
+            <div class="news-group">
+                {% assign news = site.data.news | sort: "date" | reverse %}
+                {% for _news in news limit:1 %}
+                    <div class="news_div">
+                        <h3 class="news_title">
+                            {{ _news.title }}
+                        </h3>
+                        <div class="news_subtitle">
+                            {{ _news.subtitle }}
+                        </div>
+                        <div class="news_date">
+                            {{ _news.date }}
+                        </div>
+                        {% if _news.contents.size > 0 %}
+                            <ul>
+                                {% for content in _news.contents %}
+                                    <li> {{ content }} </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div>
                 <span class="blogs-title">Blogs</span>
                 <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/blogs/">더보기</a>
             </div>

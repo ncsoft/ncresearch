@@ -1290,3 +1290,38 @@ article {
 #main {
   width: 120rem !important;
 }
+
+.news-title {
+  color: var(--gray900);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.news-group {
+  .news_div {
+    border: none !important;
+    padding: 1.875rem 0 2.5rem 0;
+  }
+
+  .news_title {
+    color: var(--gray900);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    line-height: 1.4;
+    width: 90%;
+  }
+
+  .news_subtitle {
+    color: var(--gray800);
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .news_date {
+    color: var(--gray600);
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 1.125rem;
+  }
+}
