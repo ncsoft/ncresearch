@@ -135,8 +135,8 @@ hide: true
 |**2023.08.10**|{::nomarkdown}<p><a href="https://ncsoft.github.io/ncresearch/varco-llm-details#varco-llm-ko-13b-fm-1"><b><u>VARCO LLM KO-13B-FM</u></b></a></p><ul><li>VARCO LLM 13B 모델은 현재 시점에서 NC가 제공하는 가장 강력한 성능의 언어모델입니다.</li><li>VARCO LLM 1.3B, 6.4B 모델이 잘 수행할 수 있는 모든 NLP 태스크를 더욱 뛰어난 품질로 수행 가능합니다.</li><li>13B-FM을 활용하면 수행 속도보다 품질이 더욱 중요한 AI 서비스를 합리적인 비용으로 제공할 수 있습니다.</li></ul>{:/}|
 |**2023.08.10**|{::nomarkdown}<p><a href="https://ncsoft.github.io/ncresearch/varco-llm-details#varco-llm-ko-13b-ist-1"><b><u>VARCO LLM KO-13B-IST</u></b></a></p><ul><li>VARCO LLM 13B-IST 모델은 13B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.</li><li>13B-FM 모델의 기본적인 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.</li></ul>{:/}|
 |{::nomarkdown}<p class="gray_p"><b>2023.08.29</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM Bi-13B-IST</b></p><p class="gray_p">한국어와 영어를 동시에 학습한 13B-FM 모델을 기반으로 사용자의 프롬프트를 잘 수행하도록 추가 학습된 모델입니다.</p>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 6.4B-DIALOGUE</b></p><p class="gray_p">페르소나/감정/의도를 주입하여 대화 흐름을 제어할 수 있는 고품질 챗봇 서비스용 언어모델입니다.</p>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 13B-STORY</b></p><p class="gray_p">사용자와의 상호작용을 통해 다양한 형태의 스토리나 게임 퀘스트 생성을 지원하는 모델입니다.</p>{:/}|
+|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 6.4B-PERSONA</b></p><p class="gray_p">페르소나/감정/의도를 주입하여 대화 흐름을 제어할 수 있는 고품질 챗봇 서비스용 언어모델입니다.</p>{:/}|
+|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 13B-NARRATIVE</b></p><p class="gray_p">사용자와의 상호작용을 통해 다양한 형태의 내러티브나 게임 퀘스트 생성을 지원하는 모델입니다.</p>{:/}|
 |{::nomarkdown}<p class="gray_p"><b>2023.11 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 52B-IST</b></p><p class="gray_p">성능이 절대적으로 중요한 태스크나 중/소 규모 언어모델 학습용 데이터 생성에 활용 가능한 모델입니다.</p>{:/}|
 |{::nomarkdown}<p class="gray_p"><b>2024.03 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 100B-MULTI</b></p><p class="gray_p">텍스트와 함께 그림이나 사진을 하나의 맥락으로써 이해하고 응답할 수 있는 초거대 언어모델입니다.</p>{:/}|
 {:.llm_table}
@@ -223,3 +223,16 @@ hide: true
 >
 > ![]({{"/assets/img/renewal/partner_public.png"| relative_url}})
 {:.llm_desc}
+
+
+# 언어모델 학습 데이터 연구 참여 기관
+
+부산외국어대학교 류법모 교수 연구실  
+상명대학교 게임전공 박소영 교수 연구실  
+서울대학교 국어국문학과 박진호 교수 연구실  
+연세대학교 언어정보학 협동과정 김한샘 교수 연구실 
+전북대학교 문헌정보학과 오효정 교수 지능정보융합연구실  
+제주대학교 인공지능학과 윤여찬 교수 연구실  
+한국외국어대학교 디지털언어지식콘텐츠연구센터 (DICORA) 남지순 교수 연구실  
+
+VARCO LLM의 한국어 학습 데이터 구축을 위해 연구에 참여해주신 많은 분들께 감사드립니다.
