@@ -27,7 +27,7 @@ page-type: main_page
 </thead>
 <tbody>
   <tr>
-    <td class="about_td"><a class="about_link_text" href="#언어모델과-대화-ai">언어모델과 대화 AI</a><div class='about_link_img'></div></td>
+    <td class="about_td" onclick="location.href='#언어모델과-대화-ai'"><a class="about_link_text" href="#언어모델과-대화-ai">언어모델과 대화 AI</a><div class='about_link_img'></div></td>
     <td class="about_td"><a class="about_link_text" href="#vision-ai">Vision AI</a><div class='about_link_img'></div></td>
   </tr>
   <tr>
