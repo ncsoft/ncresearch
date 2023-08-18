@@ -150,12 +150,16 @@ nav {
     }
 
     ul {
+      position: fixed;
+      left: 0;
+      top: 85px;
       width: 100%;
       overflow: hidden;
 
       /* fade out, then shrink */
       transition: opacity .25s 0s, font-size .25s 0s;
       transition-delay: 0s;
+      border-bottom: 1px solid var(--gray100);
 
       &.hide {
         height: 0;
@@ -169,6 +173,7 @@ nav {
 
     li {
       width: 100%;
+      height: auto;
       text-align: center;
       font-size: 1em;
       position: relative;
@@ -183,6 +188,15 @@ nav {
         width: 100%;
         margin: 0;
         display: block;
+        padding: 10px;
+
+        &.site_header_a_selected {
+          padding: 10px;
+        }
+      }
+
+      &.navbar_glass_icon {
+        margin: 0;
       }
 
     }
