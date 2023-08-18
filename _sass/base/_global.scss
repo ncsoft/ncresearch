@@ -665,9 +665,14 @@ a > h3:hover {
 // for links
 .link_container {
     display: grid;
-    grid-gap: 1.125rem;
-    grid-template-columns: repeat(auto-fit, 38.375rem);
+    grid-gap: 18px;
+    grid-template-columns: repeat(auto-fit, calc((100% - 18px) / 2));
     justify-content: center;
+
+  ///* --- Responsive --- */
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fit, 100%);
+  }
 }
 
 .link_div {
@@ -712,6 +717,7 @@ a > h3:hover {
     color: var(--gray500) !important;
     line-height: 1.1875rem !important;
     user-select: none;
+    width: 90%;
 }
 
 .link_img {
