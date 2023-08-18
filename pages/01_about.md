@@ -18,44 +18,28 @@ page-type: main_page
 <h6>NC Research는 미래 기술에 대한 열정과 도전을 통해 고객에게는 새로운 가치를 제공하고, NC의 장기적인 성장과 발전을 위해 노력합니다. NC Research에는 R&D 분야별 전문 조직이 구성되어 있어서 최신 기술에 대한 공유 및 집단 연구를 통해 차별화된 경쟁력을 만들어 나가며, 단기 프로젝트 중심의 활동 보다는 장기적인 비전을 통해 미래 지향적이고 지속적인 기술 개발을 수행합니다.</h6>
 
 <div id="about_div">
-<table id="about_table">
-<thead>
-  <tr>
-    <th class="about_th"><a class="about_link_text" href="#nlp-rd">NLP R&D</a></th>
-    <th class="about_th"><a class="about_link_text" href="#ai-rd">AI R&D</a></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="about_td" onclick="location.href='#언어모델과-대화-ai'"><a class="about_link_text" href="#언어모델과-대화-ai">언어모델과 대화 AI</a><div class='about_link_img'></div></td>
-    <td class="about_td" onclick="location.href='#vision-ai'"><a class="about_link_text" href="#vision-ai">Vision AI</a><div class='about_link_img'></div></td>
-  </tr>
-  <tr>
-    <td class="about_td" onclick="location.href='#언어생성과-번역-ai'"><a class="about_link_text" href="#언어생성과-번역-ai">언어생성과 번역 AI</a><div class='about_link_img'></div></td>
-    <td class="about_td" onclick="location.href='#graphics-ai'"><a class="about_link_text" href="#graphics-ai">Graphics AI</a><div class='about_link_img'></div></td>
-  </tr>
-  <tr>
-    <td class="about_td" onclick="location.href='#다국어-이해-ai'"><a class="about_link_text" href="#다국어-이해-ai">다국어 이해 AI</a><div class='about_link_img'></div></td>
-    <td class="about_td" onclick="location.href='#speech-ai'"><a class="about_link_text" href="#speech-ai">Speech AI</a><div class='about_link_img'></div></td>
-  </tr>
-  <tr>
-    <td class="about_td" onclick="location.href='#검색-기술'"><a class="about_link_text" href="#검색-기술">검색 기술</a><div class='about_link_img'></div></td>
-    <td class="about_td" onclick="location.href='#intelligent-agent'"><a class="about_link_text" href="#intelligent-agent">Intelligent Agent</a><div class='about_link_img'></div></td>
-  </tr>
-  <tr>
-    <td class="about_td" onclick="location.href='#언어-데이터-기술'"><a class="about_link_text" href="#언어-데이터-기술">언어 데이터 기술</a><div class='about_link_img'></div></td>
-    <td class="about_td" onclick="location.href='#ai-production-tech'"><a class="about_link_text" href="#ai-production-tech">AI Production Tech</a><div class='about_link_img'></div></td>
-  </tr>
-  <tr>
-    <td class="about_td" onclick="location.href='#응용-ai-기술'"><a class="about_link_text" href="#응용-ai-기술">응용 AI 기술</a><div class='about_link_img'></div></td>
-    <td class="blank"></td>
-  </tr>
-  <tr>
-    <td class="about_td" onclick="location.href='#ai-번역-서비스'"><a class="about_link_text" href="#ai-번역-서비스">AI 번역 서비스</a><div class='about_link_img'></div></td>
-    <td class="blank"></td>
-  </tr>
-</tbody>
-</table>
+
+<div class="about-table">
+    <dl>
+        <dt class="about-item"><a class="about-link" href="#nlp-rd">NLP R&D</a></dt>
+        <dd class="about-item"><a class="about-link" href="#언어모델과-대화-ai">언어모델과 대화 AI</a></dd>
+        <dd class="about-item"><a class="about-link" href="#언어생성과-번역-ai">언어생성과 번역 AI</a></dd>
+        <dd class="about-item"><a class="about-link" href="#다국어-이해-ai">다국어 이해 AI</a></dd>
+        <dd class="about-item"><a class="about-link" href="#검색-기술">검색 기술</a></dd>
+        <dd class="about-item"><a class="about-link" href="#언어-데이터-기술">언어 데이터 기술</a></dd>
+        <dd class="about-item"><a class="about-link" href="#응용-ai-기술">응용 AI 기술</a></dd>
+        <dd class="about-item"><a class="about-link" href="#ai-번역-서비스">AI 번역 서비스</a></dd>
+    </dl>
+    <dl>
+        <dt class="about-item"><a class="about-link" href="#ai-rd">AI R&D</a></dt>
+        <dd class="about-item"><a class="about-link" href="#vision-ai">Vision AI</a></dd>
+        <dd class="about-item"><a class="about-link" href="#graphics-ai">Graphics AI</a></dd>
+        <dd class="about-item"><a class="about-link" href="#speech-ai">Speech AI</a></dd>
+        <dd class="about-item"><a class="about-link" href="#intelligent-agent">Intelligent Agent</a></dd>
+        <dd class="about-item"><a class="about-link" href="#ai-production-tech">AI Production Tech</a></dd>
+    </dl>
+</div>
+
 </div>
 
 <br/>

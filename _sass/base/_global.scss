@@ -944,6 +944,67 @@ h4.subtitle {
   background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_s_hover.svg') !important;
 }
 
+// change about coding
+.about-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  dl {
+    width: calc((100% - 18px) / 2);
+
+    .about-item {
+      border-radius: 6px;
+
+      a {
+        display: block;
+        padding: 6px 16px;
+      }
+    }
+
+    dt {
+      background-color: var(--ncblue);
+
+      .about-link {
+        color: white;
+        font-weight: 700;
+
+        &:hover {
+          color: var(--blue500);
+          text-decoration: none !important;
+        }
+      }
+    }
+
+    dd {
+      margin: 10px 0 0;
+      padding: 0;
+      background-color: var(--gray50);
+
+      .about-link {
+        color: var(--gray700);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 16px) center;
+        background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_s.svg');
+
+        &:hover {
+          color: var(--blue500);
+          text-decoration: none !important;
+          background-image: url('/ncresearch/assets/img/renewal/ic_chevron_right_s_hover.svg');
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+
+    dl {
+      width: 100%;
+    }
+  }
+}
+
 .navbar_glass_icon {
   margin-right: 0;
   margin-left: -1.1rem;
