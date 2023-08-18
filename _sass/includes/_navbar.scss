@@ -20,7 +20,7 @@
   left: 0;
   bottom: 0;
   
-  padding: 1.8rem 3.125rem 1.6rem 3.125rem;
+  padding: 1.8rem 50px 1.6rem;
   // background-image: url('/ncresearch/assets/img/renewal/header.png');
   background-image: none !important;
   background: var(--white);
@@ -39,6 +39,10 @@
     &:first-child {
       display: none;
     }
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 1.8rem 30px 1.6rem;
   }
 
   .main_page_a {
@@ -119,13 +123,13 @@ nav {
 
 /* ---- Responsive ---- */
 
-@media (min-width: $break) {
+@media (min-width: 1000px) {
   a#pull {
     display: none;
   }
 }
 
-@media screen and (max-width: $break) {
+@media screen and (max-width: 999px) {
   .site-header {
     img.avatar {
       // margin-top: -7px
@@ -152,6 +156,8 @@ nav {
       transition-delay: 0s;
 
       &.hide {
+        height: 0;
+        overflow: hidden;
         font-size: 0;
         margin: 0;
         opacity: 0;
