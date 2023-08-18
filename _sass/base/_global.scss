@@ -103,7 +103,6 @@ h5,
 h6 {
   font-family: $font-family-headings;
   line-height: 1.3;
-  margin: 0.5em 0;
 
   a {
     color: var(--text);
@@ -666,9 +665,14 @@ a > h3:hover {
 // for links
 .link_container {
     display: grid;
-    grid-gap: 1.125rem;
-    grid-template-columns: repeat(auto-fit, 38.375rem);
+    grid-gap: 18px;
+    grid-template-columns: repeat(auto-fit, calc((100% - 18px) / 2));
     justify-content: center;
+
+  ///* --- Responsive --- */
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fit, 100%);
+  }
 }
 
 .link_div {
@@ -713,6 +717,7 @@ a > h3:hover {
     color: var(--gray500) !important;
     line-height: 1.1875rem !important;
     user-select: none;
+    width: 90%;
 }
 
 .link_img {
@@ -849,12 +854,11 @@ a > h3:hover {
 
 .site_header_a_selected {
   color: var(--blue500) !important;
-  border-bottom: var(--blue500) 0.25rem solid;
-  padding-bottom: 1.8rem;
+  border-bottom: var(--blue500) 4px solid;
+  padding-bottom: 28px;
 }
 
 h1.main_page {
-  padding: 3rem 0.1rem 0.1rem 0.1rem !important;
   color: var(--gray900) !important;
 }
 

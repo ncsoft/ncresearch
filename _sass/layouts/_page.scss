@@ -16,14 +16,13 @@ h1.title {
   // @extend .subtle-txt-shadow;
   // padding: 0.5em 0;
   // text-align: left;
-  padding: 0.1em 0;
   color: var(--gray900);
   font-size: 3rem;
   @media screen and (max-width: 1400px) {
-      padding: 0.1em 6%;
+      //padding: 0.1em 6%;
   }
   @media screen and (max-width: 1000px) {
-      padding: 0.1em 3%;
+      //padding: 0.1em 3%;
   }
 }
 

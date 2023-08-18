@@ -6,7 +6,7 @@
 }
 
 article {
-  @extend .comments;
+  //@extend .comments;
 
   header {
     // margin-bottom: 6%;
@@ -116,7 +116,7 @@ header {
   header {
     color: var(--black);
     margin-bottom: 0;
-    padding: $padding-large/2.5 15%;
+    //padding: $padding-large/2.5 15%;
 
     .meta {
       color: var(--gray500);
@@ -137,7 +137,7 @@ header {
 
   .post-content {
     @extend %padding-post;
-    padding-bottom: 3.825rem;
+    padding: 3.825rem 0;
   }
 
   footer {
@@ -155,7 +155,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: $xl-break) {
-    padding: 10.625rem 30.9375rem 0 30.9375rem;
+    //padding: 10.625rem 30.9375rem 0 30.9375rem;
   }
 
   @media screen and (min-width: $break) {
