@@ -82,6 +82,23 @@ hide: true
     margin-left: 2.5rem;
     color: var(--gray700) !important;
   }
+  .llm-detail-footnote {
+    margin: 0 0 50px;
+    padding-left: 30px;
+    list-style: none;
+  }
+  .llm-detail-footnote li {
+    position: relative;
+    padding-left: 22px;
+  }
+  .llm-detail-footnote li span {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .llm-detail-footnote .footnote-link {
+    color: var(--gray700);
+  }
 </style>
 <script>
   window.onload = function() {
@@ -108,6 +125,15 @@ hide: true
 
 ![]({{"/assets/img/renewal/data_details.png"| relative_url}})
 {:.post_img .data_detail_img}
+
+<ol class="llm-detail-footnote" >
+    <li><span>1)</span> AI Hub (<a class="footnote-link" href="https://aihub.or.kr/">https://aihub.or.kr/</a>)</li>
+    <li><span>2)</span> Modu Corpus (<a class="footnote-link" href="https://corpus.korean.go.kr/">https://corpus.korean.go.kr/</a>)</li>
+    <li><span>3)</span> 국립국어원 (<a class="footnote-link" href="https://opendict.korean.go.kr/main">https://opendict.korean.go.kr/main</a>)</li>
+    <li><span>4)</span> Wikipedia (<a class="footnote-link" href="https://www.wikipedia.org/">https://www.wikipedia.org/</a>)</li>
+    <li><span>5)</span> 영어 사전 학습 데이터 번역본 (<a class="footnote-link" href="https://github.com/EleutherAI/the-pile">https://github.com/EleutherAI/the-pile</a>)</li>
+    <li><span>6)</span> Common Crawl (<a class="footnote-link" href="https://commoncrawl.org/">https://commoncrawl.org/</a>)</li>
+</ol>
 
 ### Instruction Tuning Datasets
 
