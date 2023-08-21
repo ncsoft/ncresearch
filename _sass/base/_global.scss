@@ -1339,6 +1339,18 @@ h4.subtitle {
     border-right: none;
     padding: 1.5rem;
   }
+
+  @media screen and (max-width: 640px) {
+    td:first-child {
+      width: 4.5rem !important;
+      padding: 0;
+
+      p > b {
+        font-size: 0.8rem;
+        word-break: keep-all;
+      }
+    }
+  }
 }
 
 .llm-title {
