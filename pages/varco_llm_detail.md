@@ -56,7 +56,7 @@ hide: true
     margin-bottom: 0;
   }
   .data_detail_img {
-    padding-bottom: 3.125rem !important;
+    padding-bottom: 30px;
   }
   .data_detail_img img {
     padding-bottom: 0 !important;
@@ -89,7 +89,9 @@ hide: true
   }
   .llm-detail-footnote li {
     position: relative;
-    padding-left: 22px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 190%;
   }
   .llm-detail-footnote li span {
     position: absolute;
@@ -98,6 +100,8 @@ hide: true
   }
   .llm-detail-footnote .footnote-link {
     color: var(--gray700);
+    font-size: 14px;
+    line-height: 190%;
   }
 </style>
 <script>
