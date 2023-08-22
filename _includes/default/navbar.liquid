@@ -34,7 +34,7 @@
           </li>
           <li class="{% if page_.icon %}navbar_glass_icon{% endif %}">
             <a
-              class="clear{% if page.url == '/' %} main_page_a{% endif %}{% if page.title == page_.title %} site_header_a_selected{% elsif page.layout == 'post' and page_.title == 'Blogs' %} site_header_a_selected{% endif %}"
+              class="clear{% if page.url == '/' %} main_page_a{% endif %}{% if page.title == page_.title %} site_header_a_selected{% elsif page.layout == 'post' and page_.title == 'Blogs' %} site_header_a_selected{% elsif page_.title == 'VARCO LLM' and page.title == 'VARCO LLM Details' %} site_header_a_selected{% endif %}"
               aria-label="{{ page_.title }}"
               title="{{ page_.title }}"
               href="{{ page_.url | relative_url }}">

@@ -42,7 +42,7 @@ page-type: main_page
 
 </div>
 
-<br/>
+<div style="height: 73.2px"></div>
 
 > # NLP R&D
 >
