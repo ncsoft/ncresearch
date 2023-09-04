@@ -49,7 +49,7 @@ hide: true
   h2#model-details {
     padding-top: 0;
     padding-bottom: 0;
-    margin-top: 6.875rem;
+    margin-top: 1.875rem;
     margin-bottom: 1.875rem;
   }
   .post_img {
@@ -122,33 +122,6 @@ hide: true
 
 ![]({{"/assets/img/renewal/model_desc.png"| relative_url}})
 {:.post_img}
-
-## Data Details
-
-### Pre-training Datasets
-
-![]({{"/assets/img/renewal/data_details.png"| relative_url}})
-{:.post_img .data_detail_img}
-
-<ol class="llm-detail-footnote" >
-    <li><span>1)</span> AI Hub (<a class="footnote-link" href="https://aihub.or.kr/">https://aihub.or.kr/</a>)</li>
-    <li><span>2)</span> Modu Corpus (<a class="footnote-link" href="https://corpus.korean.go.kr/">https://corpus.korean.go.kr/</a>)</li>
-    <li><span>3)</span> 국립국어원 (<a class="footnote-link" href="https://opendict.korean.go.kr/main">https://opendict.korean.go.kr/main</a>)</li>
-    <li><span>4)</span> Wikipedia (<a class="footnote-link" href="https://www.wikipedia.org/">https://www.wikipedia.org/</a>)</li>
-    <li><span>5)</span> 영어 사전 학습 데이터 번역본 (<a class="footnote-link" href="https://github.com/EleutherAI/the-pile">https://github.com/EleutherAI/the-pile</a>)</li>
-    <li><span>6)</span> Common Crawl (<a class="footnote-link" href="https://commoncrawl.org/">https://commoncrawl.org/</a>)</li>
-</ol>
-
-### Instruction Tuning Datasets
-
-<ul class="llm_detail_ul">
-  <li>Chain-of-thought를 활용한 <a href="https://arxiv.org/abs/2306.02707" class="post_a">Orca-Style Instruction Tuning Dataset</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>을 자체 구축하여 학습하였습니다.</li>
-</ul>
-<ol class="llm_detail_ol">
-  <li id="fn:1" role="doc-endnote">
-    <p>Mukherjee, Subhabrata, et al. “Orca: Progressive learning from complex explanation traces of gpt-4.” arXiv preprint arXiv:2306.02707 (2023).&nbsp;<a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
-  </li>
-</ol>
 
 ## Model Details
 
