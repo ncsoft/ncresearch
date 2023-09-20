@@ -10,7 +10,7 @@ excerpt: 광학식 모션캡처 데이터 후처리 과정을 AI 기술로 자�
 back_color: "#ffffff"
 img_name: "thumbnail.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 28
