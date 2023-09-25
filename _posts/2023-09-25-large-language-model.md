@@ -21,7 +21,7 @@ index: 30
 * 모두의 말뭉치 (2019 - )
 * AI Hub (2017 - )
 * Reference
-  {:toc}
+{:toc}
 
 <br/>
 
