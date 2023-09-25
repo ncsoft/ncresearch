@@ -59,9 +59,17 @@
   list:
   - permalink: "481b04ee12af454ab1de6dde2576eb4c15f8047a"
     title: "Cross Entropy, 최선인가요?: 딥러닝을 위한 여러 손실 함수들 1"
+  - permalink: "170ae8ababa73daae786791b26c8284b8726e1e0"
+    title: "Cross Entropy, 최선인가요?: 딥러닝을 위한 여러 손실 함수들 2"
 
 - id: 8
   series_title: ""
   list:
   - permalink: "10622bb399d2037f31d276d513b360ad55204c3a"
     title: "검색의 중심에서 요약을 외치다 1"
+
+- id: 9
+  series_title: ""
+  list:
+    - permalink: "87ed2403c97ba50ae286d19dd25ece16305e3805"
+      title: "초거대 언어 모델의 수업시대 1부 - 언어 모델은 무엇으로 배우는가?"
