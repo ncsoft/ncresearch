@@ -4,7 +4,7 @@ title: "공항기상정보문 생성"
 icon: paper
 author: 0d2f2ab9757e5e214713b30c3ce09c6db47d395e
 permalink: 90d1434d24152dcb18bee65bd5a1f57c8fa5f62a
-categories: Understanding
+categories: NLP
 tags: [항공기상청, 공항기상정보, Data-to-Text, 기상청, Text Generation, NLP, AI]
 excerpt: 공항기상정보가 무엇인지 소개하고, AI 기술로 이를 자동화하는 과정을 소개합니다.
 back_color: "#ffffff"
