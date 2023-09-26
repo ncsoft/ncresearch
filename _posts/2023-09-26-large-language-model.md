@@ -8,7 +8,7 @@ categories: Data
 tags: [한국어_언어_데이터, 21세기_세종계획, 모두의 말뭉치, AI_Hub, 한국어_벤치마크_데이터셋, 프롬프트, Corpus, 코퍼스, 언어자원, LLM]
 excerpt: 생성형 AI를 실현하고 고도화하기 위해서 언어 데이터의 관점에서 살펴 봅니다. 이번 1부에서는 한국어 자연어처리 분야에서 빼놓을 수 없는 공공 데이터와 구성 상의 변화를 소개합니다.
 back_color: "#ffffff"
-img_name: "figure_ending_chatgpt.png"
+img_name: "figure_trend_nlp.png"
 toc: true
 show: false
 new: true
