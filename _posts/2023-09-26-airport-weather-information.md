@@ -101,7 +101,7 @@ index: 31
 <br/>
 
 ## References
-[^1]: [임은진, "엔씨소프트 "항공기상청과 생성 AI 활용한 항공기상 정보 제작", 연합뉴스, 2023년 7월 26일.](https://www.yna.co.kr/view/AKR20230726136700017) (ㅁ)
+[^1]: [임은진, "엔씨소프트 "항공기상청과 생성 AI 활용한 항공기상 정보 제작", 연합뉴스, 2023년 7월 26일.](https://www.yna.co.kr/view/AKR20230726136700017)
 [^2]: [항공기상청 공항기상정보](https://amo.kma.go.kr/weather/aviation/aviation-info1.do)
 [^3]: [기상청 날씨해설](https://www.weather.go.kr/plus/land/warning/report.jsp)
 [^4]: Vaswani, Ashish et al. “Attention is All you Need.” *NIPS* (2017).
