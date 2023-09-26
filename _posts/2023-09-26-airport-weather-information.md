@@ -21,6 +21,7 @@ index: 31
 * 왜 기계로 대체하려 하는가? 
 * 개발 과정에서 겪은 어려움 
 * 앞으로는?
+* References
 {:toc}
 
 <br/>
@@ -96,3 +97,11 @@ index: 31
 
 # 앞으로는?
 현재 저희는 이제 시험서비스에서 실제 서비스 운영으로 넘어가기 위한 작업을 진행하고 있는 상태입니다. 하지만 실제 서비스에 적용되더라도 아직 완전히 사람을 대체하는 단계는 아닙니다. 아직까지는 오류가 간간히 나오는게 확인되었거든요. 그래서 실제 서비스를 진행하면서 수집된 데이터로 추가적인 모델 고도화를 진행하여 사람이 확실히 "신뢰할 수 있는 모델"을 만들어나갈 계획이니 앞으로도 많은 관심 부탁드립니다.
+
+<br/>
+
+## References
+[^1]: [임은진, "엔씨소프트 "항공기상청과 생성 AI 활용한 항공기상 정보 제작", 연합뉴스, 2023년 7월 26일.](https://www.yna.co.kr/view/AKR20230726136700017) (ㅁ)
+[^2]: [항공기상청 공항기상정보](https://amo.kma.go.kr/weather/aviation/aviation-info1.do)
+[^3]: [기상청 날씨해설](https://www.weather.go.kr/plus/land/warning/report.jsp)
+[^4]: Vaswani, Ashish et al. “Attention is All you Need.” *NIPS* (2017).
