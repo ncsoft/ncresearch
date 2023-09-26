@@ -50,7 +50,7 @@ index: 29
 
 우리는 Calibration이 잘 된 모델이 필요합니다. Calibration은 모델의 출력 확률이 실제 확률을 반영하도록 하는 것을 의미합니다. (Guo et al., 2017)[^2]에서는 현대의 뉴럴넷(Neural Net) 모델들이 과거의 모델들 보다 높은 성능을 보이지만, Calibration이 잘 되어 있지 않다고 말합니다.
 
-![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/2_calibration.gif"| relative_url}})
+![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/2_calibration.png"| relative_url}})
 *[그림1] Confidence histograms (위), reliability diagrams (아래) (Guo et al., 2017)[^2]*
 
 위 그림을 보면 과거 머신 러닝 모델(LeNet, 1998 (왼쪽))에 비해 현대의 딥러닝 모델(ResNet (오른쪽))은 출력 확률 값이 매우 높게 나오는 것에 비해 Accuracy는 상대적으로 낮은 값을 보이는 것을 알 수 있습니다. 이러한 현상을 우리는 Over-confident 하다고 하며, 이는 "모델이 출력하는 확률이 진짜 확률이 아니다"라고 해석할 수 있습니다.
