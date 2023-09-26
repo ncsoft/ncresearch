@@ -55,6 +55,8 @@ index: 29
 
 이 논문(Wang et al., 2023)[^1]에서는 **NLP 분류 모델에 Focal Loss를 적용 하였더니 Calibration이 잘 되었다**고 합니다. -! 사실 Computer Vision 분야에서 Focal Loss가 Calibration에 효과적이라는 것은 이미 알려진 사실입니다. !-  이를 뒷받침하기 위한 실험에서 저자는 Amazon 자사의 고객 환불 사유 데이터를 샘플링하여 활용 하였고, 이를 5개의 클래스(Class) 혹은 2개의 클래스로 라벨링(Labeling) 하였다고 합니다. 실험에 사용된 데이터를 라벨링 한 결과는 아래 그림과 같습니다.
 
+<br/>
+
 ![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/3_distribution_of_datasets.png"| relative_url}}){: width="60%"}
 *[그림2] Amazon 사의 고객 확불 사유 데이터에서 샘플링한 데이터의 라벨 분포*
 
@@ -108,15 +110,15 @@ NER 데이터 셋으로 사용되는 CoNLL03, OntoNote5.0의 경우 대부분의
 
 자, 그럼 이 개념을 가지고 아래의 Dice Score 수식을 한 번 볼까요?
 
-![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/8_img.png"| relative_url}}){: width="50%"}
+![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/8_img.png"| relative_url}}){: width="70%"}
 
 어디선가 많이 본듯한 수식이지 않나요?
 
-![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/9_doguri2.gif"| relative_url}}){: width="30%"}
+![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/9_doguri2.gif"| relative_url}}){: width="60%"}
 
 네, 그렇습니다. 아래 수식을 보면, 위 수식이 F1-score의 수식과 같다는 것을 알 수 있습니다.
 
-![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/10_f1_score.png"| relative_url}}){: width="50%"}
+![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/10_f1_score.png"| relative_url}}){: width="70%"}
 
 결국, 이 논문에서 DSC Loss를 사용하자고 주장하는 것은 **F1-score를 평가 지표로 사용하는 NLP Task에서는 F1-score를 기반으로 한 손실 함수를 사용해 학습하겠다**는 것입니다. 이 논문에서는 이 DSC Loss를 변형해서 사용하였는데, 이를 어떻게 변형 시켰는지 같이 보시죠.
 
@@ -128,7 +130,7 @@ NER 데이터 셋으로 사용되는 CoNLL03, OntoNote5.0의 경우 대부분의
 
 논문에서는 F1-score에 기반한 이 수식으로도 Easy negative example이 많아 이에 대한 Loss가 크게 누적되어서 전체 학습을 지배할 수 있다는 문제는 해결되지 않는다고 합니다. 그래서 이 논문에서는 최종적으로 DSC Loss를 아래와 같이 변경했습니다.
 
-![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/12_dsc2.png"| relative_url}}){: width="50%"}
+![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/12_dsc2.png"| relative_url}}){: width="60%"}
 
 위 수식은 이전 수식에서 $$(1-p)$$항을 추가한 모습이며, 이를 통해 확률이 0 또는 1에 가까운 Easy example에 대한 모델의 Focus를 줄였다고 합니다. 이 부분은 Focal Loss에서 영감을 받았다고 합니다. Focal Loss의 수식에 대한 자세한 설명은 1부에서 소개 드렸던 적이 있으니, 궁금하시다면 1부를 다시 보시고 오는 것도 좋습니다
 
@@ -137,12 +139,12 @@ NER 데이터 셋으로 사용되는 CoNLL03, OntoNote5.0의 경우 대부분의
 
 아래 그림7는 NER task에 대한 실험 결과입니다. 모든 실험은 CE(Cross Entropy Loss)를 이용한 이전 SOTA(State-of-the-art)모델들을 기반으로 진행 되었고, 여기서 **FL, DL, DSC**는 각각 Focal Loss, Dice Loss(기본 DSC Loss), 변형된 DSC Loss 를 나타냅니다.
 
-![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/13_dsc_result1.png"| relative_url}})
+![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/13_dsc_result1.png"| relative_url}}){: width="80%"}
 *[그림7] NER task에 대한 실험 결과*
 
 실험 결과를 보면 **대부분의 경우 CE → FL → DL → DSC 순으로 성능이 좋아지는 경향을 보입니다.** 1부에서 소개 드렸던 Focal Loss 또한 MSRA 데이터 셋을 제외하면, 다른 모든 데이터 셋 상에서 성능 향상을 보이고 있습니다. 그렇다면, MRC task에서는 어떤 결과가 나타날까요?
 
-![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/14_dsc_result2.png"| relative_url}}){: width="70%"}
+![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/14_dsc_result2.png"| relative_url}}){: width="80%"}
 *[그림8] MRC task에 대한 실험 결과*
 
 MRC 데이터 셋 상에서도 NER task의 결과와 비슷한 양상을 보이는군요. **CE → FL → DL → DSC 순으로 성능이 좋아지는 경향을 보입니다.**
@@ -170,7 +172,7 @@ SST-2와 STS-5는 대표적인 텍스트 분류(Text classification) task입니�
 ### 서론
 아래 그림10에서 우리가 Target의 마지막 단어, "decline"을 예측하고자 한다고 가정해 보겠습니다.
 
-![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/16_mce_1.png"| relative_url}}){: width="60%"}
+![]({{"/assets/img/post/170ae8ababa73daae786791b26c8284b8726e1e0/16_mce_1.png"| relative_url}}){: width="80%"}
 *[그림10] 번역 task에서의 유의어에 대한 예시*
 
 단어 *decline*이 모델이 가장 많은 확률 질량(Probability mass)을 할당해야 하는 골드 타겟이지만, 이 맥락에서는 아래의 *drop* 혹은 *decrease*와 같은 유의어들도 충분히 그럴듯한 번역이 될 수 있습니다. 즉, 해당 위치에서 이러한 유의어들의 확률 값은 작아야 할 필요가 없습니다. 이 유의어들을 무시하고 단순히 원 핫 인코딩(One-hot encoding)을 맞추면, 모델의 예측 확률 분포가 실제 Ground truth 확률 분포로부터 벗어나기 때문에 모델의 일반화 능력이 저하될 수 있습니다.
