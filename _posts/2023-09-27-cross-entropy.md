@@ -10,7 +10,7 @@ excerpt: NLP 분야에서 주로 사용하는 Cross Entropy의 한계점을 극�
 back_color: "#ffffff"
 img_name: "2_calibration.png"
 toc: true
-show: false
+show: true
 new: true
 series: 7
 index: 29

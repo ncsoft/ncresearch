@@ -10,7 +10,7 @@ excerpt: 생성형 AI를 실현하고 고도화하기 위해서 언어 데이터
 back_color: "#ffffff"
 img_name: "figure_trend_nlp.png"
 toc: true
-show: false
+show: true
 new: true
 series: 9
 index: 30

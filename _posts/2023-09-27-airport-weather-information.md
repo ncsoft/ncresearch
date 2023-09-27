@@ -10,7 +10,7 @@ excerpt: 공항기상정보가 무엇인지 소개하고, AI 기술로 이를 �
 back_color: "#ffffff"
 img_name: "img3.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 31
