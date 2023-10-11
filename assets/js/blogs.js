@@ -1,7 +1,8 @@
 let tech_object = {
   'ai': ['speech', 'vision', 'graphics', 'reinforcement_learning', 'ai_system'],
   'nlp': ['understanding', 'dialogue', 'translation', 'search', 'data'],
-  'applied_ai': ['curation', 'anomaly_detection', 'sequence_modeling', 'xai']
+  'applied_ai': ['curation', 'anomaly_detection', 'sequence_modeling', 'xai'],
+  'financial_ai': ["investment-strategy", "market-understanding", "investor-understanding", "mlops"],
 };
 let tech_object_reverse;
 
@@ -54,19 +55,17 @@ function initEventListener() {
     const checkbox_array = document.querySelectorAll('input[type=checkbox]');
     const blog_filter_big_array = document.querySelectorAll(".blog-filter-big");
     const blog_filter_small_array = document.querySelectorAll(".blog-filter-small");
+    const tech_main_object = Object.keys(tech_object);
     
     for (let i = 0; i < checkbox_array.length; i += 1) {
       checkbox_array[i].addEventListener('change', () => {
         // main to sub check
-        switch (checkbox_array[i].id) {
-          case 'ai':
-          case 'nlp':
-          case 'applied_ai':
+        const isMain = tech_main_object.some((key) => key === checkbox_array[i].id);
+        if (isMain) {
             for (let j = 0; j < tech_object[checkbox_array[i].id].length; j += 1) {
               const sub_checkbox = document.getElementById(tech_object[checkbox_array[i].id][j]);
               sub_checkbox.checked = checkbox_array[i].checked;
             }
-            break;
         }
         
         refreshList();
