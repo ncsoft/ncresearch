@@ -12,7 +12,7 @@ back_color: "#ffffff"
 img_name: "pic2.png"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 26
 ---
