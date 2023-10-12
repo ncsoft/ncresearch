@@ -5,8 +5,8 @@ icon: paper
 author: 1876f5a0480746bbe31f5c5179e54f891db1eae8
 permalink: 96767b1b965de35635e4772b693aad19fbb76851
 categories: [Market Understanding]
-tags: [Financial AI]
-excerpt: 금융과 AI
+tags: [FinancialAI, ESG, 자연어처리, imbalanced_data, FinNLP, ML-ESG, text_augmentation]
+excerpt: ESG에 자연어처리가 어떻게 활용될 수 있는지, 시장이해 AI팀의 ML-ESG SharedTask 여정을 통해 보여드립니다.
 back_color: "#ffffff"
 img_name: "argumentation-methods.png"
 toc: true
