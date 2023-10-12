@@ -16,6 +16,23 @@ series: -1
 index: 31
 ---
 
+* Intro
+* 팀장님, 저희 대회 나가겠습니다!
+* 금융에서 ESG의 중요성
+* Multi-Lingual ESG Issue Identification (ML-ESG) Shared Task
+* 이 문제가 왜 어려울까 (1) 데이터가 적음
+* 이 문제가 왜 어려울까 (2) 데이터가 불균형
+* 이 문제가 왜 어려울까 (3) 결정 경계(Decision Boundary)가 복잡하다
+* 우리가 지닌 제약 사항 (1) 컴퓨팅 자원이 부족하다
+* 우리가 지닌 제약 사항 (2) 인적 자원이 부족하다
+* 극복을 위한 고난의 행군
+* Pythia, CerebrasGPT, OPT
+* Data Augmentation via Zero-shot Classification
+* GPT3Mix Augmentation
+* 그렇게 만들어진 우리의 데이터셋
+* 학습의 여정, 그리고 결말
+* English subtask 1위, French subtask 2위
+* 그 이후
 {:toc}
 
 <br/>
