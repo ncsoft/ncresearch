@@ -5,12 +5,12 @@ icon: paper
 author: 1876f5a0480746bbe31f5c5179e54f891db1eae8
 permalink: 96767b1b965de35635e4772b693aad19fbb76851
 categories: [Market Understanding]
-tags: [Financial AI]
-excerpt: 금융과 AI
+tags: [FinancialAI, ESG, 자연어처리, imbalanced_data, FinNLP, ML-ESG, text_augmentation]
+excerpt: ESG에 자연어처리가 어떻게 활용될 수 있는지, 시장이해 AI팀의 ML-ESG SharedTask 여정을 통해 보여드립니다.
 back_color: "#ffffff"
 img_name: "argumentation-methods.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 31
@@ -208,7 +208,7 @@ MSCI ESG rating guideline에서 해당 뉴스와 관련이 있을 만한 라벨�
 
 저희가 취한 전략을 종합하자면 <u>"더 큰 언어모델이 지닌 지식을 바탕으로, 데이터가 가진 근본적 문제를 해결하여 작고 강력한 분류 모델을 만들자!"</u>였습니다.
 
-![]({{"/assets/img/post/96767b1b965de35635e4772b693aad19fbb76851/emergent.png"| relative_url}})
+![]({{"/assets/img/post/96767b1b965de35635e4772b693aad19fbb76851/emergent.jpg"| relative_url}})
 
 일반적으로 인공지능은, 특히 언어 모델은 크기가 클수록 더 높은 성능을 지니고 있고, 더 복잡한 문제를 잘 해결하며, 다양한 문제를 해결할 수 있는 능력을 갖고 있습니다.
 다만 인공지능의 크기가 커질수록 저희가 하고자 하는 특정 문제를 위해 미세 조정(fine tuning)하는 데에 있어서 더 많은 자원이 투입되어야 합니다.
