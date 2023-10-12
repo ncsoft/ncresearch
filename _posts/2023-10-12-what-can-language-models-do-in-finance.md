@@ -10,7 +10,7 @@ excerpt: ESG에 자연어처리가 어떻게 활용될 수 있는지, 시장이�
 back_color: "#ffffff"
 img_name: "argumentation-methods.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 31
