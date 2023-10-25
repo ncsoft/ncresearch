@@ -10,7 +10,7 @@ excerpt: 최신 딥러닝 기술(NeRF)을 활용한 3D 모델링 기술을 소�
 back_color: "#ffffff"
 img_name: "pic2_NeRF_pipeline.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 33
@@ -25,7 +25,7 @@ index: 33
 <br/>
 
 > **작성자**
-> - 안상준 (Vision AI Lab Neural Rendering팀)
+> - 안상준 (Vision AI Lab)
 > - 딥러닝을 활용한 3D 모델링 기술을 연구하고 있습니다.
 >
 > **이런 분이 읽으면 좋습니다!**

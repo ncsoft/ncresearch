@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "figure_trend_nlp.png"
 toc: true
 show: true
-new: true
+new: false
 series: 9
 index: 30
 ---
