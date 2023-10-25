@@ -10,7 +10,7 @@ excerpt: 최신 딥러닝 기술(NeRF)을 활용한 3D 모델링 기술을 소�
 back_color: "#ffffff"
 img_name: "pic2_NeRF_pipeline.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 33
