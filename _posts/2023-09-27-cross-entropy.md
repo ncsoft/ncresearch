@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "2_calibration.png"
 toc: true
 show: true
-new: true
+new: false
 series: 7
 index: 29
 ---
