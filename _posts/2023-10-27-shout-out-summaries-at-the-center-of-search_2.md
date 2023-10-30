@@ -92,7 +92,7 @@ Figure 1.의 왼쪽 글은 뉴스 기사[^3]인데 일반적인 다중문서요�
 
 모듈에 대해서 설명하기 전에 입력으로는 질의어와 여러 개의 Multi-Document들이 입력되는데 하나의 Multi-Document는 연관성이 높은 문서들의 집합이라고 보기 때문에 하나의 Cluster라고 표현하였습니다. 이러한 Cluster 단위로 문서들을 segment 단위로 분리하는데 논문에서는 동일한 문서 내 **sliding window 방식을 이용하여 Passage 단위로 분리**시킨다고 합니다.<br>
 
-**Retrieval Module**에서는 질의어(Query)를 통해 검색된 passage들을 아래의 수식 Figure 5.와 같이 TF(Term Frequency) 기반의 Relevance Score 수식을 통해 계산하여 순위를 정합니다. $k_{i}^{IR}$은 ${i}$th cluster 내 segment ${j}$의 Score를 나타내며 대표적인 BM25, TF-IDF와 같은 다른 검색 모델도 사용해봤지만 짧은 segment에서는 유리하였지만 passage 단위에서는 오히려 성능 저하를 일으켜 TF를 사용했다고 합니다.<br>
+**Retrieval Module**에서는 질의어(Query)를 통해 검색된 passage들을 아래의 수식 Figure 5.와 같이 TF(Term Frequency) 기반의 Relevance Score 수식을 통해 계산하여 순위를 정합니다. $$k_{i}^{IR}$$은 $${i}$$th cluster 내 segment $${j}$$의 Score를 나타내며 대표적인 BM25, TF-IDF와 같은 다른 검색 모델도 사용해봤지만 짧은 segment에서는 유리하였지만 passage 단위에서는 오히려 성능 저하를 일으켜 TF를 사용했다고 합니다.<br>
 
 
 
