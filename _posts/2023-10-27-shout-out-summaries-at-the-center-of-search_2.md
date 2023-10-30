@@ -103,19 +103,19 @@ Figure 1.의 왼쪽 글은 뉴스 기사[^3]인데 일반적인 다중문서요�
 
 **Answering Module**에서는 **passage들의 Reranking을 통해 최종적으로 요약할 passage들을 선정**하는 모듈입니다. Sentence Selection은 BERT기반의 Encoder를 활용하여 **이진 분류(Binary Classification)를 통해 질의어와 passage 간의 연관성을 판별**하며  Span Selection은 MRC(Machine Reading Compresion)에서 사용한 방식처럼 **passage 내 답변이 될만한 문구의 바운더리(Boundary)를 찾는 모듈**입니다. 또한, 기존의 데이터를 이용하여 학습하는 방식이 아니라 공개된  MRC 데이터를 활용하여 모델을 학습했다고 합니다. <br>
 
-마지막으로 각 모듈의 확률값과 score들을 통해 아래 Figure 7.과 같이 각 문장 $e$의 Evidence Score를 구하게 됩니다. $q_{e}^S$와$\varepsilon^S$는 Sentence Selection의 score, $q_{e}^P$와$\varepsilon^P$는 Span Selection의 score를 나타내고 coefficient $\mu$=0.9로 두어 **선형 결합을 통하여 최종 Score를 계산**하여 최종적으로 score를 통해 passage를 Reranking합니다.  <br>
+마지막으로 각 모듈의 확률값과 score들을 통해 아래 Figure 7.과 같이 각 문장 $$e$$의 Evidence Score를 구하게 됩니다. $$q_{e}^S$$와$$\varepsilon^S$$는 Sentence Selection의 score, $$q_{e}^P$$와$$\varepsilon^P$$는 Span Selection의 score를 나타내고 coefficient $$\mu$$=0.9로 두어 **선형 결합을 통하여 최종 Score를 계산**하여 최종적으로 score를 통해 passage를 Reranking합니다.  <br>
 
 ![]({{"/assets/img/post/4764fc6aefe0a9f986dc4bac7f87d3ddfd01d56f/figure7.png"| relative_url}})
 *Figure 6. Sentence Selection과 Span Selection를 이용한 선형 결합 수식*
 
 
-마지막으로 Summarization Module인데 2단계를 걸쳐 최종적으로 **요약문으로 사용할 문장들을 선정**합니다. 첫번째 단계는 **LexRank[^17]을 이용하여 그래프 구성(Graph Construction)**을 하기 위해 문서들의 집합을 cluster로 두고 passage단위로 segment 하기 때문에 **TF-ISF(Inverse Sentence Frequency)**를 사용합니다.  Figure 7.와 같이 그래프의 전이행렬 $E$와 Answering Module에서 구한 Evidence Score $q$를 정규화를 거쳐 특정 크기의 벡터로 나타내는 q ̃를 이용하여 하나로 통합하는 작업을 수행하여 **사용자의 질의어와 연관된 문장들의 가중치**를 줄 수 있도록 ∅를 컨트롤하여 조정합니다. <br>
+마지막으로 Summarization Module인데 2단계를 걸쳐 최종적으로 **요약문으로 사용할 문장들을 선정**합니다. 첫번째 단계는 **LexRank[^17]을 이용하여 그래프 구성(Graph Construction)**을 하기 위해 문서들의 집합을 cluster로 두고 passage단위로 segment 하기 때문에 **TF-ISF(Inverse Sentence Frequency)**를 사용합니다.  Figure 7.와 같이 그래프의 전이행렬 $$E$$와 Answering Module에서 구한 Evidence Score $$q$$를 정규화를 거쳐 특정 크기의 벡터로 나타내는 $$\tilde{q}$$를 이용하여 하나로 통합하는 작업을 수행하여 **사용자의 질의어와 연관된 문장들의 가중치**를 줄 수 있도록 ∅를 컨트롤하여 조정합니다. <br>
 
 ![]({{"/assets/img/post/4764fc6aefe0a9f986dc4bac7f87d3ddfd01d56f/figure9.png"| relative_url}})
 *Figure 7. 그래프의 전이행렬과 Evidence Score 통합 수식*
 
 
-두번째 단계에서는 **그래프 랭킹 알고리즘[^17]**을 수행하여 **요약문으로 사용할 문장들을 선정**하기 위해 이전 그래프의 전이행렬 $\tilde{E}$가 정상 분포 $e^∗$로 수렴할 때까지 **Markov Chain을 실행**합니다. 이렇게 최종적으로 랭킹된 문장들 중에서 **250단어가 넘지 않도록 상위 문장을 선정하여 요약문으로 구성**합니다. 또한, 중복되는 문장들을 제거하기 위해 상위 랭킹된 문장과 overlap되는 문장 계산시 패널티를 부과하며 코사인 유사도(>0.6) 이상인 경우에는 제거합니다.<br>
+두번째 단계에서는 **그래프 랭킹 알고리즘[^17]**을 수행하여 **요약문으로 사용할 문장들을 선정**하기 위해 이전 그래프의 전이행렬 $$\tilde{E}$$가 정상 분포 $$e^∗$$로 수렴할 때까지 **Markov Chain을 실행**합니다. 이렇게 최종적으로 랭킹된 문장들 중에서 **250단어가 넘지 않도록 상위 문장을 선정하여 요약문으로 구성**합니다. 또한, 중복되는 문장들을 제거하기 위해 상위 랭킹된 문장과 overlap되는 문장 계산시 패널티를 부과하며 코사인 유사도(>0.6) 이상인 경우에는 제거합니다.<br>
 
 실험 데이터로는 DUC(Document Understanding Conference) 2005-2007 benchmark와 TD-QFS(Topically Diverse QFS)[^18]를 사용하였으며 실험결과는 아래 Figure 8.과 같으며 **DUC는 Query Narrtive가 길지만 문서의 양이 많지 않고 TD-QFS는 Query Narrative가 짧지만 문서의 양이 많다는 특징**을 가지고 있습니다.<br>
 
@@ -165,7 +165,7 @@ Figure 10.은 Global Layer의 구조도이며 여기서 각 head를 통해 다�
 *Figure 11. Ordering Component 내 Positional Encoding*
 
 
-PE($D_{i}, 2j$)는 문서 $D_{i}$의 $2j^{th}$번째의 Positioinal Encoding이며 $r_{i}$는 self-attention을 통해 할당된 문서 $D_{i}$의 중요도 점수를 나타냅니다. 다시 말해, **각 문서에 대해 중요도 점수 $r$를 통해 핵심정보를 생성할 수 있도록 하며 PE($D_{i}, 2j$)를 통해 문서의 Ranking 정보를 반영**하도록 모델을 학습합니다.
+PE($$D_{i}, 2j$$)는 문서 $$D_{i}$$의 $$2j^{th}$$번째의 Positioinal Encoding이며 $$r_{i}$$는 self-attention을 통해 할당된 문서 $$D_{i}$$의 중요도 점수를 나타냅니다. 다시 말해, **각 문서에 대해 중요도 점수 $$r$$를 통해 핵심정보를 생성할 수 있도록 하며 PE($$D_{i}, 2j$$)를 통해 문서의 Ranking 정보를 반영**하도록 모델을 학습합니다.
 
 실험 데이터로는 WikiSum[^24] 데이터는 질의어 정보가 위키피디아의 문서 제목이고 QMDSCNN과 QMDSIR은 논문에서 기존의 데이터를 사용하여 새롭게 구성한 QMDS Task 데이터입니다. QMDSCNN은 CNN/Daily Mail[^25] 기사제목을 질의어로 사용하였으며 QMDS IR은 Bing[^14]의 검색 로그에서 실제 사용자의 질의어를 이용했습니다.<br>
 
