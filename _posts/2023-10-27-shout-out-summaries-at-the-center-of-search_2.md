@@ -40,9 +40,9 @@ Figure 1.의 왼쪽 글은 뉴스 기사[^3]인데 일반적인 다중문서요�
 
 <span style="font-size:80%;text-align:center">하나의 예시를 보여주기 위해 단일 문서에 대한 요약 결과를 보여주고 있습니다.</span><br>
 
-질의어 정보를 반영한 문서요약을 위해 Graph, Seq2Seq과 Transformer, LLM(Language Large Model) 등이 다양한 방법으로 연구가 되고 있습니다.  대표적인 Graph 기반한 방법론은 TextRank[^4]를 이용한 모델[^5]과 Graph와 Neural Network를 결합한 모델[^6] 등 있습니다. 특히, Seq2Seq 그리고 Transformer 기반의 모델들은 Attention Mechanism의 이점을 적극 활용하여 많은 연구들[^7][^8][^9]이 있습니다.<br>
+질의어 정보를 반영한 문서요약을 위해 Graph, Seq2Seq과 Transformer, LLM(Language Large Model) 등이 다양한 방법으로 연구가 되고 있습니다.  대표적인 Graph 기반한 방법론은 TextRank[^4]를 이용한 모델[^5]과 Graph와 Neural Network를 결합한 모델[^6] 등 있습니다. 특히, Seq2Seq 그리고 Transformer 기반의 모델들은 Attention Mechanism의 이점을 적극 활용하여 많은 연구들[^7]<sup>,</sup>[^8]<sup>,</sup>[^9]이 있습니다.<br>
 
-최근에는 아래의 Figure2.처럼 질의어와 연관된 문서들에 대해 요약을 하는 하나의 모델을 학습하는 방법 대신 **Non-Parametric Memory**의 특징을 가진 **검색 모델과 LLM의 결합을 통해 문서를 요약**할 수 있도록 하는 **RAG**(**R**etrieval-**A**ugmented **G**eneration)[^10]방식으로도 활발히 연구들[^11][^12][^13]이 진행되고 있습니.<br>
+최근에는 아래의 Figure2.처럼 질의어와 연관된 문서들에 대해 요약을 하는 하나의 모델을 학습하는 방법 대신 **Non-Parametric Memory**의 특징을 가진 **검색 모델과 LLM의 결합을 통해 문서를 요약**할 수 있도록 하는 **RAG**(**R**etrieval-**A**ugmented **G**eneration)[^10]방식으로도 활발히 연구들[^11]<sup>,</sup>[^12]<sup>,</sup>[^13]이 진행되고 있습니다.<br>
 
 ![]({{"/assets/img/post/4764fc6aefe0a9f986dc4bac7f87d3ddfd01d56f/figure3.png"| relative_url}})
 *Figure 2. RAG 구조*
@@ -145,7 +145,7 @@ Rouge[^19]를 이용하여 성능 평가를 진행했는데 QUERYSUM은 논문�
 ![]({{"/assets/img/post/4764fc6aefe0a9f986dc4bac7f87d3ddfd01d56f/figure12.png"| relative_url}})
 *Figure 9. 모델 구조 비교. (a)는 Liu and Lapata의 모델 구조, (b)는 논문에서 제안한 모델 구조*
 
-기존의 여러 논문들[^22][^23] 에서는 사용자의 질의어인 Query 정보를 반영하기 위해서는 단순한 방법으로 입력 Document(s)에 결합하는 방식을 취했다면 제안하는 모델에서는 Transformer Encoder 기반의 독립된 Query Layer로 구성하여 **Local - Query - Global Layer 이러한 관계를 통해 query뿐만 아니라 query와 document들 간의 관계 정보까지도 효과적으로 추출**할 수 있다고 합니다. <br>
+기존의 여러 논문들[^22]<sup>,</sup>[^23] 에서는 사용자의 질의어인 Query 정보를 반영하기 위해서는 단순한 방법으로 입력 Document(s)에 결합하는 방식을 취했다면 제안하는 모델에서는 Transformer Encoder 기반의 독립된 Query Layer로 구성하여 **Local - Query - Global Layer 이러한 관계를 통해 query뿐만 아니라 query와 document들 간의 관계 정보까지도 효과적으로 추출**할 수 있다고 합니다. <br>
 
 Local Layer는 일반적인 Transformer Encoder 구조와 같지만 Global Layer는 차이가 있어 간략하게 소개시켜 드립니다. Global Layer에서는 Transformer의 Multi-Head Attention처럼 각 문단을 다양한 방식으로 인코딩하며 각 문서에 대해서 유연하게 표현하고 다양한 정보를 캡처할 수 있도록 **Multi-Head Pooling**과 Self-Attention처럼 문서 간의 상호 의존성을 알기 위해 **Inter-paragraph Attention**를 사용했다고 합니다.<br>
 
@@ -306,7 +306,7 @@ PE($D_{i}, 2j$)는 문서 $D_{i}$의 $2j^{th}$번째의 Positioinal Encoding이�
 [^19]: [Automatic Evaluation of Summaries Using N-gram Co-occurrence Statistics](https://aclanthology.org/N03-1020/) (Chin-Yew Lin and Eduard Hovy, 2003)
 [^20]: [Data Augmentation for Abstractive Query-Focused Multi-Document Summarization](https://cdn.aaai.org/ojs/17611/17611-13-21105-1-2-20210518.pdf) (Ramakanth Pasunuru et al., 2021)
 [^21]: [Hierarchical Transformers for Multi-Document Summarization](https://aclanthology.org/P19-1500.pdf) (Yang Liu and Mirella Lapata, 2019)
-[^22]:[Question-Driven Summarization of Answers to Consumer Health Questions](https://arxiv.org/pdf/2005.09067.pdf) (Max Savery et al., 2020)
-[^23]:[CAiRE-COVID: A Question Answering and Query-focused Multi-Document Summarization System for COVID-19 Scholarly Information Management](https://aclanthology.org/2020.nlpcovid19-2.14.pdf) (Dan Su et al., 2020)
-[^24]:[GENERATING WIKIPEDIA BY SUMMARIZING LONG SEQUENCES](https://arxiv.org/pdf/1801.10198v1.pdf) (Liu et al., 2018)
+[^22]: [Question-Driven Summarization of Answers to Consumer Health Questions](https://arxiv.org/pdf/2005.09067.pdf) (Max Savery et al., 2020)
+[^23]: [CAiRE-COVID: A Question Answering and Query-focused Multi-Document Summarization System for COVID-19 Scholarly Information Management](https://aclanthology.org/2020.nlpcovid19-2.14.pdf) (Dan Su et al., 2020)
+[^24]: [GENERATING WIKIPEDIA BY SUMMARIZING LONG SEQUENCES](https://arxiv.org/pdf/1801.10198v1.pdf) (Liu et al., 2018)
 [^25]: [Teaching Machines to Read and Comprehend](https://arxiv.org/pdf/1506.03340.pdf) (Karl Moritz Hermann et al., 2015)
