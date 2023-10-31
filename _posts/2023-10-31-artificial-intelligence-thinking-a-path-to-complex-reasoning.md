@@ -10,7 +10,7 @@ excerpt: 거대언어모델 프롬프팅(Prompting)을 활용해 추론 문제�
 back_color: "#ffffff"
 img_name: "figure1.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 35

@@ -10,7 +10,7 @@ excerpt: 사용자 질의어 기반 다중문서요약의 관련 연구, 연구 
 back_color: "#ffffff"
 img_name: "figure3.png"
 toc: true
-show: false
+show: true
 new: true
 series: 8
 index: 34
