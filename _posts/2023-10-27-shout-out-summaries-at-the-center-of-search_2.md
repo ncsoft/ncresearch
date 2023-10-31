@@ -271,8 +271,6 @@ PE($$D_{i}, 2j$$)는 문서 $$D_{i}$$의 $$2j^{th}$$번째의 Positioinal Encodi
 ![]({{"/assets/img/post/4764fc6aefe0a9f986dc4bac7f87d3ddfd01d56f/figure16.png"| relative_url}})
 *Figure 13. 사용자의 질의어 기반 추출요약과 추상요약의 예시*
 
-![]({{"/assets/img/post/4764fc6aefe0a9f986dc4bac7f87d3ddfd01d56f/figure1.png"| relative_url}})
-
 <br />
 
 # 마치며
