@@ -171,7 +171,7 @@ page-type: main_page
 <h6>VARCO Studio는 VARCO Text, VARCO Art, VARCO Human으로 구성됩니다.</h6>
 <h6>현재는 게임 콘텐츠 개발을 위한 도구로 사용 중이며, 향후 일반인들도 사용할 수 있도록 오픈할 계획입니다.</h6>
 
-<iframe width="100%" height="600" src="https://www.youtube.com/embed/sCv4jql5URY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" style="height:calc(100vw * 0.56);max-height:600px;" src="https://www.youtube.com/embed/iSOBXZdu8Tc?si=HVvK3y-fqt8dzZl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {:.center_div}
 
 
