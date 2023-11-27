@@ -62,7 +62,7 @@ Text Alignment는 이러한 상황에서 대안으로 사용될 수 있습니다
 <br />
 
 #### Examples from English-Korean TEDtalk Data
-
+{: style="text-align:center"}
 
 | 한국어                                                                           | 영어                                                                                        |
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ Text Alignment는 이러한 상황에서 대안으로 사용될 수 있습니다
 | 낸다는 것은 <span style="color:red"><sup>①</sup>어떤 것</span> 일까요?           | into <span style="color:red"><sup>③</sup>two</span> different opposites?                    |
 | 물은 <span style="color:red"><sup>⑤</sup>도시</span>를 교섭 가능하게 하고        | The water has an ability to <span style="color:red"><sup>④</sup>make</span>                 |
 | 손에 잡히는 무언가처럼 느끼게 <span style="color:red"><sup>④</sup>해주</span>죠. | the <span style="color:red"><sup>⑤</sup>city</span> negotiable, tangible.                   |
-{: style="display:block;max-width:670px;margin:0 auto"}
+{: style="display:block;max-width:655px;margin:0 auto"}
 
 <br />
 
@@ -154,8 +154,7 @@ Text Alignment는 이러한 상황에서 대안으로 사용될 수 있습니다
 
 4.	다음 한국어 문장을 위한 타깃 후보 윈도우의 시작 위치는 이전 단계에서 검색을 종료한 위치가 아니라 마지막으로 타깃을 찾은 위치에서 시작합니다. 전 단계에서 **NOT_FOUND**일 경우 후보 윈도우와 소스 한국 문장이 너무 멀리 떨어져 있을 가능성이 높기 때문입니다.
 
-<details>
-<summary>custom_similarity</summary>
+*custom_similarity*
 
 ```
 custom_similarity = (1-alpha) * labse_similarity + alpha * length_similarity
@@ -163,7 +162,6 @@ length_similarity = abs(src_len-tgt_len) / src_len
 alpha = 0.03
 similarity threshold = 0.47
 ```
-</details>
 
 <br><br>
 
@@ -179,7 +177,6 @@ similarity threshold = 0.47
 | Original Ted | 354,895 |        6,558,870         |
 | Total Pairs  | 218,157 |        6,657,754         |
 | Found Pairs  | 190,336 | 6,227,072 ( **94.94%**\) |
-{: style="display:block;max-width:400px;margin:0 auto"}
 
 &nbsp; 구축된 정답 셋으로 테스트한 결과 발견된 쌍(Found Pairs)에 대해 F1값 0.915로 시스템의 높은 성능을 확인했습니다.
 
@@ -195,7 +192,6 @@ similarity threshold = 0.47
     <td> 0.915 </td>
   </tr>
 </table>
-{: style="display:block;max-width:400px;margin:0 auto"}
 
 &nbsp; 추가로 결과에 대해 정성평가를 수행 하였습니다. 그 결과 원본 데이터 품질이 큰 폭으로 개선되었음을 확인할 수 있었습니다. 추출된 최종 데이터는 정렬이 잘 되어 있고, 길이가 적당하며 무엇보다 한국어와 영어 텍스트의 내용 매핑이 정확했습니다. 따라서 충분히 하위 태스크에 적용 될 수 있음을 확인하였습니다. <br><br>
 
@@ -222,7 +218,6 @@ similarity threshold = 0.47
 | Total | Perfect | Fixed with Post-Processing | True Error |
 |-------|---------|----------------------------|------------|
 | 100   | 75      | 14                         | 11         |
-{: style="display:block;max-width:510px;margin:0 auto"}
 
 <br />
 
