@@ -11,7 +11,7 @@ excerpt: Ted 자막을 예로 언어적 특성을 고려하여 전사 텍스트 
 back_color: "#ffffff"
 img_name: "subtitles.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 36
@@ -154,7 +154,7 @@ Text Alignment는 이러한 상황에서 대안으로 사용될 수 있습니다
 
 4.	다음 한국어 문장을 위한 타깃 후보 윈도우의 시작 위치는 이전 단계에서 검색을 종료한 위치가 아니라 마지막으로 타깃을 찾은 위치에서 시작합니다. 전 단계에서 **NOT_FOUND**일 경우 후보 윈도우와 소스 한국 문장이 너무 멀리 떨어져 있을 가능성이 높기 때문입니다.
 
-*custom_similarity*
+*▼ custom_similarity*
 
 ```
 custom_similarity = (1-alpha) * labse_similarity + alpha * length_similarity
