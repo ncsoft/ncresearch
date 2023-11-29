@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "pic2_NeRF_pipeline.png"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 33
 ---
