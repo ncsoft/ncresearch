@@ -10,7 +10,7 @@ excerpt: NeRF 기술을 게임 제작에 이용하는데 발생하는 여러 문
 back_color: "#ffffff"
 img_name: "thubnail.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 37
