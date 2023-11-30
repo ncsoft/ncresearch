@@ -94,7 +94,7 @@ index: 37
 
 # NeRF에서 조명 효과를 분리하려면?
 
-많은 연구자가 다양한 방법들을 소개하고 있지만, 이 글에서는 specular와 diffuse를 분리해서 출력하는 model 구조만으로 조명 효과를 분리하는 방법을 소개합니다!  
+많은 연구자가 다양한 방법들을 소개하고 있지만, 이 글에서는 specular와 diffuse를 분리해서 출력하는 model 구조만으로 조명 효과를 분리하는 방법[^1]<sup>,</sup>[^2]을 소개합니다!  
 
 일반적인 NeRF Network 구조가 공간의 좌표 $$x$$ (spatial location), 관찰 시점 $$d$$ (direction)을 입력으로 받아 단일 색상 $$c$$ 를 출력하는 것과 달리, diffuse specular 분리를 위한 NeRF 모델은 다음과 같은 구조로 specular color $$c_s$$ 와 diffuse color $$c_d$$ 를 나누어 출력합니다. 
 
@@ -140,13 +140,13 @@ $$\frac{(w_{r} + d)}{2}=(d \cdot n) \cdot n$$
 
 NeRF는 3차원 공간 상의 정보를 Neural Network를 통해 저장하고 있기 때문에, 우리가 장면의 정보를 알고 싶다면 반드시 Network (NeRF)를 통과해서 정보를 얻어야 합니다. 아무리 가벼운 Network라 해도, 저장된 정보를 읽어오는 것과 Network를 통해서 정보를 얻는 것은 그 속도 차이가 매우 큽니다.  이는 NeRF의 가장 큰 단점이었던 ‘느린 렌더링 속도’ 와도 직결됩니다.
 
-하지만 이러한 단점은 3차원 일부 위치에만 feature를 저장하고, 나머지 부분은 interpolation을 이용해서 계산량을 줄이는 방식들이 (e.g., Instant-NGP , Plenoxels , TriMipRF , and Zip-NeRF ) 소개되면서 많이 해결되고 있습니다. NeRF와는 다른 기술이지만 최근에는 Gaussian Splatting  이라는 기술도 등장하면서 Neural Rendering에서 real-time을 달성하는데 더 박차를 가하고 있죠.
+하지만 이러한 단점은 3차원 일부 위치에만 feature를 저장하고, 나머지 부분은 interpolation을 이용해서 계산량을 줄이는 방식들이 (e.g., Instant-NGP[^3] , Plenoxels[^4] , TriMipRF[^5] , and Zip-NeRF[^6] ) 소개되면서 많이 해결되고 있습니다. NeRF와는 다른 기술이지만 최근에는 Gaussian Splatting[^7]  이라는 기술도 등장하면서 Neural Rendering에서 real-time을 달성하는데 더 박차를 가하고 있죠.
 
 ## 2. 촬영 위치 계산을 위한 전처리
 
 또한 NeRF 모델을 학습하기 위해서는 학습에 사용될 각 이미지의 3차원 상에서의 정확한 촬영 위치를 알아야 합니다. LiDAR 센서 등 하드웨어의 도움을 받기도 하지만, 일반적인 상황에서는 촬영된 사진들의 모습을 3차원상에서 짜 맞추는 Structure-from-Motion이라는 기법을 이용합니다. 하지만 이 방법은 사진의 왜곡에 강인하지 않고, 사진이 많아질수록 그 시간이 기하급수적으로 증가한다는 문제점이 있습니다.
 
-하지만 최근에는 NeRF를 학습하면서 카메라의 위치나 회전 등, 카메라에 대한 정보를 learnable parameter로 같이 학습하는 연구와 (BARF ), NeRF 가속화와 카메라 파라미터 학습을 한꺼번에 해결하는 방법 (Instant-Pose ) 등이 제시되면서, 카메라 촬영 위치를 계산에서 발생하는 문제점도 점차 해결되고 있는 모습입니다.
+하지만 최근에는 NeRF를 학습하면서 카메라의 위치나 회전 등, 카메라에 대한 정보를 learnable parameter로 같이 학습하는 연구와 (BARF ), NeRF[^8] 가속화와 카메라 파라미터 학습을 한꺼번에 해결하는 방법 (Instant-Pose[^9] ) 등이 제시되면서, 카메라 촬영 위치를 계산에서 발생하는 문제점도 점차 해결되고 있는 모습입니다.
 
 <br />
 
@@ -192,13 +192,12 @@ NeRF와 Neural Rendering 기술 발전 초기에는, 앞서 말씀드린 여러 
 <br />
 
 ### Reference
-
-1. [Verbin et al. Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields](https://dorverbin.github.io/refnerf/)
-2. [Yariv et al. BakedSDF: Meshing Neural SDFs for Real-Time View Synthesis](https://bakedsdf.github.io/)
-3. [Muller et al. Instant Neural Graphics Primitives with a Multiresolution Hash Encoding](https://nvlabs.github.io/instant-ngp/)
-4. [Fridovich-Keil et al. Plenoxels: Radiance Fields without Neural Networks](https://alexyu.net/plenoxels/)
-5. [Hu et al. Tri-MipRF: Tri-Mip Representation for Efficient Anti-Aliasing Neural Radiance Fields](https://wbhu.github.io/projects/Tri-MipRF/)
-6. [Baron et al. Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields](https://jonbarron.info/zipnerf/)
-7. [Kerbl et al. 3D Gaussian Splatting for Real-Time Radiance Field Rendering](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/)
-8. [Lin et al. BARF: Bundle-Adjusting Neural Radiance Fields](https://chenhsuanlin.bitbucket.io/bundle-adjusting-NeRF/)
-9. [Heo et al. Robust Camera Pose Refinement for Multi-Resolution Hash Encoding](https://arxiv.org/abs/2302.01571)
+[^1]: [Verbin et al. Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields](https://dorverbin.github.io/refnerf/)
+[^2]: [Yariv et al. BakedSDF: Meshing Neural SDFs for Real-Time View Synthesis](https://bakedsdf.github.io/)
+[^3]: [Muller et al. Instant Neural Graphics Primitives with a Multiresolution Hash Encoding](https://nvlabs.github.io/instant-ngp/)
+[^4]: [Fridovich-Keil et al. Plenoxels: Radiance Fields without Neural Networks](https://alexyu.net/plenoxels/)
+[^5]: [Hu et al. Tri-MipRF: Tri-Mip Representation for Efficient Anti-Aliasing Neural Radiance Fields](https://wbhu.github.io/projects/Tri-MipRF/)
+[^6]: [Baron et al. Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields](https://jonbarron.info/zipnerf/)
+[^7]: [Kerbl et al. 3D Gaussian Splatting for Real-Time Radiance Field Rendering](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/)
+[^8]: [Lin et al. BARF: Bundle-Adjusting Neural Radiance Fields](https://chenhsuanlin.bitbucket.io/bundle-adjusting-NeRF/)
+[^9]: [Heo et al. Robust Camera Pose Refinement for Multi-Resolution Hash Encoding](https://arxiv.org/abs/2302.01571)
