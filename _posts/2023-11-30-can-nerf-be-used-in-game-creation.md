@@ -41,13 +41,13 @@ index: 37
 
 # 들어가며
 
-안녕하세요! NC Research Vision AI Lab 허환입니다. 이번 글에서는 NeRF로 실감 나는 3D 모델 만들기에 이어, NeRF를 사용하는 데 있어서 생기는 여러 가지 제약 사항들과, 이를 해결하는 방안들을 소개하려고 합니다.
+안녕하세요! NC Research Vision AI Lab 허환입니다. 이번 글에서는 [NeRF로 실감 나는 3D 모델 만들기](https://ncsoft.github.io/ncresearch/3100003e8ae8576086e5ae2b649f3c3e1863fa91)에 이어, NeRF를 사용하는 데 있어서 생기는 여러 가지 제약 사항들과, 이를 해결하는 방안들을 소개하려고 합니다.
 
 <br />
 
 # NeRF를 게임 제작에서 이용할 수 있을까?
 
-NeRF로 실감 나는 3D 모델 만들기에서도 소개되었듯이, NeRF는 여러 방향에서 찍힌 이미지 세트로부터 3D 모델을 복원하는 기술입니다. 고품질의 3D 모델을 손쉽게 얻을 수 있기 때문에, 이는 게임 제작 또한 쉽게 해줄 수 있을 매력적인 기술로 보입니다. 그렇다면 과연 NeRF 모델을 곧바로 게임 제작에서 이용할 수 있을까요? 
+[NeRF로 실감 나는 3D 모델 만들기](https://ncsoft.github.io/ncresearch/3100003e8ae8576086e5ae2b649f3c3e1863fa91)에서도 소개되었듯이, NeRF는 여러 방향에서 찍힌 이미지 세트로부터 3D 모델을 복원하는 기술입니다. 고품질의 3D 모델을 손쉽게 얻을 수 있기 때문에, 이는 게임 제작 또한 쉽게 해줄 수 있을 매력적인 기술로 보입니다. 그렇다면 과연 NeRF 모델을 곧바로 게임 제작에서 이용할 수 있을까요? 
 
 <iframe width="100%" style="height:calc(100vw * 0.56);max-height:600px;" src="https://www.youtube.com/embed/98eVXbX9hds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 {:.center_div}
@@ -152,7 +152,7 @@ NeRF는 3차원 공간 상의 정보를 Neural Network를 통해 저장하고 �
 
 # 게임 엔진에서 사용해 본 Neural Rendering
 
-NeRF와 Neural Rendering 기술 발전 초기에는, 앞서 말씀드린 여러 가지 제약 사항 때문에 게임 제작이나 여타 다른 서비스에서 NeRF를 적극적으로 사용할 수 없었습니다. 하지만 앞서 소개했듯이 이러한 문제들은 점차 해결되는 추세이고, Neural Rendering 기술을 상용 게임 엔진에서 활용할 수 있는 plug-in 들도 속속들이 등장하고 있습니다. NeRF로 실감 나는 3D 모델 만들기에서 소개했듯이, 이를 타겟으로 하는 기술 스타트업도 등장하고 있죠.
+NeRF와 Neural Rendering 기술 발전 초기에는, 앞서 말씀드린 여러 가지 제약 사항 때문에 게임 제작이나 여타 다른 서비스에서 NeRF를 적극적으로 사용할 수 없었습니다. 하지만 앞서 소개했듯이 이러한 문제들은 점차 해결되는 추세이고, Neural Rendering 기술을 상용 게임 엔진에서 활용할 수 있는 plug-in 들도 속속들이 등장하고 있습니다. [NeRF로 실감 나는 3D 모델 만들기](https://ncsoft.github.io/ncresearch/3100003e8ae8576086e5ae2b649f3c3e1863fa91)에서 소개했듯이, 이를 타겟으로 하는 기술 스타트업도 등장하고 있죠.
 
 
 <iframe width="100%" style="height:calc(100vw * 0.56);max-height:600px;" src="https://www.youtube.com/embed/6BnlkMNlezM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
