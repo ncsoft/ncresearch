@@ -10,7 +10,7 @@ excerpt: 초거대 언어모델을 활용한 다양한 추론 방법에 대한 �
 back_color: '#ffffff'
 img_name: 'reasoning_cut.png'
 toc: true
-show: true
+show: false
 new: true
 series: 9
 index: 38
