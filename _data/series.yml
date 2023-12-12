@@ -1,77 +1,79 @@
 - id: 0
-  series_title: ""
+  series_title: ''
   list:
-  - permalink: "abb25deb34567f41e96fe4b9250719cb0f1399fe"
-    title: "ㄱㄱㄱ: 견고함으로 가는 길 1"
-  - permalink: "64da1f4997161eff97aa5d3ce09e9ad83d751a79"
-    title: "ㄱㄱㄱ: 견고함으로 가는 길 2"
+    - permalink: 'abb25deb34567f41e96fe4b9250719cb0f1399fe'
+      title: 'ㄱㄱㄱ: 견고함으로 가는 길 1'
+    - permalink: '64da1f4997161eff97aa5d3ce09e9ad83d751a79'
+      title: 'ㄱㄱㄱ: 견고함으로 가는 길 2'
 
 - id: 1
-  series_title: ""
+  series_title: ''
   list:
-  - permalink: "6fc502ede05ca318787928fa22332a82b112805b"
-    title: "긴 글을 위한 트랜스포머 모델 - Longformer와 BigBird (1편)"
-  - permalink: "f5e43053b8efa07947ea8dd57dbcbb2967c7deb1"
-    title: "긴 글을 위한 트랜스포머 모델 - Longformer와 BigBird (2편)"
+    - permalink: '6fc502ede05ca318787928fa22332a82b112805b'
+      title: '긴 글을 위한 트랜스포머 모델 - Longformer와 BigBird (1편)'
+    - permalink: 'f5e43053b8efa07947ea8dd57dbcbb2967c7deb1'
+      title: '긴 글을 위한 트랜스포머 모델 - Longformer와 BigBird (2편)'
 
 - id: 2
-  series_title: ""
+  series_title: ''
   list:
-  - permalink: "022d8f7905fc7e231e56a955aee112fdc3d9b011"
-    title: "ChatGPT와 대화 모델의 미래: 발전과 고민 1"
-  - permalink: "042287f8d8542f900b6d4ce4505b4841db3d9145"
-    title: "ChatGPT와 대화 모델의 미래: 발전과 고민 2"
+    - permalink: '022d8f7905fc7e231e56a955aee112fdc3d9b011'
+      title: 'ChatGPT와 대화 모델의 미래: 발전과 고민 1'
+    - permalink: '042287f8d8542f900b6d4ce4505b4841db3d9145'
+      title: 'ChatGPT와 대화 모델의 미래: 발전과 고민 2'
 
 - id: 3
-  series_title: ""
+  series_title: ''
   list:
-  - permalink: "3147b0357afb32f7da8b67f2f76d6d626813f38b"
-    title: "거대언어모델의 프롬프트 데이터 1"
-  - permalink: "f596e51b591092dda565cff8cb37ae91cda2e84c"
-    title: "거대언어모델의 프롬프트 데이터 2"
-  - permalink: "e36b37cd7298f4ed2458cbea6029922c13761a63"
-    title: "거대언어모델의 프롬프트 데이터 3"
+    - permalink: '3147b0357afb32f7da8b67f2f76d6d626813f38b'
+      title: '거대언어모델의 프롬프트 데이터 1'
+    - permalink: 'f596e51b591092dda565cff8cb37ae91cda2e84c'
+      title: '거대언어모델의 프롬프트 데이터 2'
+    - permalink: 'e36b37cd7298f4ed2458cbea6029922c13761a63'
+      title: '거대언어모델의 프롬프트 데이터 3'
 
 - id: 4
-  series_title: ""
+  series_title: ''
   list:
-  - permalink: "1f6f252aef508cb69fbb05b893f2f2f27639d869"
-    title: "Large Language Model을 밀어서 잠금해제: Parameter-Efficient Fine-Tuning 1"
-  - permalink: "c8416dcc21d8aad7f0ee65eaa47ad53854578b59"
-    title: "Large Language Model을 밀어서 잠금해제: Parameter-Efficient Fine-Tuning 2"
+    - permalink: '1f6f252aef508cb69fbb05b893f2f2f27639d869'
+      title: 'Large Language Model을 밀어서 잠금해제: Parameter-Efficient Fine-Tuning 1'
+    - permalink: 'c8416dcc21d8aad7f0ee65eaa47ad53854578b59'
+      title: 'Large Language Model을 밀어서 잠금해제: Parameter-Efficient Fine-Tuning 2'
 
 - id: 5
-  series_title: ""
+  series_title: ''
   list:
-  - permalink: "b00718e4d73e16be22ff722474cf51a2864225a8"
-    title: "MMORPG 시뮬레이터 개발부터 서비스 배포까지 1"
+    - permalink: 'b00718e4d73e16be22ff722474cf51a2864225a8'
+      title: 'MMORPG 시뮬레이터 개발부터 서비스 배포까지 1'
 
 - id: 6
-  series_title: ""
+  series_title: ''
   list:
-  - permalink: "61fda2c4f6b3c54a863755104a7948d2e4cb9fd8"
-    title: "현실적인 가상 인물 제작을 위한 4D Scan 파이프라인 소개 1"
-  - permalink: "4244afc8f68189c2d81073a9d5fccdd31f2439cc"
-    title: "현실적인 가상 인물 제작을 위한 4D Scan 파이프라인 소개 2"
+    - permalink: '61fda2c4f6b3c54a863755104a7948d2e4cb9fd8'
+      title: '현실적인 가상 인물 제작을 위한 4D Scan 파이프라인 소개 1'
+    - permalink: '4244afc8f68189c2d81073a9d5fccdd31f2439cc'
+      title: '현실적인 가상 인물 제작을 위한 4D Scan 파이프라인 소개 2'
 
 - id: 7
-  series_title: ""
+  series_title: ''
   list:
-  - permalink: "481b04ee12af454ab1de6dde2576eb4c15f8047a"
-    title: "Cross Entropy, 최선인가요?: 딥러닝을 위한 여러 손실 함수들 1"
-  - permalink: "170ae8ababa73daae786791b26c8284b8726e1e0"
-    title: "Cross Entropy, 최선인가요?: 딥러닝을 위한 여러 손실 함수들 2"
+    - permalink: '481b04ee12af454ab1de6dde2576eb4c15f8047a'
+      title: 'Cross Entropy, 최선인가요?: 딥러닝을 위한 여러 손실 함수들 1'
+    - permalink: '170ae8ababa73daae786791b26c8284b8726e1e0'
+      title: 'Cross Entropy, 최선인가요?: 딥러닝을 위한 여러 손실 함수들 2'
 
 - id: 8
-  series_title: ""
+  series_title: ''
   list:
-  - permalink: "10622bb399d2037f31d276d513b360ad55204c3a"
-    title: "검색의 중심에서 요약을 외치다 1"
-  - permalink: "4764fc6aefe0a9f986dc4bac7f87d3ddfd01d56f"
-    title: "검색의 중심에서 요약을 외치다 2"
+    - permalink: '10622bb399d2037f31d276d513b360ad55204c3a'
+      title: '검색의 중심에서 요약을 외치다 1'
+    - permalink: '4764fc6aefe0a9f986dc4bac7f87d3ddfd01d56f'
+      title: '검색의 중심에서 요약을 외치다 2'
 
 - id: 9
-  series_title: ""
+  series_title: ''
   list:
-    - permalink: "87ed2403c97ba50ae286d19dd25ece16305e3805"
-      title: "초거대 언어 모델의 수업시대 1부 - 언어 모델은 무엇으로 배우는가?"
+    - permalink: '87ed2403c97ba50ae286d19dd25ece16305e3805'
+      title: '초거대 언어 모델의 수업시대 1부 - 언어 모델은 무엇으로 배우는가?'
+    - permalink: 'd1d22308d4efe749b647a5ad2bc8e68bd71ccded'
+      title: '초거대 언어 모델의 수업시대 2부 - 언어 모델은 어떻게 추론하는가'
