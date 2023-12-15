@@ -45,6 +45,8 @@
   list:
     - permalink: 'b00718e4d73e16be22ff722474cf51a2864225a8'
       title: 'MMORPG 시뮬레이터 개발부터 서비스 배포까지 1'
+    - permalink: '1c09617307e12ff09ab1be52fbff36affe0e6558'
+      title: 'MMORPG 시뮬레이터 개발부터 서비스 배포까지 2'
 
 - id: 6
   series_title: ''
