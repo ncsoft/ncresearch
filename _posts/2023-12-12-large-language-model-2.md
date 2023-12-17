@@ -37,7 +37,7 @@ index: 38
 LLM은 대용량의 데이터셋 안에 포함되어 있는 다양한 언어 현상을 딥러닝 기술과 통계 모델링을 통해서 자연어 처리 작업을 수행합니다. 잘 알려진 자연어 생성 문제를 예시로 들면 주어진 문맥에서 다음 단어를 예측하는 문제를 푸는 잘 훈련된 LLM은 문맥 내에 주어진 단어들 간의 관계와 유사성 등을 파악하여 다음 단어를 생성할 수 있습니다. 물론 이 생성 품질은 초거대 언어 모델을 학습하기 위해서 사용된 데이터의 양과 구성, 학습 알고리즘 등의 복잡성 등 다양한 요인에 의해서 결정되므로 학습 데이터가 LLM의 성능을 결정하는 중요한 요인이라고 할 수 있습니다.
 
 <p align="center" style="color:silver">
-    <img src="assets/img/post/d1d22308d4efe749b647a5ad2bc8e68bd71ccded/reasoning.png" width="400">
+    <img src="assets/img/post/d1d22308d4efe749b647a5ad2bc8e68bd71ccded/reasoning.png" width="70%">
     <br>Figure 1. 언어모델을 사용한 추론 개요
 </p>
 
@@ -161,7 +161,7 @@ Figure 5에서 볼 수 있듯이 **Single-Stage** 방법은 하나 이상의 예
 방금 소개한 프롬프트 엔지니어링 방식에 더하여 모델에게 주는 명령(Instruction)에 언어모델의 추론 능력을 높일 수 있는 다양한 표현들은 추가하기도 합니다. 사람에게 말을 하듯이 _"차근 차근 생각해봐", "자, 심호흡을 하고, 문제를 차근 차근 풀어봐"_ 등의 언어모델을 진정시키는 전략도 실제로 효과가 있음을 보이는 재미난 연구도 있습니다(Figure 3)[^7].
 
 <p align="center" style="color:silver">
-    <img src="assets/img/post/d1d22308d4efe749b647a5ad2bc8e68bd71ccded/stepbystep.png" width="700">
+    <img src="assets/img/post/d1d22308d4efe749b647a5ad2bc8e68bd71ccded/stepbystep.png" width="80%">
     <br>Figure 3. 언어모델에게 심호흡을 시키면 더 나은 추론 성능이 나온다는 Google DeepMind의 연구 결과
 </p>
 
