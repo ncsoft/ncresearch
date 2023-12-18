@@ -10,7 +10,7 @@ excerpt: ‘효율화’ 관점에서 가장 뜻 깊게 생각하는 개선점 2
 back_color: "#ffffff"
 img_name: "thumbnail.png"
 toc: true
-show: false
+show: true
 new: true
 series: 5
 index: 39
