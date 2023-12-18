@@ -28,7 +28,7 @@ index: 38
   - Reference
 {:toc}
 
-<br />
+<br/>
 
 ## 들어가며: 언어 모델의 추론 능력을 높이기 위한 전략
 
@@ -45,7 +45,7 @@ LLM은 대용량의 데이터셋 안에 포함되어 있는 다양한 언어 현
 
 **_이 포스트는 ACL 2023에서 발표된 논문 "Reasoning with Language Model Prompting: A Survey[^1]"의 내용을 기반으로 작성되었습니다._**
 
-<br />
+<br/>
 
 ## 초거대 언어 모델의 추론 능력: 인간 지능(Human Intelligence)로 나아가기 위한 필수 조건
 
@@ -97,7 +97,7 @@ LLM은 대용량의 데이터셋 안에 포함되어 있는 다양한 언어 현
 
 위의 예시는 언어모델을 활용한 산술적 추론, 상식 추론, 상징적 추론의 간단한 예시를 보여줍니다. 예시에서도 볼 수 있듯이 질문(입력, Input)을 던지고, 그에 대한 답변(출력, Output)을 얻는 형식입니다. 언어모델을 활용해서 수행하고자 하는 태스크에 따라서 우리는 모델에 다양한 표현과 방법 등으로 변형을 주어서 모델에게 질문을 던지게 됩니다. LLM의 추론 성능은 여전히 만족할만한 수준에 도달하기 위해서는 가야할 길이 멀고, 또 발전의 여지가 많이 남아 있기 때문에 다양한 프롬프트를 활용한 프롬프팅 방식이 제안되고 있습니다. 이어서 LM의 성능을 높이기 위해서 어떤 프롬프팅 방법들이 쓰이고 있는지 좀 더 자세히 알아보도록 하겠습니다.
 
-<br />
+<br/>
 
 ## 초거대 언어모델의 추론 능력 끌어내기
 
@@ -108,7 +108,7 @@ Qiao et al.(2023)[^1]에서는 언어모델을 사용한 추론 연구의 최근
     <br>Figure 4. 언어모델을 활용한 추론 방법과 태스크 분류 체계 (Qiao et al. (2023)에서 일부 발췌)
 </p>
 
-<br />
+<br/>
 
 ### 1.1 프롬프트 엔지니어링
 
@@ -173,7 +173,7 @@ Figure 5에서 볼 수 있듯이 **Single-Stage** 방법은 하나 이상의 예
 >
 > 여기에 언어모델의 추론 능력을 끌어 올릴 수 있는 **_Instruction_** 까지 더해진다면?
 
-<br />
+<br/>
 
 ### 1.2 프로세스 최적화
 
@@ -198,7 +198,7 @@ Figure 5에서 볼 수 있듯이 **Single-Stage** 방법은 하나 이상의 예
 >
 > **Ensemble Optimization**: Self와 Iterative의 두 방법을 결합한 최적화 방법. (장점도 두 배, 단점도 두 배...?)
 
-<br />
+<br/>
 
 ### 1.3 외부 엔진 사용
 
@@ -211,7 +211,7 @@ Figure 5에서 볼 수 있듯이 **Single-Stage** 방법은 하나 이상의 예
 
 > 언어모델이 모든 것을 다 하지도 못할 뿐더러, 꼭 혼자서 모든 것을 해내야 하는 것도 아닐겁니다.
 
-<br />
+<br/>
 
 ### 2. 지식을 활용한 추론 - Implicit Knowledge, Explicit Knowledge
 
@@ -230,7 +230,7 @@ Implicit Knowledge를 활용한 Sun et al.(2022)[^14]의 연구는 GPT를 활용
 
 > 언어모델이 그저 인간의 말을 모방하는 앵무새에 그치지 않으려면 '정확하고 일관된 지식'이 필요할 것입니다.
 
-<br />
+<br/>
 
 ## 언어모델이 풀어야 할 남은 문제들
 
@@ -244,7 +244,7 @@ Implicit Knowledge를 활용한 Sun et al.(2022)[^14]의 연구는 GPT를 활용
 
 이는 모델의 효율성 뿐만 아니라 모델의 학습과 추론 시에 발생하는 탄소 배출과 에너지 사용량을 줄이는 것과도 직결됩니다. 실제로 언어모델 개발 시에 발생할 수 있는 환경 문제[^29]도 지적되고 있기 때문에, 이러한 측면을 고려한 추론 방법론 개발이 필요하다는 연구[^30]도 나오고 있습니다. 이제 언어모델은 단순히 모델과 데이터의 문제를 뛰어 넘어 전지구적인 과제가 되어 가고 있는 것이 아닐까요?
 
-<br />
+<br/>
 
 ## 나오며: 그래서 언어모델은 어떻게 추론해야 할까요?
 
@@ -252,7 +252,7 @@ Implicit Knowledge를 활용한 Sun et al.(2022)[^14]의 연구는 GPT를 활용
 
 **인간의 지능을 모방한 기계. 과연 우리는 어디쯤 와 있는 것일까요?**
 
-<br />
+<br/>
 
 ### Reference
 
@@ -269,10 +269,8 @@ Implicit Knowledge를 활용한 Sun et al.(2022)[^14]의 연구는 GPT를 활용
 [^11]: [Li, Y., Lin, Z., Zhang, S., Fu, Q., Chen, B., Lou, J. G., & Chen, W. (2023, July). Making language models better reasoners with step-aware verifier. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (pp. 5315-5333).](https://arxiv.org/pdf/2206.02336.pdf)
 [^12]: [Wang, X., Wei, J., Schuurmans, D., Le, Q., Chi, E., Narang, S., ... & Zhou, D. (2022). Self-consistency improves chain of thought reasoning in language models. arXiv preprint arXiv:2203.11171.](https://arxiv.org/pdf/2203.11171.pdf)
 [^13]: [Qin, Y., Hu, S., Lin, Y., Chen, W., Ding, N., Cui, G., ... & Sun, M. (2023). Tool learning with foundation models. arXiv preprint arXiv:2304.08354.](https://arxiv.org/pdf/2304.08354.pdf)
-[^14]:
-    [Sun, Y., Zhang, Y., Qi, L., & Shi, Q. (2022). TSGP: Two-Stage Generative Prompting for Unsupervised Commonsense Question Answering. arXiv preprint arXiv:2211.13515.](https://aclanthology.org/2022.findings-emnlp.68.pdf)
-    [^15] [Trivedi, H., Balasubramanian, N., Khot, T., & Sabharwal, A. (2022). Interleaving retrieval with chain-of-thought reasoning for knowledge-intensive multi-step questions. arXiv preprint arXiv:2212.10509.](https://arxiv.org/pdf/2212.10509.pdf)
-
+[^14]: [Sun, Y., Zhang, Y., Qi, L., & Shi, Q. (2022). TSGP: Two-Stage Generative Prompting for Unsupervised Commonsense Question Answering. arXiv preprint arXiv:2211.13515.](https://aclanthology.org/2022.findings-emnlp.68.pdf)
+[^15]: [Trivedi, H., Balasubramanian, N., Khot, T., & Sabharwal, A. (2022). Interleaving retrieval with chain-of-thought reasoning for knowledge-intensive multi-step questions. arXiv preprint arXiv:2212.10509.](https://arxiv.org/pdf/2212.10509.pdf)
 [^16]: [Liu, J., Shen, D., Zhang, Y., Dolan, B., Carin, L., & Chen, W. (2021). What Makes Good In-Context Examples for GPT-$3 $?. arXiv preprint arXiv:2101.06804.](https://aclanthology.org/2022.deelio-1.10.pdf)
 [^17]: [Dai, D., Dong, L., Hao, Y., Sui, Z., Chang, B., & Wei, F. (2021). Knowledge neurons in pretrained transformers. arXiv preprint arXiv:2104.08696.](https://aclanthology.org/2022.acl-long.581.pdf)
 [^18]: [Wang, X., Li, S., & Ji, H. (2022). Code4Struct: Code Generation for Few-Shot Event Structure Prediction. arXiv preprint arXiv:2210.12810.](https://arxiv.org/pdf/2210.12810.pdf)
