@@ -21,11 +21,12 @@ index: 40
 - I. What? - Texture Copilot: 3D Texturing을 돕는 AI Copilot
 - II. Why? - Texture Copilot을 만들게 된 이유
   - 1. 이미지(2D) 생성 연구를 통해 발견한 새로운 가능성
-  - 2. 3D Modeling 과정과 기존의 문제점
+  - 2. 3D 에셋 제작 과정과 기존의 문제점
 - III. How? - Texture Copilot의 R&D 과정
   - 1. Stable Diffusion을 활용한 3D Texturing 연구
   - 2. Texture Copilot 서비스 개발 및 향후 계획
-       {:toc}
+- Reference
+{:toc}
 
 <br/>
 
