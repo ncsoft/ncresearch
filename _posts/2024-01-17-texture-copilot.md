@@ -98,6 +98,8 @@ Diffusion Model은 data에 noise를 조금씩 더해가거나 noise로부터 조
 
 Stable Diffusion은 ControlNet이라는 보조 네트워크와 함께할 때 더욱 강력합니다. Text만으로는 우리가 원하는 대로 이미지를 생성하기 어렵습니다. ControlNet은 Model들을 특정 Input Condition(Canny, Sketch, Depth 정보 등)으로 다룰 수 있게 도와줍니다. 이는 결국, <strong style="text-decoration:underline">AI라는 기술이 이미지/그림 등의 2D 그래픽을 자유자재로 생성할 수 있는 단계에 이르렀다는 걸 보여줍니다.</strong>
 
+<br/>
+
 ### c. 이미지 생성 AI 너머의 새로운 가능성
 
 ![]({{"/assets/img/post/3f0ba4889e331ddbed68c9dd48d845fa18d874de/img_3.png"| relative_url}}){: width="80%"}
@@ -196,15 +198,15 @@ Stable Diffusion은 ControlNet이라는 보조 네트워크와 함께할 때 더
 <이미지 9. Meticulous TEXTure 모델과 생성 결과>
 {:.center_div}
 
-#### i. Multi-ControlNet 도입
+<strong style="font-size:1.4rem">i. Multi-ControlNet 도입</strong>
 
 첫 번째 문제인 입력으로 주는 Mesh를 정확하게 인식하지 못하는 이유는 Stable-Diffusion-2-Depth 모델이 Depth(깊이) 정보만 사용할 뿐만 아니라 Depth 인식 능력이 떨어지기 때문입니다. 이를 개선하기 위해 저희는 Stable-Diffusion-2-Depth 모델을 일반 Stable Diffusion Model + Multi-ControlNet 형태로 변경했습니다. 이를 통해 Ground-Truth Mesh를 정확하게 인식시킬 수 있는 Canny, Normal, Depth 등의 정보를 인식능력이 뛰어난 ControlNet을 이용하여 Text와 함께 모델에 Conditioning 시킬 수 있었습니다.
 
-#### ii. 자체 Projection Method 구현
+<strong style="font-size:1.4rem">ii. 자체 Projection Method 구현</strong>
 
 두 번째 문제인 Texture를 고해상도로 생성할 수 없다는 점은 Texture를 하나의 Tensor로 보고 Loss Function을 통해 Image를 UV Space 상으로 Project(투영)하는 Projection Method에서 비롯된 문제였습니다. Texture를 학습을 통해 optimization하는 과정이 오래 걸리고 많은 artifact가 생기는 문제가 있었습니다. 이를 해결하기 위해 저희는 이미지를 Mesh의 UV Mapping 정보를 바탕으로 Image를 Texture에 Mapping하는 자체 Projection Method를 구현하여 적용해 보았습니다. Loss 방식에 비해 속도가 훨씬 빠르고 artifact 역시 전혀 발생하지 않음을 확인했습니다.
 
-#### iii. UV-Blending 알고리즘
+<strong style="font-size:1.4rem">iii. UV-Blending 알고리즘</strong>
 
 세 번째 문제인 Texture 마감 처리 부족이란 Stable Diffusion을 통해 반복적으로 이미지를 붙여나가는 과정에서 이미지 간 연결부위가 깔끔하지 않은 문제입니다. 이는 이미지를 붙여나가는 TEXTure 알고리즘의 근본적인 한계이기도 합니다. 문제를 얼굴 텍스쳐로 한정할 경우 UV Mapping의 형태를 고정해 두고 Template Texture와의 Blending 방법을 통해 마감처리를 수행할 수 있었습니다.
 
@@ -216,7 +218,9 @@ Stable Diffusion은 ControlNet이라는 보조 네트워크와 함께할 때 더
 
 Meticulous TEXTure 연구에 존재했던 한계들은 다음과 같습니다. <strong style="text-decoration:underline">1. 얼굴 Texture만 잘 생성한다는 점,</strong> 얼굴 Mesh뿐만이 아닌 <strong style="text-decoration:underline">2. 다양한 Mesh에 대한 범용적인 마감처리 로직이 필요하다는 점,</strong> 기존의 Stable Diffusion과 비교해, <strong style="text-decoration:underline">3. Text에 대한 이해도가 낮다는 점 등이 있었는데요,</strong> 이러한 한계들은 현재 개선을 완료했습니다. 다만, <strong style="text-decoration:underline">4. Multi-View Consistency 문제, 5. PBR (Physical Based Rendering) 관련 문제</strong> 등은 여전히 개선 방안을 연구 중입니다.
 
-#### i. 다양한 Object, 다양한 기능으로 확장
+<br/>
+
+<strong style="font-size:1.4rem">i. 다양한 Object, 다양한 기능으로 확장</strong>
 
 ![]({{"/assets/img/post/3f0ba4889e331ddbed68c9dd48d845fa18d874de/img_10.png"| relative_url}}){: width="60%"}
 
@@ -225,7 +229,7 @@ Meticulous TEXTure 연구에 존재했던 한계들은 다음과 같습니다. <
 
 저희는 얼굴 한정으로만 동작하는 UV-Blending 알고리즘을 제거하고, 각 사물에 맞는 적절한 Prompt와 카메라 각도 등을 선택할 수 있도록 설정하여 Object의 형태로부터 자유로우면서도, 일치도가 높은 Texture 생성이 가능하도록 개선했습니다. 더불어 Stable Diffusion 부분을 SD Web UI API로 변경하면서 Web UI 커뮤니티의 다양한 방법론들을 활용할 수 있었는데요, LoRA(Low-Rank Adaptation of Large Language Models)나 Textual Inversion 등의 기법들은 여러 대상에 대한 Texture를 생성하는 데 큰 도움이 되었습니다.
 
-#### ii. Texture Extrapolation 및 Normal Map 기반 마감처리 로직 도입
+<strong style="font-size:1.4rem">ii. Texture Extrapolation 및 Normal Map 기반 마감처리 로직 도입</strong>
 
 ![]({{"/assets/img/post/3f0ba4889e331ddbed68c9dd48d845fa18d874de/img_11.png"| relative_url}}){: width="60%"}
 
@@ -234,7 +238,7 @@ Meticulous TEXTure 연구에 존재했던 한계들은 다음과 같습니다. <
 
 UV-Blending을 제거하면서 마감 처리에 대한 문제가 다시 발생했습니다. Graphics AI Lab 내 피드백을 통해, Projection된 Texture 결과에 대한 Extrapolation, Mesh의 Normal Map을 활용한 새로운 Blending 로직을 파이프라인에 도입했고, 더 자연스럽고 빈틈없는 Texturing이 가능해졌습니다.
 
-#### iii. SDXL 도입을 통한 Text 이해도 증가
+<strong style="font-size:1.4rem">iii. SDXL 도입을 통한 Text 이해도 증가</strong>
 
 ![]({{"/assets/img/post/3f0ba4889e331ddbed68c9dd48d845fa18d874de/img_12.png"| relative_url}}){: width="60%"}
 
@@ -245,7 +249,7 @@ Text의 이해도가 낮아진 건 Diffusion Model에 Mesh에 대한 정보가 �
 
 위의 사진 중 2번이 그 예시인데요, 사실 wood box가 colorful하거나 neon 조명이 들어가 있는 장면이 상상이 잘 안됨에도 불구하고 Text를 잘 이해하여 Texture가 생성되는 것을 확인할 수 있었습니다. SDXL 에서는 이미지 생성 해상도가 1K(1024)로 올라갔기 때문에 Texture 해상도 역시 더 올릴 수 있었습니다.
 
-#### iv. Multi-View Consistency 문제
+<strong style="font-size:1.4rem">iv. Multi-View Consistency 문제</strong>
 
 연구하다 보니 Multi-View Consistency 문제는 Texture 생성 과정에서 기술적으로 가장 도전적인 문제임을 알게 되었습니다. 특정 대상만을 생성하는 LoRA나 여러 각도를 한 번에 생성하는 LoRA를 활용해 보기도 하고, SDXL의 Revision( 이미지를 다른 비슷한 이미지로 변형하는 기능)을 활용해 정면의 이미지를 다른 이미지로 변형해 보기도 했으나 Multi-View Consistency 문제를 완벽하게 해결할 수는 없었습니다.
 
@@ -260,11 +264,13 @@ Text의 이해도가 낮아진 건 Diffusion Model에 Mesh에 대한 정보가 �
 
 저희는 이러한 <strong style="text-decoration:underline">Multi-View Consistency 문제에 대한 연구들이 AI를 통한 텍스쳐링 방식의 문제를 해결할 뿐만이 아니라, AI를 활용한 모델링까지 접근해 볼 수 있게 만들어 줄 것으로 보고 있습니다.</strong> 이 글을 작성하는 시점(23년 11월)에는 MVDream, Wonder3D, Zero123++, DreamCraft3D와 같은 괜찮은 성능의 3D 생성 연구이 본격적으로 공개되고 있기 때문에, 이러한 연구들을 활용하여 Multi-View Consistency 문제를 해결하고자 연구 중입니다.
 
-#### v. PBR(Physically Based Rendering) 관련 문제
+<strong style="font-size:1.4rem">v. PBR(Physically Based Rendering) 관련 문제</strong>
 
 PBR은 "Physically Based Rendering"의 약어로, 실제 세계에서 빛이 물체와 상호 작용하는 방식을 모델링하여 더 현실적인 시각적 결과물을 얻을 수 있게 도와주는 렌더링 방식입니다. PBR은 3D 모델의 외관을 사실적으로 표현하기 위해 다양한 텍스처 맵을 활용합니다. 이러한 텍스처 맵에는 Color만을 표현하는 Diffuse Map, 빛의 반사를 나타내는 Specular Map, 그리고 물체의 표면 세부 정보를 포함하는 Normal Map 등이 포함됩니다.
 
 Stable Diffusion이 본질적으로 모든 정보를 포함한 이미지를 생성하기 때문에 AI를 활용한 3D Texturing 방식은 각각의 정보(Color, Reflect, Normal, Light 등)를 나누어 관리하는 3D Pipeline의 PBR 방식에 바로 활용되기가 어렵습니다. 이 문제의 경우, 우선은 Diffuse Map 생성에 한정해 Prompt나 LoRA 등을 통해 Light, Reflect 등을 많이 낮추는 시도를 진행 중이며, Specular와 Normal 등 다른 Map들의 경우 잘 생성된 Diffuse Map을 기반으로 Estimation 하는 방식을 연구 중입니다.
+
+<br/>
 
 ## 2. Texture Copilot 서비스 개발 및 향후 계획
 
