@@ -251,7 +251,7 @@ Text의 이해도가 낮아진 건 Diffusion Model에 Mesh에 대한 정보가 �
 
 <strong style="font-size:1.4rem">iv. Multi-View Consistency 문제</strong>
 
-연구하다 보니 Multi-View Consistency 문제는 Texture 생성 과정에서 기술적으로 가장 도전적인 문제임을 알게 되었습니다. 특정 대상만을 생성하는 LoRA나 여러 각도를 한 번에 생성하는 LoRA를 활용해 보기도 하고, SDXL의 Revision( 이미지를 다른 비슷한 이미지로 변형하는 기능)을 활용해 정면의 이미지를 다른 이미지로 변형해 보기도 했으나 Multi-View Consistency 문제를 완벽하게 해결할 수는 없었습니다.
+연구하다 보니 Multi-View Consistency 문제는 <strong style="text-decoration:underline">Texture 생성 과정에서 기술적으로 가장 도전적인 문제</strong>임을 알게 되었습니다. 특정 대상만을 생성하는 LoRA나 여러 각도를 한 번에 생성하는 LoRA를 활용해 보기도 하고, SDXL의 Revision( 이미지를 다른 비슷한 이미지로 변형하는 기능)을 활용해 정면의 이미지를 다른 이미지로 변형해 보기도 했으나 Multi-View Consistency 문제를 완벽하게 해결할 수는 없었습니다.
 
 ![]({{"/assets/img/post/3f0ba4889e331ddbed68c9dd48d845fa18d874de/img_13.png"| relative_url}}){: width="60%"}
 
