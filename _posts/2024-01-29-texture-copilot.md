@@ -12,7 +12,7 @@ excerpt: 3D Texturing을 돕는 Texture Copilot의 R&D 과정과 Alpha 버전 �
 back_color: "#ffffff"
 img_name: "thumbnail.png"
 toc: true
-show: false
+show: true
 new: true
 series: -1
 index: 40
