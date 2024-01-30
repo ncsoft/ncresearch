@@ -11,7 +11,7 @@ back_color: '#ffffff'
 img_name: 'reasoning_cut.png'
 toc: true
 show: true
-new: true
+new: false
 series: 9
 index: 38
 ---
