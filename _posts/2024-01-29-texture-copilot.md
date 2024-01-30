@@ -6,8 +6,7 @@ author: 80b289cd86eac70ef28c174b6555ca379b40bbc6
 author2: 163ddcbe9c434ddcdca343a1b285f840c28abf11
 permalink: 3f0ba4889e331ddbed68c9dd48d845fa18d874de
 categories: Graphics
-tags:
-  [AI, 3D Texturing, 3D Modeling, Image/Graphic Generative AI, Diffusion Model]
+tags: [AI, 3D Texturing, 3D Modeling, Image/Graphic Generative AI, Diffusion Model]
 excerpt: 3D Texturing을 돕는 Texture Copilot의 R&D 과정과 Alpha 버전 사내 테스트 결과에 대해 소개합니다.
 back_color: "#ffffff"
 img_name: "thumbnail.png"
