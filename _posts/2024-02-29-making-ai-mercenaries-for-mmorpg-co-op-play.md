@@ -6,7 +6,7 @@ author: 694c04818d09a34684a029fb6e2a2fe486c472fd
 permalink: 1cee38b5f39928bc5962c02d1694506d7931adc8
 categories: Reinforcement Learning
 tags: [Reinforcement_Learning, GameAI, Multi_Agent_RL, Controllable_RL, Curriculum_learning, AI_In_MMORPG]
-excerpt: "<리니지 리마스터: 잊혀진 섬>의 AI용병 시스템에 대한 연구 경험을 소개합니다."
+excerpt: "\"리니지 리마스터: 잊혀진 섬\"의 AI용병 시스템에 대한 연구 경험을 소개합니다."
 back_color: "#ffffff"
 img_name: "thumb.png"
 toc: true
