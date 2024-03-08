@@ -1,7 +1,7 @@
 ---
 layout: page
 title: VARCO LLM Details
-title2: VARCO LLM 모델 상세 정보
+title2: VARCO-LLM 모델 상세 정보
 permalink: /varco-llm-details/
 subtitle: ""
 page-type: main_page
@@ -62,7 +62,7 @@ hide: true
     padding-bottom: 0 !important;
   }
   .post_img img {
-    padding: 0 0 5rem 0;
+    padding: 0 0 3.75rem 0;
     margin-top: 1.875rem;
     /* max-width: 77.875rem; */
   }
@@ -103,6 +103,18 @@ hide: true
     font-size: 14px;
     line-height: 190%;
   }
+  .llm_blocktitle {
+    background-color: #fbfbfc;
+    border-radius: 0.625rem;
+    height: 3.75rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 1.5rem;
+    border-left: none;
+    margin: 3.75rem 0 0 0;
+    color: var(--gray800);
+  }
 </style>
 <script>
   window.onload = function() {
@@ -120,11 +132,14 @@ hide: true
 <h6>지속적으로 성능이 개선된 모델이 업데이트 될 예정이며, 다국어 및 개별 태스크에 특화된 모델들도 순차적으로 공개됩니다.</h6>
 <h6>모델의 추가적인 성능 개선이나 튜닝, 서비스 적용을 위한 협업 문의는 메일(<a class="post_a" href="mailto:varco_llm@ncsoft.com">varco_llm@ncsoft.com</a>) 로 연락주십시오.</h6>
 
+<div class='llm_blocktitle'><div><h4>2024년 신규 모델</h4></div></div>
+
+<p style='padding: 0 1.5rem 0 1.5rem;'>※ 신규 모델에 대한 상세 정보와 성능은 AWS 론칭 시점에 업데이트될 예정입니다.</p>
+
+<div class='llm_blocktitle'><div><h4>2023년</h4></div></div>
+
 ![]({{"/assets/img/renewal/model_desc.png"| relative_url}})
 {:.post_img}
-
-## Model Details
-
 
 ### VARCO LLM KO-13B-IST
 

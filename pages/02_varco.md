@@ -172,11 +172,11 @@ page-type: main_page
 <div class='llm_blocktitle'><div><h4>2024년 신규 모델</h4></div><div>※ 모델 성능은 AWS 런칭 시점에 공개 예정</div></div>
 
 |**2024.03**|{::nomarkdown}<p><b>VARCO LLM 2.0 small/base</b></p><ul><li>4개 국어(한/영/중/일)를 지원하는 고성능 다국어 언어모델입니다.</li><li>Q&A, 문서 요약, 정보 추출, 챗봇 등 다양한 NLP 태스크에 적용할 수 있고, 높은 성능이 요구되는 고품질 AI 서비스 개발에 적합합니다.</li><li>속도와 성능이 적절하게 조화를 이루는 모델로 대부분의 AI 서비스에 주력으로 사용할 수 있습니다.</li></ul>{:/}|
-|**2024.03**|{::nomarkdown}<p><b>VARCO LLM 2.0 small/base - instruct</b></p><ul><li>VARCO FM 모델의 기본 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습된 모델입니다.</li><li>IST 모델은 NCSOFT가 자체 구축한 Orca 스타일 고품질 IST 데이터셋으로 학습되었습니다.</li></ul>{:/}|
-|**2024.05**|{::nomarkdown}<p><b>VARCO LLM 2.0 Dialog </b></p><ul><li>VARCO LLM IST를 기반으로 학습된 챗봇 서비스용 언어모델입니다.</li><li>NCSOFT가 자체 구축한 고품질 대화 IST 데이터 셋과 Human Feedback 반영 기술을 적용하여 학습되었습니다.</li><li>사용자 요구 사항에 따라 페르소나/감정/의도를 주입하여 대화 흐름을 제어할 수 있습니다.</ul>{:/}|
-|**2024.05**|{::nomarkdown}<p><b>VARCO LLM 2.0 Story</b></p><ul><li>VARCO LLM IST를 기반으로 NCSOFT가 자체 구축한 고품질 생성 IST 데이터 셋과 Human Feedback 반영 기술을 적용하여 추가 학습된 문서 생성 특화 언어모델입니다.</li><li>사용자가 입력한 지시에 따라 상황 또는 세계관을 반영하여 다양한 형태의 스토리 작성, 캐릭터 생성, 게임 퀘스트 기획 및 브레인스토밍 등에 활용할 수 있습니다. </li></ul>{:/}|
+|**2024.03**|{::nomarkdown}<p><b>VARCO LLM 2.0 small/base - instruct</b></p><ul><li>VARCO FM 모델의 기본 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습된 모델입니다.</li><li>IST 모델은 NC가 자체 구축한 Orca 스타일 고품질 IST 데이터셋으로 학습되었습니다.</li></ul>{:/}|
+|**2024.05**|{::nomarkdown}<p><b>VARCO LLM 2.0 - Dialog </b></p><ul><li>VARCO LLM IST를 기반으로 학습된 챗봇 서비스용 언어모델입니다.</li><li>NC가 자체 구축한 고품질 대화 IST 데이터 셋과 Human Feedback 반영 기술을 적용하여 학습되었습니다.</li><li>사용자 요구 사항에 따라 페르소나/감정/의도를 주입하여 대화 흐름을 제어할 수 있습니다.</ul>{:/}|
+|**2024.05**|{::nomarkdown}<p><b>VARCO LLM 2.0 - Story</b></p><ul><li>VARCO LLM IST를 기반으로 NC가 자체 구축한 고품질 생성 IST 데이터 셋과 Human Feedback 반영 기술을 적용하여 추가 학습된 문서 생성 특화 언어모델입니다.</li><li>사용자가 입력한 지시에 따라 상황 또는 세계관을 반영하여 다양한 형태의 스토리 작성, 캐릭터 생성, 게임 퀘스트 기획 및 브레인스토밍 등에 활용할 수 있습니다. </li></ul>{:/}|
 |**2024.09**|{::nomarkdown}<p><b>VARCO MLLM 1.0</b></p><ul><li>이미지를 이해하고 생성할 수 있는 멀티모달 언어모델입니다.</li><li>텍스트와 함께 그림이나 사진을 하나의 맥락으로써 이해하고 응답할 수 있습니다.</li></ul>{:/}|
-|**2024.11**|{::nomarkdown}<p><b>VARCO MLLM 1.0 Game</b></p><ul><li>VARCO MLLM 모델을 기반으로 학습된 게임 분야 특화 멀티모달 언어모델입니다.</li><li>게임 퀘스트나 스토리, 게임아트와 같은 게임 관련 멀티모달 데이터를 보다 잘 이해하고 생성할 수 있습니다.</li></ul>{:/}|
+|**2024.11**|{::nomarkdown}<p><b>VARCO MLLM 1.0 - Game</b></p><ul><li>VARCO MLLM 모델을 기반으로 학습된 게임 분야 특화 멀티모달 언어모델입니다.</li><li>게임 퀘스트나 스토리, 게임아트와 같은 게임 관련 멀티모달 데이터를 보다 잘 이해하고 생성할 수 있습니다.</li></ul>{:/}|
 {:.llm_table}
 
 <br>
