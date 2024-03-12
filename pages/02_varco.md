@@ -1,8 +1,8 @@
 ---
 layout: page
-title: VARCO LLM
+title: VARCO
 title2: 거대언어모델
-permalink: /varco-llm/
+permalink: /varco/
 subtitle: "VARCO (Via AI, Realize your Creativity and Originality) LLM"
 page-type: main_page
 ---
@@ -52,8 +52,12 @@ page-type: main_page
   .llm_table .gray_p {
     color: var(--gray300);
   }
+  .llm_table td {
+    vertical-align: top;
+  }
   .llm_table td:first-child {
     width: 14rem;
+    padding-top: 1.5em;
   }
   .llm_desc img {
     padding-bottom: 2rem;
@@ -75,6 +79,27 @@ page-type: main_page
   }
   .llm_blockquote h3 {
     margin: 0 !important;
+  }
+  .llm_blockquote h4 {
+    background-color: #fbfbfc;
+    border-radius: 0.625rem;
+    line-height: 0;
+    padding: 0.5rem 0 0 0;
+    border-left: none;
+    margin: 0 0 0 0;
+    color: var(--gray800);
+  }
+  .llm_blocktitle {
+    background-color: #fbfbfc;
+    border-radius: 0.625rem;
+    height: 3.75rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem 0 1.5rem;
+    border-left: none;
+    margin: 2rem 0 0 0;
+    color: var(--gray800);
   }
   .aws_button {
     float: right;
@@ -99,6 +124,14 @@ page-type: main_page
   }
   .post_img img {
     padding: 0 0 0 0;
+    margin-top: 1.875rem;
+    /* max-width: 77.875rem; */
+  }
+  .post_img_first {
+    margin-bottom: 0;
+  }
+  .post_img_first img {
+    padding: 0 0 0 0;
     /* margin-top: 1.875rem; */
     /* max-width: 77.875rem; */
   }
@@ -117,15 +150,17 @@ page-type: main_page
 <h6>그동안 풀지 못한 문제의 솔루션을 개발하고, 고객에게 새로운 소통과 경험을 줄 수 있습니다.</h6>
 <h6>우리는 기업과 개인이 창작과 생산을 위해 고민하는 긴 과정에서 AI 가 인간의 든든한 동반자가 되어 주기를 바랍니다.</h6>
 
-# 로드맵
-
-![]({{"/assets/img/renewal/roadmap.png"| relative_url}})
+# 2024년 로드맵
+![]({{"/assets/img/renewal/roadmap_24_llm.png"| relative_url}})
+{:.post_img_first}
+![]({{"/assets/img/renewal/roadmap_24_studio.png"| relative_url}})
 {:.post_img}
-
+<br>
 
 <div class="llm-div">
   <span class="llm-title">모델 공개 리스트</span>
-  <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/varco-llm-details">자세히 보기</a>
+  <!--<a class="blogs-link" href="https://ncsoft.github.io/ncresearch/varco-llm-details">자세히 보기</a>-->
+  <a class="blogs-link" href="/ncresearch/varco-llm-details">자세히 보기</a>
 </div>
 
 <h6>VARCO LLM 은 NC의 거대 언어모델입니다.</h6>
@@ -134,19 +169,29 @@ page-type: main_page
 <h6>향후에도 지속적으로 성능이 개선된 모델이 업데이트될 예정이며, 다국어 및 개별 태스크에 특화된 모델들도 순차적으로 공개됩니다.</h6>
 <h6>모델의 추가적인 성능 개선이나 튜닝, 서비스 적용을 위한 협업 문의는 메일(<a href="mailto:varco_llm@ncsoft.com">varco_llm@ncsoft.com</a>) 로 연락주십시오.</h6>
 
-|공개 일정|모델명|
-|**2023.08.16**|{::nomarkdown}<p><a href="https://ncsoft.github.io/ncresearch/varco-llm-details#varco-llm-ko-13b-ist"><b><u>VARCO LLM KO-13B-IST</u></b></a></p><ul><li>VARCO LLM 13B-IST 모델은 13B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.</li><li>13B-FM 모델의 기본적인 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.</li><li>추론과 생성 능력에 집중하였습니다. 워크플로우의 자동화를 통해 생산성을 향상하고, One-stop 서비스형 챗봇, 개성이 묻어나는 챗봇 등을 제작하여 고객에게 새로운 경험을 제공하세요.</li></ul>{:/}|
-|**2023.08.16**|{::nomarkdown}<p><a href="https://ncsoft.github.io/ncresearch/varco-llm-details#varco-llm-ko-13b-fm"><b><u>VARCO LLM KO-13B-FM</u></b></a></p><ul><li>VARCO LLM 13B 모델은 현재 시점에서 NC가 제공하는 가장 강력한 성능의 언어모델입니다.</li><li>VARCO LLM 1.3B, 6.4B 모델이 잘 수행할 수 있는 모든 NLP 태스크를 더욱 뛰어난 품질로 수행 가능합니다.</li><li>13B-FM을 활용하면 수행 속도보다 품질이 더욱 중요한 AI 서비스를 합리적인 비용으로 제공할 수 있습니다.</li></ul>{:/}|
-|**2023.08.16**|{::nomarkdown}<p><a href="https://ncsoft.github.io/ncresearch/varco-llm-details#varco-llm-ko-64b-ist"><b><u>VARCO LLM KO-6.4B-IST</u></b></a></p><ul><li>VARCO LLM 6.4B-IST 모델은 6.4B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.</li><li>6.4B-FM 모델의 기본적인 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.</li><li>추론과 생성 능력에 집중하였습니다. 워크플로우의 자동화를 통해 생산성을 향상하고, One-stop 서비스형 챗봇, 개성이 묻어나는 챗봇 등을 제작하여 고객에게 새로운 경험을 제공하세요.</li></ul>{:/}|
-|**2023.08.16**|{::nomarkdown}<p><a href="https://ncsoft.github.io/ncresearch/varco-llm-details#varco-llm-ko-64b-fm"><b><u>VARCO LLM KO-6.4B-FM</u></b></a></p><ul><li>VARCO LLM 6.4B 모델은 대부분의 NLP 태스크에서 뛰어난 성능을 보이는 고성능 언어모델입니다.</li><li>Q&A, 문서 요약, 정보 추출, 챗봇 등 다양한 NLP 태스크에 적용 가능하며, 높은 성능이 요구되는 고품질 AI 서비스 개발에 적합합니다.</li></ul>{:/}|
-|**2023.08.16**|{::nomarkdown}<p><a href="https://ncsoft.github.io/ncresearch/varco-llm-details#varco-llm-ko-13b-fm--ist"><b><u>VARCO LLM KO-1.3B-IST</u></b></a></p><ul><li>VARCO LLM 1.3B-IST 모델은 1.3B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.</li><li>1.3B-FM 모델의 기본적인 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.</li><li>기존의 NLP 분석 엔진을 쉽게 대체할 수 있습니다. 빅데이터 분석 엔진 등에서 경제적으로 NLP의 어려운 문제를 해결하세요.</li></ul>{:/}|
-|**2023.08.16**|{::nomarkdown}<p><a href="https://ncsoft.github.io/ncresearch/varco-llm-details#varco-llm-ko-13b-fm--ist"><b><u>VARCO LLM KO-1.3B-FM</u></b></a></p><ul><li>VARCO LLM 1.3B 모델은 작지만 7B급 언어모델에 준하는 높은 성능을 보유하고 있는 경제적인 모델입니다.</li><li>특히, 텍스트의 감성/감정 분석이나 문서 분류와 같은 태스크에서 뛰어난 성능을 보이며, 간단한 일상 대화 챗봇 개발에도 활용 가능합니다.</li></ul>{:/}|
+<div class='llm_blocktitle'><div><h4>2024년 신규 모델</h4></div><div>※ 모델 성능은 AWS 런칭 시점에 공개 예정</div></div>
+
+|**2024.03**|{::nomarkdown}<p><b>VARCO LLM 2.0 small/base</b></p><ul><li>4개 국어(한/영/중/일)를 지원하는 고성능 다국어 언어모델입니다.</li><li>Q&A, 문서 요약, 정보 추출, 챗봇 등 다양한 NLP 태스크에 적용할 수 있고, 높은 성능이 요구되는 고품질 AI 서비스 개발에 적합합니다.</li><li>속도와 성능이 적절하게 조화를 이루는 모델로 대부분의 AI 서비스에 주력으로 사용할 수 있습니다.</li></ul>{:/}|
+|**2024.03**|{::nomarkdown}<p><b>VARCO LLM 2.0 small/base - instruct</b></p><ul><li>VARCO FM 모델의 기본 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습된 모델입니다.</li><li>IST 모델은 NC가 자체 구축한 Orca 스타일 고품질 IST 데이터셋으로 학습되었습니다.</li></ul>{:/}|
+|**2024.05**|{::nomarkdown}<p><b>VARCO LLM 2.0 - Dialog </b></p><ul><li>VARCO LLM IST를 기반으로 학습된 챗봇 서비스용 언어모델입니다.</li><li>NC가 자체 구축한 고품질 대화 IST 데이터 셋과 Human Feedback 반영 기술을 적용하여 학습되었습니다.</li><li>사용자 요구 사항에 따라 페르소나/감정/의도를 주입하여 대화 흐름을 제어할 수 있습니다.</ul>{:/}|
+|**2024.05**|{::nomarkdown}<p><b>VARCO LLM 2.0 - Story</b></p><ul><li>VARCO LLM IST를 기반으로 NC가 자체 구축한 고품질 생성 IST 데이터 셋과 Human Feedback 반영 기술을 적용하여 추가 학습된 문서 생성 특화 언어모델입니다.</li><li>사용자가 입력한 지시에 따라 상황 또는 세계관을 반영하여 다양한 형태의 스토리 작성, 캐릭터 생성, 게임 퀘스트 기획 및 브레인스토밍 등에 활용할 수 있습니다. </li></ul>{:/}|
+|**2024.09**|{::nomarkdown}<p><b>VARCO MLLM 1.0</b></p><ul><li>이미지를 이해하고 생성할 수 있는 멀티모달 언어모델입니다.</li><li>텍스트와 함께 그림이나 사진을 하나의 맥락으로써 이해하고 응답할 수 있습니다.</li></ul>{:/}|
+|**2024.11**|{::nomarkdown}<p><b>VARCO MLLM 1.0 - Game</b></p><ul><li>VARCO MLLM 모델을 기반으로 학습된 게임 분야 특화 멀티모달 언어모델입니다.</li><li>게임 퀘스트나 스토리, 게임아트와 같은 게임 관련 멀티모달 데이터를 보다 잘 이해하고 생성할 수 있습니다.</li></ul>{:/}|
+{:.llm_table}
+
+<br>
+<div class='llm_blocktitle'><h4>2023년</h4></div>
+
+<!--|공개 일정|모델명|-->
+
+|**2023.08.16**|{::nomarkdown}<p><a href="/ncresearch/varco-llm-details#varco-llm-ko-13b-ist"><b><u>VARCO LLM KO-13B-IST</u></b></a></p><ul><li>VARCO LLM 13B-IST 모델은 13B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.</li><li>13B-FM 모델의 기본적인 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.</li><li>추론과 생성 능력에 집중하였습니다. 워크플로우의 자동화를 통해 생산성을 향상하고, One-stop 서비스형 챗봇, 개성이 묻어나는 챗봇 등을 제작하여 고객에게 새로운 경험을 제공하세요.</li></ul>{:/}|
+|**2023.08.16**|{::nomarkdown}<p><a href="/ncresearch/varco-llm-details#varco-llm-ko-13b-fm"><b><u>VARCO LLM KO-13B-FM</u></b></a></p><ul><li>VARCO LLM 13B 모델은 현재 시점에서 NC가 제공하는 가장 강력한 성능의 언어모델입니다.</li><li>VARCO LLM 1.3B, 6.4B 모델이 잘 수행할 수 있는 모든 NLP 태스크를 더욱 뛰어난 품질로 수행 가능합니다.</li><li>13B-FM을 활용하면 수행 속도보다 품질이 더욱 중요한 AI 서비스를 합리적인 비용으로 제공할 수 있습니다.</li></ul>{:/}|
+|**2023.08.16**|{::nomarkdown}<p><a href="/ncresearch/varco-llm-details#varco-llm-ko-64b-ist"><b><u>VARCO LLM KO-6.4B-IST</u></b></a></p><ul><li>VARCO LLM 6.4B-IST 모델은 6.4B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.</li><li>6.4B-FM 모델의 기본적인 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.</li><li>추론과 생성 능력에 집중하였습니다. 워크플로우의 자동화를 통해 생산성을 향상하고, One-stop 서비스형 챗봇, 개성이 묻어나는 챗봇 등을 제작하여 고객에게 새로운 경험을 제공하세요.</li></ul>{:/}|
+|**2023.08.16**|{::nomarkdown}<p><a href="/ncresearch/varco-llm-details#varco-llm-ko-64b-fm"><b><u>VARCO LLM KO-6.4B-FM</u></b></a></p><ul><li>VARCO LLM 6.4B 모델은 대부분의 NLP 태스크에서 뛰어난 성능을 보이는 고성능 언어모델입니다.</li><li>Q&A, 문서 요약, 정보 추출, 챗봇 등 다양한 NLP 태스크에 적용 가능하며, 높은 성능이 요구되는 고품질 AI 서비스 개발에 적합합니다.</li></ul>{:/}|
+|**2023.08.16**|{::nomarkdown}<p><a href="/ncresearch/varco-llm-details#varco-llm-ko-13b-fm--ist"><b><u>VARCO LLM KO-1.3B-IST</u></b></a></p><ul><li>VARCO LLM 1.3B-IST 모델은 1.3B-FM 모델을 NC에서 자체 구축한 Instruction 데이터 셋으로 추가 학습한 모델입니다.</li><li>1.3B-FM 모델의 기본적인 성능에 더하여 사용자가 입력하는 프롬프트를 잘 수행하도록 학습되었기 때문에 보다 유연하게 다양한 태스크에 활용될 수 있습니다.</li><li>기존의 NLP 분석 엔진을 쉽게 대체할 수 있습니다. 빅데이터 분석 엔진 등에서 경제적으로 NLP의 어려운 문제를 해결하세요.</li></ul>{:/}|
+|**2023.08.16**|{::nomarkdown}<p><a href="/ncresearch/varco-llm-details#varco-llm-ko-13b-fm--ist"><b><u>VARCO LLM KO-1.3B-FM</u></b></a></p><ul><li>VARCO LLM 1.3B 모델은 작지만 7B급 언어모델에 준하는 높은 성능을 보유하고 있는 경제적인 모델입니다.</li><li>특히, 텍스트의 감성/감정 분석이나 문서 분류와 같은 태스크에서 뛰어난 성능을 보이며, 간단한 일상 대화 챗봇 개발에도 활용 가능합니다.</li></ul>{:/}|
 |**2023.08.29**|{::nomarkdown}<p><b>VARCO LLM KO/EN-6.4B-IST</b></p><ul><li>VARCO LLM KO/EN-6.4B-IST 모델은 NC에서 자체 구축한 한국어/영어 사전 학습 데이터 및 Instruction 데이터 셋으로 학습한 이중 언어 모델입니다.</li><li>VARCO LLM KO-6.4B-IST 이상의 한국어/영어 텍스트 생성 능력을 갖추고 있으며, 하나의 모델로 한국과 영어권 국가에 대응하는 글로벌 서비스 개발이 가능합니다.</li><li>한국어 IST 모델 대비 10배 이상 많은 Instruction 데이터 셋으로 학습되어 훨씬 더 다양한 형태의 사용자 프롬프트에 효과적으로 대응할 수 있습니다.</li></ul>{:/}|
 |**2023.08.29**|{::nomarkdown}<p><b>VARCO LLM KO/EN-13B-IST</b></p><ul><li>VARCO LLM KO/EN-13B-IST 모델은 NC에서 자체 구축한 한국어/영어 사전 학습 데이터 및 Instruction 데이터 셋으로 학습한 이중 언어 모델입니다.</li><li>VARCO LLM KO-13B-IST 이상의 한국어/영어 텍스트 생성 능력을 갖추고 있으며, 하나의 모델로 한국과 영어권 국가에 대응하는 글로벌 서비스 개발이 가능합니다.</li><li>한국어 IST 모델 대비 10배 이상 많은 Instruction 데이터 셋으로 학습되어 훨씬 더 다양한 형태의 사용자 프롬프트에 효과적으로 대응할 수 있습니다.</li></ul>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 6.4B-PERSONA</b></p><p class="gray_p">페르소나/감정/의도를 주입하여 대화 흐름을 제어할 수 있는 고품질 챗봇 서비스용 언어모델입니다.</p>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2023.09 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 13B-NARRATIVE</b></p><p class="gray_p">사용자와의 상호작용을 통해 다양한 형태의 내러티브나 게임 퀘스트 생성을 지원하는 모델입니다.</p>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2023.11 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 52B-IST</b></p><p class="gray_p">성능이 절대적으로 중요한 태스크나 중/소 규모 언어모델 학습용 데이터 생성에 활용 가능한 모델입니다.</p>{:/}|
-|{::nomarkdown}<p class="gray_p"><b>2024.03 공개 예정</b></p>{:/}|{::nomarkdown}<p class="gray_p"><b>VARCO LLM 100B-MULTI</b></p><p class="gray_p">텍스트와 함께 그림이나 사진을 하나의 맥락으로써 이해하고 응답할 수 있는 초거대 언어모델입니다.</p>{:/}|
 {:.llm_table}
 
 > ### NC 자체 서비스

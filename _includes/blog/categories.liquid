@@ -3,13 +3,13 @@
         <div class="category-groups">
             <div class="news-title-group">
                 <span class="news-title">거대언어모델</span>
-                <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/varco-llm/">더보기</a>
+                <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/varco/">더보기</a>
             </div>
             <div class="news-group">
                 {% assign news = site.data.news | sort: "date" | reverse %}
                 {% for _news in news limit:1 %}
                     <div class="news_div">
-                        <a href="https://ncsoft.github.io/ncresearch/varco-llm">
+                        <a href="https://ncsoft.github.io/ncresearch/varco/">
                             <h3 class="news_title">
                                 {{ _news.title }}
                                 {% if _news.new == true %}
