@@ -134,7 +134,7 @@ hide: true
 
 <div class='llm_blocktitle'><div><h4>2024년 신규 모델</h4></div></div>
 
-<p style='padding: 0 1.5rem 0 1.5rem;'>※ 신규 모델에 대한 상세 정보와 성능은 AWS 론칭 시점에 업데이트될 예정입니다.</p>
+<p style='padding: 0 1.5rem 0 1.5rem; margin: 1.5rem 0 0 0'>※ 신규 모델에 대한 상세 정보와 성능은 AWS 론칭 시점에 업데이트될 예정입니다.</p>
 
 <div class='llm_blocktitle'><div><h4>2023년</h4></div></div>
 
