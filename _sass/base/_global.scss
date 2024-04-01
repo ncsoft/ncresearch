@@ -546,6 +546,9 @@ table {
 .about_desc h3 + ul {
   display: none;
 }
+.about_desc h3 + ul + p {
+  display: none;
+}
 .about_desc h3 + p + ul {
   display: none;
 }
@@ -573,6 +576,9 @@ table {
 .about_desc h4 + ul {
   display: none;
 }
+.about_desc h4 + ul + p {
+  display: none;
+}
 .about_desc h4 + p + ul {
   display: none;
 }
@@ -584,6 +590,9 @@ table {
   display: block;
 }
 .about_desc.active h3+ul {
+  display: block;
+}
+.about_desc.active h3+ul+p {
   display: block;
 }
 .about_desc.active h3+p+ul {
@@ -611,6 +620,9 @@ table {
   display: block;
 }
 .about_desc.active h4+ul {
+  display: block;
+}
+.about_desc.active h4+ul+p {
   display: block;
 }
 .about_desc.active h4+p+ul {
