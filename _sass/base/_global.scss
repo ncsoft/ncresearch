@@ -1398,7 +1398,7 @@ article {
 
   .news_div {
     border: none !important;
-    padding: 1.5rem 2rem;
+    padding: 1.875rem 2.5rem;
     background-color: #fbfbfc;
     border-radius: 0.625rem;
 
@@ -1414,7 +1414,9 @@ article {
     font-weight: 700;
     margin-top: 0;
     line-height: 1.4;
-    width: 90%;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
 
     .news-item-new {
       display: inline-block;
@@ -1422,7 +1424,7 @@ article {
       height: 1.5rem;
       background-image: url('/ncresearch/assets/img/renewal/new_badge.svg');
       background-size: contain;
-      margin-left: 0.25rem;
+      margin-left: 0.75rem;
     }
   }
 
@@ -1434,19 +1436,21 @@ article {
   .news_subtitle {
     color: var(--gray800);
     font-size: 1.25rem;
+    line-height: 150%;
     font-weight: 500;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .news_date {
     color: var(--gray600);
     font-size: 1.125rem;
     font-weight: 400;
-    margin-bottom: 1.125rem;
+    text-align: right;
+    flex-grow: 1;
   }
 
   ul {
-    margin-left: 3.5rem;
+    margin-left: 2.375rem;
     color: var(--gray600);
   }
 }

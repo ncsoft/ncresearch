@@ -4,3 +4,9 @@
   contents: ["VARCO LLM 13B-IST","VARCO LLM 13B-FM","VARCO LLM 6.4B-IST","VARCO LLM 6.4B-FM","VARCO LLM 1.3B-IST","VARCO LLM 1.3B-FM"]
   new: false
   show: true
+- title: "VARCO LLM 2.0"
+  subtitle: "NC의 혁신적인 언어모델, VARCO LLM 2.0이 신규 출시되었습니다!<br>VARCO LLM 2.0은 요약, 챗봇, 번역 뿐 아니라 이메일, 광고 기획, 스토리 생성에 이르기까지 다양한 글쓰기 작업에 도움을 줄 수 있습니다.<br>우측 상단의 '더보기'를 눌러 VARCO LLM 2.0의 자세한 정보를 확인하세요!"
+  date: 2024-04-26
+  contents: ["VARCO LLM 2.0 Small", "VARCO LLM 2.0 Base", "VARCO LLM 2.0 Small Instruct", "VARCO LLM 2.0 Base Instruct"]
+  new: true
+  show: true

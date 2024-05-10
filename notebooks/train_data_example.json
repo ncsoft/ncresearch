@@ -1,0 +1,29 @@
+[
+	{
+		"system_prompt": "<Your System Prompt Here>",
+		"source": [
+			"<Your Questions Here>"
+		],
+		"target": [
+			"<Your Answer Here>"
+		]
+	},
+	{
+		"system_prompt": "<Your System Prompt Here>",
+		"source": [
+			"<Your Questions Here>"
+		],
+		"target": [
+			"<Your Answer Here>"
+		]
+	},
+	{
+		"system_prompt": "<Your System Prompt Here>",
+		"source": [
+			"<Your Questions Here>"
+		],
+		"target": [
+			"<Your Answer Here>"
+		]
+	},
+]
