@@ -3,26 +3,33 @@
         <div class="category-groups">
             <div class="news-title-group">
                 <span class="news-title">거대언어모델</span>
-                <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/varco/">더보기</a>
+                <!-- <a class="blogs-link" href="https://ncsoft.github.io/ncresearch/varco/">더보기</a> -->
+                <a class="blogs-link" href="/ncresearch/varco/">더보기</a>
             </div>
             <div class="news-group">
                 {% assign news = site.data.news | sort: "date" | reverse %}
                 {% for _news in news limit:1 %}
                     <div class="news_div">
-                        <a href="https://ncsoft.github.io/ncresearch/varco/">
+                        <!-- <a href="https://ncsoft.github.io/ncresearch/varco/"> -->
+                        <a href="/ncresearch/varco/">
                             <h3 class="news_title">
                                 {{ _news.title }}
                                 {% if _news.new == true %}
                                     <span class="news-item-new"></span>
                                 {% endif %}
+                                <div class="news_date">
+                                    {{ _news.date }}
+                                </div>
                             </h3>
                         </a>
                         <div class="news_subtitle">
                             {{ _news.subtitle }}
                         </div>
+                        <!--
                         <div class="news_date">
                             {{ _news.date }}
                         </div>
+                        -->
                         {% if _news.contents.size > 0 %}
                             <ul>
                                 {% for content in _news.contents %}
