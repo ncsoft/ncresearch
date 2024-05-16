@@ -60,5 +60,4 @@ exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node
 remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
 
 toc:
-    min_level: 1
-    max_level: 3
+    max_level: 2
