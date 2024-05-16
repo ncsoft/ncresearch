@@ -9,7 +9,7 @@ tags: [검색, Information_Retrieval, Search, SPLADE, DPR, BM25]
 excerpt: "Sparse에서 Dense을 거쳐 Learned Sparse Retrieval까지 검색 패러다임의 변천사를 소개합니다."
 back_color: "#ffffff"
 img_name: "thumbnail.png"
-toc: false
+toc: true
 show: true
 new: true
 series: -1
@@ -24,6 +24,7 @@ index: 45
   - [Learned Sparse Retrieval](#learned-sparse-retrieval)
 - [마치며](#마치며)
 - [References](#references)
+{:toc}
 
 <br/>
 
