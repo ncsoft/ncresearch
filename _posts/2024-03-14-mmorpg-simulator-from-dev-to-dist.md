@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "4_거울전쟁.png"
 toc: true
 show: true
-new: true
+new: false
 series: 5
 index: 44
 ---
