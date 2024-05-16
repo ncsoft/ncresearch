@@ -9,7 +9,7 @@ tags: [LLM, Recommendation, Zero-shot Learner, Instruction Tuning, Retrieval Aug
 excerpt: "NCSOFT VARCO 모델을 활용하여 다양한 도메인의 추천에 적용가능한 생성형 추천 모델을 제작했던 경험을 공유합니다."
 back_color: "#ffffff"
 img_name: "zero_shot_RS_framework.png"
-toc: true
+toc: false
 show: true
 new: true
 series: -1
