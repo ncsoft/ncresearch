@@ -39,6 +39,7 @@ layout: default
           {% endif %}
         {% endfor %}
       {% endif %}
+      {% toc %}
       {{ content | replace: '-!', '<span class="sidenote-number"><small class="sidenote">' | replace: '!-', '</small></span>' | toc }}
       {% if page.bootstrap %}
       </div>
