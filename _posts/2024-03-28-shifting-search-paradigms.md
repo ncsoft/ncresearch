@@ -16,15 +16,15 @@ series: -1
 index: 45
 ---
 
-- [시작하며](#시작하며)
-  - [검색 파이프라인](#검색-파이프라인)
-- [검색 패러다임](#검색-패러다임)
-  - [Sparse Retrieval](#sparse-retrieval)
-  - [Dense Retrieval](#dense-retrieval)
-  - [Learned Sparse Retrieval](#learned-sparse-retrieval)
-- [마치며](#마치며)
-- [References](#references)
-{:toc}
+- 시작하며
+  - 검색 파이프라인
+- 검색 패러다임
+  - Sparse Retrieval
+  - Dense Retrieval
+  - Learned Sparse Retrieval
+- 마치며
+- References
+  {:toc}
 
 <br/>
 
