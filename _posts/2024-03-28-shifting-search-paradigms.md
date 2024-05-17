@@ -9,21 +9,22 @@ tags: [검색, Information_Retrieval, Search, SPLADE, DPR, BM25]
 excerpt: "Sparse에서 Dense을 거쳐 Learned Sparse Retrieval까지 검색 패러다임의 변천사를 소개합니다."
 back_color: "#ffffff"
 img_name: "thumbnail.png"
-toc: false
+toc: true
 show: true
 new: true
 series: -1
 index: 45
 ---
 
-- [시작하며](#시작하며)
-  - [검색 파이프라인](#검색-파이프라인)
-- [검색 패러다임](#검색-패러다임)
-  - [Sparse Retrieval](#sparse-retrieval)
-  - [Dense Retrieval](#dense-retrieval)
-  - [Learned Sparse Retrieval](#learned-sparse-retrieval)
-- [마치며](#마치며)
-- [References](#references)
+- 시작하며
+  - 검색 파이프라인
+- 검색 패러다임
+  - Sparse Retrieval
+  - Dense Retrieval
+  - Learned Sparse Retrieval
+- 마치며
+- References
+{:toc}
 
 <br/>
 
@@ -72,6 +73,7 @@ index: 45
 `Sparse Retrieval은 Lexical Match 기반 검색 패러다임입니다.` **검색어에 있는 단어가 많이 나오는 문서**를 사용자에게 검색 결과로 제공합니다. 직관적인 검색 방법으로 좋은 성능을 보였기에 오랜 시간이 지난 지금에도 사용되는 전통적인 검색 방식입니다.
 
 ### 인덱싱과 검색 단계
+{:.no_toc}
 ![]({{"/assets/img/post/003e686308f3f3db597b5e5b5d9b6a6bd062aad0/sparse_retrieval.png"| relative_url}})
 *<그림 2> Sparse Retrieval의 예시*
 *(인덱싱 단계) 어떤 단어가 어떤 문서에 들어있는지 인덱스로 구조화한다. (검색 단계) 검색어에서 단어를 뽑고 인덱스에서 해당 단어가 들어있는 문서를 찾아서 검색 결과로 제공한다.*
@@ -83,6 +85,7 @@ Sparse Retrieval의 인덱싱과 검색 단계는 <그림 2>와 같습니다.
 검색에 사용될 수 있는 단어의 개수는 매우 많습니다. Sparse Retrieval은 수많은 단어 중에서도 대상 문서와 검색어에 있는 **일부 단어만 고려**해서 Lexical Match 점수를 계산합니다. 일부 단어만 고려하기 때문에 **Sparse Retrieval**이라는 이름이 붙었습니다.
 
 ### BM25 알고리즘
+{:.no_toc}
 **BM25**(**B**est **M**atch)[^2] 알고리즘은 Sparse Retrieval에 속하는 대표적인 방법론입니다. BM25는 **검색어와 문서 사이의 Lexical Match 점수를 계산**합니다. 검색어와 문서에 있는 단어가 겹치는 정도를 기준으로 검색 결과를 만듭니다. 아래 수식은 BM25 알고리즘을 표현한 것입니다.
 
 $$
@@ -92,6 +95,7 @@ $$
 위 수식의 $$f(q_i, D)$$와 $$\text{IDF}(q_i)$$는 각각 TF-IDF의 구성요소인 TF(Term Frequency)와 IDF(Inverse Document Frequency)입니다. $$(k_1 + 1)$$과 $$k_1 \cdot (1 - b + b \cdot \frac{\\|D\\|}{\text{avgdl}})$$ 부분은 Smoothing을 위한 항으로 결과 조정을 위해 추가된 부분입니다. 따라서 BM25는 TF-IDF를 기반으로 문서-검색어 간 관련도를 계산하는 알고리즘입니다.
 
 ### Sparse Retrieval의 한계
+{:.no_toc}
 다시 <그림 2>을 살펴봅시다. <그림 2>의 인덱스를 통해 문서6에 단어 "*마라탕*"과 "*맛집*"이 있는 것을 알 수 있습니다.  검색어 "*판교 마라탕 맛집*"과 문서6이 두 개의 단어에서 Lexical Match 됐습니다. <그림 2>와 같이 검색어를 **문서에 등장할 법한 단어**로 잘 정리해서 Lexical Match가 되면 원하는 검색 결과를 쉽게 얻을 수 있습니다.
 
 ![]({{"/assets/img/post/003e686308f3f3db597b5e5b5d9b6a6bd062aad0/vocab_mismatch.png"| relative_url}})
@@ -106,6 +110,7 @@ Sparse Retrieval의 Lexical Mismatch 문제를 해결하기 위해 여러 방법
 `Dense Retrieval은 문서/검색어의 의미를 고려하는 벡터 검색 패러다임입니다.` 예전과 달리 언어 모델이 발전해서 문서/검색어를 의미 벡터로 표현할 수 있게 되며 Dense Retrieval이 등장할 수 있었습니다.
 
 ### 새로운 검색 파이프라인
+{:.no_toc}
 ![]({{"/assets/img/post/003e686308f3f3db597b5e5b5d9b6a6bd062aad0/pipeline.png"| relative_url}})
 *<그림 4> 학습 단계가 포함된 파이프라인*
 *왼쪽 상단의 노란색으로 강조된 부분은 학습 단계를 나타낸다. 인덱싱을 하기 전에 언어모델을 데이터셋으로 학습해서 인코더를 만든다. 인덱싱 단계에서 문서 인코더는 문서를 벡터화한다. 검색 단계에서 검색어 인코더는 검색어를 벡터화한다.*
@@ -113,6 +118,7 @@ Sparse Retrieval의 Lexical Mismatch 문제를 해결하기 위해 여러 방법
 Dense Retrieval부터는 인코더(Encoders)의 개념이 나타납니다. 문서와 검색어를 의미 벡터로 표현하기 위한 문서 인코더와 검색어 인코더를 말합니다. 문서/검색어 인코더는 먼저 언어모델을 데이터셋으로 **학습**(Training)해서 만들 수 있습니다. 따라서 학습 단계가 파이프라인에 추가됩니다. <그림 4>의 좌측 상단에 노란색으로 강조한 부분이 추가된 학습 단계에 해당합니다. 인코더 학습 단계는 인덱싱과 검색 단계 이전에 진행되어야 합니다. 학습된 문서/검색어 인코더를 인덱싱과 검색 단계에서 사용하기 때문입니다.
 
 ### 인덱싱과 검색 단계
+{:.no_toc}
 ![]({{"/assets/img/post/003e686308f3f3db597b5e5b5d9b6a6bd062aad0/dense_retrieval.png"| relative_url}})
 *<그림 5> Dense Retrieval의 인덱싱과 검색 단계*
 *(인덱싱 단계) 문서 인코더로 각 문서를 벡터로 만들고 벡터 인덱스로 구조화한다. (검색 단계) 검색어 인코더로 사용자의 검색어를 벡터로 만든다. 벡터 인덱스에서 검색어 벡터와 가까운 문서 벡터를 찾아서 검색 결과로 제공한다. 의미가 비슷한 문서를 검색 결과로 얻을 수 있다.*
@@ -126,9 +132,11 @@ Dense Retrieval에서의 인덱싱과 검색 단계는 <그림 5>와 같습니�
 <그림 5>의 인코더는 문서와 문장을 **빽빽한 벡터**(Dense Vector)로 인코딩합니다. 벡터의 각 차원은 다양한 의미를 나타내고 대부분 0이 아닌 값을 갖습니다. <그림 5>의 벡터가 각 차원에 다양한 색을 갖는 것이 Dense Vector의 특성을 보여줍니다. Dense Vector로 문서/검색어를 표현하고 검색에 사용하기에 **Dense Retrieval**이라고 하는 것입니다.
 
 ### DPR
+{:.no_toc}
 Dense Retrieval에서는 인코더의 구조와 학습 단계에 따라 다양한 방법론이 나타났습니다. 특히 **DPR**(**D**ense **P**assage **R**etrieval)[^4]은 Dense Retrieval에 속하는 대표적인 방법론입니다. DPR 인코더는 BERT 기반이며 문서와 검색어 각각 전용 인코더를 두는 점이 특징입니다. 또한 In-Batch Negative Sampling과 Contrastive Learning을 통해 인코더를 학습하는 점도 특징입니다. DPR을 자세히 살펴보겠습니다.
 
 #### DPR 인코더 학습 단계
+{:.no_toc}
 DPR의 인코더 학습 단계를 간단히 살펴보겠습니다.
 - 검색어와 관련 문서가 연결된 학습 데이터셋을 준비합니다.
 - 문서/검색어 인코더(BERT)로 문서/검색어를 Dense Vector로 만듭니다.
@@ -154,6 +162,7 @@ $$
 위 수식은 검색어 $$q_i$$와 관련된 문서 $$p_{i}^+$$(Positive Sample)와 관련 없는 문서들 $$p_{i,1:n}^-$$(In-Batch Negative Samples) 간의 **Contrastive Loss**(Rank-IBN)를 나타냅니다. Contrastive Loss를 최소화하면 관련된 문서와의 유사도 $$\text{sim}(q_i,p_{i}^+)$$는 커지고 관련 없는 문서와의 유사도 $$\text{sim}(q_i,p_{i,j}^-)$$는 작아지도록 인코더의 가중치값이 조정됩니다.
 
 ### Dense Retrieval의 한계
+{:.no_toc}
 검색할 때는 **핵심 단어에 집중**할 필요가 있습니다. `하지만 Dense Retrieval에서는 핵심 단어보다는 문서/검색어의 전체적인 의미를 바탕으로 검색합니다.` 검색어의 핵심 단어가 없어도 비슷한 의미의 문서가 검색 결과로 나올 수 있습니다.
 
 예를 들어 "*축구선수 리오넬 메시는 어떤 상 받았어?*"를 검색하면 검색어의 핵심 단어는 단연코 "*리오넬 메시*"입니다. 하지만 핵심 단어가 나오는  "*메시의 국가대표 경력*" 문서뿐만 아니라 전체적인 의미가 비슷한 "*네이마르가 바르사에서 이달의 선수상 첫 수상*", "*축구선수 음바페 역대 수상 목록*" 등의 문서도 검색 결과로 나오게 됩니다. 사용자의 의도에 맞지 않는 검색 결과입니다.
@@ -168,6 +177,7 @@ Sparse와 Dense Retrieval의 장단점을 다시 살펴보겠습니다.
 인코더가 Lexical Match를 학습하면 어떨까요? 문서/검색어의 의미를 반영하면서도 핵심 단어에 집중해서 검색할 수 있을 것입니다. 위 예시에서 본 *"축구선수 리오넬 메시는 어떤 상 받았어?"* 검색어에 대해서 *"네이마르가 바르사에서 이달의 선수상 첫 수상"*, *"축구선수 음바페 역대 수상 목록"* 문서를 찾는 문제를 막을 것입니다. 지금부터 다룰 `Learned Sparse Retrieval은 학습할 수 있는 인코더로 의미 기반 Lexical Match를 하는 검색 패러다임입니다.` Learned Sparse Retrieval에서 어떻게 인코더로 Lexical Match를 하는지 살펴보겠습니다.
 
 ### 인덱싱과 검색 단계
+{:.no_toc}
 ![]({{"/assets/img/post/003e686308f3f3db597b5e5b5d9b6a6bd062aad0/learned_sparse_retrieval.png"| relative_url}})
 *<그림 6> Learned Sparse Retrieval의 인덱싱과 검색 단계*
 *문서 인코더와 검색어 인코더는 Sparse Vector를 만든다. Sparse Vector는 대부분이 0이고 일부분만 0이 아닌 값을 가진다. 벡터의 0인 부분은 흰색으로 표현했고 0이 아닌 부분은 푸른색으로 표현했다. 벡터 간 유사도 계산을 해서 검색어와 가까운 문서를 검색 결과로 제공한다. 녹색 사각형은 두 벡터가 모두 0이 아닌 부분을 표현하고 있다. 유사도 계산시 녹색 사각형 부분만 연산하면 된다는 특징이 있다.*
@@ -175,9 +185,11 @@ Sparse와 Dense Retrieval의 장단점을 다시 살펴보겠습니다.
 Learned Sparse Retrieval을 표현한 <그림 6>과 Dense Retrieval을 표현한 <그림 5>를 비교해 보면 인코더로 벡터를 만들고 유사도 계산을 하는 점이 비슷합니다. 반면에 가장 두드러지는 차이는 벡터의 형태에 있습니다. <그림 5>의 인코더는 Dense Vector를 만들지만 <그림 6>의 인코더는 **희소한 벡터**(Sparse Vector)를 만듭니다. <그림 6>의 벡터의 값이 0인 대부분은 흰색이고 0이 아닌 일부만 푸른색인 것이 Sparse Vector의 특성을 보여줍니다. 벡터가 Sparse하므로 유사도 계산 시 0이 아닌 부분에 대해서만 연산하면 됩니다. Sparse Vector에서 각 차원이 단어라고 생각하면 검색어와 단어가 많이 겹치는 문서에 높은 점수를 주게 되는 것입니다. Sparse Retrieval의 Lexical Match 방식과 비슷합니다. 학습을 통한 Sparse Retrieval이라 **Learned Sparse Retrieval** 패러다임입니다.
 
 ### SPLADE
+{:.no_toc}
 Learned Sparse Retrieval에서도 인코더의 구조와 학습 단계에 따라 다양한 방법론이 나타났습니다. 특히 Sparse Vector를 만드는 방식과 벡터의 각 차원이 의미하는 바가 무엇인지가 중요합니다. **SPLADE**(**SP**arse **L**exical **A**n**D** **E**xpansion model)[^5]는 Learned Sparse Retrieval에 속하는 대표적인 방법론입니다. SPLADE는 Log Saturation과 FLOPS Regularization을 통해 Sparse Vector를 만든다는 점과 벡터의 각 차원이 Vocabulary 단어를 의미한다는 점이 주요 특징입니다. SPLADE를 자세히 살펴보겠습니다.
 
 #### SPLADE 인코더 구조
+{:.no_toc}
 ![]({{"/assets/img/post/003e686308f3f3db597b5e5b5d9b6a6bd062aad0/splade_encoder.png"| relative_url}})
 *<그림 7> SPLADE 인코더 예시*
 *BERT와 Linear는 문서/검색어 토큰의 Vocabulary Size 차원 벡터를 만든다. Log Saturation은 각 토큰 벡터를 Sparse 하게 바꾼다. 모든 토큰에 대해 Log Saturated 벡터를 더한 문서/검색어 벡터는 Sparse Vector가 된다. 벡터의 각 차원은 Vocabulary 단어의 중요도를 나타낸다.*
@@ -213,6 +225,7 @@ SPLADE 인코더에서 중요한 역할을 하는 **Log Saturation**이 어떤 �
 Log-saturated 토큰 벡터의 합으로 정의되는 문서 벡터는 Sparse 하며 Vocabulary Size의 차원을 가지게 됩니다. 문서와 검색어는 **적은 수의 단어**에 대한 중요도로 표현되며 덕분에 **핵심 단어**에 집중할 수 있습니다. <그림 7>에서 검색어 "*경기도민의 수는 얼마나 되나요?*"의 벡터가 핵심 단어 "*인구*", "*경기도*", "*명*"에 집중된 것을 확인할 수 있습니다.
 
 #### SPLADE 인코더 학습 단계
+{:.no_toc}
 SPLADE의 인코더 학습 단계를 살펴보겠습니다.
 - 검색어와 관련 문서가 연결된 학습 데이터셋을 준비합니다.
 - 문서/검색어 인코더로 문서/검색어를 Sparse Vector로 만듭니다.
@@ -237,11 +250,13 @@ $$
 $$\ell_{\text{FLOPS}}$$를 최소화 하는 것은 모든 문서 쌍/검색어 쌍 $$(d_x, d_y)$$ 벡터 절댓값의 Dot Product 값인 $$\langle\vert\textbf{w}^{(d_x)}\vert,\vert\textbf{w}^{(d_y)}\vert\rangle$$를 0에 가깝게 하는 것입니다. Dot Product를 0에 가깝게 하는 것은 벡터 간에 Orthogonal 하게 하고 벡터가 Sparse 하게 만듭니다. 따라서 FLOPS Regularizer는 벡터 간의 **직교성**(Orthogonality)과 벡터의 **희소성**(Sparsity)을 높입니다. Orthogonality가 높은 것은 두 벡터가 공통으로 0이 아닌 차원의 수가 적다는 의미입니다. 따라서 유사도 연산에 필요한 Floating-point Operations의 수를 규제합니다. Floating-point Operations의 수를 규제하기에 이름이 FLOPS Regularizer입니다.
 
 ### Sparsity & Orthogonality
+{:.no_toc}
 SPLADE는 인코더 구조에 **Log Saturation**과 학습 단계에 **FLOPS Regularizer**를 사용해서 **Sparse & Orthogonal 문서/검색어 벡터**를 만듭니다. Sparsity 덕에 각 문서/검색어는 적은 수의 단어에 대한 중요도 벡터로 표현되며 Orthogonality 덕에 각 문서/검색어를 표현하는 단어가 덜 겹칩니다. `SPLADE는 Sparsity와 Orthogonality 덕에 유사도 계산 시 연산량이 적고 핵심 단어에 집중합니다.` 따라서 논문[^5]의 실험 결과를 보면 SPLADE가 기존 모델들보다 효율과 검색 성능 면에서 뛰어납니다.
 
 앞선 Dense Retrieval의 한계점으로 제시된 *메시* 예시를 다시 생각해 봅시다. SPLADE 인코더를 사용하면 "*축구선수 리오넬 메시는 어떤 상 받았어?*" 벡터는 "*메시*", "*아르헨티나*", "*발롱도르*" 등 핵심 단어에 집중될 것입니다. 따라서 "*네이마르*"나 "*음바페*"에 관련된 문서 대신 "*메시의 국가대표 경력*" 문서를 검색 결과로 찾을 것입니다.
 
 ### SPLADE 결과
+{:.no_toc}
 ![]({{"/assets/img/post/003e686308f3f3db597b5e5b5d9b6a6bd062aad0/splade_vector_example.png"| relative_url}})
 *<그림 9> SPLADE 벡터 예시*
 *SPLADE로 생성한 네 개의 검색어에 대한 벡터 예시이다. x축(Vocabulary 단어)을 y축(벡터값)의 내림차순으로 정렬했다. 검색어 벡터에서 0이 아닌 부분은 수만 개의 단어 중 100개도 되지 않을 정도로 Sparse 하다. 검색어 "체리 효능" 벡터의 단어 "영양"의 경우처럼 검색어에 없는 단어에도 높은 중요도가 나타난다. 검색어 "도쿄올림픽 한국 여자배구 세계 랭킹" 벡터의 단어 "랭킹"의 경우처럼 검색어에 있는 단어인데도 벡터값이 0인 경우가 있다.*
@@ -249,6 +264,7 @@ SPLADE는 인코더 구조에 **Log Saturation**과 학습 단계에 **FLOPS Reg
 실제 예시를 통해서도 SPLADE의 특징을 확인할 수 있습니다. <그림 9>는 한국어 데이터로 SPLADE 인코더를 학습한 후 네 개의 검색어에 대해 벡터를 만들어 본 결과입니다. 수만 차원의 벡터에서 100개도 되지 않는 적은 차원에서만 0이 아닌 값이 나왔습니다. **Sparse Vector**가 만들어졌습니다. 검색어 "*체리 효능*"에 없는 단어 "*영양*"이 상위권에 생성되었고 검색어 "*도쿄올림픽 한국 여자배구 세계 랭킹*"에 있는 단어 "*랭킹*"이 사라지고 "*순위*"가 생겨난 것을 확인할 수 있습니다. 핵심 단어를 찾는 것이 **Query Term Expansion**과 **Selection**의 효과도 갖고 있음을 보여줍니다. 각 문서/검색어가 어떤 단어들의 벡터로 표현됐는지 알 수 있다 보니 **각 단어가 검색 결과에 미치는 영향**을 쉽게 확인할 수도 있습니다. 또한 중요도 0.5 이상의 단어만 쓰는 등 **Thresholding**을 하면 사용하는 단어의 수를 조절할 수 있습니다.
 
 ### SPLADE vs. BM25, DPR
+{:.no_toc}
 SPLADE는 앞서 보았던 방법론들과 비교하여 다음과 같은 장점이 있습니다.
 - BM25와 달리 SPLADE는 학습을 통해 개선할 수 있으며 문서/검색어의 의미를 고려합니다.
 - DPR와 달리 SPLADE는 핵심 단어에 대한 Lexical Match를 할 수 있으며 각 단어가 검색 결과에 미치는 영향을 쉽게 확인할 수 있습니다.

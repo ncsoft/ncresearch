@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "argumentation-methods.png"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 32
 ---
@@ -226,7 +226,7 @@ MSCI ESG rating guideline에서 해당 뉴스와 관련이 있을 만한 라벨�
 
 <br/>
 
-#### Pythia, CerebrasGPT, OPT
+### Pythia, CerebrasGPT, OPT
 
 해당 대회 시작 시기 즈음부터 Alpaca, Vicuna부터 시작된, 효과적으로 사전 학습 및 미세 조정된 오픈소스 언어모델이 출시되었으나,
 당시 새로운 미세조정된 오픈소스 언어모델들에 대한 저희 팀의 활용 경험은 아직 부족했습니다.
