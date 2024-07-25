@@ -6,38 +6,10 @@
   url: https://about.ncsoft.com/
   desc: 엔씨소프트의 공식 브랜드 미디어로 기업의 소식을 전합니다.
 
-- name: "AI Center 유튜브 채널"
+- name: "NC Research 유튜브 채널"
   url: https://www.youtube.com/channel/UCCEMC6k5fZWzOUcv-bnSWZA
-  desc: "엔씨소프트 AI Center의 데모를 보실 수 있는 유튜브 채널입니다."
+  desc: "NC Research의 테크데모 영상을 볼 수 있는 유튜브 채널입니다."
 
-- name: "NC Applied AI Lab 블로그"
-  url: https://velog.io/@applailab
-  desc: 엔씨소프트 Applied AI Lab의 블로그입니다.
-
-- name: "SIGKDD"
-  url: https://kdd.org/
-  desc: SIGKDD는 데이터로부터 지식을 발견하거나 데이터 마이닝 문제를 연구하는 사람들을 위한 국제 학회입니다.
-
-- name: "단비 블로그"
-  url: https://danbi-ncsoft.github.io/
-  desc: 엔씨소프트 데이터센터 I&I실의 블로그입니다.
-
-- name: "언어공학연구회"
-  url: http://www.hclt.kr/
-  desc: 1991년 창립된 학회로 매년 한글날 전후에 한국인지과학회와 공동으로 "한글 및 한국어정보처리 학술대회"를 개최합니다.
-
-- name: "문화체육관광부 국립국어원"
-  url: https://corpus.korean.go.kr/
-  desc: 국립국어원은 어문 정책을 수립‧시행하고, 국민의 바르고 편리한 언어생활을 지원하기 위한 사업을 수행하고자 설립된 문화체육관광부 소속기관입니다.
-
-- name: "한국어학회"
-  url: https://koling.org/
-  desc: 1986년 설립된, 한국어학을 대표하는 학회로 연 4회의 학술지 발행, 영문 학술지 발행, 국제학술대회 개최 등을 진행하고 있습니다.
-
-- name: "AI HUB"
-  url: 	https://www.aihub.or.kr/
-  desc: AI 기술 및 제품·서비스 개발에 필요한 AI 인프라(AI 데이터, AI SW API, 컴퓨팅 자원)를 지원함으로써 누구나 활용하고 참여하는 AI 통합 플랫폼입니다.
-
-- name: "Association for Computational Linguistics(ACL)"
-  url: 	https://www.aclweb.org/portal/
-  desc: The Association for Computational Linguistics(ACL)는 컴퓨터 언어학 또는 자연어 처리에 관련된 문제를 연구하는 사람들을 위한 국제 학회입니다.
+- name: "FAIR AI"
+  url: https://app.wisetracker.co.kr/20551/sld.do?trackId=M00205511721201776847
+  desc: "엔씨문화재단의 AI 윤리 정보 웹라이브러리 입니다."

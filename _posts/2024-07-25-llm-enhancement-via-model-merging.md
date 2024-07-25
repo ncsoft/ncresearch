@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "빠르고 편리한 생성형 AI, 윤리적 고민도 빠르게 접근 중"
+title: "LLM 성능 향상을 위한 모델 병합 기술 활용 #1"
 icon: paper
 author: 07f98dfca0a2ce72eb39ad0ad4f5ecebae36a5bd
 permalink: 97e37d3af13fab6d2c69618087e7d3afb2ff566c
