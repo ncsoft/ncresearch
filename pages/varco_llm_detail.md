@@ -155,7 +155,7 @@ hide: true
     display: none; !important;
   }
   article.main-container {
-    padding: 200px 30px 150px 0px; !important;
+    padding: 200px 30px 150px 30px; !important;
   }
 </style>
 <script>
