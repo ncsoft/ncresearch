@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "Codec-based LM.png"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 48
 ---
