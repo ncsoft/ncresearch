@@ -1,3 +1,51 @@
+- authors: "이용혁(NCSOFT), 조남현(NCSOFT)"
+  title: "iPhonMatchNet: Zero-shot User-Defined Keyword Spotting Using Implicit Acoustic Echo Cancellation"
+  conf: "ICASSP 2024"
+  year: 2024
+  abstract: "In response to the increasing interest in human–machine communication across various domains, this paper introduces a novel approach called iPhonMatchNet, which addresses the challenge of barge-in scenarios, wherein user speech overlaps with device playback audio, thereby creating a self-referencing problem. The proposed model leverages implicit acoustic echo cancellation (iAEC) techniques to increase the efficiency of user-defined keyword spotting models, achieving a remarkable 95% reduction in mean absolute error with a minimal increase in model size (0.13%) compared to the baseline model, PhonMatchNet. We also present an efficient model structure and demonstrate its capability to learn iAEC functionality without requiring a clean signal. The findings of our study indicate that the proposed model achieves competitive performance in real-world deployment conditions of smart devices."
+  tags: ["ICASSP2024", "Keyword spotting", "Zero-shot", “Acoustic echo cancellation”]
+  id: 
+
+- authors: "Jae Hyun Park(NCSOFT), Joon-Gyu Maeng(NCSOFT), TaeJun Bak(SK Telecom), Young-Sun Joo(NCSOFT)"
+  title: " Synthe-Sees:Multi-Speaker Text-to-Speech for Virtual Speaker"
+  conf: "ICASSP 2024"
+  year: 2024
+  abstract: "Recent virtual voice generation researches have limitations in that they results in low-quality voice and generate inconsistent voice from the same speaker’s different facial images. To handle this, we propose a facial encoder module for the pre-trained multi-speaker TTS system called SYNTHE-SEES, which utilizes face embeddings as speaker embeddings by sharing the embedding space of the pre-trained speech embeddings using cross-modal contrastive learning. We trained the facial encoder in two ways: 1) for consistent embeddings, we use the dataset supervision to capture discriminative speaker attributes; 2) we leverage internal structure of the speech embedding to generate diverse and high-quality voices. Experimental results demonstrate that our method generates more distinct, consistent, and high-quality speaker embeddings than other state-of-the-art methods in both quantitative and qualitative evaluations. Especially, the result of cluster-level evaluation verifies that our method shows the highest distinction performance of diverse speaker embedding. Our demo is available at Demo."
+  tags: [“ICASSP2024”, “Speech Synthesis”, “Face-to-speech”, “Speaker generation”, “Virtual speaker”]
+  id: 
+
+- authors: "Sungguk Cha(NCSOFT), Jusung Lee(NCSOFT), Younghyun Lee(NCSOFT), Cheoljong Yang(NCSOFT)"
+  title: " Visually Dehallucinative Instruction Generation"
+  conf: "ICASSP 2024"
+  year: 2024
+  abstract: "In recent years, synthetic visual instructions by generative language model have demonstrated plausible text generation performance on the visual question-answering tasks. However, challenges persist in the hallucination of generative language models, i.e., the generated image-text data contains unintended contents. This paper presents a novel and scalable method for generating visually dehallucinative instructions, dubbed CAP2QA, that constrains the scope to only image contents. Our key contributions lie in introducing imagealigned instructive QA dataset CAP2QA-COCO and its scalable recipe. In our experiments, we compare synthetic visual instruction datasets that share the same source data by visual instruction tuning and conduct general visual recognition tasks. It shows that our proposed method significantly reduces visual hallucination while consistently improving visual recognition ability and expressiveness."
+  tags: ["ICASSP2024", "Multimodal large language model", "Hallucination", "Visual instruction tuning" ]
+  id: 
+
+- authors: "Jaehyeop Choi(NCSOFT), Youngbaek Kim(NCSOFT), Younghyun Lee(NCSOFT)"
+  title: "Robust Face Recognition Based on an Angle-aware Loss and Masked Autoencoder Pre-training"
+  conf: "ICASSP 2024"
+  year: 2024
+  abstract: "Despite the advances in deep learning techniques, accurate identification using face recognition (FR) systems remains challenging owing to changes in face angles, bad lighting, and occlusions. To address these problems, we propose an optimized approach to improve the robustness of feature extraction models that are used in FR systems. The proposed method leverages an angle-aware loss function, inspired by ArcFace, that provides a large margin for significantly rotated faces. Additionally, a pre-trained weight initialization was derived from a masked autoencoder to enhance the ability of the model to cope with various poor conditions. The experimental results indicate that the proposed method outperforms existing face recognition methods in both normal and adverse environments."
+  tags: ["ICASSP2024", "Vision", "Face recognition", "AI"]
+  id: 
+
+- authors: "Jungnam Park, Sehee Min, Phil Sik Chang, Jaedong Lee, Moon Seok Park, Jehee Lee(NCSOFT)"
+  title: "Generative GaitNet"
+  conf: "SIGGRAPH 2022"
+  year: 2022
+  abstract: "Understanding the relation between anatomy and gait is key to successful predictive gait simulation. In this paper, we present Generative GaitNet, which is a novel network architecture based on deep reinforcement learning for controlling a comprehensive, fullbody, musculoskeletal model with 304 Hill-type musculotendons. The Generative GaitNet is a pre-trained, integrated system of artificial neural networks learned in a 618-dimensional continuous domain of anatomy conditions (e.g., mass distribution, body proportion, bone deformity, and muscle deficits) and gait conditions (e.g., stride and cadence). The pre-trained GaitNet takes anatomy and gait conditions as input and generates a series of gait cycles appropriate to the conditions through physics-based simulation. We will demonstrate the efficacy and expressive power of Generative GaitNet to generate a variety of healthy and pathological human gaits in real-time physics-based simulation."
+  tags: ["SIGRGRAPH2022", "Graphics", "AI", "GaitNet", "Character Animation"]
+  id:
+
+- authors: "Sunmin Lee, Taeho Kang, Jungnam Park, Jehee Lee(NCSOFT), Jungdam Won"
+  title: "SAME: Skeleton-Agnostic Motion Embedding for Character Animation"
+  conf: "SIGGRAPH 2023 Asia"
+  year: 2023
+  abstract: "Learning deep neural networks on human motion data has become common in computer graphics research, but the heterogeneity of available datasets poses challenges for training large-scale networks. This paper presents a framework that allows us to solve various animation tasks in a skeleton-agnostic manner. The core of our framework is to learn an embedding space to disentangle skeleton-related information from input motion while preserving semantics, which we call Skeleton-Agnostic Motion Embedding (SAME). To efficiently learn the embedding space, we develop a novel autoencoder with graph convolution networks, and we provide new formulations of various animation tasks operating in the SAME space. We showcase various examples, including retargeting, reconstruction, and interactive character control, and conduct an ablation study to validate design choices made during development."
+  tags: ["SIGGRAPH 2023 Asia", "Graphics", "AI", "SAME", "Character Animation"]
+  id:
+
 - authors: "Donghyun Kim, Youbin Ahn, Wongyu Kim, Chanhee Lee, Kyungchan Lee, Kyong‐Ho Lee, Jeonguk Kim, Donghoon Shin(NCSOFT), Yeonsoo Lee(NCSOFT)"
   title: "Persona Expansion with Commonsense Knowledge for Diverse and Consistent Response Generation"
   conf: "The 17th Conference of the European Chapter of the Association for Computational Linguistics(EACL). (2023)"
