@@ -107,7 +107,7 @@
   conf: "Proceedings of the 29th International Conference on Computational Linguistics. (COLING) (2022)"
   year: 2022
   abstract: "This study proposes Semantic-Infused SElective Graph Reasoning (SISER) for fact verification, which newly presents semantic-level graph reasoning and injects its reasoning-enhanced representation into other
-  types of graph-based and sequence-based reasoning methods. SISER combines three reasoning types: 1) semantic-level graph reasoning, which uses a semantic graph from evidence sentences, whose nodes are elements of a triple – <Subject, Verb, Object>, 2)“semantic-infused” sentence-level “selective” graph reasoning, which combine semanticlevel and sentence-level representations and perform graph reasoning in a selective manner using the node selection mechanism, and 3) sequence reasoning, which concatenates all evidence sentences and performs attentionbased reasoning. Experiment results on a large-scale dataset for Fact Extraction and VERification (FEVER) show that SISER outperforms the previous graph-based approaches and achieves state-of-the-art performance."
+  types of graph-based and sequence-based reasoning methods. SISER combines three reasoning types: 1) semantic-level graph reasoning, which uses a semantic graph from evidence sentences, whose nodes are elements of a triple – <Subject, Verb, Object>, 2)\"semantic-infused\" sentence-level \"selective\" graph reasoning, which combine semanticlevel and sentence-level representations and perform graph reasoning in a selective manner using the node selection mechanism, and 3) sequence reasoning, which concatenates all evidence sentences and performs attentionbased reasoning. Experiment results on a large-scale dataset for Fact Extraction and VERification (FEVER) show that SISER outperforms the previous graph-based approaches and achieves state-of-the-art performance."
   tags: ["COLING2022", "Understanding", "NLP"]
   id: 7
 
@@ -643,7 +643,7 @@
   title: "ATSR: 단어 인식기에 필요한 것은 트랜스포머"
   conf: "대한전자공학회 2020년도 하계종합학술대회"
   year: 2020
-  abstract: "Scene text recognition is a challenging taskbecause it contains a variety of background, noise,blur,fonts, and perspective views. Recently, deep learning-based algorithms, for example, RNN-based methods or Transformer-based methods, have shown out standing results on the scene text recognition task. However, RNN-based methods suffer inherently from long-term dependency problems and Transformer-based methods have low accuracy in curved and irregular text.In this paper, we propose a novel deep neural network architecture which combines “Spatial Transformer Network” and “Transformer” network for scene text recognition. The proposed architecture shows consistently better word accuracy over widely used public word recognition datasets,compared to previous scene text recognition models."
+  abstract: "Scene text recognition is a challenging taskbecause it contains a variety of background, noise,blur,fonts, and perspective views. Recently, deep learning-based algorithms, for example, RNN-based methods or Transformer-based methods, have shown out standing results on the scene text recognition task. However, RNN-based methods suffer inherently from long-term dependency problems and Transformer-based methods have low accuracy in curved and irregular text.In this paper, we propose a novel deep neural network architecture which combines \"Spatial Transformer Network\" and \"Transformer\" network for scene text recognition. The proposed architecture shows consistently better word accuracy over widely used public word recognition datasets,compared to previous scene text recognition models."
   tags: ["대한전자공학회2020년도하계종합학술대회", "Vision", "AI"]
   id: 74
 
@@ -699,7 +699,7 @@
   title: "Adversarial TableQA: Attention Supervision for Question Answering on Tables"
   conf: "Proceedings of the 10th Asian Conference on Machine Learning (AACL). (2018)"
   year: 2018
-  abstract: "The task of answering a question given a text passage has shown great developments on model performance thanks to community efforts in building useful datasets. Recently, there have been doubts whether such rapid progress has been based on truly understanding language. The same question has not been asked in the table question answering (TableQA) task, where we are tasked to answer a query given a table. We show that existing efforts, of using “answers” for both evaluation and supervision for TableQA, show deteriorating performances in adversarial settings of perturbations that do not affect the answer. This insight naturally motivates to develop new models that understand question and table more precisely. For this goal, we propose Neural Operator (NeOp), a multi-layer sequential network with attention supervision to answer the query given a table. NeOp uses multiple Selective Recurrent Units (SelRUs) to further help the interpretability of the answers of the model. Experiments show that the use of operand information to train the model significantly improves the performance and interpretability of TableQA models.NeOp outperforms all the previous models by a big margin."
+  abstract: "The task of answering a question given a text passage has shown great developments on model performance thanks to community efforts in building useful datasets. Recently, there have been doubts whether such rapid progress has been based on truly understanding language. The same question has not been asked in the table question answering (TableQA) task, where we are tasked to answer a query given a table. We show that existing efforts, of using \"answers\" for both evaluation and supervision for TableQA, show deteriorating performances in adversarial settings of perturbations that do not affect the answer. This insight naturally motivates to develop new models that understand question and table more precisely. For this goal, we propose Neural Operator (NeOp), a multi-layer sequential network with attention supervision to answer the query given a table. NeOp uses multiple Selective Recurrent Units (SelRUs) to further help the interpretability of the answers of the model. Experiments show that the use of operand information to train the model significantly improves the performance and interpretability of TableQA models.NeOp outperforms all the previous models by a big margin."
   tags: ["AACL2018", "Question_answering", "Applied_AI"]
   id: 81
 
@@ -806,3 +806,51 @@
   abstract: "대형 코퍼스로 학습한 언어 모델은 코퍼스 안의 사회적 편견이나 혐오 표현까지 학습한다. 본 연구에서는 한국어 오픈 도메인 대화 모델에서 혐오 표현 생성을 완화하는 방법을 제시한다. Seq2seq 구조인 BART를 기반으로 하여 컨트롤 코드을 추가해 혐오 표현 생성 조절을 수행하였다. 컨트롤 코드를 사용하지 않은 기준 모델과 비교한 결과, 컨트롤 코드를 추가해 학습한 모델에서 혐오 표현 생성이 완화되었고 대화 품질에도 변화가 없음을 확인하였다."
   tags: ["2021한글및한국어정보처리학술대회", "Dialogue", "NLP"]
   id: 94
+
+- authors: "이용혁(NCSOFT), 조남현(NCSOFT)"
+  title: "iPhonMatchNet: Zero-shot User-Defined Keyword Spotting Using Implicit Acoustic Echo Cancellation"
+  conf: "ICASSP 2024"
+  year: 2024
+  abstract: "In response to the increasing interest in human–machine communication across various domains, this paper introduces a novel approach called iPhonMatchNet, which addresses the challenge of barge-in scenarios, wherein user speech overlaps with device playback audio, thereby creating a self-referencing problem. The proposed model leverages implicit acoustic echo cancellation (iAEC) techniques to increase the efficiency of user-defined keyword spotting models, achieving a remarkable 95% reduction in mean absolute error with a minimal increase in model size (0.13%) compared to the baseline model, PhonMatchNet. We also present an efficient model structure and demonstrate its capability to learn iAEC functionality without requiring a clean signal. The findings of our study indicate that the proposed model achieves competitive performance in real-world deployment conditions of smart devices."
+  tags: ["ICASSP2024", "Keyword spotting", "Zero-shot", "Acoustic echo cancellation"]
+  id: 95
+
+- authors: "Jae Hyun Park(NCSOFT), Joon-Gyu Maeng(NCSOFT), TaeJun Bak(SK Telecom), Young-Sun Joo(NCSOFT)"
+  title: "Synthe-Sees:Multi-Speaker Text-to-Speech for Virtual Speaker"
+  conf: "ICASSP 2024"
+  year: 2024
+  abstract: "Recent virtual voice generation researches have limitations in that they results in low-quality voice and generate inconsistent voice from the same speaker’s different facial images. To handle this, we propose a facial encoder module for the pre-trained multi-speaker TTS system called SYNTHE-SEES, which utilizes face embeddings as speaker embeddings by sharing the embedding space of the pre-trained speech embeddings using cross-modal contrastive learning. We trained the facial encoder in two ways: 1) for consistent embeddings, we use the dataset supervision to capture discriminative speaker attributes; 2) we leverage internal structure of the speech embedding to generate diverse and high-quality voices. Experimental results demonstrate that our method generates more distinct, consistent, and high-quality speaker embeddings than other state-of-the-art methods in both quantitative and qualitative evaluations. Especially, the result of cluster-level evaluation verifies that our method shows the highest distinction performance of diverse speaker embedding. Our demo is available at Demo."
+  tags: ["ICASSP2024", "Speech Synthesis", "Face-to-speech", "Speaker generation", "Virtual speaker"]
+  id: 96
+
+- authors: "Sungguk Cha(NCSOFT), Jusung Lee(NCSOFT), Younghyun Lee(NCSOFT), Cheoljong Yang(NCSOFT)"
+  title: "Visually Dehallucinative Instruction Generation"
+  conf: "ICASSP 2024"
+  year: 2024
+  abstract: "In recent years, synthetic visual instructions by generative language model have demonstrated plausible text generation performance on the visual question-answering tasks. However, challenges persist in the hallucination of generative language models, i.e., the generated image-text data contains unintended contents. This paper presents a novel and scalable method for generating visually dehallucinative instructions, dubbed CAP2QA, that constrains the scope to only image contents. Our key contributions lie in introducing imagealigned instructive QA dataset CAP2QA-COCO and its scalable recipe. In our experiments, we compare synthetic visual instruction datasets that share the same source data by visual instruction tuning and conduct general visual recognition tasks. It shows that our proposed method significantly reduces visual hallucination while consistently improving visual recognition ability and expressiveness."
+  tags: ["ICASSP2024", "Multimodal large language model", "Hallucination", "Visual instruction tuning" ]
+  id: 97
+
+- authors: "Jaehyeop Choi(NCSOFT), Youngbaek Kim(NCSOFT), Younghyun Lee(NCSOFT)"
+  title: "Robust Face Recognition Based on an Angle-aware Loss and Masked Autoencoder Pre-training"
+  conf: "ICASSP 2024"
+  year: 2024
+  abstract: "Despite the advances in deep learning techniques, accurate identification using face recognition (FR) systems remains challenging owing to changes in face angles, bad lighting, and occlusions. To address these problems, we propose an optimized approach to improve the robustness of feature extraction models that are used in FR systems. The proposed method leverages an angle-aware loss function, inspired by ArcFace, that provides a large margin for significantly rotated faces. Additionally, a pre-trained weight initialization was derived from a masked autoencoder to enhance the ability of the model to cope with various poor conditions. The experimental results indicate that the proposed method outperforms existing face recognition methods in both normal and adverse environments."
+  tags: ["ICASSP2024", "Vision", "Face recognition", "AI"]
+  id: 98
+
+- authors: "Jungnam Park, Sehee Min, Phil Sik Chang, Jaedong Lee, Moon Seok Park, Jehee Lee(NCSOFT)"
+  title: "Generative GaitNet"
+  conf: "SIGGRAPH 2022"
+  year: 2022
+  abstract: "Understanding the relation between anatomy and gait is key to successful predictive gait simulation. In this paper, we present Generative GaitNet, which is a novel network architecture based on deep reinforcement learning for controlling a comprehensive, fullbody, musculoskeletal model with 304 Hill-type musculotendons. The Generative GaitNet is a pre-trained, integrated system of artificial neural networks learned in a 618-dimensional continuous domain of anatomy conditions (e.g., mass distribution, body proportion, bone deformity, and muscle deficits) and gait conditions (e.g., stride and cadence). The pre-trained GaitNet takes anatomy and gait conditions as input and generates a series of gait cycles appropriate to the conditions through physics-based simulation. We will demonstrate the efficacy and expressive power of Generative GaitNet to generate a variety of healthy and pathological human gaits in real-time physics-based simulation."
+  tags: ["SIGRGRAPH2022", "Graphics", "AI", "GaitNet", "Character Animation"]
+  id: 99
+
+- authors: "Sunmin Lee, Taeho Kang, Jungnam Park, Jehee Lee(NCSOFT), Jungdam Won"
+  title: "SAME: Skeleton-Agnostic Motion Embedding for Character Animation"
+  conf: "SIGGRAPH 2023 Asia"
+  year: 2023
+  abstract: "Learning deep neural networks on human motion data has become common in computer graphics research, but the heterogeneity of available datasets poses challenges for training large-scale networks. This paper presents a framework that allows us to solve various animation tasks in a skeleton-agnostic manner. The core of our framework is to learn an embedding space to disentangle skeleton-related information from input motion while preserving semantics, which we call Skeleton-Agnostic Motion Embedding (SAME). To efficiently learn the embedding space, we develop a novel autoencoder with graph convolution networks, and we provide new formulations of various animation tasks operating in the SAME space. We showcase various examples, including retargeting, reconstruction, and interactive character control, and conduct an ablation study to validate design choices made during development."
+  tags: ["SIGGRAPH 2023 Asia", "Graphics", "AI", "SAME", "Character Animation"]
+  id: 100

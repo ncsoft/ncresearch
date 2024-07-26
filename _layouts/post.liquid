@@ -43,6 +43,10 @@ layout: default
       {% if page.bootstrap %}
       </div>
     {% endif %}
+    <!-- Footer -->
+    {% if page.footer %}
+      {{ page.footer | markdownify }}
+    {% endif %}
   </section>
 
   <!-- Tag list -->
