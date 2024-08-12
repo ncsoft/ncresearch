@@ -80,3 +80,11 @@
       title: '초거대 언어 모델의 수업시대 1부 - 언어 모델은 무엇으로 배우는가?'
     - permalink: 'd1d22308d4efe749b647a5ad2bc8e68bd71ccded'
       title: '초거대 언어 모델의 수업시대 2부 - 언어 모델은 어떻게 추론하는가'
+
+- id: 10
+  series_title: ''
+  list:
+    - permalink: '97e37d3af13fab6d2c69618087e7d3afb2ff566c'
+      title: 'LLM 성능 향상을 위한 모델 병합 기술 활용 #1'
+    - permalink: 'c89a492c815109c0979ce0d4fa0efababd20e6b5'
+      title: 'LLM 성능 향상을 위한 모델 병합 기술 활용 #2'
