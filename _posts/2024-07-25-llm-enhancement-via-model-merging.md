@@ -12,7 +12,7 @@ img_name: "썸네일.png"
 toc: true
 show: true
 new: true
-series: -1
+series: 10
 index: 52
 ---
 
