@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "Karras_2017_NVIDIA.png"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 50
 ---
