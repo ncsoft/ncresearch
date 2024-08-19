@@ -2,6 +2,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5LTHBDHQ');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Theme Mode-->
     {% if site.color_theme == 'auto' %}
     <script>
@@ -52,24 +65,26 @@
     <!-- Simple Jekyll Search 1.10.0 -->
     <script src="{{ '/assets/js/vendor/simple-jekyll-search.min.js' | relative_url }}" type="text/javascript"></script>
 
-    <!-- Google Analytics / Cookie Consent -->
+    <!-- Google Analytics / Cookie Consent
     <script>
       const cookieName = 'cookie-notice-dismissed-{{ site.url }}';
       const isCookieConsent = '{{ site.cookie_consent }}';
       const analyticsName = '{{ site.google_analytics }}';
       const analyticsNameGA4 = '{{ site.google_analytics_ga4 }}';
     </script>
-
+    -->
     {% if site.cookie_consent %}
         <span id="cookie-notice"><span>{{ site.data.language.str_cookie_disclaimer | default: "We would like to use third party cookies and scripts to improve the functionality of this website." }}
           </span><a id="cookie-notice-accept" class="button">{{ site.data.language.str_cookie_approve | default: "Approve" }}</a>
         </span>
     {% endif %}
     {% if site.google_analytics %}
-        <!-- Global site tag (gtag.js) -->
+        <!-- Global site tag (gtag.js)
         <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-        <!-- Page analysis (analytics.js) -->
+        -->
+        <!-- Page analysis (analytics.js)
         <script async src='https://www.google-analytics.com/analytics.js'></script>
+        -->
     {% endif %}
 
     <!-- seo tags -->
