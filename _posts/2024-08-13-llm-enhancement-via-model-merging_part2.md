@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "썸네일.png"
 toc: true
 show: true
-new: true
+new: false
 series: 10
 index: 53
 ---
