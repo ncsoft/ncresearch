@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "최애의LLM.png"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 56
 ---
