@@ -8,7 +8,7 @@ categories: [NLP, Data]
 tags: [LLM_평가, 벤치마크, 한국어_LLM, 한국어_벤치마크_데이터셋]
 excerpt: "LLM을 평가하기 위한 벤치마크에 대해 소개합니다."
 back_color: "#ffffff"
-img_name: "언어모델+평가를+위한+벤치마크+데이터셋+소개와+그+활용%20(1).doc.filesimage002.png"
+img_name: "언어모델+평가를+위한+벤치마크+데이터셋+소개와+그+활용.png"
 toc: true
 show: true
 new: true
@@ -71,7 +71,7 @@ SuperGLUE(Super General Language Understanding Evaluation) 같은 종합 평가 
 변화가 필요해졌습니다.
 
 <br>
-![]({{"/assets/img/post/b93db425f816a64229e09d2e5777de401fec76ed/언어모델+평가를+위한+벤치마크+데이터셋+소개와+그+활용%20(1).doc.filesimage002.png"| relative_url}})
+![]({{"/assets/img/post/b93db425f816a64229e09d2e5777de401fec76ed/언어모델+평가를+위한+벤치마크+데이터셋+소개와+그+활용.png"| relative_url}})
 {:.center_div}
 *그림 1. 언어 모델 평가의 변천사*
 {:.center_div}
@@ -804,31 +804,31 @@ AI 모델의 성능을 평가하는 중요한 도구로, 한국어 챗봇의 상
 * * *
 # 참고자료
 
-· Zhuang, Z., Chen, Q., Ma, L., Li, M., Han, Y., Qian, Y., Bai, H.,
+- Zhuang, Z., Chen, Q., Ma, L., Li, M., Han, Y., Qian, Y., Bai, H.,
 Zhang, W., & Liu, T. (2023). Through the lens of core competency: Survey on
 evaluation of large language models. _arXiv_.
 <https://arxiv.org/abs/2308.07902> <br>
-· Zheng, L., Chiang, W.-L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y.,
+- Zheng, L., Chiang, W.-L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y.,
 Lin, Z., Li, Z., Li, D., Xing, E. P., Zhang, H., Gonzalez, J. E., & Stoica, I.
 (2023). Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. _arXiv_.
 <https://arxiv.org/abs/2306.05685> <br>
-· Kim, S., Lee, J., & Lee, C. (2023). KorNAT: LLM alignment benchmark
+- Kim, S., Lee, J., & Lee, C. (2023). KorNAT: LLM alignment benchmark
 for Korean social values and common knowledge. _arXiv_.
 <https://arxiv.org/abs/2309.12345> <br>
-· Park, H., Kim, D., & Choi, Y. (2023). BEEP! Korean corpus of online
+- Park, H., Kim, D., & Choi, Y. (2023). BEEP! Korean corpus of online
 news comments for toxic speech detection. _arXiv_.
 <https://arxiv.org/abs/2307.12345> <br>
-· Mirzadeh, I., Alizadeh, K., Shahrokhi, H., Tuzel, O., & Bengio, S.
+- Mirzadeh, I., Alizadeh, K., Shahrokhi, H., Tuzel, O., & Bengio, S.
 (2024). GSM-Symbolic: Understanding the limitations of mathematical reasoning
 in large language models. _arXiv_. <https://arxiv.org/abs/2410.05229>
 
-· <https://huggingface.co/datasets/jiyounglee0523/KorNAT> <br>
-· <https://huggingface.co/datasets/cais/mmlu> <br>
-· <https://huggingface.co/datasets/openai/gsm8k> <br>
-· <https://huggingface.co/nlpai-lab> <br>
-· <https://github.com/allenai> <br>
-· <https://github.com/google-research/FLAN/tree/main/flan> <br>
-· <https://github.com/e9t/nsmc> <br>
-· <https://github.com/kocohub/korean-hate-speech> <br>
-· <https://github.com/lm-sys/FastChat> <br>
-· <https://www.enkefalos.com/newsletters-and-articles/evaluating-large-language-models/> <br>
+- <https://huggingface.co/datasets/jiyounglee0523/KorNAT> <br>
+- <https://huggingface.co/datasets/cais/mmlu> <br>
+- <https://huggingface.co/datasets/openai/gsm8k> <br>
+- <https://huggingface.co/nlpai-lab> <br>
+- <https://github.com/allenai> <br>
+- <https://github.com/google-research/FLAN/tree/main/flan> <br>
+- <https://github.com/e9t/nsmc> <br>
+- <https://github.com/kocohub/korean-hate-speech> <br>
+- <https://github.com/lm-sys/FastChat> <br>
+- <https://www.enkefalos.com/newsletters-and-articles/evaluating-large-language-models/> <br>
