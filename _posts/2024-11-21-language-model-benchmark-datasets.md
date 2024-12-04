@@ -806,21 +806,17 @@ AI 모델의 성능을 평가하는 중요한 도구로, 한국어 챗봇의 상
 
 - Zhuang, Z., Chen, Q., Ma, L., Li, M., Han, Y., Qian, Y., Bai, H.,
 Zhang, W., & Liu, T. (2023). Through the lens of core competency: Survey on
-evaluation of large language models. _arXiv_.
-<https://arxiv.org/abs/2308.07902> <br>
+evaluation of large language models. _arXiv_. <br><https://arxiv.org/abs/2308.07902> <br>
 - Zheng, L., Chiang, W.-L., Sheng, Y., Zhuang, S., Wu, Z., Zhuang, Y.,
 Lin, Z., Li, Z., Li, D., Xing, E. P., Zhang, H., Gonzalez, J. E., & Stoica, I.
-(2023). Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. _arXiv_.
-<https://arxiv.org/abs/2306.05685> <br>
+(2023). Judging LLM-as-a-judge with MT-Bench and Chatbot Arena. _arXiv_. <br><https://arxiv.org/abs/2306.05685> <br>
 - Kim, S., Lee, J., & Lee, C. (2023). KorNAT: LLM alignment benchmark
-for Korean social values and common knowledge. _arXiv_.
-<https://arxiv.org/abs/2309.12345> <br>
+for Korean social values and common knowledge. _arXiv_. <br><https://arxiv.org/abs/2309.12345> <br>
 - Park, H., Kim, D., & Choi, Y. (2023). BEEP! Korean corpus of online
-news comments for toxic speech detection. _arXiv_.
-<https://arxiv.org/abs/2307.12345> <br>
+news comments for toxic speech detection. _arXiv_. <br><https://arxiv.org/abs/2307.12345> <br>
 - Mirzadeh, I., Alizadeh, K., Shahrokhi, H., Tuzel, O., & Bengio, S.
 (2024). GSM-Symbolic: Understanding the limitations of mathematical reasoning
-in large language models. _arXiv_. <https://arxiv.org/abs/2410.05229>
+in large language models. _arXiv_. <br><https://arxiv.org/abs/2410.05229>
 
 - <https://huggingface.co/datasets/jiyounglee0523/KorNAT> <br>
 - <https://huggingface.co/datasets/cais/mmlu> <br>

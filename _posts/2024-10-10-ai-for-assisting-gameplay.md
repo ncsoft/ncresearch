@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "figure2.PNG"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 57
 ---
