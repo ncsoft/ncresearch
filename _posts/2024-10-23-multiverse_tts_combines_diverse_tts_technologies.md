@@ -12,7 +12,7 @@ back_color: "#ffffff"
 img_name: "fig_multiverse.png"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 58
 ---
