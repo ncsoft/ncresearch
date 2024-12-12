@@ -84,7 +84,8 @@ layout: page
                   </div>
                 {% endif %}
               {% assign _author2 = post.author2 %}
-              {% include blog/post_info.liquid author=post.author author2=_author2 date=post.date %}
+              {% assign _author3 = post.author3 %}
+              {% include blog/post_info.liquid author=post.author author2=_author2 author3=_author3 date=post.date %}
               </div>
             {% endif %}
           {% endfor %}

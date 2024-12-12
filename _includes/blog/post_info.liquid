@@ -3,6 +3,10 @@
 {% if include.author2 %}
   {% assign author2 = site.data.authors[include.author2] %}
 {% endif %}
+{% assign author3 = false %}
+{% if include.author3 %}
+  {% assign author3 = site.data.authors[include.author3] %}
+{% endif %}
 {% assign date = include.date | default: "today" | date: "%B %-d, %Y" %}
 
 <div class="post-info">
@@ -15,9 +19,14 @@
         <img alt="Author2's avatar" src="{{ author2.avatar | relative_url }}">
       {% endif %}
     {% endif %}
+    {% if author3 != false %}
+      {% if author3.avatar %}
+        <img alt="Author3's avatar" src="{{ author3.avatar | relative_url }}">
+      {% endif %}
+    {% endif %}
     <div>
       <p class="meta">
-        {% if author.name %}{{ author.name }}{% if author2 != false %}, {{ author2.name }}{% endif %}{% endif %}
+        {% if author.name %}{{ author.name }}{% if author2 != false %}, {{ author2.name }}{% if author3 != false %}, {{ author3.name }}{% endif %}{% endif %}{% endif %}
         {% assign x = date | date: "%m" | minus: 1 %}
 
       </p>
