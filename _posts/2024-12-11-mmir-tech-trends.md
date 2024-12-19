@@ -274,20 +274,20 @@ M-BEIR 와 같은 Universal 환경에서 멀티모달 검색을 수행한다면 
     <td rowspan="3">Has thin straps and different pattern and more autumn colored and longer.<br><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_1.png"></td>
     <td rowspan="3"><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_2.png"></td>
     <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_1.png"></td>
+    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_1.png"></td>
+    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_1.png"></td>
+    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_3.png"></td>
+  </tr>
+  <tr>
     <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_4.png"></td>
     <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_5.png"></td>
-    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_1.png"></td>
+    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_5.png"></td>
+    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_6.png"></td>
   </tr>
   <tr>
     <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_5.png"></td>
     <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_7.png"></td>
-    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_1.png"></td>
-    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_5.png"></td>
-  </tr>
-  <tr>
     <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_8.png"></td>
-    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_3.png"></td>
-    <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_6.png"></td>
     <td><img src="assets/img/post/e84a5b2d8fd47fbb984e8facd989818342e1f594/3_9.png"></td>
   </tr>
 
