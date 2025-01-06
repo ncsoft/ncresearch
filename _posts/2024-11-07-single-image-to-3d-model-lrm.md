@@ -12,7 +12,7 @@ back_color: "#ffffff"
 img_name: "lrm-20241011-091046.jpg"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 59
 ---
