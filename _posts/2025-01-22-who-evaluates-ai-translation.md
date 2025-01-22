@@ -164,7 +164,7 @@ index: 64
 <br>
 
 ![그림 6.png]({{"/assets/img/post/c47a12e472eb475aa6de16e0861a55d39eeb375e/그림6.png"| relative_url}})  
-그림 6. 엔씨 게임 채팅 예시, 게임 채팅은 그 의미가 모호한 경우가 굉장히 많다[^4]  
+그림 6. 엔씨 게임 채팅 예시, 게임 채팅은 그 의미가 모호한 경우가 굉장히 많다
 {:.center_div}  
 <br>
 
@@ -181,7 +181,7 @@ index: 64
 그래서 최근에는 reference-free 평가 방법이 주목받고 있습니다. reference-free 방법은 <strong>샘플마다 reference를 준비하지 않고도 번역 품질을 산출</strong>할 수 있어 효율적이며 실제 활용하기에도 적합한 방법입니다. 이 방법의 대표적인 연구로는 <strong>COMET-QE[^4]</strong>가 있습니다. <strong>COMET-QE</strong>는 기존의 COMET[^5] 모델의 후속 연구로, <strong>reference 없이 번역 품질을 평가할 수 있도록 설계된 모델</strong>입니다. 이 모델은 강력한 다국어 이해 능력을 가진 PLM(Pre-trained Language Model)을 인코더로 활용하며, 기존의 평가지표(e.g., BLEU, chrF)보다 사람의 평가와 더욱 유사한 결과를 제공하는 게 특징입니다.
 
 ![그림 7.png]({{"/assets/img/post/c47a12e472eb475aa6de16e0861a55d39eeb375e/그림7.png"| relative_url}})  
-그림 7. COMET-QE 모델 구조 
+그림 7. COMET-QE 모델 구조[^4]
 {:.center_div}  
 <br>
 
