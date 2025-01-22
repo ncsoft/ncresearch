@@ -11,7 +11,7 @@ back_color: "#ffffff"
 img_name: "언어모델+평가를+위한+벤치마크+데이터셋+소개와+그+활용.png"
 toc: true
 show: true
-new: true
+new: false
 series: -1
 index: 60
 ---
