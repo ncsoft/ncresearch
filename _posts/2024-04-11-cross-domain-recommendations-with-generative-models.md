@@ -6,7 +6,7 @@ author: caccbbfc8b4a8b458a6301836e8445e948cb6950
 permalink: affc3ff6a14f0165fa6b6dd35884a7990c5731c3
 categories: NLP
 tags: [LLM, Recommendation, Zero-shot Learner, Instruction Tuning, Retrieval Augmented Generation, Data Augmentation]
-excerpt: "NCSOFT VARCO 모델을 활용하여 다양한 도메인의 추천에 적용가능한 생성형 추천 모델을 제작했던 경험을 공유합니다."
+excerpt: "NC VARCO 모델을 활용하여 다양한 도메인의 추천에 적용가능한 생성형 추천 모델을 제작했던 경험을 공유합니다."
 back_color: "#ffffff"
 img_name: "zero_shot_RS_framework.png"
 toc: true

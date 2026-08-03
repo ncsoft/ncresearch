@@ -133,7 +133,7 @@ index: 25
 - 언어 확장: 언어 종속성 없는 무한한 확장 가능 구조  
 - 모달리티 확장: 극한의 잡음 환경에서의 강건성 확보를 위한 멀티 모달 연구 
 
-논문에 서술되어 있으나 이번 글에서 다루지 않은 부분이나 글을 읽으시면서 궁금하셨던 부분, 혹은 코드레벨에서 논의할 의견이 있으신 분들은 저희 NCSOFT 공식 GitHub에 공개된 [PhonMatchNet repository](https://github.com/ncsoft/PhonMatchNet)에 이슈 및 PR 남겨 주시면 감사하겠습니다. 
+논문에 서술되어 있으나 이번 글에서 다루지 않은 부분이나 글을 읽으시면서 궁금하셨던 부분, 혹은 코드레벨에서 논의할 의견이 있으신 분들은 저희 NC 공식 GitHub에 공개된 [PhonMatchNet repository](https://github.com/ncsoft/PhonMatchNet)에 이슈 및 PR 남겨 주시면 감사하겠습니다. 
 
  
 

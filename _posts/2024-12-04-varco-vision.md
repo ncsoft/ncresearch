@@ -36,7 +36,7 @@ index: 61
 <br>
 
 # **들어가며**
-안녕하세요. 멀티모달생성팀 리더를 맡고 있는 김영준입니다. AI 분야에서 멀티모달의 중요성이 커짐에 따라 국내에서도 멀티모달 연구의 출발점으로 VLM(Vision-Language Model) 개발이 점차 활성화되고 있습니다. 기존의 LLM(Large-Language-Model)은 텍스트를 입력으로 받아 텍스트를 생성하는 모델이었다면, VLM은 텍스트와 이미지를 입력으로 받아 텍스트를 생성하는 모델을 말합니다. 그러나 대부분의 오픈소스 VLM은 영어와 중국어에 특화되어 있고, 한국어를 지원하지 않는 경우가 많습니다. 이에 우리 팀은 한국어 이해 및 생성 능력이 뛰어난 [VARCO-VISION](https://huggingface.co/NCSOFT/VARCO-VISION-14B)을 개발하고 누구나 사용 가능하도록 오픈소스로 공개하였습니다. 아래 그림은 VARCO-VISION의 다양한 활용사례를 한눈에 보여주고 있습니다. 이번 글에서는 VARCO-VISION의 [테크니컬 리포트](https://arxiv.org/pdf/2411.19103) [^4]를 요약하여 소개하고자 합니다. 자세한 내용이 궁금하신 분들은 테크니컬 리포트를 참고해주시면 감사하겠습니다.
+안녕하세요. 멀티모달생성팀 리더를 맡고 있는 김영준입니다. AI 분야에서 멀티모달의 중요성이 커짐에 따라 국내에서도 멀티모달 연구의 출발점으로 VLM(Vision-Language Model) 개발이 점차 활성화되고 있습니다. 기존의 LLM(Large-Language-Model)은 텍스트를 입력으로 받아 텍스트를 생성하는 모델이었다면, VLM은 텍스트와 이미지를 입력으로 받아 텍스트를 생성하는 모델을 말합니다. 그러나 대부분의 오픈소스 VLM은 영어와 중국어에 특화되어 있고, 한국어를 지원하지 않는 경우가 많습니다. 이에 우리 팀은 한국어 이해 및 생성 능력이 뛰어난 [VARCO-VISION](https://huggingface.co/NC/VARCO-VISION-14B)을 개발하고 누구나 사용 가능하도록 오픈소스로 공개하였습니다. 아래 그림은 VARCO-VISION의 다양한 활용사례를 한눈에 보여주고 있습니다. 이번 글에서는 VARCO-VISION의 [테크니컬 리포트](https://arxiv.org/pdf/2411.19103) [^4]를 요약하여 소개하고자 합니다. 자세한 내용이 궁금하신 분들은 테크니컬 리포트를 참고해주시면 감사하겠습니다.
 <br>
 
 ![그림1-20241128-054454.png]({{"/assets/img/post/95ad8712e60063e9ac97538504ac3eea0ac530af/그림1.png"| relative_url}}){: style="padding: 0 0;"}
@@ -105,11 +105,11 @@ VARCO-VISION의 정량 평가는 다음 네 가지 카테고리로 나누어 진
 ## **한국어 벤치마크 기반 VLM 능력 평가**
 VLM(Vision-Language Model)의 한국어 기반 이미지 이해 및 텍스트 생성 능력을 정량적으로 평가할 수 있는 벤치마크가 부족한 상황은 국내 멀티모달 모델 연구의 제약 요인이 되어 왔습니다. 이러한 한계를 극복하고자 VLM을 한국어로 평가할 수 있는 벤치마크 5종(K-MMBench, K-SEED, K-MMSTAR, K-DTCBench, K-LLaVA-W)을 공개하기로 하였습니다. 다음은 각 벤치마크에 대한 설명입니다.
 
-- **[K-MMBench](https://huggingface.co/datasets/NCSOFT/K-MMBench)** : K-MMBench는 영어로 구성된 MMBench를 한국어로 번역하고 확장한 벤치마크입니다. 이 벤치마크는 아이덴티티 추론, 이미지 감정 분석, 속성 인식 등 20가지 카테고리로 이루어져 있어, 모델의 다양한 이미지 이해 능력을 종합적으로 평가할 수 있습니다.
-- **[K-SEED](https://huggingface.co/datasets/NCSOFT/K-SEED)** : K-MMBench와 유사하게 이미지 이해 능력을 종합적으로 평가할 수 있는 벤치마크 입니다. 영어 SEED-Bench 데이터 중 20%를 추출하여 한국어로 번역하였습니다.
-- **[K-MMStar](https://huggingface.co/datasets/NCSOFT/K-MMStar)** : K-MMStar는 이미지를 깊이있게 이해해야 답을 할 수 있는 1,500개의 질문으로 구성된 벤치마크입니다. MMBench와 SEED 보다 난이도가 높고, 이미지 종류가 다양하여 모델의 추론 능력을 평가할때 유용합니다.
-- **[K-DTCBench](https://huggingface.co/datasets/NCSOFT/K-DTCBench)** : K-DTCBench는 한국어로 작성된 문서, 표, 차트의 이해 능력을 평가하기 위해 직접 구축한 벤치마크입니다.
-- **[K-LLaVA-W](https://huggingface.co/datasets/NCSOFT/K-LLaVA-W)** : K-LLaVA-W는 주어진 이미지와 텍스트를 기반으로 자연스럽고 일관된 한국어 생성이 가능한지 GPT API를 사용하여 평가합니다. 이는 모델이 단순히 이미지를 이해하는 것을 넘어 창의적이고 유창한 생성 능력을 가지고 있는지를 판단하는 중요한 지표입니다.
+- **[K-MMBench](https://huggingface.co/datasets/NC/K-MMBench)** : K-MMBench는 영어로 구성된 MMBench를 한국어로 번역하고 확장한 벤치마크입니다. 이 벤치마크는 아이덴티티 추론, 이미지 감정 분석, 속성 인식 등 20가지 카테고리로 이루어져 있어, 모델의 다양한 이미지 이해 능력을 종합적으로 평가할 수 있습니다.
+- **[K-SEED](https://huggingface.co/datasets/NC/K-SEED)** : K-MMBench와 유사하게 이미지 이해 능력을 종합적으로 평가할 수 있는 벤치마크 입니다. 영어 SEED-Bench 데이터 중 20%를 추출하여 한국어로 번역하였습니다.
+- **[K-MMStar](https://huggingface.co/datasets/NC/K-MMStar)** : K-MMStar는 이미지를 깊이있게 이해해야 답을 할 수 있는 1,500개의 질문으로 구성된 벤치마크입니다. MMBench와 SEED 보다 난이도가 높고, 이미지 종류가 다양하여 모델의 추론 능력을 평가할때 유용합니다.
+- **[K-DTCBench](https://huggingface.co/datasets/NC/K-DTCBench)** : K-DTCBench는 한국어로 작성된 문서, 표, 차트의 이해 능력을 평가하기 위해 직접 구축한 벤치마크입니다.
+- **[K-LLaVA-W](https://huggingface.co/datasets/NC/K-LLaVA-W)** : K-LLaVA-W는 주어진 이미지와 텍스트를 기반으로 자연스럽고 일관된 한국어 생성이 가능한지 GPT API를 사용하여 평가합니다. 이는 모델이 단순히 이미지를 이해하는 것을 넘어 창의적이고 유창한 생성 능력을 가지고 있는지를 판단하는 중요한 지표입니다.
 
 이러한 벤치마크를 통해 VARCO-VISION을 평가한 결과, 최신 오픈소스 중소형 모델들 중에서 한국어 기반 이미지 이해 및 텍스트 생성 능력이 가장 우수한 것으로 나타났습니다. 아래 표에서 확인할 수 있듯이, VARCO-VISION은 K-MMBench, K-SEED, K-MMStar에서 가장 높은 점수를 기록하였습니다. 특히 K-DTCBench에서 84.58점을 기록하여, 한국어로 작성된 문서, 표, 차트의 이해 능력이 다른 모델들에 비해 크게 앞섰습니다. 또한 K-LLaVA-W에서도 84.74점으로 최고 성능을 보이며, 모델의 생성 능력도 우수함을 입증하였습니다. 비록 VARCO-VISION이 상업적 모델이나 72B 규모의 대형 오픈소스 모델과 비교하면 다소 낮지만 모델의 크기와 효율성을 고려하면 준수한 성능이라고 할 수 있습니다. 이번에 공개하는 5종의 벤치마크가 한국어 기반 VLM의 발전에 기여하고, 연구/개발자들에게 유용한 데이터셋으로 활용되기를 기대합니다.
 
